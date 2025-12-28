@@ -12,9 +12,9 @@ export default defineConfig({
         src: './src/assets/logo.svg',
         replacesTitle: false,
       },
-      social: {
-        github: 'https://github.com/yourusername/ai-workshop',
-      },
+      social: [
+        { icon: 'github', label: 'GitHub', href: 'https://github.com/inosaint/ai-workshop' },
+      ],
       customCss: [
         './src/styles/custom.css',
       ],
