@@ -23,6 +23,7 @@ export default defineConfig({
           label: 'Start Here',
           items: [
             { label: 'Welcome', link: '/introduction/' },
+            { label: 'Your First AI Creation', link: '/quick-win/' },
           ],
         },
         {

@@ -56,6 +56,8 @@ Here's our roadmap:
 [You are here]
       ↓
 ┌─────────────────────┐
+│  0. QUICK WIN       │ ← Experience AI magic in 60 seconds
+├─────────────────────┤
 │  1. SETUP           │ ← Create accounts, install tools
 ├─────────────────────┤
 │  2. LEARN GIT       │ ← Understand how code is saved
@@ -69,7 +71,7 @@ Here's our roadmap:
 │  6. LEVEL UP        │ ← APIs, analytics, and more
 └─────────────────────┘
       ↓
-   [Success! 🎉]
+   [Success!]
 ```
 
 ---
@@ -101,7 +103,7 @@ This workshop has a [Troubleshooting](/ai-workshop/troubleshooting/) section for
 
 ## Ready to Start?
 
-Let's begin by setting up your GitHub account - your new home for all your code.
+But first - let's experience what AI can do in just 60 seconds. No setup required!
 
 <div class="tip-box">
   <strong>💡 Tip:</strong> Keep this workshop open in one browser tab, and follow along with the other windows. You've got this!
@@ -110,7 +112,7 @@ Let's begin by setting up your GitHub account - your new home for all your code.
 ---
 
 <div style="text-align: center; margin-top: 2rem;">
-  <a href="/ai-workshop/github-setup/" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
-    Continue to GitHub Setup →
+  <a href="/ai-workshop/quick-win/" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
+    Your First AI Creation →
   </a>
 </div>
