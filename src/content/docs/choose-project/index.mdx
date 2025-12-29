@@ -5,15 +5,16 @@ sidebar:
   order: 5
 ---
 
-import PromptEditor from '../../../components/PromptEditor.astro';
-
-# Choose Your Project
-
 Now comes the fun part - deciding what to build!
 
-You have **four options**:
-1. Follow one of our three guided projects
-2. Create your own unique project
+During this workshop, you can choose from three project ideas, or bring your own:
+
+| Project | Description |
+|---------|-------------|
+| Personal Portfolio | A beautiful one-page website showcasing who you are |
+| Interactive Quiz | A fun game that tests knowledge and shows results |
+| Habit Tracker | A simple app to track daily habits and see your progress |
+| Your Own Idea | Anything you can imagine! |
 
 All paths lead to the same destination: a working project you can show off!
 
@@ -114,9 +115,9 @@ Have something else in mind? Use our Prompt Builder to create your own project p
   </h3>
 
   <div style="display: grid; gap: 1rem; margin-bottom: 1.5rem;">
-    <div>
+    <div class="prompt-field">
       <label style="display: block; font-weight: 500; margin-bottom: 0.5rem;">What type of project?</label>
-      <select id="projectType" style="width: 100%; padding: 0.75rem; border: 1px solid var(--sl-color-gray-3); border-radius: 8px; font-size: 1rem;">
+      <select id="projectType">
         <option value="">Choose a type...</option>
         <option value="website">Website / Landing Page</option>
         <option value="game">Game</option>
@@ -126,19 +127,19 @@ Have something else in mind? Use our Prompt Builder to create your own project p
       </select>
     </div>
 
-    <div>
+    <div class="prompt-field">
       <label style="display: block; font-weight: 500; margin-bottom: 0.5rem;">Describe your idea (1-2 sentences)</label>
-      <textarea id="projectIdea" placeholder="e.g., A recipe organizer where I can save and search my favorite recipes" style="width: 100%; padding: 0.75rem; border: 1px solid var(--sl-color-gray-3); border-radius: 8px; font-size: 1rem; min-height: 80px; resize: vertical;"></textarea>
+      <textarea id="projectIdea" placeholder="e.g., A recipe organizer where I can save and search my favorite recipes"></textarea>
     </div>
 
-    <div>
+    <div class="prompt-field">
       <label style="display: block; font-weight: 500; margin-bottom: 0.5rem;">Key features (comma-separated)</label>
-      <input type="text" id="projectFeatures" placeholder="e.g., search, favorites, categories, dark mode" style="width: 100%; padding: 0.75rem; border: 1px solid var(--sl-color-gray-3); border-radius: 8px; font-size: 1rem;" />
+      <input type="text" id="projectFeatures" placeholder="e.g., search, favorites, categories, dark mode" />
     </div>
 
-    <div>
+    <div class="prompt-field">
       <label style="display: block; font-weight: 500; margin-bottom: 0.5rem;">Color preference (optional)</label>
-      <input type="text" id="projectColors" placeholder="e.g., blue and white, dark theme, colorful" style="width: 100%; padding: 0.75rem; border: 1px solid var(--sl-color-gray-3); border-radius: 8px; font-size: 1rem;" />
+      <input type="text" id="projectColors" placeholder="e.g., blue and white, dark theme, colorful" />
     </div>
   </div>
 
@@ -235,8 +236,6 @@ Once you've chosen (or created) your project:
 3. **Paste and run** - Give Claude Code your prompt and watch the magic happen!
 
 We'll walk through this step-by-step in the next section.
-
----
 
 <div class="checkpoint">
   <div class="checkpoint-title">✅ Checkpoint</div>

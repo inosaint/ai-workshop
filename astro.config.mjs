@@ -61,6 +61,7 @@ export default defineConfig({
           label: 'Optional',
           collapsed: true,
           items: [
+            { label: 'Using Cursor (Alternative)', link: '/optional/cursor/' },
             { label: 'Deploy to Netlify', link: '/optional/netlify/' },
           ],
         },

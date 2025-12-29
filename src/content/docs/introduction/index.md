@@ -15,35 +15,44 @@ And the best part? **You don't need any prior coding experience.**
 
 ---
 
-## What is Claude Code?
+## The Journey Ahead
 
-Think of Claude Code as a **super-smart assistant** that lives in your computer's terminal (that black window where hackers type in movies).
+Here's our roadmap:
 
-Instead of typing cryptic commands yourself, you can simply tell Claude Code what you want in plain English:
-
-> "Create a simple website with a header, a photo, and three sections about my hobbies"
-
-And Claude Code will:
-1. Understand what you want
-2. Write the code for you
-3. Help you fix any problems
-4. Explain what it's doing along the way
-
-It's like having an experienced developer sitting next to you, ready to help 24/7.
+```
+[You are here]
+      ↓
+┌─────────────────────┐
+│  0. QUICK WIN       │ ← Experience AI magic in 60 seconds
+├─────────────────────┤
+│  1. SETUP           │ ← Create accounts, install tools
+├─────────────────────┤
+│  2. LEARN GIT       │ ← Understand how code is saved
+├─────────────────────┤
+│  3. BUILD           │ ← Create your project with Claude
+├─────────────────────┤
+│  4. TEST            │ ← Make sure everything works
+├─────────────────────┤
+│  5. DEPLOY          │ ← Put it on the internet!
+├─────────────────────┤
+│  6. LEVEL UP        │ ← APIs, analytics, and more
+└─────────────────────┘
+      ↓
+   [Success!]
+```
 
 ---
 
-## What We'll Build
+## What You'll Need
 
-During this workshop, you can choose from three project ideas, or bring your own:
+Before we start, make sure you have:
 
-| Project            | Description                                              |
-| ------------------ | -------------------------------------------------------- |
-| Personal Portfolio | A beautiful one-page website showcasing who you are      |
-| Interactive Quiz   | A fun game that tests knowledge and shows results        |
-| Habit Tracker      | A simple app to track daily habits and see your progress |
-| Your Own Idea      | Anything you can imagine!                                |
-|                    |                                                          |
+- ✅ A computer (Windows or Mac)
+- ✅ An internet connection
+- ✅ About 3 hours of focused time
+- ✅ Curiosity and patience!
+
+That's it. No special software, no coding knowledge, no experience required.
 
 ---
 
@@ -55,13 +64,13 @@ Here's a secret that experienced developers know:
 
 When something goes wrong (and it will), that's not failure - that's learning. Every error message is a clue. Every bug is a puzzle to solve.
 
-This workshop has a [Troubleshooting](/ai-workshop/troubleshooting/) section for common issues. And remember: Claude Code is here to help you debug!
+This workshop has a [Troubleshooting](/ai-workshop/troubleshooting/) section for common issues.
 
 ---
 
 ## Ready to Start?
 
-But first - let's experience what AI can do in just 60 seconds. No setup required!
+Let's experience what AI can do in just 60 seconds. No setup required!
 
 <div class="tip-box">
   <strong>💡 Tip:</strong> Keep this workshop open in one browser tab, and follow along with the other windows. You've got this!

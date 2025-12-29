@@ -5,17 +5,33 @@ sidebar:
   order: 2
 ---
 
-# Your First AI Creation
-
 Before we dive into installations and setups, let's experience what AI can do **right now**.
 
 No downloads. No accounts. Just pure magic.
 
 ---
 
+## What is Claude Code?
+
+Think of Claude Code as a **super-smart assistant** that lives in your computer's terminal (that black window where hackers type in movies).
+
+Instead of typing cryptic commands yourself, you can simply tell Claude Code what you want in plain English:
+
+> "Create a simple website with a header, a photo, and three sections about my hobbies"
+
+And Claude Code will:
+1. Understand what you want
+2. Write the code for you
+3. Help you fix any problems
+4. Explain what it's doing along the way
+
+It's like having an experienced developer sitting next to you, ready to help 24/7.
+
+---
+
 ## Meet Claude Artifacts
 
-Claude has a feature called **Artifacts** that lets you create things instantly in your browser. Let's try it!
+But first, let's try something even simpler. Claude has a feature called **Artifacts** that lets you create things instantly in your browser.
 
 ### Step 1: Open Claude
 
@@ -31,8 +47,6 @@ If you don't have an account, you can create one for free in 30 seconds.
   </div>
 </div>
 
----
-
 ### Step 2: Ask Claude to Create Something
 
 Copy and paste this prompt into Claude:
@@ -44,8 +58,6 @@ and equals. Make it look beautiful with rounded buttons and nice colors.
 ```
 
 Press **Enter** and watch!
-
----
 
 ### Step 3: See the Magic
 
@@ -113,28 +125,6 @@ The difference? **Claude Artifacts** run in your browser temporarily. In this wo
 - Build things **on your own computer**
 - Have **full control** over your code
 - Share your creations with **anyone in the world**
-
----
-
-## The Journey Ahead
-
-```
-[You are here]
-      ↓
-┌──────────────────────────────┐
-│  ✅ Quick Win (just did it!) │
-├──────────────────────────────┤
-│  → GitHub Account            │
-├──────────────────────────────┤
-│  → Install Claude Code       │
-├──────────────────────────────┤
-│  → Learn Git Basics          │
-├──────────────────────────────┤
-│  → Build Your Project        │
-├──────────────────────────────┤
-│  → Deploy to the Internet    │
-└──────────────────────────────┘
-```
 
 ---
 
