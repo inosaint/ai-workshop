@@ -1,0 +1,303 @@
+---
+title: Building with Claude Code
+description: Use Claude Code to create your project step by step
+sidebar:
+  order: 6
+---
+
+# Building with Claude Code
+
+This is the moment you've been waiting for! Let's use Claude Code to build your project.
+
+---
+
+## Step 1: Create Your Project Folder
+
+First, let's create a folder for your project. Open your terminal (Command Prompt on Windows, Terminal on Mac).
+
+### Windows
+
+```bash
+mkdir my-project
+cd my-project
+```
+
+### Mac
+
+```bash
+mkdir my-project
+cd my-project
+```
+
+<div class="tip-box">
+  <strong>💡 Tip:</strong> Replace "my-project" with a name for your project, like "my-portfolio" or "quiz-game". Use lowercase letters and hyphens (no spaces!).
+</div>
+
+---
+
+## Step 2: Initialize Git
+
+Let's set up Git in your project folder:
+
+```bash
+git init
+```
+
+You should see:
+```
+Initialized empty Git repository in /path/to/my-project/.git/
+```
+
+---
+
+## Step 3: Launch Claude Code
+
+Now for the exciting part! Start Claude Code:
+
+```bash
+claude
+```
+
+<div class="image-placeholder">
+  <div class="image-placeholder-icon">🖼️</div>
+  <div class="image-placeholder-text">
+    <strong>[Screenshot: Claude Code interface]</strong><br/>
+    The Claude Code CLI showing the welcome message and prompt ready for input
+  </div>
+</div>
+
+---
+
+## Step 4: Give Claude Code Your Prompt
+
+Now paste your project prompt from the previous section. For example, if you chose the Portfolio project:
+
+```text
+Create a personal portfolio website with:
+- A hero section with my name and a short tagline
+- An "About Me" section where I can describe myself
+- A "Skills" section showing 4-6 things I'm good at
+- A "Projects" section with placeholder cards for 3 projects
+- A "Contact" section with links to email and social media
+- Modern, clean design with a color scheme of your choice
+- Mobile-responsive layout
+- Use HTML, CSS, and vanilla JavaScript only
+```
+
+Press **Enter** and watch Claude Code work!
+
+<div class="image-placeholder">
+  <div class="image-placeholder-icon">🖼️</div>
+  <div class="image-placeholder-text">
+    <strong>[Screenshot: Claude Code generating code]</strong><br/>
+    Claude Code showing progress as it creates files, with file names appearing as they're created
+  </div>
+</div>
+
+---
+
+## Step 5: Watch and Learn
+
+Claude Code will:
+
+1. **Plan** - Think about the best approach
+2. **Create files** - Generate HTML, CSS, and JavaScript files
+3. **Explain** - Tell you what it's doing and why
+
+<div class="warning-box">
+  <strong>⚠️ Be patient!</strong> Complex projects might take a minute or two. Don't interrupt Claude Code while it's working.
+</div>
+
+---
+
+## Step 6: Review What Was Created
+
+After Claude Code finishes, let's see what files were created:
+
+```bash
+ls
+```
+
+You should see something like:
+```
+index.html
+styles.css
+script.js
+```
+
+(The exact files depend on your project)
+
+---
+
+## Working with Claude Code: Tips & Tricks
+
+### Asking Follow-up Questions
+
+You can ask Claude Code to modify or add things:
+
+```text
+Can you change the color scheme to blue and white?
+```
+
+```text
+Add a dark mode toggle button
+```
+
+```text
+The contact form needs email validation
+```
+
+### Being Specific Helps
+
+Instead of:
+> "Make it look better"
+
+Try:
+> "Add more spacing between sections and make the headings larger"
+
+Instead of:
+> "It's not working"
+
+Try:
+> "When I click the submit button, nothing happens. Can you check the JavaScript?"
+
+### Asking for Explanations
+
+Don't understand something? Just ask!
+
+```text
+Can you explain what the CSS flexbox code does?
+```
+
+```text
+Why did you use addEventListener instead of onclick?
+```
+
+Claude Code is patient and loves explaining things!
+
+---
+
+## Common Claude Code Commands
+
+While chatting with Claude Code, you can use these helpful commands:
+
+| Command | What It Does |
+|---------|--------------|
+| `/help` | Shows available commands |
+| `/clear` | Clears the conversation history |
+| `exit` or `Ctrl+C` | Exit Claude Code |
+
+---
+
+## Example Conversation
+
+Here's what a typical session might look like:
+
+```
+You: Create a simple landing page with a hero section,
+     3 feature cards, and a footer with social links
+
+Claude: I'll create a clean landing page for you. Let me
+        set up the structure with HTML, add styling with
+        CSS, and include some interactive elements...
+
+        [Creates index.html]
+        [Creates styles.css]
+        [Creates script.js]
+
+        Done! I've created a landing page with:
+        - A hero section with a headline and CTA button
+        - 3 feature cards with icons
+        - A footer with social media links
+
+        You can open index.html in your browser to see it.
+
+You: Can you make the feature cards have a hover effect?
+
+Claude: Sure! I'll add a smooth hover animation to the
+        cards...
+
+        [Updates styles.css]
+
+        Done! Now when you hover over a card, it will
+        lift up slightly with a shadow effect.
+```
+
+---
+
+## Making Changes
+
+Want to tweak something? You have two options:
+
+### Option 1: Ask Claude Code
+
+The easiest way - just tell Claude Code what to change:
+
+```text
+Change the heading font to something more playful
+```
+
+### Option 2: Edit Files Yourself
+
+You can also edit files directly using any text editor:
+
+1. Open the file in a text editor (VS Code, Notepad++, TextEdit, etc.)
+2. Make your changes
+3. Save the file
+4. Refresh your browser to see the changes
+
+<div class="tip-box">
+  <strong>💡 Pro Tip:</strong> Try making small changes yourself! If you break something, you can always ask Claude Code to fix it.
+</div>
+
+---
+
+## Save Your Progress with Git
+
+After Claude Code creates your project, let's save it with Git:
+
+```bash
+git add .
+git commit -m "Initial project created with Claude Code"
+```
+
+<div class="checkpoint">
+  <div class="checkpoint-title">✅ Checkpoint</div>
+  <p>Your project files are created and saved in Git. Let's test it locally!</p>
+</div>
+
+---
+
+## Troubleshooting
+
+### Claude Code isn't responding
+
+Try pressing Enter. If that doesn't work, press `Ctrl+C` to exit and restart with `claude`.
+
+### "I don't like what Claude Code made"
+
+That's okay! You can:
+1. Ask Claude Code to change it: "Can you try a different style?"
+2. Start over: Delete the files and give a new prompt
+3. Be more specific in your next prompt
+
+### Files weren't created
+
+Make sure you're in the right folder. Run `pwd` (Mac) or `cd` (Windows) to see your current location.
+
+---
+
+## Next Steps
+
+You have a working project! In the next section, we'll learn how to view it in your browser and make sure everything works.
+
+---
+
+<div style="display: flex; justify-content: space-between; margin-top: 2rem;">
+  <a href="/ai-workshop/choose-project/" style="padding: 0.75rem 1.5rem; border: 2px solid var(--sl-color-gray-3); color: inherit; text-decoration: none; border-radius: 8px;">
+    ← Choose Your Project
+  </a>
+  <a href="/ai-workshop/testing-locally/" style="padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
+    Testing Locally →
+  </a>
+</div>

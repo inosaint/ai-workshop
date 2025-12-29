@@ -1,0 +1,127 @@
+/* Custom styles for AI Workshop - Blue accent for Rapide theme */
+
+:root {
+  /* Blue accent color matching the landing page button (#2563eb) */
+  --sl-color-accent-low: #1e40af;
+  --sl-color-accent: #2563eb;
+  --sl-color-accent-high: #60a5fa;
+
+  /* Override Rapide theme accent */
+  --str-color-accent: #2563eb;
+  --str-color-accent-high: #60a5fa;
+  --str-color-accent-low: #1e40af;
+}
+
+[data-theme="dark"] {
+  --sl-color-accent-low: #1e40af;
+  --sl-color-accent: #3b82f6;
+  --sl-color-accent-high: #93c5fd;
+
+  --str-color-accent: #3b82f6;
+  --str-color-accent-high: #93c5fd;
+  --str-color-accent-low: #1e40af;
+}
+
+/* Checkpoint component */
+.checkpoint {
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+  border-left: 4px solid #10b981;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.checkpoint-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #065f46;
+  margin-bottom: 0.5rem;
+}
+
+[data-theme="dark"] .checkpoint {
+  background: linear-gradient(135deg, #064e3b 0%, #065f46 100%);
+}
+
+[data-theme="dark"] .checkpoint-title {
+  color: #a7f3d0;
+}
+
+/* Warning box */
+.warning-box {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border-left: 4px solid #f59e0b;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+[data-theme="dark"] .warning-box {
+  background: linear-gradient(135deg, #78350f 0%, #92400e 100%);
+}
+
+/* Tip box */
+.tip-box {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border-left: 4px solid #2563eb;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+[data-theme="dark"] .tip-box {
+  background: linear-gradient(135deg, #1e3a5f 0%, #1e40af 100%);
+}
+
+/* Image placeholder */
+.image-placeholder {
+  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+  border: 2px dashed #94a3b8;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  color: #64748b;
+  margin: 1.5rem 0;
+}
+
+[data-theme="dark"] .image-placeholder {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  border-color: #475569;
+  color: #94a3b8;
+}
+
+.image-placeholder-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.image-placeholder-text {
+  font-size: 0.9rem;
+}
+
+/* Prompt editor input fields */
+.prompt-field input,
+.prompt-field textarea,
+.prompt-field select {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: white;
+  width: 100%;
+}
+
+[data-theme="dark"] .prompt-field input,
+[data-theme="dark"] .prompt-field textarea,
+[data-theme="dark"] .prompt-field select {
+  background: #1e293b;
+  border-color: #475569;
+  color: #f1f5f9;
+}
+
+.prompt-field textarea {
+  min-height: 100px;
+  resize: vertical;
+}
