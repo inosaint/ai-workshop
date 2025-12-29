@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import starlightThemeRapide from 'starlight-theme-rapide';
 
 export default defineConfig({
   site: 'https://yourusername.github.io',
@@ -8,6 +9,7 @@ export default defineConfig({
     starlight({
       title: 'AI Workshop',
       description: 'A beginner-friendly guide to building projects with Claude Code',
+      plugins: [starlightThemeRapide()],
       logo: {
         src: './src/assets/logo.svg',
         replacesTitle: false,
