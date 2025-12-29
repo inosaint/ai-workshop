@@ -5,13 +5,11 @@ sidebar:
   order: 1
 ---
 
-# Welcome to the AI Workshop!
+You're about to embark on an exciting journey. By the end of this workshop, you'll learn:
 
-You're about to embark on an exciting journey. By the end of this workshop, you'll have:
-
+- Familiarise yourself with the AI ecosystem
+- Experience how AI can help you create
 - A real project running live on the internet
-- Experience using AI to help you code
-- Skills you can use to build anything you imagine
 
 And the best part? **You don't need any prior coding experience.**
 
@@ -39,53 +37,13 @@ It's like having an experienced developer sitting next to you, ready to help 24/
 
 During this workshop, you can choose from three project ideas, or bring your own:
 
-| Project | Description |
-|---------|-------------|
-| Personal Portfolio | A beautiful one-page website showcasing who you are |
-| Interactive Quiz | A fun game that tests knowledge and shows results |
-| Habit Tracker | A simple app to track daily habits and see your progress |
-| Your Own Idea | Anything you can imagine! |
-
----
-
-## The Journey Ahead
-
-Here's our roadmap:
-
-```
-[You are here]
-      ↓
-┌─────────────────────┐
-│  0. QUICK WIN       │ ← Experience AI magic in 60 seconds
-├─────────────────────┤
-│  1. SETUP           │ ← Create accounts, install tools
-├─────────────────────┤
-│  2. LEARN GIT       │ ← Understand how code is saved
-├─────────────────────┤
-│  3. BUILD           │ ← Create your project with Claude
-├─────────────────────┤
-│  4. TEST            │ ← Make sure everything works
-├─────────────────────┤
-│  5. DEPLOY          │ ← Put it on the internet!
-├─────────────────────┤
-│  6. LEVEL UP        │ ← APIs, analytics, and more
-└─────────────────────┘
-      ↓
-   [Success!]
-```
-
----
-
-## What You'll Need
-
-Before we start, make sure you have:
-
-- ✅ A computer (Windows or Mac)
-- ✅ An internet connection
-- ✅ About 3 hours of focused time
-- ✅ Curiosity and patience!
-
-That's it. No special software, no coding knowledge, no experience required.
+| Project            | Description                                              |
+| ------------------ | -------------------------------------------------------- |
+| Personal Portfolio | A beautiful one-page website showcasing who you are      |
+| Interactive Quiz   | A fun game that tests knowledge and shows results        |
+| Habit Tracker      | A simple app to track daily habits and see your progress |
+| Your Own Idea      | Anything you can imagine!                                |
+|                    |                                                          |
 
 ---
 
