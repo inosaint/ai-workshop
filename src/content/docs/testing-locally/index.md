@@ -248,12 +248,24 @@ The development cycle is:
 
 ## Save Your Work!
 
-Once you're happy with your changes, save them with Git:
+Once you're happy with your changes, save them with GitHub Desktop:
 
-```bash
-git add .
-git commit -m "Fix styling issues and test locally"
-```
+### Step 1: Open GitHub Desktop
+
+Switch to GitHub Desktop to see your changes.
+
+### Step 2: Review Your Changes
+
+Look at the "Changes" tab to see what you modified.
+
+### Step 3: Commit Your Changes
+
+1. In the "Summary" field, type: `Fix styling issues and test locally`
+2. Click **"Commit to main"**
+
+### Step 4: Push to GitHub
+
+Click **"Push origin"** to back up your work.
 
 <div class="checkpoint">
   <div class="checkpoint-title">✅ Checkpoint</div>

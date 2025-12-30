@@ -28,53 +28,40 @@ Keep this page bookmarked! Here's a quick reference for everything you learned.
 - **Mac**: `Cmd + Space`, type `Terminal`, press Enter
 
 
-## Git Commands
+## GitHub Desktop
 
-### Starting Out
+### Creating a New Repository
 
-```bash
-# Initialize Git in a folder
-git init
-
-# Clone a repository
-git clone https://github.com/user/repo.git
-
-# Configure your identity (first time only)
-git config --global user.name "Your Name"
-git config --global user.email "you@example.com"
-```
+1. **File → New Repository** (or Ctrl+N / Cmd+N)
+2. Fill in name, description, and local path
+3. Check "Initialize with a README"
+4. Click **"Create Repository"**
 
 ### Daily Workflow
 
-```bash
-# Check what's changed
-git status
+1. **Make changes** in your code editor and save
+2. **Open GitHub Desktop** - changes appear in "Changes" tab
+3. **Review changes** - click files to see what changed
+4. **Write summary** - describe what you changed
+5. **Commit to main** - click the button
+6. **Push origin** - click the button at top
 
-# Stage all changes
-git add .
+### Publishing to GitHub
 
-# Stage specific file
-git add filename.html
+1. Click **"Publish repository"** button
+2. Uncheck "Keep this code private" (for GitHub Pages)
+3. Click **"Publish repository"**
 
-# Commit with message
-git commit -m "Your message here"
+### Useful Actions
 
-# Push to GitHub
-git push
-
-# Pull latest changes
-git pull
-```
-
-### Connecting to GitHub
-
-```bash
-# Add remote repository
-git remote add origin https://github.com/user/repo.git
-
-# Push and set upstream
-git push -u origin main
-```
+| Action | How To Do It |
+|--------|--------------|
+| View on GitHub | Repository → View on GitHub |
+| Open in editor | Right-click repo → Open in Visual Studio Code |
+| Discard changes | Right-click file → Discard changes |
+| See history | Click "History" tab |
+| Pull latest | Repository → Pull |
+| Clone a repo | File → Clone Repository |
 
 
 ## Claude Code

@@ -241,18 +241,34 @@ You can also edit files directly using any text editor:
 </div>
 
 
-## Save Your Progress with Git
+## Save Your Progress with GitHub Desktop
 
-After Claude Code creates your project, let's save it with Git:
+After Claude Code creates your project, let's save it with GitHub Desktop:
 
-```bash
-git add .
-git commit -m "Initial project created with Claude Code"
-```
+### Step 1: Open GitHub Desktop
+
+Switch to GitHub Desktop. You should see your new files listed in the "Changes" tab.
+
+### Step 2: Review Your Changes
+
+Click on the files to see what was created. All the new files should be checked.
+
+### Step 3: Commit Your Changes
+
+1. In the "Summary" field at the bottom left, type: `Initial project created with Claude Code`
+2. Click the **"Commit to main"** button
+
+### Step 4: Publish to GitHub
+
+1. Click the **"Publish repository"** button at the top
+2. Uncheck "Keep this code private" (we want it public for GitHub Pages)
+3. Click **"Publish repository"**
+
+Your project is now saved and backed up on GitHub! 🎉
 
 <div class="checkpoint">
   <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>Your project files are created and saved in Git. Let's test it locally!</p>
+  <p>Your project files are created and saved on GitHub. Let's test it locally!</p>
 </div>
 
 
