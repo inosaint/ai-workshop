@@ -29,7 +29,9 @@ The Claude interface with the chat input at the bottom
 
 Copy and paste this prompt into Claude:
 
-“Can you create Tetris as a Claude Artifact?’
+```
+Can you create Tetris as a Claude Artifact?
+```
 
 Press **Enter** and watch!
 
@@ -55,20 +57,26 @@ All within 5 minutes. Imagine what you can build with more time.
 ## Additional Prompts
 
 Here are some fun things to ask Claude to create:
+
 ### A Pomodoro Timer
 
-Create a Pomodoro timer with 25-minute work sessions and 5-minute breaks.  
+```
+Create a Pomodoro timer with 25-minute work sessions and 5-minute breaks.
 Add start, pause, and reset buttons. Show the time in a large, easy-to-read format.
+```
 
 ### A Color Palette Generator
 
-Create a color palette generator that shows 5 harmonious colors.  
+```
+Create a color palette generator that shows 5 harmonious colors.
 Add a "Generate New Palette" button. Show the hex codes for each color and let me click to copy them.
+```
 
 ### A Simple Game
 
-> [!NOTE]
-> Create a simple memory card matching game with 8 pairs of cards. When I click two cards, show if they match. Track my number of moves.
+```
+Create a simple memory card matching game with 8 pairs of cards. When I click two cards, show if they match. Track my number of moves.
+```
 
 
 ---
