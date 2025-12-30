@@ -8,11 +8,33 @@ sidebar:
   You can skip this section if you are already familiar with Github and have an account 
 
 </div>
-# GitHub Account
 
 GitHub is where developers store their code. Think of it as **Google Drive for code**.
 
 In this section, you'll create a free GitHub account that you'll use for the rest of the workshop.
+### What is Git?
+
+**Git is a time machine for your code.**
+
+Remember when you'd save files like:
+- `design_final.psd`
+- `poster_final_v2.ai`
+- `design_FINAL_FINAL.sketch`
+- `design_FINAL_FINAL_actually_final.fig`
+
+Git solves this problem elegantly. Instead of creating copies, Git tracks every change you make. You can:
+- Go back to any previous version
+- See what changed and when
+- Work with others without overwriting each other's work
+
+## Git vs GitHub: What's the Difference?
+
+| Git                       | GitHub                        |
+| ------------------------- | ----------------------------- |
+| Software on your computer | Website on the internet       |
+| Tracks changes locally    | Stores your code in the cloud |
+| Free and open source      | Free for public projects      |
+| Works offline             | Requires internet             |
 
 ## A crash course of terms
 
