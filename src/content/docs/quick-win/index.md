@@ -7,10 +7,11 @@ sidebar:
 
 Before we dive into installations and setups, let's experience what AI can do **right now**.
 
-No downloads. No accounts. Just pure magic.
+ChatGPT, Grok and Claude are the popular LLMs in the western world. For this exercise, we will be using Claude though you could try this with the LLM of your choice.
 
----
+## What is [Claude.ai?](Claude.ai?)
 
+<<<<<<< Updated upstream
 ## What is Claude Code?
 
 Think of Claude Code as a **super-smart assistant** that lives in your computer's terminal (that black window where hackers type in movies).
@@ -31,10 +32,15 @@ It's like having an experienced developer sitting next to you, ready to help 24/
 
 ## Meet Claude Artifacts
 
+=======
+Think of Claude as a **super-smart assistant** that you can talk to via a Chat interface in plain english. Today you can use Claude and other LLMs to do a variety of tasks from editing blog posts to generating images and even building full fledged apps.
+  
+>>>>>>> Stashed changes
 But first, let's try something even simpler. Claude has a feature called **Artifacts** that lets you create things instantly in your browser.
 
 ### Step 1: Open Claude
 
+<<<<<<< Updated upstream
 Go to [claude.ai](https://claude.ai) in your browser.
 
 If you don't have an account, you can create one for free in 30 seconds.
@@ -46,68 +52,62 @@ If you don't have an account, you can create one for free in 30 seconds.
     The Claude interface with the chat input at the bottom
   </div>
 </div>
+=======
+Go to [claude.ai](https://claude.ai/) in your browser.  
+If you don't have an account, you can create one for free in 30 seconds.  
+🖼️  
+**[screenshot: claude.ai homepage]**  
+The Claude interface with the chat input at the bottom
+>>>>>>> Stashed changes
 
 ### Step 2: Ask Claude to Create Something
 
 Copy and paste this prompt into Claude:
 
-```text
-Create a simple interactive calculator with a clean, modern design.
-It should have buttons for numbers 0-9, basic operations (+, -, ×, ÷),
-and equals. Make it look beautiful with rounded buttons and nice colors.
-```
+“Can you create Tetris as a Claude Artifact?’
 
 Press **Enter** and watch!
 
+<<<<<<< Updated upstream
+=======
+Note: feel free to use any other simple game you would want to create or check out these additional [[#Prompts]].
+
+>>>>>>> Stashed changes
 ### Step 3: See the Magic
 
-Within seconds, Claude will create a **working calculator** right in your browser!
+Within seconds, Claude will create a **working Tetris game** right in your browser!  
+🖼️  
+**[screenshot: claude artifact showing calculator]**
 
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: Claude Artifact showing calculator]</strong><br/>
-    A beautiful calculator artifact created by Claude, with the "Preview" tab active
-  </div>
-</div>
+  
+### Step 4: Iterate on the outcome
 
-**Try it out!** Click the numbers and operators - it actually works!
+Was the outcome to your satisfaction?
+If not, try asking it to make changes.
 
-<div class="checkpoint">
-  <div class="checkpoint-title">✅ You just created your first app with AI!</div>
-  <p>That took about 60 seconds. Imagine what you can build with more time.</p>
-</div>
+E.g., You can ask it to change the visual style or add some fun new game elements.
 
----
+✅ You just created your first app with AI!  
+All within 5 minutes. Imagine what you can build with more time.
 
-## Try More Prompts
+## Additional Prompts
 
 Here are some fun things to ask Claude to create:
-
 ### A Pomodoro Timer
-```text
-Create a Pomodoro timer with 25-minute work sessions and 5-minute breaks.
+
+Create a Pomodoro timer with 25-minute work sessions and 5-minute breaks.  
 Add start, pause, and reset buttons. Show the time in a large, easy-to-read format.
-```
 
 ### A Color Palette Generator
-```text
-Create a color palette generator that shows 5 harmonious colors.
-Add a "Generate New Palette" button. Show the hex codes for each color
-and let me click to copy them.
-```
+
+Create a color palette generator that shows 5 harmonious colors.  
+Add a "Generate New Palette" button. Show the hex codes for each color and let me click to copy them.
 
 ### A Simple Game
-```text
-Create a simple memory card matching game with 8 pairs of cards.
-When I click two cards, show if they match. Track my number of moves.
-```
 
-### A Mood Tracker
-```text
-Create a mood tracker where I can click on emoji faces (😊 😐 😢 😡 😴)
-to log how I'm feeling. Show a simple history of my recent moods.
-```
+> [!NOTE]
+> Create a simple memory card matching game with 8 pairs of cards. When I click two cards, show if they match. Track my number of moves.
+
 
 ---
 

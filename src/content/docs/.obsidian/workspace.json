@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "introduction/index.md",
+                "file": "quick-win/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "introduction/index.md",
+                "file": "quick-win/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "introduction/index.md",
+                "file": "quick-win/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -156,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "introduction/index.md",
+                "file": "quick-win/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -185,6 +185,8 @@
   },
   "active": "6301744345747392",
   "lastOpenFiles": [
+    "optional/cursor.md",
+    "introduction/index.md",
     "building-with-claude/index.md"
   ]
 }
