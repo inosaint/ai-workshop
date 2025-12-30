@@ -290,14 +290,3 @@ Make sure you're in the right folder. Run `pwd` (Mac) or `cd` (Windows) to see y
 ## Next Steps
 
 You have a working project! In the next section, we'll learn how to view it in your browser and make sure everything works.
-
----
-
-<div style="display: flex; justify-content: space-between; margin-top: 2rem;">
-  <a href="/ai-workshop/choose-project/" style="padding: 0.75rem 1.5rem; border: 2px solid var(--sl-color-gray-3); color: inherit; text-decoration: none; border-radius: 8px;">
-    ← Choose Your Project
-  </a>
-  <a href="/ai-workshop/testing-locally/" style="padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
-    Testing Locally →
-  </a>
-</div>

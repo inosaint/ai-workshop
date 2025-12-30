@@ -273,14 +273,3 @@ git commit -m "Fix styling issues and test locally"
 ## Next Steps
 
 Your project is looking good! Let's deploy it to GitHub Pages so anyone with the link can see it.
-
----
-
-<div style="display: flex; justify-content: space-between; margin-top: 2rem;">
-  <a href="/ai-workshop/building-with-claude/" style="padding: 0.75rem 1.5rem; border: 2px solid var(--sl-color-gray-3); color: inherit; text-decoration: none; border-radius: 8px;">
-    ← Building with Claude
-  </a>
-  <a href="/ai-workshop/deploy-github-pages/" style="padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
-    Deploy to GitHub Pages →
-  </a>
-</div>

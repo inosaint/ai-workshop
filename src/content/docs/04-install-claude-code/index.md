@@ -229,14 +229,3 @@ You'll be asked for your password. Type it (it won't show characters) and press 
 ## Next Steps
 
 Claude Code is installed and ready to go! Before we start building, let's learn the basics of Git - the tool that helps us save and share our code.
-
----
-
-<div style="display: flex; justify-content: space-between; margin-top: 2rem;">
-  <a href="/ai-workshop/github-setup/" style="padding: 0.75rem 1.5rem; border: 2px solid var(--sl-color-gray-3); color: inherit; text-decoration: none; border-radius: 8px;">
-    ← GitHub Setup
-  </a>
-  <a href="/ai-workshop/git-basics/" style="padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
-    Git Basics →
-  </a>
-</div>

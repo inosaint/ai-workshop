@@ -24,7 +24,7 @@ Something not working? Don't panic! Here are solutions to common problems.
    ```bash
    node --version
    ```
-3. **If not installed**, go back to the [Install Claude Code](/ai-workshop/install-claude-code/) section
+3. **If not installed**, go back to the [Install Claude Code](/ai-workshop/04-install-claude-code/) section
 
 ### "npm ERR! permission denied" (Mac)
 
@@ -323,15 +323,4 @@ Then push once - it will save your credentials for next time.
 
 <div class="tip-box">
   <strong>💡 Remember:</strong> Making mistakes is part of learning. Every experienced developer has seen these errors hundreds of times!
-</div>
-
----
-
-<div style="display: flex; justify-content: space-between; margin-top: 2rem;">
-  <a href="/ai-workshop/reference/glossary/" style="padding: 0.75rem 1.5rem; border: 2px solid var(--sl-color-gray-3); color: inherit; text-decoration: none; border-radius: 8px;">
-    ← Glossary
-  </a>
-  <a href="/ai-workshop/" style="padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
-    Back to Start →
-  </a>
 </div>

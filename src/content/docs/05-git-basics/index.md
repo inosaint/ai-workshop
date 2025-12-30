@@ -281,14 +281,3 @@ You now understand the basics of Git! Let's put this knowledge to use by choosin
   <div class="checkpoint-title">✅ Checkpoint</div>
   <p>You understand what Git is and know the basic commands. Don't worry about memorizing them - Claude Code will help!</p>
 </div>
-
----
-
-<div style="display: flex; justify-content: space-between; margin-top: 2rem;">
-  <a href="/ai-workshop/install-claude-code/" style="padding: 0.75rem 1.5rem; border: 2px solid var(--sl-color-gray-3); color: inherit; text-decoration: none; border-radius: 8px;">
-    ← Install Claude Code
-  </a>
-  <a href="/ai-workshop/choose-project/" style="padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
-    Choose Your Project →
-  </a>
-</div>
