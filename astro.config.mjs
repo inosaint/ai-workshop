@@ -24,37 +24,37 @@ export default defineConfig({
         {
           label: 'Start Here',
           items: [
-            { label: 'Welcome', link: '/01-introduction/' },
-            { label: 'Your First AI Creation', link: '/02-quick-win/' },
+            { label: 'Welcome', link: '/introduction/' },
+            { label: 'Your First AI Creation', link: '/quick-win/' },
           ],
         },
         {
           label: 'Setup',
           items: [
-            { label: 'GitHub Account', link: '/03-github-setup/' },
-            { label: 'Install Claude Code', link: '/04-install-claude-code/' },
-            { label: 'Git Basics', link: '/05-git-basics/' },
+            { label: 'GitHub Account', link: '/github-setup/' },
+            { label: 'Install Claude Code', link: '/install-claude-code/' },
+            { label: 'Git Basics', link: '/git-basics/' },
           ],
         },
         {
           label: 'Build Your Project',
           items: [
-            { label: 'Choose Your Project', link: '/06-choose-project/' },
-            { label: 'Building with Claude', link: '/07-building-with-claude/' },
-            { label: 'Testing Locally', link: '/08-testing-locally/' },
+            { label: 'Choose Your Project', link: '/choose-project/' },
+            { label: 'Building with Claude', link: '/building-with-claude/' },
+            { label: 'Testing Locally', link: '/testing-locally/' },
           ],
         },
         {
           label: 'Go Live',
           items: [
-            { label: 'Deploy to GitHub Pages', link: '/09-deploy-github-pages/' },
+            { label: 'Deploy to GitHub Pages', link: '/deploy-github-pages/' },
           ],
         },
         {
           label: 'Level Up',
           items: [
-            { label: 'Claude API Basics', link: '/10-claude-api/' },
-            { label: 'Add Analytics (PostHog)', link: '/11-analytics-posthog/' },
+            { label: 'Claude API Basics', link: '/claude-api/' },
+            { label: 'Add Analytics (PostHog)', link: '/analytics-posthog/' },
           ],
         },
         {
