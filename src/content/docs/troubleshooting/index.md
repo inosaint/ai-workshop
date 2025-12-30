@@ -24,7 +24,7 @@ Something not working? Don't panic! Here are solutions to common problems.
    ```bash
    node --version
    ```
-3. **If not installed**, go back to the [Install Claude Code](/ai-workshop/04-install-claude-code/) section
+3. **If not installed**, go back to the [Install Claude Code](/ai-workshop/install-claude-code/) section
 
 ### "npm ERR! permission denied" (Mac)
 
