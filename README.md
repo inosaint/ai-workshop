@@ -1,5 +1,7 @@
 # AI Workshop
 
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
 A beginner-friendly workshop companion guide for learning Claude Code - from zero to deployed project.
 
 ## What is this?
@@ -49,6 +51,11 @@ cd ai-workshop
 
 # Install dependencies
 npm install
+
+# (Optional) Set up analytics
+# Copy .env.example to .env and add your PostHog API key
+cp .env.example .env
+# Then edit .env with your PostHog credentials
 
 # Start the development server
 npm run dev
@@ -123,6 +130,23 @@ ai-workshop/
 
 ## Customization
 
+### Analytics Setup (Optional)
+
+This project includes PostHog analytics integration with automatic course progression tracking. To enable it:
+
+1. Sign up for a free account at [PostHog](https://posthog.com)
+2. Get your API key from your PostHog project settings
+3. Copy `.env.example` to `.env`
+4. Add your PostHog API key to the `.env` file
+
+The analytics will automatically track:
+- Page views with module progression (1-11)
+- User funnels through the course
+- Checkpoint engagement
+- Popular pages and sections
+
+**See [ANALYTICS.md](ANALYTICS.md) for detailed tracking capabilities and how to create dashboards in PostHog.**
+
 ### Adding Screenshots
 
 Replace placeholder images in the content with actual screenshots:
@@ -148,4 +172,6 @@ Contributions are welcome! Please:
 
 ## License
 
-MIT
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+You are free to share and adapt this material for non-commercial purposes, as long as you give appropriate credit and share your adaptations under the same license.

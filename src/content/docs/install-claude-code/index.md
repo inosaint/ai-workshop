@@ -223,6 +223,72 @@ This will launch Claude Code. The first time you run it, you'll need to authenti
 
 ---
 
+## Connecting Claude Code to GitHub
+
+Now that Claude Code is authenticated, we need to connect it to your GitHub account so it can create and update repositories for you.
+
+### Step 1: Exit Claude Code
+
+If Claude Code is still running, exit it by typing:
+```
+/exit
+```
+
+Or press `Ctrl+C` (Windows/Linux) or `Cmd+C` (Mac).
+
+### Step 2: Start a GitHub Session
+
+In your terminal, run:
+
+```bash
+claude --github
+```
+
+This tells Claude Code you want to work with GitHub repositories.
+
+<div class="image-placeholder">
+  <div class="image-placeholder-icon">🖼️</div>
+  <div class="image-placeholder-text">
+    <strong>[Screenshot: Claude Code GitHub authentication prompt]</strong><br/>
+    The prompt asking you to authorize GitHub access
+  </div>
+</div>
+
+### Step 3: Authorize GitHub Access
+
+1. Claude Code will open your browser or provide a URL
+2. You'll be taken to GitHub's authorization page
+3. Review the permissions Claude Code is requesting:
+   - **Read access** to your profile and repositories
+   - **Write access** to create and update repositories
+4. Click **"Authorize"** to grant access
+
+<div class="warning-box">
+  <strong>⚠️ What permissions does Claude Code need?</strong><br/>
+  Claude Code needs write access to create your personal website repository (username.github.io) and push code to it. This is safe - you can revoke access anytime from your GitHub settings.
+</div>
+
+### Step 4: Verify GitHub Connection
+
+After authorizing, return to your terminal. You should see a success message confirming Claude Code is connected to your GitHub account.
+
+<div class="checkpoint">
+  <div class="checkpoint-title">✅ Checkpoint</div>
+  <p>Claude Code is now connected to GitHub and ready to create repositories for you!</p>
+</div>
+
+### Managing GitHub Access
+
+If you ever want to review or revoke Claude Code's access:
+
+1. Go to **[github.com](https://github.com)** and log in
+2. Click your profile icon → **Settings**
+3. In the left sidebar, click **Applications**
+4. Under "Installed GitHub Apps" or "Authorized OAuth Apps", find Claude Code
+5. You can review permissions or revoke access if needed
+
+---
+
 ## Troubleshooting
 
 ### "command not found: claude" (Mac)

@@ -1,0 +1,76 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+
+const posthogKey = import.meta.env.PUBLIC_POSTHOG_KEY;
+const posthogHost = import.meta.env.PUBLIC_POSTHOG_HOST;
+---
+
+<!-- PostHog Analytics -->
+{posthogKey && (
+  <script is:inline define:vars={{ posthogKey, posthogHost }}>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys getNextSurveyStep onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init(posthogKey, {
+      api_host: posthogHost,
+      person_profiles: 'identified_only',
+      capture_pageview: true,
+      capture_pageleave: true
+    });
+
+    // Track course module based on URL path
+    document.addEventListener('DOMContentLoaded', function() {
+      const path = window.location.pathname;
+
+      // Map paths to course modules for funnel tracking
+      const moduleMap = {
+        '/introduction/': { module: 'Introduction', order: 1, section: 'Start Here' },
+        '/quick-win/': { module: 'Quick Win', order: 2, section: 'Start Here' },
+        '/github-setup/': { module: 'GitHub Setup', order: 3, section: 'Setup' },
+        '/install-claude-code/': { module: 'Install Claude Code', order: 4, section: 'Setup' },
+        '/git-basics/': { module: 'Git Basics', order: 5, section: 'Setup' },
+        '/choose-project/': { module: 'Choose Project', order: 6, section: 'Build Your Project' },
+        '/building-with-claude/': { module: 'Building with Claude', order: 7, section: 'Build Your Project' },
+        '/testing-locally/': { module: 'Testing Locally', order: 8, section: 'Build Your Project' },
+        '/deploy-github-pages/': { module: 'Deploy to GitHub Pages', order: 9, section: 'Go Live' },
+        '/claude-api/': { module: 'Claude API', order: 10, section: 'Level Up' },
+        '/analytics-posthog/': { module: 'Analytics PostHog', order: 11, section: 'Level Up' }
+      };
+
+      // Find matching module
+      for (const [urlPath, data] of Object.entries(moduleMap)) {
+        if (path.includes(urlPath)) {
+          posthog.capture('page_viewed', {
+            module: data.module,
+            module_order: data.order,
+            course_section: data.section,
+            page_path: path
+          });
+
+          // Set user properties for funnel analysis
+          posthog.people.set({
+            last_module_viewed: data.module,
+            furthest_module_order: data.order,
+            last_section: data.section
+          });
+          break;
+        }
+      }
+
+      // Track checkpoint interactions
+      const checkpoints = document.querySelectorAll('.checkpoint');
+      checkpoints.forEach((checkpoint, index) => {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              posthog.capture('checkpoint_viewed', {
+                page_path: path,
+                checkpoint_index: index
+              });
+            }
+          });
+        }, { threshold: 0.5 });
+
+        observer.observe(checkpoint);
+      });
+    });
+  </script>
+)}

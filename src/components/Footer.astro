@@ -1,0 +1,59 @@
+---
+// Custom footer component for license notice
+---
+
+<footer class="license-footer">
+  <div class="license-content">
+    <p>
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png"
+          alt="CC BY-NC-SA 4.0"
+          class="license-badge"
+        />
+      </a>
+    </p>
+    <p class="license-text">
+      This work is licensed under a
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">
+        Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+      </a>.
+    </p>
+  </div>
+</footer>
+
+<style>
+  .license-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--sl-color-gray-5);
+    text-align: center;
+  }
+
+  .license-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .license-badge {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .license-text {
+    font-size: 0.875rem;
+    color: var(--sl-color-gray-2);
+    margin: 0;
+  }
+
+  .license-text a {
+    color: var(--sl-color-accent);
+    text-decoration: none;
+  }
+
+  .license-text a:hover {
+    text-decoration: underline;
+  }
+</style>
