@@ -1,11 +1,11 @@
 ---
-title: Setting Up GitHub
+title: GitHub Account
 description: Create your GitHub account step by step
 sidebar:
   order: 2
 ---
 
-# Setting Up GitHub
+# GitHub Account
 
 GitHub is where developers store their code. Think of it as **Google Drive for code** - but with superpowers.
 
@@ -140,15 +140,4 @@ Your GitHub account is ready. In the next section, we'll install Claude Code on 
 
 <div class="tip-box">
   <strong>💡 Tip:</strong> Keep the GitHub tab open - we'll come back to it soon!
-</div>
-
----
-
-<div style="display: flex; justify-content: space-between; margin-top: 2rem;">
-  <a href="/ai-workshop/introduction/" style="padding: 0.75rem 1.5rem; border: 2px solid var(--sl-color-gray-3); color: inherit; text-decoration: none; border-radius: 8px;">
-    ← Introduction
-  </a>
-  <a href="/ai-workshop/install-claude-code/" style="padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
-    Install Claude Code →
-  </a>
 </div>
