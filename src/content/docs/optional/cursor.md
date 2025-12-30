@@ -26,7 +26,6 @@ Cursor is an **AI-powered code editor** built on top of VS Code. Instead of typi
   </div>
 </div>
 
----
 
 ## Why Use Cursor?
 
@@ -38,7 +37,6 @@ Cursor is an **AI-powered code editor** built on top of VS Code. Instead of typi
 | Code editing | Creates/modifies files | Edit + AI suggestions inline |
 | Best for | Quick projects, automation | Longer coding sessions |
 
----
 
 ## Installing Cursor
 
@@ -68,7 +66,6 @@ Open Cursor and create a free account (or sign in with GitHub/Google).
   <p>You should now see the Cursor editor with a welcome screen.</p>
 </div>
 
----
 
 ## Opening Your Project in Cursor
 
@@ -78,7 +75,6 @@ Open Cursor and create a free account (or sign in with GitHub/Google).
 
 You'll see your project files in the sidebar on the left.
 
----
 
 ## Using AI in Cursor
 
@@ -117,7 +113,6 @@ Cursor will show you a preview of the changes. Press **Enter** to accept.
 
 As you type code, Cursor suggests completions. Press **Tab** to accept them.
 
----
 
 ## Cursor Shortcuts Cheat Sheet
 
@@ -131,7 +126,6 @@ As you type code, Cursor suggests completions. Press **Tab** to accept them.
 | `Cmd/Ctrl + S` | Save file |
 | `Cmd/Ctrl + P` | Quick file search |
 
----
 
 ## Example: Building the Same Project
 
@@ -167,7 +161,6 @@ Want to tweak something? Select the code, press `Cmd/Ctrl + K`:
 Change the color scheme to blue and white
 ```
 
----
 
 ## Cursor vs Claude Code: When to Use Which
 
@@ -184,7 +177,6 @@ Change the color scheme to blue and white
 - You're doing longer coding sessions
 - You want inline suggestions as you type
 
----
 
 ## Tips for Cursor Success
 
@@ -199,7 +191,6 @@ Change the color scheme to blue and white
   </ul>
 </div>
 
----
 
 ## Switching Between Tools
 
@@ -211,14 +202,12 @@ You can use both tools on the same project! Your files are just files on your co
 4. Continue where you left off
 5. Go back to Claude Code later when limits reset
 
----
 
 <div class="checkpoint">
   <div class="checkpoint-title">✅ Checkpoint</div>
   <p>You now have a backup option when Claude Code isn't available. Keep building!</p>
 </div>
 
----
 
 <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
   <a href="/ai-workshop/optional/netlify/" style="padding: 0.75rem 1.5rem; border: 2px solid var(--sl-color-gray-3); color: inherit; text-decoration: none; border-radius: 8px;">

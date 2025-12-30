@@ -11,7 +11,6 @@ This is the moment of truth! Let's put your project on the internet where anyone
 
 GitHub Pages is a free hosting service that turns your GitHub repository into a live website.
 
----
 
 ## Step 1: Create a GitHub Repository
 
@@ -46,7 +45,6 @@ Click **"Create repository"**
   </div>
 </div>
 
----
 
 ## Step 2: Connect Your Local Project to GitHub
 
@@ -96,7 +94,6 @@ Refresh your GitHub repository page. You should see your files!
   <p>Your code is now on GitHub! Time to turn on GitHub Pages.</p>
 </div>
 
----
 
 ## Step 3: Enable GitHub Pages
 
@@ -119,7 +116,6 @@ Now let's turn your repository into a live website!
   </div>
 </div>
 
----
 
 ## Step 4: Wait for Deployment
 
@@ -137,7 +133,6 @@ GitHub needs a minute or two to build and deploy your site.
   </div>
 </div>
 
----
 
 ## Step 5: Visit Your Live Site!
 
@@ -149,7 +144,6 @@ https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/
 
 🎉 **Congratulations! Your project is live on the internet!**
 
----
 
 ## Updating Your Site
 
@@ -164,7 +158,6 @@ git push
 
 GitHub Pages will automatically update within a few minutes.
 
----
 
 ## Troubleshooting
 
@@ -194,7 +187,6 @@ GitHub Pages will automatically update within a few minutes.
   </div>
 </div>
 
----
 
 ## Sharing Your Site
 
@@ -213,14 +205,12 @@ Share it with:
   <strong>💡 Pro Tip:</strong> You can use a custom domain (like "yourname.com") instead of the github.io address. That's a bit more advanced, but GitHub has <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site" target="_blank">great documentation</a> if you're interested!
 </div>
 
----
 
 <div class="checkpoint">
   <div class="checkpoint-title">✅ Checkpoint</div>
   <p>Your project is LIVE on the internet! You just deployed a real website. 🎉</p>
 </div>
 
----
 
 ## What's Next?
 

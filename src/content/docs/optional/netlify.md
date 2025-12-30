@@ -13,7 +13,6 @@ GitHub Pages is great, but Netlify offers some extra features:
 - Continuous deployment from Git
 - Deploy previews for branches
 
----
 
 ## Step 1: Create a Netlify Account
 
@@ -29,7 +28,6 @@ GitHub Pages is great, but Netlify offers some extra features:
   </div>
 </div>
 
----
 
 ## Step 2: Connect Your Repository
 
@@ -46,7 +44,6 @@ GitHub Pages is great, but Netlify offers some extra features:
   </div>
 </div>
 
----
 
 ## Step 3: Configure Build Settings
 
@@ -65,7 +62,6 @@ For a simple HTML/CSS/JS project:
 
 Click **"Deploy site"**!
 
----
 
 ## Step 4: Wait for Deployment
 
@@ -79,7 +75,6 @@ Netlify will:
   <p>Your site should be live at something like <code>random-name-12345.netlify.app</code></p>
 </div>
 
----
 
 ## Step 5: Change Your Site Name
 
@@ -97,7 +92,6 @@ The random URL isn't great. Let's change it:
   </div>
 </div>
 
----
 
 ## Automatic Deployments
 
@@ -109,7 +103,6 @@ Push to GitHub → Netlify detects changes → Site updates automatically
 
 No manual steps needed after initial setup.
 
----
 
 ## Adding a Custom Domain
 
@@ -122,7 +115,6 @@ Want to use your own domain (like `yourname.com`)?
 
 Netlify provides free HTTPS certificates automatically!
 
----
 
 ## Netlify Forms (Bonus Feature)
 
@@ -147,7 +139,6 @@ Just add the `netlify` attribute to your form:
 
 Submissions appear in your Netlify dashboard!
 
----
 
 ## GitHub Pages vs Netlify
 
@@ -163,7 +154,6 @@ Submissions appear in your Netlify dashboard!
 
 **Bottom line:** Both are great! GitHub Pages is simpler, Netlify has more features.
 
----
 
 ## Troubleshooting
 

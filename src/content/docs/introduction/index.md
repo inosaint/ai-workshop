@@ -13,7 +13,6 @@ You're about to embark on an exciting journey. By the end of this workshop, you'
 
 And the best part? **You don't need any prior coding experience.**
 
----
 
 ## The Journey Ahead
 
@@ -41,7 +40,6 @@ Here's our roadmap:
    [Success!]
 ```
 
----
 
 ## What You'll Need
 
@@ -54,7 +52,6 @@ Before we start, make sure you have:
 
 That's it. No special software, no coding knowledge, no experience required.
 
----
 
 ## A Note on Making Mistakes
 
@@ -66,7 +63,6 @@ When something goes wrong (and it will), that's not failure - that's learning. E
 
 This workshop has a [Troubleshooting](/ai-workshop/troubleshooting/) section for common issues.
 
----
 
 ## Ready to Start?
 

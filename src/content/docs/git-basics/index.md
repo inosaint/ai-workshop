@@ -9,7 +9,6 @@ sidebar:
 
 Git might sound intimidating, but it's actually quite simple once you understand what it does. Let's break it down!
 
----
 
 ## What is Git?
 
@@ -26,7 +25,6 @@ Git solves this problem elegantly. Instead of creating copies, Git tracks every 
 - See what changed and when
 - Work with others without overwriting each other's work
 
----
 
 ## Git vs GitHub: What's the Difference?
 
@@ -39,7 +37,6 @@ Git solves this problem elegantly. Instead of creating copies, Git tracks every 
 
 **Analogy**: Git is like Microsoft Word's "Track Changes." GitHub is like OneDrive where you store and share your documents.
 
----
 
 ## Essential Git Commands
 
@@ -64,7 +61,6 @@ git clone https://github.com/username/project-name.git
   </div>
 </div>
 
----
 
 ### 2. `git status` - Check What's Changed
 
@@ -83,7 +79,6 @@ Changes not staged for commit:
   modified:   style.css
 ```
 
----
 
 ### 3. `git add` - Prepare Changes for Saving
 
@@ -99,7 +94,6 @@ git add .
 
 **Analogy**: Like selecting which files to include in an email attachment.
 
----
 
 ### 4. `git commit` - Save Your Changes
 
@@ -121,7 +115,6 @@ git commit -m "Add homepage layout and styling"
   ❌ "Changes"
 </div>
 
----
 
 ### 5. `git push` - Upload to GitHub
 
@@ -142,7 +135,6 @@ git push
   </div>
 </div>
 
----
 
 ### 6. `git pull` - Download Latest Changes
 
@@ -154,7 +146,6 @@ git pull
 
 **Analogy**: Like syncing to get the latest version from the cloud.
 
----
 
 ## The Git Workflow
 
@@ -180,7 +171,6 @@ Here's the typical flow you'll use:
 └─────────────────────────────────────────────────────────────┘
 ```
 
----
 
 ## Setting Up Git (First-Time Only)
 
@@ -197,7 +187,6 @@ git config --global user.email "your.email@example.com"
   <strong>⚠️ Important:</strong> Use the same email you used for GitHub!
 </div>
 
----
 
 ## Connecting to GitHub (SSH vs HTTPS)
 
@@ -211,7 +200,6 @@ GitHub will ask for your username and password (or a personal access token). We'
 
 Uses cryptographic keys. We won't cover this in the workshop, but it's great for the future!
 
----
 
 ## Common Git Situations
 
@@ -235,7 +223,6 @@ git status
 
 Always run `git status` when in doubt. It tells you exactly what's happening!
 
----
 
 ## Don't Worry About Memorizing
 
@@ -247,7 +234,6 @@ Claude Code will help you with Git! You can simply tell it:
 
 And Claude Code will run the right commands for you. How cool is that?
 
----
 
 ## Practice Time! (Optional)
 
@@ -271,7 +257,6 @@ git status
 
 You should see something like "On branch main" and "nothing to commit."
 
----
 
 ## Next Steps
 

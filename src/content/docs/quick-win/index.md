@@ -79,7 +79,6 @@ Create a simple memory card matching game with 8 pairs of cards. When I click tw
 ```
 
 
----
 
 ## Why This Matters
 
@@ -96,7 +95,6 @@ The difference? **Claude Artifacts** run in your browser temporarily. In this wo
 - Have **full control** over your code
 - Share your creations with **anyone in the world**
 
----
 
 ## Ready for More?
 

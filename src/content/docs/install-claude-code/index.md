@@ -11,13 +11,11 @@ Now for the exciting part - let's install Claude Code on your computer!
 
 Don't worry, we'll go step by step. Choose your operating system below.
 
----
 
 ## Prerequisites: Installing Node.js
 
 Claude Code is built using Node.js, so we need to install that first. Think of Node.js as the "engine" that powers Claude Code.
 
----
 
 ## Windows Installation
 
@@ -105,7 +103,6 @@ claude --version
 
 You should see the Claude Code version number.
 
----
 
 ## Mac Installation
 
@@ -168,7 +165,6 @@ npm install -g @anthropic-ai/claude-code
 claude --version
 ```
 
----
 
 ## Your First Claude Code Command
 
@@ -200,7 +196,6 @@ This will launch Claude Code. The first time you run it, you'll need to authenti
   <p>You should now see the Claude Code interface ready for your commands!</p>
 </div>
 
----
 
 ## Troubleshooting
 
@@ -224,7 +219,6 @@ sudo npm install -g @anthropic-ai/claude-code
 
 You'll be asked for your password. Type it (it won't show characters) and press Enter.
 
----
 
 ## Next Steps
 
