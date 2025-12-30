@@ -9,7 +9,6 @@ sidebar:
 
 Something not working? Don't panic! Here are solutions to common problems.
 
----
 
 ## Installation Issues
 
@@ -46,7 +45,6 @@ Enter your Mac password when prompted (you won't see characters as you type).
 2. Try again in a few minutes (servers might be busy)
 3. If behind a firewall/VPN, try disabling temporarily
 
----
 
 ## Claude Code Issues
 
@@ -91,7 +89,6 @@ Enter your Mac password when prompted (you won't see characters as you type).
 2. Wait a moment - complex tasks can take time
 3. If still stuck, close the terminal and restart Claude Code
 
----
 
 ## Git Issues
 
@@ -155,7 +152,6 @@ git config --global credential.helper store
 ```
 Then push once - it will save your credentials for next time.
 
----
 
 ## Website Issues
 
@@ -217,7 +213,6 @@ Then push once - it will save your credentials for next time.
 
 3. **Check for typos** in element IDs and function names
 
----
 
 ## GitHub Pages Issues
 
@@ -251,7 +246,6 @@ Then push once - it will save your credentials for next time.
 
 **Solution:** Change all `http://` links to `https://` in your code.
 
----
 
 ## API Issues
 
@@ -289,7 +283,6 @@ Then push once - it will save your credentials for next time.
 2. Check [status.anthropic.com](https://status.anthropic.com) for outages
 3. If persistent, contact support
 
----
 
 ## General Tips
 
@@ -307,7 +300,6 @@ Then push once - it will save your credentials for next time.
 - **Test frequently** as you make changes
 - **Keep backups** of working versions
 
----
 
 ## Still Stuck?
 
@@ -319,7 +311,6 @@ Then push once - it will save your credentials for next time.
 3. **Take a break** - Sometimes stepping away helps!
 4. **Ask a friend** - Fresh eyes often spot the problem
 
----
 
 <div class="tip-box">
   <strong>💡 Remember:</strong> Making mistakes is part of learning. Every experienced developer has seen these errors hundreds of times!

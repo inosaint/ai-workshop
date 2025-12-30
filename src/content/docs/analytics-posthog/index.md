@@ -9,7 +9,6 @@ sidebar:
 
 You've built something amazing and put it online. But how do you know if people are actually using it? That's where analytics come in!
 
----
 
 ## What is PostHog?
 
@@ -22,7 +21,6 @@ PostHog is a free, open-source analytics tool that helps you understand:
 
 It's privacy-friendly and has a generous free tier - perfect for personal projects.
 
----
 
 ## Why Analytics Matter
 
@@ -42,7 +40,6 @@ Without analytics, you're flying blind:
 └────────────────────────────────────────────────────────────┘
 ```
 
----
 
 ## Step 1: Create a PostHog Account
 
@@ -69,7 +66,6 @@ Without analytics, you're flying blind:
   <p>You should now see your PostHog dashboard!</p>
 </div>
 
----
 
 ## Step 2: Get Your Snippet
 
@@ -88,7 +84,6 @@ It looks something like this:
 </script>
 ```
 
----
 
 ## Step 3: Add to Your Website
 
@@ -118,7 +113,6 @@ Paste the snippet in your HTML file, just before the closing `</head>` tag:
   <strong>⚠️ Replace the API key!</strong> Make sure to use your actual PostHog API key from your dashboard.
 </div>
 
----
 
 ## Step 4: Test It's Working
 
@@ -141,7 +135,6 @@ Paste the snippet in your HTML file, just before the closing `</head>` tag:
   <p>If you see events appearing in PostHog, analytics is working!</p>
 </div>
 
----
 
 ## Step 5: Track Custom Events
 
@@ -177,7 +170,6 @@ posthog.capture('project_viewed', {
 });
 ```
 
----
 
 ## Understanding Your Dashboard
 
@@ -210,7 +202,6 @@ PostHog can record user sessions (with their consent). This shows you exactly ho
   <strong>💡 Privacy Note:</strong> Session recordings are optional. Always be transparent with your users about what you track!
 </div>
 
----
 
 ## Creating Your First Insight
 
@@ -234,7 +225,6 @@ Now you can see how many times that button was clicked over time!
   </div>
 </div>
 
----
 
 ## Privacy & GDPR
 
@@ -272,7 +262,6 @@ if (localStorage.getItem('cookies_accepted') === 'true') {
 </script>
 ```
 
----
 
 ## What to Track (And What Not To)
 
@@ -291,7 +280,6 @@ if (localStorage.getItem('cookies_accepted') === 'true') {
 - Passwords or sensitive data
 - Anything users wouldn't expect
 
----
 
 ## PostHog Free Tier
 
@@ -303,14 +291,12 @@ PostHog's free tier includes:
 
 Perfect for what we're building!
 
----
 
 <div class="checkpoint">
   <div class="checkpoint-title">✅ Checkpoint</div>
   <p>You've added analytics to your project! You can now see how people interact with your site.</p>
 </div>
 
----
 
 ## What You've Accomplished!
 
@@ -327,7 +313,6 @@ Take a moment to appreciate how far you've come:
 
 **You're no longer a complete beginner - you're a builder!** 🎉
 
----
 
 ## Next Steps
 

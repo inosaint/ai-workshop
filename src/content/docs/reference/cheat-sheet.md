@@ -9,7 +9,6 @@ sidebar:
 
 Keep this page bookmarked! Here's a quick reference for everything you learned.
 
----
 
 ## Terminal / Command Line
 
@@ -28,7 +27,6 @@ Keep this page bookmarked! Here's a quick reference for everything you learned.
 - **Windows**: `Win + R`, type `cmd`, press Enter
 - **Mac**: `Cmd + Space`, type `Terminal`, press Enter
 
----
 
 ## Git Commands
 
@@ -78,7 +76,6 @@ git remote add origin https://github.com/user/repo.git
 git push -u origin main
 ```
 
----
 
 ## Claude Code
 
@@ -117,7 +114,6 @@ Can you explain what [code/concept] does?
 Can you change [feature] to [new behavior]?
 ```
 
----
 
 ## Node.js / npm
 
@@ -143,7 +139,6 @@ npx serve
 npm install -g serve && serve
 ```
 
----
 
 ## Local Testing
 
@@ -177,7 +172,6 @@ npm install -g serve && serve
 - **Windows**: `Ctrl + Shift + R`
 - **Mac**: `Cmd + Shift + R`
 
----
 
 ## GitHub Pages
 
@@ -195,7 +189,6 @@ npm install -g serve && serve
 https://USERNAME.github.io/REPO-NAME/
 ```
 
----
 
 ## Claude API
 
@@ -223,7 +216,6 @@ const message = await client.messages.create({
 console.log(message.content[0].text);
 ```
 
----
 
 ## PostHog Analytics
 
@@ -254,7 +246,6 @@ posthog.opt_out_capturing();
 posthog.opt_in_capturing();
 ```
 
----
 
 ## Keyboard Shortcuts
 
@@ -276,7 +267,6 @@ posthog.opt_in_capturing();
 | `F12` or `Cmd + Option + I` | Developer tools |
 | `Cmd/Ctrl + U` | View source |
 
----
 
 ## File Structure Basics
 
@@ -311,7 +301,6 @@ dist/
 build/
 ```
 
----
 
 ## Quick Troubleshooting
 
@@ -324,7 +313,6 @@ build/
 | GitHub Pages 404 | Wait 5 min, check `index.html` exists |
 | API error 401 | Check API key is correct |
 
----
 
 ## Helpful Links
 
@@ -334,7 +322,6 @@ build/
 - [PostHog Docs](https://posthog.com/docs)
 - [MDN Web Docs](https://developer.mozilla.org) (HTML/CSS/JS reference)
 
----
 
 <div style="text-align: center; margin-top: 2rem;">
   <a href="/ai-workshop/reference/glossary/" style="padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">

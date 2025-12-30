@@ -9,7 +9,6 @@ sidebar:
 
 This is the moment you've been waiting for! Let's use Claude Code to build your project.
 
----
 
 ## Step 1: Create Your Project Folder
 
@@ -33,7 +32,6 @@ cd my-project
   <strong>💡 Tip:</strong> Replace "my-project" with a name for your project, like "my-portfolio" or "quiz-game". Use lowercase letters and hyphens (no spaces!).
 </div>
 
----
 
 ## Step 2: Initialize Git
 
@@ -48,7 +46,6 @@ You should see:
 Initialized empty Git repository in /path/to/my-project/.git/
 ```
 
----
 
 ## Step 3: Launch Claude Code
 
@@ -66,7 +63,6 @@ claude
   </div>
 </div>
 
----
 
 ## Step 4: Give Claude Code Your Prompt
 
@@ -94,7 +90,6 @@ Press **Enter** and watch Claude Code work!
   </div>
 </div>
 
----
 
 ## Step 5: Watch and Learn
 
@@ -108,7 +103,6 @@ Claude Code will:
   <strong>⚠️ Be patient!</strong> Complex projects might take a minute or two. Don't interrupt Claude Code while it's working.
 </div>
 
----
 
 ## Step 6: Review What Was Created
 
@@ -127,7 +121,6 @@ script.js
 
 (The exact files depend on your project)
 
----
 
 ## Working with Claude Code: Tips & Tricks
 
@@ -175,7 +168,6 @@ Why did you use addEventListener instead of onclick?
 
 Claude Code is patient and loves explaining things!
 
----
 
 ## Common Claude Code Commands
 
@@ -187,7 +179,6 @@ While chatting with Claude Code, you can use these helpful commands:
 | `/clear` | Clears the conversation history |
 | `exit` or `Ctrl+C` | Exit Claude Code |
 
----
 
 ## Example Conversation
 
@@ -223,7 +214,6 @@ Claude: Sure! I'll add a smooth hover animation to the
         lift up slightly with a shadow effect.
 ```
 
----
 
 ## Making Changes
 
@@ -250,7 +240,6 @@ You can also edit files directly using any text editor:
   <strong>💡 Pro Tip:</strong> Try making small changes yourself! If you break something, you can always ask Claude Code to fix it.
 </div>
 
----
 
 ## Save Your Progress with Git
 
@@ -266,7 +255,6 @@ git commit -m "Initial project created with Claude Code"
   <p>Your project files are created and saved in Git. Let's test it locally!</p>
 </div>
 
----
 
 ## Troubleshooting
 
@@ -285,7 +273,6 @@ That's okay! You can:
 
 Make sure you're in the right folder. Run `pwd` (Mac) or `cd` (Windows) to see your current location.
 
----
 
 ## Next Steps
 
