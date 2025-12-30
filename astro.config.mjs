@@ -81,6 +81,7 @@ export default defineConfig({
             { label: 'Cheat Sheet', link: '/reference/cheat-sheet/' },
             { label: 'Glossary', link: '/reference/glossary/' },
             { label: 'Troubleshooting', link: '/troubleshooting/' },
+            { label: 'License', link: '/license/' },
           ],
         },
       ],
