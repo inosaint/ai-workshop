@@ -9,20 +9,34 @@ Before we dive into installations and setups, let's experience what AI can do **
 
 ChatGPT, Grok and Claude are the popular LLMs in the western world. For this exercise, we will be using Claude though you could try this with the LLM of your choice.
 
-## What is Claude?
+## What is [Claude.ai?](Claude.ai?)
+
+Think of Claude Code as a **super-smart assistant** that you can talk to via a Chat interface in plain english. Today you can use Claude and other LLMs to do a variety of tasks from editing blog posts to generating images and even building full fledged apps.
+
+Instead of typing cryptic commands yourself, you can simply tell Claude Code what you want in plain English:
+
+> "Create a simple website with a header, a photo, and three sections about my hobbies"
+
+And Claude Code will:
+1. Understand what you want
+2. Write the code for you
+3. Help you fix any problems
+4. Explain what it's doing along the way
+
+It's like having an experienced developer sitting next to you, ready to help 24/7.
+
+## Meet Claude Artifacts
 
 Think of Claude as a **super-smart assistant** that you can talk to via a Chat interface in plain english. Today you can use Claude and other LLMs to do a variety of tasks from editing blog posts to generating images and even building full fledged apps.
-
-Claude has a feature called **Artifacts** that lets you create things instantly in your browser.
+  
+But first, let's try something even simpler. Claude has a feature called **Artifacts** that lets you create things instantly in your browser.
 
 ### Step 1: Open Claude
 
-Go to [claude.ai](https://claude.ai/) in your browser.
+Go to [claude.ai](https://claude.ai/) in your browser and create an account.  
 
-If you don't have an account, you can create one for free in 30 seconds.
-
-🖼️
-**[screenshot: claude.ai homepage]**
+🖼️  
+**[screenshot: claude.ai homepage]**  
 The Claude interface with the chat input at the bottom
 
 ### Step 2: Ask Claude to Create Something
@@ -35,14 +49,13 @@ Can you create Tetris as a Claude Artifact?
 
 Press **Enter** and watch!
 
-Note: feel free to use any other simple game you would want to create or check out these additional prompts below.
+Note: feel free to use any other simple game you would want to create or check out these additional [[#Prompts]].
 
 ### Step 3: See the Magic
 
 Within seconds, Claude will create a **working Tetris game** right in your browser!
 🖼️
 **[screenshot: claude artifact showing calculator]**
-
 
 ### Step 4: Iterate on the outcome
 
@@ -78,9 +91,6 @@ Add a "Generate New Palette" button. Show the hex codes for each color and let m
 Create a simple memory card matching game with 8 pairs of cards. When I click two cards, show if they match. Track my number of moves.
 ```
 
-
----
-
 ## Why This Matters
 
 What you just did is the core of what we'll learn in this workshop:
@@ -96,12 +106,20 @@ The difference? **Claude Artifacts** run in your browser temporarily. In this wo
 - Have **full control** over your code
 - Share your creations with **anyone in the world**
 
----
-
 ## Ready for More?
 
 Now that you've seen what's possible, let's set up the tools that will let you build anything you can imagine.
 
 <div class="tip-box">
   <strong>💡 Keep that Claude tab open!</strong> You can use Artifacts to quickly prototype ideas throughout the workshop.
+</div>
+
+
+<div style="display: flex; justify-content: space-between; margin-top: 2rem;">
+  <a href="/ai-workshop/introduction/" style="padding: 0.75rem 1.5rem; border: 2px solid var(--sl-color-gray-3); color: inherit; text-decoration: none; border-radius: 8px;">
+    ← Introduction
+  </a>
+  <a href="/ai-workshop/github-setup/" style="padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
+    Set Up GitHub →
+  </a>
 </div>

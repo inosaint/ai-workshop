@@ -4,15 +4,13 @@ description: Create your GitHub account step by step
 sidebar:
   order: 2
 ---
-You can skip this section if you are already familiar with Github. 
+<div class="tip-box">You can skip this section if you are already familiar with Github and have an account </div>
 
 # GitHub Account
 
 GitHub is where developers store their code. Think of it as **Google Drive for code**.
 
 In this section, you'll create a free GitHub account that you'll use for the rest of the workshop.
-
----
 
 ## A crash course of terms
 
@@ -27,8 +25,6 @@ Before we dive in, let's understand a few terms you would need to be familiar wi
 | **Pull**              | Downloading the latest version from the cloud                         |
 
 You don't need to memorize these now - they'll make more sense once we use them!
-
----
 
 ## Creating Your GitHub Account
 
@@ -47,31 +43,6 @@ Head over to Github.com and Navigate to your newly created repository and click 
 
 ### Step 5:
 Navigate to pages on the left nav and select, 'Deploy from a Branch'
-
----
-
-## Understanding the GitHub Interface
-
-Let's take a quick tour of what you'll see:
-
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: GitHub dashboard with annotations]</strong><br/>
-    The main dashboard with labels pointing to:<br/>
-    • Profile menu (top right)<br/>
-    • Search bar (top center)<br/>
-    • "New" button for creating repositories<br/>
-    • Recent activity feed
-  </div>
-</div>
-
-### Key Areas:
-- **Top Bar**: Search, notifications, and your profile
-- **Left Sidebar**: Your repositories and recent activity
-- **"New"** (green button): Create new repositories
-
----
 
 ## Next Steps
 
