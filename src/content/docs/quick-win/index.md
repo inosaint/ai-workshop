@@ -19,11 +19,11 @@ Claude has a feature called **Artifacts** that lets you create things instantly 
 
 Go to [claude.ai](https://claude.ai/) in your browser and create an account.  
 
-🖼️  
-**[screenshot: claude.ai homepage]**  
-The Claude interface with the chat input at the bottom
-
 ### Step 2: Ask Claude to Create Something
+
+Once you login, you should be able to see an interface with an input field at the bottom. Try asking Claude some simple queries to familiarise yourself.
+
+Once you are ready, let's head to making your first AI assisted artifact. 
 
 Copy and paste this prompt into Claude:
 
@@ -38,8 +38,8 @@ Note: feel free to use any other simple game you would want to create or check o
 ### Step 3: See the Magic
 
 Within seconds, Claude will create a **working Tetris game** right in your browser!
-🖼️
-**[screenshot: claude artifact showing calculator]**
+
+![Claude doing it's magic in browser](tetris.png)
 
 ### Step 4: Iterate on the outcome
 

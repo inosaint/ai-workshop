@@ -5,17 +5,12 @@ sidebar:
   order: 3
 ---
 
-# Installing Claude Code
 
-Now for the exciting part - let's install Claude Code on your computer!
-
-Don't worry, we'll go step by step. Choose your operating system below.
-
+Next - let's install Claude Code on your computer. You can also use Claude Code on the web, but I've found it easier to have Claude Code on desktop. 
 
 ## Prerequisites: Installing Node.js
 
 Claude Code is built using Node.js, so we need to install that first. Think of Node.js as the "engine" that powers Claude Code.
-
 
 ## Windows Installation
 
