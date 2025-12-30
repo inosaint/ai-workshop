@@ -2,6 +2,7 @@
 title: Git Basics
 description: Essential Git commands explained in plain English
 sidebar:
+  hidden: true
   order: 4
 ---
 
@@ -34,7 +35,7 @@ Git solves this problem elegantly. Instead of creating copies, Git tracks every 
 |-----|--------|
 | Software on your computer | Website on the internet |
 | Tracks changes locally | Stores your code in the cloud |
-| Free and open source | Free for public projects |
+| Free and open source | Free (public and private projects) |
 | Works offline | Requires internet |
 
 **Analogy**: Git is like Microsoft Word's "Track Changes." GitHub is like OneDrive where you store and share your documents.
