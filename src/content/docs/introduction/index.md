@@ -1,5 +1,5 @@
 ---
-title: Welcome to the AI Workshop
+title: Welcome
 description: An introduction to what we'll build and learn together
 sidebar:
   order: 1
@@ -13,7 +13,6 @@ You're about to embark on an exciting journey. By the end of this workshop, you'
 
 And the best part? **You don't need any prior coding experience.**
 
----
 
 ## The Journey Ahead
 
@@ -41,7 +40,6 @@ Here's our roadmap:
    [Success!]
 ```
 
----
 
 ## What You'll Need
 
@@ -54,7 +52,6 @@ Before we start, make sure you have:
 
 That's it. No special software, no coding knowledge, no experience required.
 
----
 
 ## A Note on Making Mistakes
 
@@ -66,7 +63,6 @@ When something goes wrong (and it will), that's not failure - that's learning. E
 
 This workshop has a [Troubleshooting](/ai-workshop/troubleshooting/) section for common issues.
 
----
 
 ## Ready to Start?
 
@@ -74,12 +70,4 @@ Let's experience what AI can do in just 60 seconds. No setup required!
 
 <div class="tip-box">
   <strong>💡 Tip:</strong> Keep this workshop open in one browser tab, and follow along with the other windows. You've got this!
-</div>
-
----
-
-<div style="text-align: center; margin-top: 2rem;">
-  <a href="/ai-workshop/quick-win/" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
-    Your First AI Creation →
-  </a>
 </div>

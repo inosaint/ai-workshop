@@ -9,7 +9,6 @@ sidebar:
 
 Something not working? Don't panic! Here are solutions to common problems.
 
----
 
 ## Installation Issues
 
@@ -46,7 +45,6 @@ Enter your Mac password when prompted (you won't see characters as you type).
 2. Try again in a few minutes (servers might be busy)
 3. If behind a firewall/VPN, try disabling temporarily
 
----
 
 ## Claude Code Issues
 
@@ -91,71 +89,77 @@ Enter your Mac password when prompted (you won't see characters as you type).
 2. Wait a moment - complex tasks can take time
 3. If still stuck, close the terminal and restart Claude Code
 
----
 
-## Git Issues
+## GitHub Desktop Issues
 
-### "git: command not found"
+### GitHub Desktop Won't Open/Install
 
-**Problem:** Git isn't installed.
-
-**Solutions:**
-
-- **Windows:** Download from [git-scm.com](https://git-scm.com)
-- **Mac:**
-  ```bash
-  xcode-select --install
-  ```
-  or
-  ```bash
-  brew install git
-  ```
-
-### "fatal: not a git repository"
-
-**Problem:** You're not in a Git-initialized folder.
-
-**Solution:**
-```bash
-git init
-```
-
-### "error: failed to push some refs"
-
-**Problem:** Your local copy is behind the remote.
-
-**Solution:**
-```bash
-git pull --rebase
-git push
-```
-
-### "Permission denied (publickey)"
-
-**Problem:** GitHub doesn't recognize you.
+**Problem:** Can't install or open GitHub Desktop.
 
 **Solutions:**
 
-1. **Use HTTPS instead of SSH:**
-   ```bash
-   git remote set-url origin https://github.com/USERNAME/REPO.git
-   ```
-2. **Create a Personal Access Token:**
-   - Go to GitHub → Settings → Developer settings → Personal access tokens
-   - Generate new token with 'repo' scope
-   - Use this as your password when pushing
+- **Windows:** Make sure you're running Windows 10 or later
+- **Mac:** Make sure you're running macOS 10.15 or later
+- Download the latest version from [desktop.github.com](https://desktop.github.com)
+- Try restarting your computer
 
-### "Username for 'https://github.com':" keeps appearing
+### Can't Sign In to GitHub Desktop
 
-**Problem:** Git doesn't remember your credentials.
+**Problem:** GitHub Desktop won't accept your credentials.
 
-**Solution (store credentials):**
-```bash
-git config --global credential.helper store
-```
-Then push once - it will save your credentials for next time.
+**Solutions:**
 
----
+1. Make sure you're using your GitHub username and password
+2. Check your internet connection
+3. If using two-factor authentication, you may need a personal access token:
+   - Go to GitHub.com → Settings → Developer settings → Personal access tokens
+   - Generate a new token with 'repo' scope
+   - Use this token as your password in GitHub Desktop
+
+### "Push Rejected" or "Can't Push"
+
+**Problem:** GitHub Desktop says it can't push your changes.
+
+**Solutions:**
+
+1. Click **Repository → Pull** to get the latest changes first
+2. Then try pushing again
+3. If still failing, check that you have internet connection
+4. Make sure you have permission to push to this repository
+
+### No Changes Showing Up
+
+**Problem:** You made changes but don't see them in GitHub Desktop.
+
+**Solutions:**
+
+1. Make sure you've saved your files in your code editor
+2. Click **Repository → Refresh** in GitHub Desktop
+3. Check that you're looking at the correct repository (check the name at the top)
+
+### "Repository Not Found"
+
+**Problem:** GitHub Desktop can't find your repository.
+
+**Solutions:**
+
+1. Make sure the repository exists on GitHub.com
+2. Try removing and re-adding the repository:
+   - Right-click the repository name
+   - Select "Remove"
+   - Then **File → Clone Repository** to add it back
+
+### Can't See My Repository on GitHub
+
+**Problem:** Pushed changes but can't see them on GitHub.com.
+
+**Solutions:**
+
+1. Make sure you clicked **"Push origin"** after committing
+2. Check that the push completed (look for the checkmark)
+3. Refresh the GitHub.com page in your browser
+4. Verify you're looking at the correct repository and branch
+
 
 ## Website Issues
 
@@ -217,7 +221,6 @@ Then push once - it will save your credentials for next time.
 
 3. **Check for typos** in element IDs and function names
 
----
 
 ## GitHub Pages Issues
 
@@ -240,10 +243,9 @@ Then push once - it will save your credentials for next time.
 2. **Hard refresh:** `Ctrl + Shift + R` (Windows) or `Cmd + Shift + R` (Mac)
 3. **Check Actions tab** for deployment status
 4. **Make sure you pushed:**
-   ```bash
-   git status  # Should say "nothing to commit"
-   git push    # Push any pending changes
-   ```
+   - Open GitHub Desktop
+   - Look for "Push origin" button - if you see it, click it
+   - Changes tab should be empty (everything committed)
 
 ### Mixed Content Error
 
@@ -251,7 +253,6 @@ Then push once - it will save your credentials for next time.
 
 **Solution:** Change all `http://` links to `https://` in your code.
 
----
 
 ## API Issues
 
@@ -289,7 +290,6 @@ Then push once - it will save your credentials for next time.
 2. Check [status.anthropic.com](https://status.anthropic.com) for outages
 3. If persistent, contact support
 
----
 
 ## General Tips
 
@@ -307,7 +307,6 @@ Then push once - it will save your credentials for next time.
 - **Test frequently** as you make changes
 - **Keep backups** of working versions
 
----
 
 ## Still Stuck?
 
@@ -319,19 +318,7 @@ Then push once - it will save your credentials for next time.
 3. **Take a break** - Sometimes stepping away helps!
 4. **Ask a friend** - Fresh eyes often spot the problem
 
----
 
 <div class="tip-box">
   <strong>💡 Remember:</strong> Making mistakes is part of learning. Every experienced developer has seen these errors hundreds of times!
-</div>
-
----
-
-<div style="display: flex; justify-content: space-between; margin-top: 2rem;">
-  <a href="/ai-workshop/reference/glossary/" style="padding: 0.75rem 1.5rem; border: 2px solid var(--sl-color-gray-3); color: inherit; text-decoration: none; border-radius: 8px;">
-    ← Glossary
-  </a>
-  <a href="/ai-workshop/" style="padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
-    Back to Start →
-  </a>
 </div>
