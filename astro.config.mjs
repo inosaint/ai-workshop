@@ -3,7 +3,7 @@ import starlight from '@astrojs/starlight';
 import starlightThemeRapide from 'starlight-theme-rapide';
 
 export default defineConfig({
-  site: 'https://yourusername.github.io',
+  site: 'https://inosaint.github.io',
   base: '/ai-workshop',
   integrations: [
     starlight({
