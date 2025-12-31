@@ -9,51 +9,64 @@ sidebar:
 
 This is the moment you've been waiting for! Let's use Claude Code to build your project.
 
+You should already have:
+- ✅ A project folder created via GitHub Desktop
+- ✅ Git initialized in your project
+- ✅ Claude Code app installed and open
 
-## Step 1: Create Your Project Folder
 
-First, let's create a folder for your project. Open your terminal (Command Prompt on Windows, Terminal on Mac).
+## Step 1: Open Your Project Folder in Terminal
 
-### Windows
+We need to navigate to your project folder in the terminal so Claude Code knows where to create your files.
 
+### Opening Terminal
+
+<div class="tip-box">
+  <strong>💡 Quick Reference:</strong> See the <a href="/ai-workshop/reference/cheat-sheet/#terminal--command-line">Terminal section of our Cheat Sheet</a> for more terminal commands.
+</div>
+
+**Windows:**
+1. Press `Win + R` to open Run dialog
+2. Type `cmd` and press Enter
+
+**Mac:**
+1. Press `Cmd + Space` to open Spotlight
+2. Type `Terminal` and press Enter
+
+### Navigate to Your Project
+
+In the terminal, use `cd` (change directory) to go to your project folder:
+
+**Windows:**
 ```bash
-mkdir my-project
-cd my-project
+cd Documents\GitHub\my-project
 ```
 
-### Mac
-
+**Mac:**
 ```bash
-mkdir my-project
-cd my-project
+cd ~/Documents/GitHub/my-project
 ```
 
 <div class="tip-box">
-  <strong>💡 Tip:</strong> Replace "my-project" with a name for your project, like "my-portfolio" or "quiz-game". Use lowercase letters and hyphens (no spaces!).
+  <strong>💡 Tip:</strong> Replace "my-project" with your actual project folder name. If you're not sure where GitHub Desktop saves projects, check GitHub Desktop → Preferences → Advanced → Repository storage location.
 </div>
 
+You can verify you're in the right place by running:
+- **Windows:** `dir`
+- **Mac:** `ls`
 
-## Step 2: Initialize Git
-
-Let's set up Git in your project folder:
-
-```bash
-git init
-```
-
-You should see:
-```
-Initialized empty Git repository in /path/to/my-project/.git/
-```
+You should see your project files (or an empty folder if you just created it).
 
 
-## Step 3: Launch Claude Code
+## Step 2: Launch Claude Code
 
-Now for the exciting part! Start Claude Code:
+Now start Claude Code in your project folder:
 
 ```bash
 claude
 ```
+
+The first time you run Claude Code, it will ask you to authenticate with your Anthropic account. Follow the prompts in your browser.
 
 <div class="image-placeholder">
   <div class="image-placeholder-icon">🖼️</div>
@@ -64,7 +77,7 @@ claude
 </div>
 
 
-## Step 4: Give Claude Code Your Prompt
+## Step 3: Give Claude Code Your Prompt
 
 Now paste your project prompt from the previous section. For example, if you chose the Portfolio project:
 
@@ -91,7 +104,7 @@ Press **Enter** and watch Claude Code work!
 </div>
 
 
-## Step 5: Watch and Learn
+## Step 4: Watch and Learn
 
 Claude Code will:
 
@@ -104,10 +117,16 @@ Claude Code will:
 </div>
 
 
-## Step 6: Review What Was Created
+## Step 5: Review What Was Created
 
-After Claude Code finishes, let's see what files were created:
+After Claude Code finishes, let's see what files were created. You can check in your file explorer or run:
 
+**Windows:**
+```bash
+dir
+```
+
+**Mac:**
 ```bash
 ls
 ```

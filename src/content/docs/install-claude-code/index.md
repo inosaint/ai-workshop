@@ -183,9 +183,38 @@ You should see the Claude Code version number.
 
 ---
 
+## Opening Your Terminal
+
+Before we test Claude Code, you need to know how to open the terminal on your system.
+
+### Windows
+
+1. Press `Win + R` to open the Run dialog
+2. Type `cmd` and press Enter
+3. The Command Prompt window will open
+
+### Mac
+
+1. Press `Cmd + Space` to open Spotlight
+2. Type `Terminal` and press Enter
+3. The Terminal window will open
+
+<div class="tip-box">
+  <strong>💡 Terminal Reference:</strong> For more terminal commands and tips, check out the <a href="/ai-workshop/reference/cheat-sheet/#terminal--command-line">Terminal section of our Cheat Sheet</a>.
+</div>
+
+
 ## Your First Claude Code Command
 
-Let's make sure Claude Code is working! In your terminal (Command Prompt on Windows, Terminal on Mac):
+Let's make sure Claude Code is working! In your terminal:
+
+```bash
+claude --version
+```
+
+You should see the Claude Code version number.
+
+Now let's start Claude Code:
 
 ```bash
 claude
@@ -204,79 +233,14 @@ This will launch Claude Code. The first time you run it, you'll need to authenti
 ### Authenticating Claude Code
 
 1. Claude Code will provide a URL or open your browser automatically
-2. Log in with your Anthropic account (or create one)
+2. Log in with your Anthropic account (or create one if you don't have one)
 3. Authorize Claude Code to access your account
 4. Return to your terminal - you should now be authenticated!
 
 <div class="checkpoint">
   <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>You should now see the Claude Code interface ready for your commands!</p>
+  <p>You should now see the Claude Code interface ready for your commands! You can type <code>/exit</code> or press <code>Ctrl+C</code> to exit.</p>
 </div>
-
-
-## Connecting Claude Code to GitHub
-
-Now that Claude Code is authenticated, we need to connect it to your GitHub account so it can create and update repositories for you.
-
-### Step 1: Exit Claude Code
-
-If Claude Code is still running, exit it by typing:
-```
-/exit
-```
-
-Or press `Ctrl+C` (Windows/Linux) or `Cmd+C` (Mac).
-
-### Step 2: Start a GitHub Session
-
-In your terminal, run:
-
-```bash
-claude --github
-```
-
-This tells Claude Code you want to work with GitHub repositories.
-
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: Claude Code GitHub authentication prompt]</strong><br/>
-    The prompt asking you to authorize GitHub access
-  </div>
-</div>
-
-### Step 3: Authorize GitHub Access
-
-1. Claude Code will open your browser or provide a URL
-2. You'll be taken to GitHub's authorization page
-3. Review the permissions Claude Code is requesting:
-   - **Read access** to your profile and repositories
-   - **Write access** to create and update repositories
-4. Click **"Authorize"** to grant access
-
-<div class="warning-box">
-  <strong>⚠️ What permissions does Claude Code need?</strong><br/>
-  Claude Code needs write access to create your personal website repository (username.github.io) and push code to it. This is safe - you can revoke access anytime from your GitHub settings.
-</div>
-
-### Step 4: Verify GitHub Connection
-
-After authorizing, return to your terminal. You should see a success message confirming Claude Code is connected to your GitHub account.
-
-<div class="checkpoint">
-  <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>Claude Code is now connected to GitHub and ready to create repositories for you!</p>
-</div>
-
-### Managing GitHub Access
-
-If you ever want to review or revoke Claude Code's access:
-
-1. Go to **[github.com](https://github.com)** and log in
-2. Click your profile icon → **Settings**
-3. In the left sidebar, click **Applications**
-4. Under "Installed GitHub Apps" or "Authorized OAuth Apps", find Claude Code
-5. You can review permissions or revoke access if needed
 
 ---
 
@@ -307,4 +271,4 @@ You'll be asked for your Mac password. Type it (it won't show characters) and pr
 
 ## Next Steps
 
-Claude Code is installed and ready to go! Before we start building, let's learn the basics of Git - the tool that helps us save and share our code.
+Claude Code is installed and ready to go! Next, you'll choose a project to build with Claude Code.

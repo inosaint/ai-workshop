@@ -11,74 +11,28 @@ This is the moment of truth! Let's put your project on the internet where anyone
 
 GitHub Pages is a free hosting service that turns your GitHub repository into a live website.
 
+You should already have:
+- ✅ Your project code created with Claude Code
+- ✅ Your repository published to GitHub via GitHub Desktop
+- ✅ All changes committed and pushed
 
-## Step 1: Create a GitHub Repository
 
-First, we need a place on GitHub to store your project.
+## Step 1: Verify Your Code is on GitHub
 
-1. Go to [github.com](https://github.com) and log in
-2. Click the **+** icon in the top-right corner
-3. Select **"New repository"**
+Let's make sure everything is ready:
 
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: GitHub new repository button]</strong><br/>
-    GitHub interface showing the "+" dropdown menu with "New repository" highlighted
-  </div>
-</div>
+1. Open **GitHub Desktop**
+2. Check that the **Changes tab** is empty (all changes committed)
+3. Click **Repository → View on GitHub** (or press `Ctrl+Shift+G` / `Cmd+Shift+G`)
+4. Your browser will open to your repository - you should see your project files!
 
-### Fill in the Details
-
-- **Repository name**: Something descriptive (e.g., `my-portfolio`, `quiz-game`)
-- **Description**: Optional, but helpful (e.g., "My personal portfolio website")
-- **Public**: Select this (required for free GitHub Pages)
-- **Skip** all the other options (no README, no .gitignore, no license)
-
-Click **"Create repository"**
-
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: Create repository form]</strong><br/>
-    GitHub create repository form with fields filled in and "Public" selected
-  </div>
+<div class="warning-box">
+  <strong>⚠️ Files not showing?</strong><br/>
+  If you don't see your files on GitHub, go back to GitHub Desktop and look for a "Push origin" or "Publish repository" button. Click it to upload your code.
 </div>
 
 
-## Step 2: Push Your Code to GitHub (If Not Already Done)
-
-If you followed the previous section, your code should already be on GitHub. Let's verify:
-
-### Check GitHub Desktop
-
-Open GitHub Desktop and check:
-- **Changes tab**: Should be empty (everything committed)
-- **Top of window**: Should say "No local changes" or show "Push origin" button
-
-### If You See "Push origin"
-
-Click the **"Push origin"** button to upload your code.
-
-### If You Haven't Published Yet
-
-1. Click **"Publish repository"** at the top
-2. Uncheck "Keep this code private"
-3. Click **"Publish repository"**
-
-### Verify on GitHub.com
-
-1. Open GitHub Desktop
-2. Click **Repository → View on GitHub** (or press Ctrl+Shift+G / Cmd+Shift+G)
-3. You should see your files in the repository!
-
-<div class="checkpoint">
-  <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>Your code is now on GitHub! Time to turn on GitHub Pages.</p>
-</div>
-
-
-## Step 3: Enable GitHub Pages
+## Step 2: Enable GitHub Pages
 
 Now let's turn your repository into a live website!
 
@@ -100,7 +54,7 @@ Now let's turn your repository into a live website!
 </div>
 
 
-## Step 4: Wait for Deployment
+## Step 3: Wait for Deployment
 
 GitHub needs a minute or two to build and deploy your site.
 
@@ -117,7 +71,7 @@ GitHub needs a minute or two to build and deploy your site.
 </div>
 
 
-## Step 5: Visit Your Live Site!
+## Step 4: Visit Your Live Site!
 
 Click the link or type it in your browser:
 
