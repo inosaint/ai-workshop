@@ -21,15 +21,15 @@ All paths lead to the same destination: a working project you can show off!
 
 ## Option 1: Personal Portfolio
 
-<div class="project-card" style="margin: 2rem 0; padding: 1.5rem; border-radius: 12px; border: 2px solid var(--sl-color-gray-3);">
-  <div style="font-size: 2.5rem; margin-bottom: 1rem;">👤</div>
-  <h3 style="margin: 0 0 0.5rem 0;">Personal Portfolio</h3>
+<div class="project-card" role="article" aria-labelledby="portfolio-title">
+  <div style="font-size: 2.5rem; margin-bottom: 1rem;" role="img" aria-label="Personal Portfolio icon">👤</div>
+  <h3 id="portfolio-title" style="margin: 0 0 0.5rem 0;">Personal Portfolio</h3>
   <p style="color: var(--sl-color-gray-5); margin-bottom: 1rem;">
     A beautiful one-page website that showcases who you are. Perfect for job hunting, networking, or just having your own corner of the internet.
   </p>
 
   <details>
-    <summary style="cursor: pointer; font-weight: 600; color: var(--sl-color-accent);">View starter prompt (click to expand)</summary>
+    <summary aria-label="View starter prompt for Personal Portfolio">View starter prompt (click to expand)</summary>
 
 ```text
 Create a personal portfolio website with:
@@ -48,15 +48,15 @@ Create a personal portfolio website with:
 
 ## Option 2: Interactive Quiz Game
 
-<div class="project-card" style="margin: 2rem 0; padding: 1.5rem; border-radius: 12px; border: 2px solid var(--sl-color-gray-3);">
-  <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎮</div>
-  <h3 style="margin: 0 0 0.5rem 0;">Interactive Quiz Game</h3>
+<div class="project-card" role="article" aria-labelledby="quiz-title">
+  <div style="font-size: 2.5rem; margin-bottom: 1rem;" role="img" aria-label="Interactive Quiz Game icon">🎮</div>
+  <h3 id="quiz-title" style="margin: 0 0 0.5rem 0;">Interactive Quiz Game</h3>
   <p style="color: var(--sl-color-gray-5); margin-bottom: 1rem;">
     A fun trivia game that tests knowledge and shows a final score. Great for learning how user interaction works.
   </p>
 
   <details>
-    <summary style="cursor: pointer; font-weight: 600; color: var(--sl-color-accent);">View starter prompt (click to expand)</summary>
+    <summary aria-label="View starter prompt for Interactive Quiz Game">View starter prompt (click to expand)</summary>
 
 ```text
 Create an interactive quiz game with:
@@ -76,15 +76,15 @@ Create an interactive quiz game with:
 
 ## Option 3: Habit Tracker
 
-<div class="project-card" style="margin: 2rem 0; padding: 1.5rem; border-radius: 12px; border: 2px solid var(--sl-color-gray-3);">
-  <div style="font-size: 2.5rem; margin-bottom: 1rem;">✅</div>
-  <h3 style="margin: 0 0 0.5rem 0;">Habit Tracker</h3>
+<div class="project-card" role="article" aria-labelledby="habit-title">
+  <div style="font-size: 2.5rem; margin-bottom: 1rem;" role="img" aria-label="Habit Tracker icon">✅</div>
+  <h3 id="habit-title" style="margin: 0 0 0.5rem 0;">Habit Tracker</h3>
   <p style="color: var(--sl-color-gray-5); margin-bottom: 1rem;">
     A simple app to track daily habits and visualize your consistency. Perfect for building good routines.
   </p>
 
   <details>
-    <summary style="cursor: pointer; font-weight: 600; color: var(--sl-color-accent);">View starter prompt (click to expand)</summary>
+    <summary aria-label="View starter prompt for Habit Tracker">View starter prompt (click to expand)</summary>
 
 ```text
 Create a habit tracker app with:
@@ -105,15 +105,15 @@ Create a habit tracker app with:
 
 Have something else in mind? Use our Prompt Builder to create your own project prompt!
 
-<div class="prompt-editor" style="margin: 2rem 0; padding: 2rem; background: var(--sl-color-gray-1); border-radius: 12px;">
-  <h3 style="margin: 0 0 1.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
+<div class="prompt-editor" style="margin: 2rem 0; padding: 2rem; background: var(--sl-color-gray-1); border-radius: 12px;" role="region" aria-labelledby="prompt-builder-heading">
+  <h3 id="prompt-builder-heading" style="margin: 0 0 1.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
     ✨ Prompt Builder
   </h3>
 
   <div style="display: grid; gap: 1rem; margin-bottom: 1.5rem;">
     <div class="prompt-field">
-      <label style="display: block; font-weight: 500; margin-bottom: 0.5rem;">What type of project?</label>
-      <select id="projectType">
+      <label for="projectType">What type of project?</label>
+      <select id="projectType" aria-describedby="projectTypeHelp">
         <option value="">Choose a type...</option>
         <option value="website">Website / Landing Page</option>
         <option value="game">Game</option>
@@ -124,86 +124,173 @@ Have something else in mind? Use our Prompt Builder to create your own project p
     </div>
 
     <div class="prompt-field">
-      <label style="display: block; font-weight: 500; margin-bottom: 0.5rem;">Describe your idea (1-2 sentences)</label>
-      <textarea id="projectIdea" placeholder="e.g., A recipe organizer where I can save and search my favorite recipes"></textarea>
+      <label for="projectIdea">Describe your idea (1-2 sentences) <span aria-label="required">*</span></label>
+      <textarea
+        id="projectIdea"
+        placeholder="e.g., A recipe organizer where I can save and search my favorite recipes"
+        aria-required="true"
+        aria-describedby="projectIdeaHelp"
+      ></textarea>
+      <span id="projectIdeaHelp" class="error-message" role="alert">Please describe your project idea</span>
     </div>
 
     <div class="prompt-field">
-      <label style="display: block; font-weight: 500; margin-bottom: 0.5rem;">Key features (comma-separated)</label>
-      <input type="text" id="projectFeatures" placeholder="e.g., search, favorites, categories, dark mode" />
+      <label for="projectFeatures">Key features (comma-separated)</label>
+      <input
+        type="text"
+        id="projectFeatures"
+        placeholder="e.g., search, favorites, categories, dark mode"
+        aria-describedby="projectFeaturesHelp"
+      />
+      <span id="projectFeaturesHelp" style="font-size: 0.875rem; color: var(--sl-color-gray-5); margin-top: 0.25rem; display: block;">Separate features with commas</span>
     </div>
 
     <div class="prompt-field">
-      <label style="display: block; font-weight: 500; margin-bottom: 0.5rem;">Color preference (optional)</label>
-      <input type="text" id="projectColors" placeholder="e.g., blue and white, dark theme, colorful" />
+      <label for="projectColors">Color preference (optional)</label>
+      <input
+        type="text"
+        id="projectColors"
+        placeholder="e.g., blue and white, dark theme, colorful"
+        aria-describedby="projectColorsHelp"
+      />
     </div>
   </div>
 
-  <button onclick="generatePrompt()" style="width: 100%; padding: 0.875rem; background: var(--sl-color-accent); color: white; border: none; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer;">
+  <div aria-live="polite" aria-atomic="true" class="sr-only" id="statusMessage"></div>
+
+  <button
+    id="generateBtn"
+    class="prompt-button"
+    type="button"
+    aria-label="Generate custom project prompt"
+  >
     Generate My Prompt
   </button>
 
-  <div id="generatedPrompt" style="display: none; margin-top: 1.5rem;">
-    <label style="display: block; font-weight: 500; margin-bottom: 0.5rem;">Your custom prompt:</label>
+  <div id="generatedPrompt" style="display: none; margin-top: 1.5rem;" role="region" aria-labelledby="generatedPromptLabel">
+    <label id="generatedPromptLabel" for="promptOutput">Your custom prompt:</label>
     <div style="position: relative;">
-      <pre id="promptOutput" style="background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 8px; white-space: pre-wrap; font-size: 0.9rem; line-height: 1.6;"></pre>
-      <button onclick="copyPrompt()" id="copyBtn" style="position: absolute; top: 0.75rem; right: 0.75rem; padding: 0.5rem 1rem; background: var(--sl-color-accent); color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 0.85rem;">
+      <pre id="promptOutput" role="textbox" aria-readonly="true" aria-multiline="true" tabindex="0"></pre>
+      <button
+        id="copyBtn"
+        class="copy-button"
+        type="button"
+        aria-label="Copy prompt to clipboard"
+      >
         Copy
       </button>
     </div>
   </div>
 </div>
 
-<script>
+<script is:inline>
 {`
-function generatePrompt() {
-  const type = document.getElementById('projectType').value;
-  const idea = document.getElementById('projectIdea').value;
-  const features = document.getElementById('projectFeatures').value;
-  const colors = document.getElementById('projectColors').value;
+(function() {
+  function generatePrompt() {
+    const type = document.getElementById('projectType').value;
+    const idea = document.getElementById('projectIdea').value.trim();
+    const features = document.getElementById('projectFeatures').value;
+    const colors = document.getElementById('projectColors').value;
+    const errorMsg = document.getElementById('projectIdeaHelp');
+    const statusMsg = document.getElementById('statusMessage');
 
-  if (!idea) {
-    alert('Please describe your project idea!');
-    return;
-  }
+    // Clear previous error
+    errorMsg.classList.remove('show');
 
-  let prompt = 'Create a ' + (type || 'web project') + ':\\n\\n';
-  prompt += 'Main concept: ' + idea + '\\n\\n';
-  prompt += 'Features to include:\\n';
+    if (!idea) {
+      errorMsg.classList.add('show');
+      document.getElementById('projectIdea').focus();
+      statusMsg.textContent = 'Error: Please describe your project idea';
+      return;
+    }
 
-  if (features) {
-    features.split(',').forEach(feature => {
-      prompt += '- ' + feature.trim() + '\\n';
-    });
-  } else {
-    prompt += '- [Add your key features here]\\n';
-  }
+    let prompt = 'Create a ' + (type || 'web project') + ':\\n\\n';
+    prompt += 'Main concept: ' + idea + '\\n\\n';
+    prompt += 'Features to include:\\n';
 
-  prompt += '\\nAdditional requirements:\\n';
-  if (colors) {
-    prompt += '- Color scheme: ' + colors + '\\n';
-  }
-  prompt += '- Mobile-responsive design\\n';
-  prompt += '- Clean, modern UI\\n';
-  prompt += '- Use HTML, CSS, and vanilla JavaScript only\\n';
-  prompt += '- Include helpful comments in the code';
+    if (features) {
+      features.split(',').forEach(feature => {
+        const trimmed = feature.trim();
+        if (trimmed) {
+          prompt += '- ' + trimmed + '\\n';
+        }
+      });
+    } else {
+      prompt += '- [Add your key features here]\\n';
+    }
 
-  document.getElementById('promptOutput').textContent = prompt;
-  document.getElementById('generatedPrompt').style.display = 'block';
-}
+    prompt += '\\nAdditional requirements:\\n';
+    if (colors) {
+      prompt += '- Color scheme: ' + colors + '\\n';
+    }
+    prompt += '- Mobile-responsive design\\n';
+    prompt += '- Clean, modern UI\\n';
+    prompt += '- Use HTML, CSS, and vanilla JavaScript only\\n';
+    prompt += '- Include helpful comments in the code';
 
-function copyPrompt() {
-  const prompt = document.getElementById('promptOutput').textContent;
-  navigator.clipboard.writeText(prompt).then(() => {
-    const btn = document.getElementById('copyBtn');
-    btn.textContent = 'Copied!';
-    btn.style.background = '#10b981';
+    document.getElementById('promptOutput').textContent = prompt;
+    document.getElementById('generatedPrompt').style.display = 'block';
+    statusMsg.textContent = 'Prompt generated successfully';
+
+    // Focus on the generated prompt
     setTimeout(() => {
-      btn.textContent = 'Copy';
-      btn.style.background = 'var(--sl-color-accent)';
-    }, 2000);
-  });
-}
+      document.getElementById('promptOutput').focus();
+    }, 100);
+  }
+
+  function copyPrompt() {
+    const prompt = document.getElementById('promptOutput').textContent;
+    const btn = document.getElementById('copyBtn');
+    const statusMsg = document.getElementById('statusMessage');
+
+    navigator.clipboard.writeText(prompt).then(() => {
+      btn.textContent = 'Copied!';
+      btn.classList.add('copied');
+      btn.setAttribute('aria-label', 'Prompt copied to clipboard');
+      statusMsg.textContent = 'Prompt copied to clipboard';
+
+      setTimeout(() => {
+        btn.textContent = 'Copy';
+        btn.classList.remove('copied');
+        btn.setAttribute('aria-label', 'Copy prompt to clipboard');
+      }, 2000);
+    }).catch(err => {
+      statusMsg.textContent = 'Failed to copy prompt. Please try selecting and copying manually.';
+      console.error('Copy failed:', err);
+    });
+  }
+
+  // Set up event listeners when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+
+  function init() {
+    const generateBtn = document.getElementById('generateBtn');
+    const copyBtn = document.getElementById('copyBtn');
+
+    if (generateBtn) {
+      generateBtn.addEventListener('click', generatePrompt);
+    }
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', copyPrompt);
+    }
+
+    // Allow Enter key in textarea but not to submit
+    const textarea = document.getElementById('projectIdea');
+    if (textarea) {
+      textarea.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' && e.ctrlKey) {
+          e.preventDefault();
+          generatePrompt();
+        }
+      });
+    }
+  }
+})();
 `}
 </script>
 
