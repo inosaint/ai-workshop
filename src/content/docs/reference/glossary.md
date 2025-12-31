@@ -9,7 +9,6 @@ sidebar:
 
 Don't know what a term means? Look it up here! All explanations are in plain English.
 
----
 
 ## A
 
@@ -19,7 +18,6 @@ A way for programs to talk to each other. Like a waiter that takes your order (r
 ### API Key
 A secret password that identifies you when using an API. Like a membership card at a club - you need it to get in.
 
----
 
 ## B
 
@@ -32,7 +30,6 @@ A parallel version of your code. Like making a copy of a document to try changes
 ### Browser
 The application you use to view websites (Chrome, Firefox, Safari, Edge). It reads HTML, CSS, and JavaScript and displays web pages.
 
----
 
 ## C
 
@@ -51,7 +48,6 @@ A tool in your browser that shows error messages and lets you run JavaScript. Op
 ### CSS (Cascading Style Sheets)
 The language that controls how websites look - colors, fonts, spacing, layouts. The "paint and decorations" of a web page.
 
----
 
 ## D
 
@@ -64,21 +60,18 @@ Built-in browser tools for debugging websites. Open with F12. Shows errors, lets
 ### Domain
 The address of a website (like google.com). Can be custom (yourname.com) or free (username.github.io).
 
----
 
 ## E
 
 ### Environment Variable
 A value stored outside your code, like passwords or API keys. Keeps secrets safe and makes code portable.
 
----
 
 ## F
 
 ### Frontend
 The part of a website you see and interact with - buttons, text, images. Like the dining area of a restaurant.
 
----
 
 ## G
 
@@ -91,7 +84,6 @@ A website that hosts Git repositories online. Like Google Drive for code, with e
 ### GitHub Pages
 A free service that turns a GitHub repository into a live website. No server setup required!
 
----
 
 ## H
 
@@ -101,14 +93,12 @@ Where your website lives on the internet. The computer (server) that sends your 
 ### HTML (HyperText Markup Language)
 The language that defines the structure of web pages - headings, paragraphs, images, links. The "skeleton" of a website.
 
----
 
 ## I
 
 ### IDE (Integrated Development Environment)
 A fancy text editor designed for writing code. VS Code is a popular example. Has features like syntax highlighting and auto-complete.
 
----
 
 ## J
 
@@ -118,7 +108,6 @@ A programming language that makes websites interactive - animations, form valida
 ### JSON (JavaScript Object Notation)
 A format for storing and sending data. Looks like this: `{"name": "John", "age": 25}`. Easy for both humans and computers to read.
 
----
 
 ## L
 
@@ -128,14 +117,12 @@ Your own computer. "Running locally" means running on your machine, not on the i
 ### LLM (Large Language Model)
 An AI trained on lots of text that can understand and generate language. Claude is an LLM.
 
----
 
 ## M
 
 ### Markdown
 A simple way to format text using symbols. Like this: `**bold**`, `*italic*`, `# Heading`. Used in README files and documentation.
 
----
 
 ## N
 
@@ -145,14 +132,12 @@ A program that lets you run JavaScript outside of a browser. Needed for developm
 ### npm (Node Package Manager)
 A tool for downloading and managing JavaScript packages (reusable code). Comes with Node.js.
 
----
 
 ## O
 
 ### Open Source
 Software whose code is publicly available. Anyone can view, use, and often contribute to it. GitHub hosts lots of open source projects.
 
----
 
 ## P
 
@@ -171,7 +156,6 @@ Uploading your commits to GitHub. Like syncing your changes to the cloud.
 ### Pull (Git)
 Downloading changes from GitHub to your computer. Like syncing updates from the cloud.
 
----
 
 ## R
 
@@ -181,7 +165,6 @@ A folder tracked by Git. Contains your project files and their history. Can be l
 ### Responsive Design
 A website that adapts to different screen sizes - looking good on phones, tablets, and desktops.
 
----
 
 ## S
 
@@ -194,7 +177,6 @@ A secure way to connect to servers and GitHub. Uses cryptographic keys instead o
 ### Static Site
 A website made of fixed files (HTML, CSS, JS, images) that don't change. As opposed to dynamic sites that generate content on the fly.
 
----
 
 ## T
 
@@ -207,14 +189,12 @@ A unit of text for AI models. Roughly 4 characters or 3/4 of a word. API pricing
 ### Token (Authentication)
 A string of characters that proves your identity. Like a temporary password. Used for GitHub and API access.
 
----
 
 ## U
 
 ### URL (Uniform Resource Locator)
 A web address. Like `https://github.com/user/repo`. The way browsers find websites.
 
----
 
 ## V
 
@@ -224,14 +204,12 @@ A system for tracking changes over time. Git is version control software. Lets y
 ### VS Code
 A popular free code editor made by Microsoft. Has lots of extensions and features for developers.
 
----
 
 ## W
 
 ### Workflow
 A sequence of steps to accomplish something. Your Git workflow might be: edit → add → commit → push.
 
----
 
 ## Need Something Else?
 
@@ -240,7 +218,6 @@ If there's a term you don't understand that's not here, try:
 - Searching [MDN Web Docs](https://developer.mozilla.org)
 - Googling "[term] explained simply"
 
----
 
 <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
   <a href="/ai-workshop/reference/cheat-sheet/" style="padding: 0.75rem 1.5rem; border: 2px solid var(--sl-color-gray-3); color: inherit; text-decoration: none; border-radius: 8px;">

@@ -11,7 +11,6 @@ You've been using Claude Code, which is like having a conversation with Claude. 
 
 That's where the **Claude API** comes in!
 
----
 
 ## What is an API?
 
@@ -37,7 +36,6 @@ With the Claude API:
 - **Waiter** = The Claude API
 - **Kitchen** = Claude's AI brain
 
----
 
 ## Getting Your API Key
 
@@ -90,7 +88,6 @@ ANTHROPIC_API_KEY=sk-ant-your-key-here
   <strong>⚠️ Never commit this file!</strong> Add <code>.env</code> to your <code>.gitignore</code> file to keep it out of GitHub.
 </div>
 
----
 
 ## Understanding API Pricing
 
@@ -105,7 +102,6 @@ For learning and small projects, you'll likely spend less than $1!
 
 New accounts often get free credits to start - check your console.
 
----
 
 ## Your First API Call
 
@@ -161,7 +157,6 @@ ANTHROPIC_API_KEY=your-key-here node test-api.js
   <p>If you see penguin facts in your terminal, congratulations! You've made your first API call!</p>
 </div>
 
----
 
 ## Understanding the API Response
 
@@ -192,7 +187,6 @@ Key parts:
 - `usage` - How many tokens were used (for billing)
 - `stop_reason` - Why Claude stopped (usually "end_turn")
 
----
 
 ## Building a Simple AI Feature
 
@@ -263,7 +257,6 @@ Let's add a real AI feature to a web page - a writing assistant!
   <strong>⚠️ Security Note:</strong> For a real production app, you'd need a backend server to keep your API key secret. For learning purposes, this example shows the concept.
 </div>
 
----
 
 ## System Prompts: Giving Claude a Role
 
@@ -292,7 +285,6 @@ const message = await client.messages.create({
 | Tutor | "You are a patient teacher. Explain concepts simply, using examples." |
 | Translator | "You are a professional translator. Translate accurately while preserving tone." |
 
----
 
 ## Streaming Responses
 
@@ -317,7 +309,6 @@ for await (const chunk of stream) {
 
 This creates a more dynamic, engaging user experience!
 
----
 
 ## Best Practices
 
@@ -353,7 +344,6 @@ try {
 - Use environment variables
 - For web apps, call the API from a backend server
 
----
 
 ## Ideas for Your Projects
 
@@ -368,26 +358,13 @@ Now that you understand the API, here are some features you could add:
 | **Translator** | Translate content on the fly |
 | **Writing Assistant** | Help users improve their writing |
 
----
 
 <div class="checkpoint">
   <div class="checkpoint-title">✅ Checkpoint</div>
   <p>You understand how the Claude API works and can make basic API calls. You're now ready to add AI features to any project!</p>
 </div>
 
----
 
 ## Next Steps
 
 In the next section, we'll add analytics to your project so you can see how people are using it!
-
----
-
-<div style="display: flex; justify-content: space-between; margin-top: 2rem;">
-  <a href="/ai-workshop/deploy-github-pages/" style="padding: 0.75rem 1.5rem; border: 2px solid var(--sl-color-gray-3); color: inherit; text-decoration: none; border-radius: 8px;">
-    ← Deploy to GitHub Pages
-  </a>
-  <a href="/ai-workshop/analytics-posthog/" style="padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
-    Add Analytics →
-  </a>
-</div>

@@ -13,7 +13,6 @@ GitHub Pages is great, but Netlify offers some extra features:
 - Continuous deployment from Git
 - Deploy previews for branches
 
----
 
 ## Step 1: Create a Netlify Account
 
@@ -29,7 +28,6 @@ GitHub Pages is great, but Netlify offers some extra features:
   </div>
 </div>
 
----
 
 ## Step 2: Connect Your Repository
 
@@ -46,7 +44,6 @@ GitHub Pages is great, but Netlify offers some extra features:
   </div>
 </div>
 
----
 
 ## Step 3: Configure Build Settings
 
@@ -65,7 +62,6 @@ For a simple HTML/CSS/JS project:
 
 Click **"Deploy site"**!
 
----
 
 ## Step 4: Wait for Deployment
 
@@ -79,7 +75,6 @@ Netlify will:
   <p>Your site should be live at something like <code>random-name-12345.netlify.app</code></p>
 </div>
 
----
 
 ## Step 5: Change Your Site Name
 
@@ -97,7 +92,6 @@ The random URL isn't great. Let's change it:
   </div>
 </div>
 
----
 
 ## Automatic Deployments
 
@@ -109,7 +103,6 @@ Push to GitHub → Netlify detects changes → Site updates automatically
 
 No manual steps needed after initial setup.
 
----
 
 ## Adding a Custom Domain
 
@@ -122,7 +115,6 @@ Want to use your own domain (like `yourname.com`)?
 
 Netlify provides free HTTPS certificates automatically!
 
----
 
 ## Netlify Forms (Bonus Feature)
 
@@ -147,7 +139,6 @@ Just add the `netlify` attribute to your form:
 
 Submissions appear in your Netlify dashboard!
 
----
 
 ## GitHub Pages vs Netlify
 
@@ -163,7 +154,6 @@ Submissions appear in your Netlify dashboard!
 
 **Bottom line:** Both are great! GitHub Pages is simpler, Netlify has more features.
 
----
 
 ## Troubleshooting
 
@@ -184,14 +174,3 @@ Submissions appear in your Netlify dashboard!
 - Check the **Deploys** tab to see if deployment succeeded
 - Hard refresh: `Ctrl + Shift + R` (Windows) or `Cmd + Shift + R` (Mac)
 - Check that you pushed to the correct branch
-
----
-
-<div style="display: flex; justify-content: space-between; margin-top: 2rem;">
-  <a href="/ai-workshop/analytics-posthog/" style="padding: 0.75rem 1.5rem; border: 2px solid var(--sl-color-gray-3); color: inherit; text-decoration: none; border-radius: 8px;">
-    ← Analytics
-  </a>
-  <a href="/ai-workshop/reference/cheat-sheet/" style="padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
-    Cheat Sheet →
-  </a>
-</div>

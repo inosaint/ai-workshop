@@ -5,19 +5,12 @@ sidebar:
   order: 3
 ---
 
-# Installing Claude Code
 
-Now for the exciting part - let's install Claude Code on your computer!
-
-Don't worry, we'll go step by step. Choose your operating system below.
-
----
+Next - let's install Claude Code on your computer. You can also use Claude Code on the web, but I've found it easier to have Claude Code on desktop. 
 
 ## Prerequisites: Installing Node.js
 
 Claude Code is built using Node.js, so we need to install that first. Think of Node.js as the "engine" that powers Claude Code.
-
----
 
 ## Windows Installation
 
@@ -105,7 +98,6 @@ claude --version
 
 You should see the Claude Code version number.
 
----
 
 ## Mac Installation
 
@@ -221,7 +213,6 @@ This will launch Claude Code. The first time you run it, you'll need to authenti
   <p>You should now see the Claude Code interface ready for your commands!</p>
 </div>
 
----
 
 ## Connecting Claude Code to GitHub
 
@@ -313,19 +304,7 @@ sudo npm install -g @anthropic-ai/claude-code
 
 You'll be asked for your Mac password. Type it (it won't show characters) and press Enter.
 
----
 
 ## Next Steps
 
 Claude Code is installed and ready to go! Before we start building, let's learn the basics of Git - the tool that helps us save and share our code.
-
----
-
-<div style="display: flex; justify-content: space-between; margin-top: 2rem;">
-  <a href="/ai-workshop/github-setup/" style="padding: 0.75rem 1.5rem; border: 2px solid var(--sl-color-gray-3); color: inherit; text-decoration: none; border-radius: 8px;">
-    ← GitHub Setup
-  </a>
-  <a href="/ai-workshop/git-basics/" style="padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
-    Git Basics →
-  </a>
-</div>

@@ -9,7 +9,6 @@ sidebar:
 
 This is the moment you've been waiting for! Let's use Claude Code to build your project.
 
----
 
 ## Step 1: Create Your Project Folder
 
@@ -33,7 +32,6 @@ cd my-project
   <strong>💡 Tip:</strong> Replace "my-project" with a name for your project, like "my-portfolio" or "quiz-game". Use lowercase letters and hyphens (no spaces!).
 </div>
 
----
 
 ## Step 2: Initialize Git
 
@@ -48,7 +46,6 @@ You should see:
 Initialized empty Git repository in /path/to/my-project/.git/
 ```
 
----
 
 ## Step 3: Launch Claude Code
 
@@ -66,7 +63,6 @@ claude
   </div>
 </div>
 
----
 
 ## Step 4: Give Claude Code Your Prompt
 
@@ -94,7 +90,6 @@ Press **Enter** and watch Claude Code work!
   </div>
 </div>
 
----
 
 ## Step 5: Watch and Learn
 
@@ -108,7 +103,6 @@ Claude Code will:
   <strong>⚠️ Be patient!</strong> Complex projects might take a minute or two. Don't interrupt Claude Code while it's working.
 </div>
 
----
 
 ## Step 6: Review What Was Created
 
@@ -127,7 +121,6 @@ script.js
 
 (The exact files depend on your project)
 
----
 
 ## Working with Claude Code: Tips & Tricks
 
@@ -175,7 +168,6 @@ Why did you use addEventListener instead of onclick?
 
 Claude Code is patient and loves explaining things!
 
----
 
 ## Common Claude Code Commands
 
@@ -187,7 +179,6 @@ While chatting with Claude Code, you can use these helpful commands:
 | `/clear` | Clears the conversation history |
 | `exit` or `Ctrl+C` | Exit Claude Code |
 
----
 
 ## Example Conversation
 
@@ -223,7 +214,6 @@ Claude: Sure! I'll add a smooth hover animation to the
         lift up slightly with a shadow effect.
 ```
 
----
 
 ## Making Changes
 
@@ -250,23 +240,37 @@ You can also edit files directly using any text editor:
   <strong>💡 Pro Tip:</strong> Try making small changes yourself! If you break something, you can always ask Claude Code to fix it.
 </div>
 
----
 
-## Save Your Progress with Git
+## Save Your Progress with GitHub Desktop
 
-After Claude Code creates your project, let's save it with Git:
+After Claude Code creates your project, let's save it with GitHub Desktop:
 
-```bash
-git add .
-git commit -m "Initial project created with Claude Code"
-```
+### Step 1: Open GitHub Desktop
+
+Switch to GitHub Desktop. You should see your new files listed in the "Changes" tab.
+
+### Step 2: Review Your Changes
+
+Click on the files to see what was created. All the new files should be checked.
+
+### Step 3: Commit Your Changes
+
+1. In the "Summary" field at the bottom left, type: `Initial project created with Claude Code`
+2. Click the **"Commit to main"** button
+
+### Step 4: Publish to GitHub
+
+1. Click the **"Publish repository"** button at the top
+2. Uncheck "Keep this code private" (we want it public for GitHub Pages)
+3. Click **"Publish repository"**
+
+Your project is now saved and backed up on GitHub! 🎉
 
 <div class="checkpoint">
   <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>Your project files are created and saved in Git. Let's test it locally!</p>
+  <p>Your project files are created and saved on GitHub. Let's test it locally!</p>
 </div>
 
----
 
 ## Troubleshooting
 
@@ -285,19 +289,7 @@ That's okay! You can:
 
 Make sure you're in the right folder. Run `pwd` (Mac) or `cd` (Windows) to see your current location.
 
----
 
 ## Next Steps
 
 You have a working project! In the next section, we'll learn how to view it in your browser and make sure everything works.
-
----
-
-<div style="display: flex; justify-content: space-between; margin-top: 2rem;">
-  <a href="/ai-workshop/choose-project/" style="padding: 0.75rem 1.5rem; border: 2px solid var(--sl-color-gray-3); color: inherit; text-decoration: none; border-radius: 8px;">
-    ← Choose Your Project
-  </a>
-  <a href="/ai-workshop/testing-locally/" style="padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
-    Testing Locally →
-  </a>
-</div>

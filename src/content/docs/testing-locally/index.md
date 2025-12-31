@@ -9,7 +9,6 @@ sidebar:
 
 Before sharing your project with the world, let's make sure it works properly on your own computer.
 
----
 
 ## What Does "Testing Locally" Mean?
 
@@ -21,7 +20,6 @@ When you test locally:
 - You can break things safely (no one else will see!)
 - It's free - no hosting needed
 
----
 
 ## Method 1: Just Open the HTML File
 
@@ -52,7 +50,6 @@ The simplest way to view your project:
   <strong>💡 Tip:</strong> The address bar will show something like <code>file:///path/to/your/file</code>. This means you're viewing a local file, not a website on the internet.
 </div>
 
----
 
 ## Method 2: Use a Local Server (Recommended)
 
@@ -107,7 +104,6 @@ Open the URL it shows (usually `http://localhost:3000`).
 2. Right-click on `index.html`
 3. Select "Open with Live Server"
 
----
 
 ## Testing Checklist
 
@@ -144,7 +140,6 @@ Most browsers let you simulate mobile devices:
   </div>
 </div>
 
----
 
 ## Found a Problem? Fix It!
 
@@ -180,7 +175,6 @@ Look for red error messages in the **Console** tab. These tell you what went wro
   </div>
 </div>
 
----
 
 ## Common Issues and Fixes
 
@@ -230,7 +224,6 @@ Try hard refresh: `Ctrl + Shift + R` (Windows) or `Cmd + Shift + R` (Mac)
 </body>
 ```
 
----
 
 ## Making Changes and Seeing Updates
 
@@ -252,35 +245,34 @@ The development cycle is:
 └──────────────────────────────────────────────────────┘
 ```
 
----
 
 ## Save Your Work!
 
-Once you're happy with your changes, save them with Git:
+Once you're happy with your changes, save them with GitHub Desktop:
 
-```bash
-git add .
-git commit -m "Fix styling issues and test locally"
-```
+### Step 1: Open GitHub Desktop
+
+Switch to GitHub Desktop to see your changes.
+
+### Step 2: Review Your Changes
+
+Look at the "Changes" tab to see what you modified.
+
+### Step 3: Commit Your Changes
+
+1. In the "Summary" field, type: `Fix styling issues and test locally`
+2. Click **"Commit to main"**
+
+### Step 4: Push to GitHub
+
+Click **"Push origin"** to back up your work.
 
 <div class="checkpoint">
   <div class="checkpoint-title">✅ Checkpoint</div>
   <p>Your project works locally and you've saved your progress. Time to share it with the world!</p>
 </div>
 
----
 
 ## Next Steps
 
 Your project is looking good! Let's deploy it to GitHub Pages so anyone with the link can see it.
-
----
-
-<div style="display: flex; justify-content: space-between; margin-top: 2rem;">
-  <a href="/ai-workshop/building-with-claude/" style="padding: 0.75rem 1.5rem; border: 2px solid var(--sl-color-gray-3); color: inherit; text-decoration: none; border-radius: 8px;">
-    ← Building with Claude
-  </a>
-  <a href="/ai-workshop/deploy-github-pages/" style="padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
-    Deploy to GitHub Pages →
-  </a>
-</div>

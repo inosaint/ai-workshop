@@ -1,6 +1,6 @@
 ---
 title: Git Basics
-description: Essential Git commands explained in plain English
+description: Understanding Git with GitHub Desktop - no command line needed!
 sidebar:
   hidden: true
   order: 4
@@ -8,9 +8,8 @@ sidebar:
 
 # Git Basics
 
-Git might sound intimidating, but it's actually quite simple once you understand what it does. Let's break it down!
+Git might sound intimidating, but with GitHub Desktop, it's as easy as clicking buttons! Let's break it down.
 
----
 
 ## What is Git?
 
@@ -27,7 +26,6 @@ Git solves this problem elegantly. Instead of creating copies, Git tracks every 
 - See what changed and when
 - Work with others without overwriting each other's work
 
----
 
 ## Git vs GitHub: What's the Difference?
 
@@ -40,77 +38,73 @@ Git solves this problem elegantly. Instead of creating copies, Git tracks every 
 
 **Analogy**: Git is like Microsoft Word's "Track Changes." GitHub is like OneDrive where you store and share your documents.
 
----
 
-## Essential Git Commands
+## What is GitHub Desktop?
 
-Here are the only commands you need for this workshop. We'll use them together, so you don't need to memorize them!
+**GitHub Desktop is a friendly app that makes Git easy - no typing commands required!**
 
-### 1. `git clone` - Copy a Project
+Instead of memorizing commands, you'll use buttons and visual tools. It's perfect for beginners and makes version control as simple as clicking "Save."
 
-This downloads a project from GitHub to your computer.
 
-```bash
-git clone https://github.com/username/project-name.git
+## Download and Install GitHub Desktop
+
+### Step 1: Download
+
+Go to [desktop.github.com](https://desktop.github.com) and download GitHub Desktop for your operating system (Windows or Mac).
+
+### Step 2: Install
+
+- **Windows**: Run the downloaded `.exe` file
+- **Mac**: Drag GitHub Desktop to your Applications folder
+
+### Step 3: Sign In
+
+Open GitHub Desktop and sign in with your GitHub account credentials.
+
+
+## How GitHub Desktop Works
+
+Here's the workflow you'll use with GitHub Desktop:
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                  GITHUB DESKTOP WORKFLOW                    │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│   1. MAKE CHANGES     →    Edit your files normally        │
+│         ↓                                                   │
+│   2. SEE CHANGES      →    View in "Changes" tab          │
+│         ↓                                                   │
+│   3. WRITE MESSAGE    →    Describe what you changed       │
+│         ↓                                                   │
+│   4. COMMIT           →    Click "Commit" button           │
+│         ↓                                                   │
+│   5. PUSH            →    Click "Push origin"              │
+│                                                             │
+│   [ Repeat as needed! ]                                     │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
 ```
 
-**Analogy**: Like downloading a Google Doc to edit offline.
 
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Diagram: git clone visualization]</strong><br/>
-    Shows GitHub cloud → arrow → Local computer folder<br/>
-    "GitHub repository" → "Your computer"
-  </div>
-</div>
+## Key GitHub Desktop Features
 
----
+### 1. The Changes Tab
 
-### 2. `git status` - Check What's Changed
+This shows all files you've modified. You'll see:
+- **Green** lines = added content
+- **Red** lines = removed content
+- **Checkboxes** = select which changes to save
 
-See which files you've modified.
+**Analogy**: Like a "before and after" comparison.
 
-```bash
-git status
-```
 
-**Analogy**: Like asking "what have I changed since I last saved?"
+### 2. Commit to Main
 
-You'll see output like:
-```
-Changes not staged for commit:
-  modified:   index.html
-  modified:   style.css
-```
-
----
-
-### 3. `git add` - Prepare Changes for Saving
-
-Tell Git which changes you want to save.
-
-```bash
-# Add a specific file
-git add index.html
-
-# Add all changed files
-git add .
-```
-
-**Analogy**: Like selecting which files to include in an email attachment.
-
----
-
-### 4. `git commit` - Save Your Changes
-
-Create a snapshot of your work with a message describing what you did.
-
-```bash
-git commit -m "Add homepage layout and styling"
-```
-
-**Analogy**: Like hitting "Save As" with a note explaining what this version contains.
+At the bottom left, you'll see:
+- **Summary** field: Brief description of changes (required)
+- **Description** field: More details (optional)
+- **Commit** button: Saves your changes locally
 
 <div class="tip-box">
   <strong>💡 Good commit messages:</strong><br/>
@@ -122,174 +116,149 @@ git commit -m "Add homepage layout and styling"
   ❌ "Changes"
 </div>
 
----
 
-### 5. `git push` - Upload to GitHub
+### 3. Push Origin
 
-Send your saved changes to GitHub so they're backed up in the cloud.
-
-```bash
-git push
-```
+After committing, you'll see a "Push origin" button at the top. This uploads your changes to GitHub (the cloud).
 
 **Analogy**: Like uploading your Word document to OneDrive.
 
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Diagram: git push visualization]</strong><br/>
-    Shows Local computer folder → arrow → GitHub cloud<br/>
-    "Your computer" → "GitHub repository"
-  </div>
-</div>
 
----
+### 4. Fetch Origin / Pull Origin
 
-### 6. `git pull` - Download Latest Changes
-
-Get the newest version from GitHub (useful when working with others).
-
-```bash
-git pull
-```
+These buttons download the latest changes from GitHub to your computer.
 
 **Analogy**: Like syncing to get the latest version from the cloud.
 
----
 
-## The Git Workflow
+## Creating Your First Repository
 
-Here's the typical flow you'll use:
+Let's practice creating a repository (project folder) with GitHub Desktop:
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                      THE GIT WORKFLOW                       │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│   1. MAKE CHANGES     →    Edit your files normally        │
-│         ↓                                                   │
-│   2. git status       →    See what changed                │
-│         ↓                                                   │
-│   3. git add .        →    Stage your changes              │
-│         ↓                                                   │
-│   4. git commit -m    →    Save with a message             │
-│         ↓                                                   │
-│   5. git push         →    Upload to GitHub                │
-│                                                             │
-│   [ Repeat as needed! ]                                     │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
+### Step 1: Click "New Repository"
 
----
+In GitHub Desktop, click **File → New Repository** (or Ctrl+N / Cmd+N).
 
-## Setting Up Git (First-Time Only)
+### Step 2: Fill in the Details
 
-If this is your first time using Git, you need to tell it who you are. This only needs to be done once.
+- **Name**: `my-first-project`
+- **Description**: Practice repository for learning Git
+- **Local Path**: Where on your computer to save it
+- **Initialize with a README**: Check this box
 
-Open your terminal and run these commands, replacing with your info:
+### Step 3: Create Repository
 
-```bash
-git config --global user.name "Your Name"
-git config --global user.email "your.email@example.com"
-```
+Click **"Create Repository"** button.
 
-<div class="warning-box">
-  <strong>⚠️ Important:</strong> Use the same email you used for GitHub!
-</div>
+🎉 You just created your first Git repository!
 
----
 
-## Connecting to GitHub (SSH vs HTTPS)
+## Publishing to GitHub
 
-When you push code to GitHub, it needs to verify it's really you. There are two ways:
+Right now, your repository only exists on your computer. Let's put it on GitHub:
 
-### Option 1: HTTPS (Easier, Recommended for Beginners)
+### Step 1: Click "Publish repository"
 
-GitHub will ask for your username and password (or a personal access token). We'll set this up when needed.
+You'll see a blue button at the top that says "Publish repository".
 
-### Option 2: SSH (More Advanced)
+### Step 2: Choose Settings
 
-Uses cryptographic keys. We won't cover this in the workshop, but it's great for the future!
+- **Name**: Keep it as `my-first-project`
+- **Description**: Optional
+- **Keep this code private**: Uncheck this (we want it public for GitHub Pages)
 
----
+### Step 3: Publish
 
-## Common Git Situations
+Click the **"Publish repository"** button.
 
-### "I made a mistake in my last commit message!"
+Your code is now backed up on GitHub! 🎊
 
-```bash
-git commit --amend -m "New, better message"
+
+## Making and Saving Changes
+
+Let's practice the full workflow:
+
+### Step 1: Make a Change
+
+Create a new file called `index.html` in your project folder with this content:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Page</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+</body>
+</html>
 ```
 
-### "I want to undo my changes to a file"
+### Step 2: See the Change in GitHub Desktop
 
-```bash
-git checkout -- filename.html
-```
+Switch to GitHub Desktop. You'll see `index.html` listed in the "Changes" tab.
 
-### "I'm confused about what state my project is in"
+### Step 3: Review the Change
 
-```bash
-git status
-```
+Click on `index.html` to see what you added. Green lines show new content.
 
-Always run `git status` when in doubt. It tells you exactly what's happening!
+### Step 4: Commit the Change
 
----
+1. Make sure the checkbox next to `index.html` is checked
+2. In the "Summary" field, type: `Add index.html with hello world`
+3. Click the **"Commit to main"** button
 
-## Don't Worry About Memorizing
+### Step 5: Push to GitHub
 
-Here's a secret: **you don't need to memorize these commands.**
+Click the **"Push origin"** button at the top.
 
-Claude Code will help you with Git! You can simply tell it:
+Done! Your changes are now on GitHub.
 
-> "Save my changes and push to GitHub"
 
-And Claude Code will run the right commands for you. How cool is that?
+## Common Tasks in GitHub Desktop
 
----
+### Opening Your Project in VS Code
 
-## Practice Time! (Optional)
+Right-click your repository name → **Open in Visual Studio Code**
 
-Try these in your terminal:
+(Or your preferred editor)
 
-1. Create a new folder:
-```bash
-mkdir my-practice-folder
-cd my-practice-folder
-```
 
-2. Initialize Git in this folder:
-```bash
-git init
-```
+### Viewing Your Repository on GitHub
 
-3. Check the status:
-```bash
-git status
-```
+Click **Repository → View on GitHub** (or Ctrl+Shift+G / Cmd+Shift+G)
 
-You should see something like "On branch main" and "nothing to commit."
 
----
+### Discarding Changes
+
+If you want to undo changes to a file:
+1. Right-click the file in the Changes tab
+2. Select **Discard changes...**
+3. Confirm
+
+
+### Seeing Your History
+
+Click the **"History"** tab to see all your past commits. Click any commit to see what changed.
+
+
+## Understanding Branches (Optional)
+
+Branches let you work on new features without affecting your main code. For this workshop, we'll stick with the "main" branch, but it's good to know they exist!
+
+
+## Don't Worry About Mistakes
+
+Here's a secret: **Git makes it really hard to permanently lose your work.**
+
+Everything is saved, and you can always go back. If something goes wrong, check the History tab - your previous versions are all there!
+
 
 ## Next Steps
 
-You now understand the basics of Git! Let's put this knowledge to use by choosing and building your project.
+You now understand Git basics using GitHub Desktop! No command line needed - just clicks and buttons.
 
 <div class="checkpoint">
   <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>You understand what Git is and know the basic commands. Don't worry about memorizing them - Claude Code will help!</p>
-</div>
-
----
-
-<div style="display: flex; justify-content: space-between; margin-top: 2rem;">
-  <a href="/ai-workshop/install-claude-code/" style="padding: 0.75rem 1.5rem; border: 2px solid var(--sl-color-gray-3); color: inherit; text-decoration: none; border-radius: 8px;">
-    ← Install Claude Code
-  </a>
-  <a href="/ai-workshop/choose-project/" style="padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
-    Choose Your Project →
-  </a>
+  <p>You have GitHub Desktop installed and understand the commit → push workflow. Time to build your project!</p>
 </div>

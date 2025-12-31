@@ -9,7 +9,6 @@ sidebar:
 
 Keep this page bookmarked! Here's a quick reference for everything you learned.
 
----
 
 ## Terminal / Command Line
 
@@ -28,57 +27,42 @@ Keep this page bookmarked! Here's a quick reference for everything you learned.
 - **Windows**: `Win + R`, type `cmd`, press Enter
 - **Mac**: `Cmd + Space`, type `Terminal`, press Enter
 
----
 
-## Git Commands
+## GitHub Desktop
 
-### Starting Out
+### Creating a New Repository
 
-```bash
-# Initialize Git in a folder
-git init
-
-# Clone a repository
-git clone https://github.com/user/repo.git
-
-# Configure your identity (first time only)
-git config --global user.name "Your Name"
-git config --global user.email "you@example.com"
-```
+1. **File → New Repository** (or Ctrl+N / Cmd+N)
+2. Fill in name, description, and local path
+3. Check "Initialize with a README"
+4. Click **"Create Repository"**
 
 ### Daily Workflow
 
-```bash
-# Check what's changed
-git status
+1. **Make changes** in your code editor and save
+2. **Open GitHub Desktop** - changes appear in "Changes" tab
+3. **Review changes** - click files to see what changed
+4. **Write summary** - describe what you changed
+5. **Commit to main** - click the button
+6. **Push origin** - click the button at top
 
-# Stage all changes
-git add .
+### Publishing to GitHub
 
-# Stage specific file
-git add filename.html
+1. Click **"Publish repository"** button
+2. Uncheck "Keep this code private" (for GitHub Pages)
+3. Click **"Publish repository"**
 
-# Commit with message
-git commit -m "Your message here"
+### Useful Actions
 
-# Push to GitHub
-git push
+| Action | How To Do It |
+|--------|--------------|
+| View on GitHub | Repository → View on GitHub |
+| Open in editor | Right-click repo → Open in Visual Studio Code |
+| Discard changes | Right-click file → Discard changes |
+| See history | Click "History" tab |
+| Pull latest | Repository → Pull |
+| Clone a repo | File → Clone Repository |
 
-# Pull latest changes
-git pull
-```
-
-### Connecting to GitHub
-
-```bash
-# Add remote repository
-git remote add origin https://github.com/user/repo.git
-
-# Push and set upstream
-git push -u origin main
-```
-
----
 
 ## Claude Code
 
@@ -117,7 +101,6 @@ Can you explain what [code/concept] does?
 Can you change [feature] to [new behavior]?
 ```
 
----
 
 ## Node.js / npm
 
@@ -143,7 +126,6 @@ npx serve
 npm install -g serve && serve
 ```
 
----
 
 ## Local Testing
 
@@ -177,7 +159,6 @@ npm install -g serve && serve
 - **Windows**: `Ctrl + Shift + R`
 - **Mac**: `Cmd + Shift + R`
 
----
 
 ## GitHub Pages
 
@@ -195,7 +176,6 @@ npm install -g serve && serve
 https://USERNAME.github.io/REPO-NAME/
 ```
 
----
 
 ## Claude API
 
@@ -223,7 +203,6 @@ const message = await client.messages.create({
 console.log(message.content[0].text);
 ```
 
----
 
 ## PostHog Analytics
 
@@ -254,7 +233,6 @@ posthog.opt_out_capturing();
 posthog.opt_in_capturing();
 ```
 
----
 
 ## Keyboard Shortcuts
 
@@ -276,7 +254,6 @@ posthog.opt_in_capturing();
 | `F12` or `Cmd + Option + I` | Developer tools |
 | `Cmd/Ctrl + U` | View source |
 
----
 
 ## File Structure Basics
 
@@ -311,7 +288,6 @@ dist/
 build/
 ```
 
----
 
 ## Quick Troubleshooting
 
@@ -324,7 +300,6 @@ build/
 | GitHub Pages 404 | Wait 5 min, check `index.html` exists |
 | API error 401 | Check API key is correct |
 
----
 
 ## Helpful Links
 
@@ -334,7 +309,6 @@ build/
 - [PostHog Docs](https://posthog.com/docs)
 - [MDN Web Docs](https://developer.mozilla.org) (HTML/CSS/JS reference)
 
----
 
 <div style="text-align: center; margin-top: 2rem;">
   <a href="/ai-workshop/reference/glossary/" style="padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
