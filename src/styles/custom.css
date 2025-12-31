@@ -124,21 +124,31 @@
 .prompt-editor {
   max-width: 100%;
   overflow: hidden;
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border: 2px solid #cbd5e1;
+  color: #1e293b;
 }
 
 .prompt-editor h3 {
   color: #1e293b;
 }
 
+.prompt-editor label {
+  color: #334155;
+}
+
 [data-theme="dark"] .prompt-editor {
-  background: var(--sl-color-gray-6);
-  border-color: var(--sl-color-gray-5);
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  border-color: #475569;
+  color: #f1f5f9;
 }
 
 [data-theme="dark"] .prompt-editor h3 {
-  color: var(--sl-color-white);
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .prompt-editor label {
+  color: #e2e8f0;
 }
 
 /* Prompt editor input fields */
