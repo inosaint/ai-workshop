@@ -86,6 +86,7 @@ export default defineConfig({
           collapsed: true,
           items: [
             { label: 'Why This Guide', link: '/about/why-this-guide/' },
+            { label: 'Further Learning', link: '/about/further-learning/' },
             { label: 'License', link: '/about/license/' },
           ],
         },
