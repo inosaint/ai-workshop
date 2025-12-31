@@ -187,6 +187,37 @@ Why did you use addEventListener instead of onclick?
 
 Claude Code is patient and loves explaining things!
 
+### Getting Beginner-Friendly Responses
+
+If you're new to coding and want Claude to explain things in simple terms, add this to your prompts:
+
+<div class="tip-box">
+  <strong>💡 Beginner-Friendly Prompt:</strong>
+  <p>Add this at the end of your requests to Claude:</p>
+  <pre><code>Please explain everything in simple terms, as if I'm a complete
+beginner. Avoid technical jargon and use everyday language.
+If you need to use a technical term, please define it first.</code></pre>
+</div>
+
+**Example:**
+
+```text
+Can you add a contact form to my website? Please explain
+everything in simple terms, as if I'm a complete beginner.
+```
+
+This helps Claude:
+- Use plain, everyday language instead of technical terms
+- Explain concepts like you're learning for the first time
+- Define any technical words before using them
+- Keep explanations clear and approachable
+
+**Before (technical):**
+> "I'll implement a POST request handler with form validation using regex patterns and preventDefault to handle the submit event."
+
+**After (beginner-friendly):**
+> "I'll add code that checks if the email looks correct when someone clicks the submit button, and then sends the message."
+
 
 ## Common Claude Code Commands
 
