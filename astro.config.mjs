@@ -26,7 +26,6 @@ export default defineConfig({
         './src/styles/custom.css',
       ],
       components: {
-        Footer: './src/components/Footer.astro',
         Head: './src/components/Head.astro',
       },
       sidebar: [
@@ -42,7 +41,6 @@ export default defineConfig({
           items: [
             { label: 'GitHub Account', link: '/github-setup/' },
             { label: 'Install Claude Code', link: '/install-claude-code/' },
-            { label: 'Git Basics', link: '/git-basics/' },
           ],
         },
         {
@@ -81,7 +79,14 @@ export default defineConfig({
             { label: 'Cheat Sheet', link: '/reference/cheat-sheet/' },
             { label: 'Glossary', link: '/reference/glossary/' },
             { label: 'Troubleshooting', link: '/troubleshooting/' },
-            { label: 'License', link: '/license/' },
+          ],
+        },
+        {
+          label: 'About',
+          collapsed: true,
+          items: [
+            { label: 'Why This Guide', link: '/about/why-this-guide/' },
+            { label: 'License', link: '/about/license/' },
           ],
         },
       ],
