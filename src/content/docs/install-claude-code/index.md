@@ -5,183 +5,69 @@ sidebar:
   order: 3
 ---
 
+# Installing Claude Code
 
-Next - let's install Claude Code on your computer. You can also use Claude Code on the web, but I've found it easier to have Claude Code on desktop. 
+Next - let's install Claude Code on your computer. We'll be using the Claude Code desktop app, which includes everything you need to start building.
 
-## Prerequisites: Installing Node.js
+## Download Claude Code
 
-Claude Code is built using Node.js, so we need to install that first. Think of Node.js as the "engine" that powers Claude Code.
+### Windows
 
-## Windows Installation
+1. Go to **[claude.ai/download](https://claude.ai/download)** (or the official Claude Code download page)
+2. Click **"Download for Windows"**
+3. The installer will download (usually to your Downloads folder)
 
-### Step 1: Download Node.js
+### Mac
 
-1. Open your browser and go to **[nodejs.org](https://nodejs.org)**
-2. Click the **LTS** (Long Term Support) version - this is the stable one
-
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: Node.js website]</strong><br/>
-    The Node.js homepage showing two download buttons - LTS and Current.<br/>
-    Arrow pointing to the LTS button.
-  </div>
-</div>
-
-### Step 2: Run the Installer
-
-1. Open the downloaded file (usually in your Downloads folder)
-2. Click **"Next"** through the installer
-3. Accept the license agreement
-4. Keep the default installation location
-5. Click **"Next"** and then **"Install"**
+1. Go to **[claude.ai/download](https://claude.ai/download)** (or the official Claude Code download page)
+2. Click **"Download for Mac"**
+3. The installer will download (usually to your Downloads folder)
 
 <div class="image-placeholder">
   <div class="image-placeholder-icon">🖼️</div>
   <div class="image-placeholder-text">
-    <strong>[Screenshot: Node.js installer on Windows]</strong><br/>
-    The installation wizard with default options selected
+    <strong>[Screenshot: Claude Code download page]</strong><br/>
+    The download page showing Windows and Mac download buttons
   </div>
 </div>
 
-<div class="warning-box">
-  <strong>⚠️ Important:</strong> When asked about "Tools for Native Modules", you can uncheck this option. We don't need it for this workshop.
+
+## Install Claude Code
+
+### Windows
+
+1. Open the downloaded file from your Downloads folder
+2. Follow the installation wizard
+3. Click **"Install"** and wait for the installation to complete
+4. Click **"Finish"** when done
+
+<div class="image-placeholder">
+  <div class="image-placeholder-icon">🖼️</div>
+  <div class="image-placeholder-text">
+    <strong>[Screenshot: Claude Code Windows installer]</strong><br/>
+    The installation wizard showing the install button
+  </div>
 </div>
 
-### Step 3: Verify Installation
+### Mac
 
-1. Press `Windows + R` to open the Run dialog
-2. Type `cmd` and press Enter to open Command Prompt
-3. Type the following and press Enter:
+1. Open the downloaded `.dmg` file from your Downloads folder
+2. Drag the **Claude Code** app to your **Applications** folder
+3. Open **Applications** and double-click **Claude Code**
+4. If you see a security warning, click **"Open"** to confirm
 
-```bash
-node --version
-```
-
-You should see something like `v20.x.x` (the exact numbers may differ).
-
-4. Now check npm (Node Package Manager):
-
-```bash
-npm --version
-```
-
-You should see a version number like `10.x.x`.
+<div class="image-placeholder">
+  <div class="image-placeholder-icon">🖼️</div>
+  <div class="image-placeholder-text">
+    <strong>[Screenshot: Claude Code Mac installation]</strong><br/>
+    The DMG window showing the drag-to-Applications process
+  </div>
+</div>
 
 <div class="checkpoint">
   <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>If you see version numbers for both commands, Node.js is installed correctly!</p>
+  <p>Claude Code is now installed on your computer!</p>
 </div>
-
-### Step 4: Install Claude Code
-
-Now let's install Claude Code! In the same Command Prompt window, type:
-
-```bash
-npm install -g @anthropic-ai/claude-code
-```
-
-Wait for the installation to complete. You'll see a progress bar and some text.
-
-<div class="tip-box">
-  <strong>💡 What does this command mean?</strong><br/>
-  <code>npm install</code> = Install a package<br/>
-  <code>-g</code> = Globally (available everywhere on your computer)<br/>
-  <code>@anthropic-ai/claude-code</code> = The name of the Claude Code package
-</div>
-
-### Step 5: Verify Claude Code Installation
-
-```bash
-claude --version
-```
-
-You should see the Claude Code version number.
-
-
-## Mac Installation
-
-### Step 1: Download Node.js
-
-1. Open your browser and go to **[nodejs.org](https://nodejs.org)**
-2. Click the **LTS** (Long Term Support) version - this is the stable one
-
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: Node.js website]</strong><br/>
-    The Node.js homepage showing two download buttons - LTS and Current.<br/>
-    Arrow pointing to the LTS button for macOS.
-  </div>
-</div>
-
-### Step 2: Run the Installer
-
-1. Open the downloaded `.pkg` file (usually in your Downloads folder)
-2. Click **"Continue"** through the installer
-3. Accept the license agreement
-4. Keep the default installation location
-5. Click **"Install"** and enter your Mac password when prompted
-
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: Node.js installer on Mac]</strong><br/>
-    The installation wizard with default options selected
-  </div>
-</div>
-
-### Step 3: Verify Installation
-
-1. Press `Cmd + Space` to open Spotlight
-2. Type `Terminal` and press Enter to open Terminal
-3. Type the following and press Enter:
-
-```bash
-node --version
-```
-
-You should see something like `v20.x.x` (the exact numbers may differ).
-
-4. Now check npm (Node Package Manager):
-
-```bash
-npm --version
-```
-
-You should see a version number like `10.x.x`.
-
-<div class="checkpoint">
-  <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>If you see version numbers for both commands, Node.js is installed correctly!</p>
-</div>
-
-### Step 4: Install Claude Code
-
-Now let's install Claude Code! In the same Terminal window, type:
-
-```bash
-npm install -g @anthropic-ai/claude-code
-```
-
-Wait for the installation to complete. You'll see a progress bar and some text.
-
-<div class="tip-box">
-  <strong>💡 What does this command mean?</strong><br/>
-  <code>npm install</code> = Install a package<br/>
-  <code>-g</code> = Globally (available everywhere on your computer)<br/>
-  <code>@anthropic-ai/claude-code</code> = The name of the Claude Code package
-</div>
-
-### Step 5: Verify Claude Code Installation
-
-```bash
-claude --version
-```
-
-You should see the Claude Code version number.
-
----
 
 ## Opening Your Terminal
 
@@ -246,27 +132,23 @@ This will launch Claude Code. The first time you run it, you'll need to authenti
 
 ## Troubleshooting
 
-### "command not found: claude" (Mac)
+### Can't find Claude Code after installation (Mac)
 
-Close Terminal completely and reopen it. The installation needs a fresh window to work.
+Check your **Applications** folder. If Claude Code is there but won't open, right-click it and select **"Open"** to bypass the security warning.
 
-If that doesn't work, try:
-```bash
-source ~/.zshrc
-```
+### Installation stuck or won't complete (Windows)
 
-### "npm is not recognized" (Windows)
+Try running the installer as Administrator:
+1. Right-click the installer file
+2. Select **"Run as administrator"**
+3. Follow the installation steps again
 
-Close Command Prompt completely and reopen it. The installation needs a fresh window to work.
+### "App is damaged" message (Mac)
 
-### Permission Errors (Mac)
-
-If you see permission errors during installation, you might need to prefix the install command with `sudo`:
-```bash
-sudo npm install -g @anthropic-ai/claude-code
-```
-
-You'll be asked for your Mac password. Type it (it won't show characters) and press Enter.
+This can happen with downloaded apps. Try:
+1. Open **Terminal**
+2. Run: `xattr -cr /Applications/Claude\ Code.app`
+3. Try opening Claude Code again
 
 
 ## Next Steps
