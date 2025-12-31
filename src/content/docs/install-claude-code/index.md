@@ -101,65 +101,87 @@ You should see the Claude Code version number.
 
 ## Mac Installation
 
-### Step 1: Open Terminal
+### Step 1: Download Node.js
 
-1. Press `Cmd + Space` to open Spotlight
-2. Type `Terminal` and press Enter
+1. Open your browser and go to **[nodejs.org](https://nodejs.org)**
+2. Click the **LTS** (Long Term Support) version - this is the stable one
 
 <div class="image-placeholder">
   <div class="image-placeholder-icon">🖼️</div>
   <div class="image-placeholder-text">
-    <strong>[Screenshot: Mac Spotlight with Terminal]</strong><br/>
-    Spotlight search showing Terminal application
+    <strong>[Screenshot: Node.js website]</strong><br/>
+    The Node.js homepage showing two download buttons - LTS and Current.<br/>
+    Arrow pointing to the LTS button for macOS.
   </div>
 </div>
 
-### Step 2: Install Homebrew (Package Manager)
+### Step 2: Run the Installer
 
-Homebrew is like an app store for your Terminal. Paste this command and press Enter:
+1. Open the downloaded `.pkg` file (usually in your Downloads folder)
+2. Click **"Continue"** through the installer
+3. Accept the license agreement
+4. Keep the default installation location
+5. Click **"Install"** and enter your Mac password when prompted
 
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-<div class="warning-box">
-  <strong>⚠️ Note:</strong> This might take a few minutes. You may be asked to enter your Mac password.
+<div class="image-placeholder">
+  <div class="image-placeholder-icon">🖼️</div>
+  <div class="image-placeholder-text">
+    <strong>[Screenshot: Node.js installer on Mac]</strong><br/>
+    The installation wizard with default options selected
+  </div>
 </div>
 
-When Homebrew finishes installing, it will show you some "Next steps" - follow those instructions to add Homebrew to your path.
+### Step 3: Verify Installation
 
-### Step 3: Install Node.js via Homebrew
-
-```bash
-brew install node
-```
-
-### Step 4: Verify Node.js Installation
+1. Press `Cmd + Space` to open Spotlight
+2. Type `Terminal` and press Enter to open Terminal
+3. Type the following and press Enter:
 
 ```bash
 node --version
+```
+
+You should see something like `v20.x.x` (the exact numbers may differ).
+
+4. Now check npm (Node Package Manager):
+
+```bash
 npm --version
 ```
 
-Both commands should show version numbers.
+You should see a version number like `10.x.x`.
 
 <div class="checkpoint">
   <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>If you see version numbers, Node.js is installed!</p>
+  <p>If you see version numbers for both commands, Node.js is installed correctly!</p>
 </div>
 
-### Step 5: Install Claude Code
+### Step 4: Install Claude Code
+
+Now let's install Claude Code! In the same Terminal window, type:
 
 ```bash
 npm install -g @anthropic-ai/claude-code
 ```
 
-### Step 6: Verify Claude Code Installation
+Wait for the installation to complete. You'll see a progress bar and some text.
+
+<div class="tip-box">
+  <strong>💡 What does this command mean?</strong><br/>
+  <code>npm install</code> = Install a package<br/>
+  <code>-g</code> = Globally (available everywhere on your computer)<br/>
+  <code>@anthropic-ai/claude-code</code> = The name of the Claude Code package
+</div>
+
+### Step 5: Verify Claude Code Installation
 
 ```bash
 claude --version
 ```
 
+You should see the Claude Code version number.
+
+---
 
 ## Your First Claude Code Command
 
@@ -192,11 +214,79 @@ This will launch Claude Code. The first time you run it, you'll need to authenti
 </div>
 
 
+## Connecting Claude Code to GitHub
+
+Now that Claude Code is authenticated, we need to connect it to your GitHub account so it can create and update repositories for you.
+
+### Step 1: Exit Claude Code
+
+If Claude Code is still running, exit it by typing:
+```
+/exit
+```
+
+Or press `Ctrl+C` (Windows/Linux) or `Cmd+C` (Mac).
+
+### Step 2: Start a GitHub Session
+
+In your terminal, run:
+
+```bash
+claude --github
+```
+
+This tells Claude Code you want to work with GitHub repositories.
+
+<div class="image-placeholder">
+  <div class="image-placeholder-icon">🖼️</div>
+  <div class="image-placeholder-text">
+    <strong>[Screenshot: Claude Code GitHub authentication prompt]</strong><br/>
+    The prompt asking you to authorize GitHub access
+  </div>
+</div>
+
+### Step 3: Authorize GitHub Access
+
+1. Claude Code will open your browser or provide a URL
+2. You'll be taken to GitHub's authorization page
+3. Review the permissions Claude Code is requesting:
+   - **Read access** to your profile and repositories
+   - **Write access** to create and update repositories
+4. Click **"Authorize"** to grant access
+
+<div class="warning-box">
+  <strong>⚠️ What permissions does Claude Code need?</strong><br/>
+  Claude Code needs write access to create your personal website repository (username.github.io) and push code to it. This is safe - you can revoke access anytime from your GitHub settings.
+</div>
+
+### Step 4: Verify GitHub Connection
+
+After authorizing, return to your terminal. You should see a success message confirming Claude Code is connected to your GitHub account.
+
+<div class="checkpoint">
+  <div class="checkpoint-title">✅ Checkpoint</div>
+  <p>Claude Code is now connected to GitHub and ready to create repositories for you!</p>
+</div>
+
+### Managing GitHub Access
+
+If you ever want to review or revoke Claude Code's access:
+
+1. Go to **[github.com](https://github.com)** and log in
+2. Click your profile icon → **Settings**
+3. In the left sidebar, click **Applications**
+4. Under "Installed GitHub Apps" or "Authorized OAuth Apps", find Claude Code
+5. You can review permissions or revoke access if needed
+
+---
+
 ## Troubleshooting
 
 ### "command not found: claude" (Mac)
 
-Try closing and reopening Terminal, then run:
+Close Terminal completely and reopen it. The installation needs a fresh window to work.
+
+If that doesn't work, try:
 ```bash
 source ~/.zshrc
 ```
@@ -205,14 +295,14 @@ source ~/.zshrc
 
 Close Command Prompt completely and reopen it. The installation needs a fresh window to work.
 
-### Permission Errors
+### Permission Errors (Mac)
 
-On Mac, you might need to prefix the install command with `sudo`:
+If you see permission errors during installation, you might need to prefix the install command with `sudo`:
 ```bash
 sudo npm install -g @anthropic-ai/claude-code
 ```
 
-You'll be asked for your password. Type it (it won't show characters) and press Enter.
+You'll be asked for your Mac password. Type it (it won't show characters) and press Enter.
 
 
 ## Next Steps

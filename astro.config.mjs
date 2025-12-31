@@ -17,9 +17,18 @@ export default defineConfig({
       social: [
         { icon: 'github', label: 'GitHub', href: 'https://github.com/inosaint/ai-workshop' },
       ],
+      credits: true,
+      lastUpdated: true,
+      editLink: {
+        baseUrl: 'https://github.com/inosaint/ai-workshop/edit/main/',
+      },
       customCss: [
         './src/styles/custom.css',
       ],
+      components: {
+        Footer: './src/components/Footer.astro',
+        Head: './src/components/Head.astro',
+      },
       sidebar: [
         {
           label: 'Start Here',
@@ -72,6 +81,7 @@ export default defineConfig({
             { label: 'Cheat Sheet', link: '/reference/cheat-sheet/' },
             { label: 'Glossary', link: '/reference/glossary/' },
             { label: 'Troubleshooting', link: '/troubleshooting/' },
+            { label: 'License', link: '/license/' },
           ],
         },
       ],

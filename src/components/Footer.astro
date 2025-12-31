@@ -1,0 +1,43 @@
+---
+// Custom footer component for license notice
+---
+
+<footer class="license-footer">
+  <div class="license-content">
+    <p class="license-text">
+      This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+    </p>
+  </div>
+</footer>
+
+<style>
+  .license-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--sl-color-gray-5);
+    text-align: center;
+  }
+
+  .license-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .license-text {
+    font-size: 0.875rem;
+    color: var(--sl-color-gray-2);
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .license-text a {
+    color: var(--sl-color-accent);
+    text-decoration: none;
+  }
+
+  .license-text a:hover {
+    text-decoration: underline;
+  }
+</style>
