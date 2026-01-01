@@ -14,6 +14,14 @@ You're about to embark on an exciting journey. By the end of this workshop, you'
 And the best part? **You don't need any prior coding experience.**
 
 
+## Who Is This Guide For?
+
+Like the previous line states, this guide is written for anyone who is just a beginner and has no prior coding experience. 
+
+When I started [vibe coding in November 2025](http://kenneth.dsouza.im/writing/vibe-coding/) and shared my projects with my friends. Many expressed interest in trying out vibecoding but I found that there wasnt any resource that helped people build on their own. Most resources, even official ones tend to be written for intermediate or expert users. 
+
+Yes, there are AI based vibe-coding systems like Replit and Figma Make but they kinda lock you within their private platforms. So I decided to write a simple guide based on my approach towards vibe coding(a missing manual perhaps?), hoping that helps new users get a taste of vibe coding and start building.
+
 ## The Journey Ahead
 
 Here's our roadmap:

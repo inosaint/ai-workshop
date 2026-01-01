@@ -9,7 +9,6 @@ sidebar:
 
 Before sharing your project with the world, let's make sure it works properly on your own computer.
 
-
 ## What Does "Testing Locally" Mean?
 
 "Local" means on your own computer (as opposed to "the cloud" or "online").
@@ -20,31 +19,11 @@ When you test locally:
 - You can break things safely (no one else will see!)
 - It's free - no hosting needed
 
-
 ## Method 1: Just Open the HTML File
 
-The simplest way to view your project:
+If you choose to build a simple static project, then the simplest way to view your project is to navigate to the folder in your file finder and open the index.html file
 
-### Windows
-
-1. Open File Explorer
-2. Navigate to your project folder
-3. Double-click on `index.html`
-
-### Mac
-
-1. Open Finder
-2. Navigate to your project folder
-3. Double-click on `index.html`
-
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: Browser showing local file]</strong><br/>
-    A browser window displaying the project, with the address bar showing<br/>
-    "file:///Users/yourname/my-project/index.html"
-  </div>
-</div>
+Opening this file should open a new browser window and you should be able to view your project. 
 
 <div class="tip-box">
   <strong>💡 Tip:</strong> The address bar will show something like <code>file:///path/to/your/file</code>. This means you're viewing a local file, not a website on the internet.
@@ -57,7 +36,48 @@ Some features (like loading data or using certain JavaScript) require a "real" s
 
 ### Using Python (Usually Pre-installed on Mac)
 
-Open your terminal in the project folder and run:
+### Opening Terminal
+
+<div class="tip-box">
+  <strong>💡 Quick Reference:</strong> See the <a href="/ai-workshop/reference/cheat-sheet/#terminal--command-line">Terminal section of our Cheat Sheet</a> for more terminal commands.
+</div>
+
+**Windows:**
+1. Press `⊞ Win + R` to open Run dialog
+2. Type `cmd` and press Enter
+
+**Mac:**
+1. Press `Cmd + Space` to open Spotlight
+2. Type `Terminal` and press Enter
+
+### Navigate to Your Project
+
+#### Step 1:
+In the terminal, use `cd` (change directory) to go to your project folder. You can use the system's folder information menu action to find the full folder pathname.
+
+**Windows:**
+```bash
+cd Documents\GitHub\my-project
+```
+
+**Mac:**
+```bash
+cd ~/Documents/GitHub/my-project
+```
+
+<div class="tip-box">
+  <strong>💡 Tip:</strong> Replace "my-project" with your actual project folder name. If you're not sure where GitHub Desktop saves projects, check GitHub Desktop → Preferences → Advanced → Repository storage location.
+</div>
+
+
+You can verify you're in the right place by running:
+- **Windows:** `dir`
+- **Mac:** `ls`
+
+You should see your project files (or an empty folder if you just created it).
+
+#### Step 2:
+Now that you have navigated to your project folder in the terminal, run the follwoing command:
 
 **Python 3:**
 ```bash
@@ -69,41 +89,12 @@ python -m http.server 8000
 python -m SimpleHTTPServer 8000
 ```
 
-Then open your browser and go to:
+This should setup the local server at port 8000 and when it's running, it should open up your browser automatically to the correct url. If it doesn't use the url below.
 ```
 http://localhost:8000
 ```
 
-### Using Node.js (Since You Already Have It!)
-
-Install a simple server globally:
-
-```bash
-npm install -g serve
-```
-
-Then in your project folder:
-
-```bash
-serve
-```
-
-Open the URL it shows (usually `http://localhost:3000`).
-
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: Terminal running local server]</strong><br/>
-    Terminal showing "serve" running with the local URL displayed
-  </div>
-</div>
-
-### Using VS Code Live Server (If You Use VS Code)
-
-1. Install the "Live Server" extension
-2. Right-click on `index.html`
-3. Select "Open with Live Server"
-
+If you encounter any error in the terminal window, copy and paste that error into Claude's chat and Claude will be able to tell you what you need to do.
 
 ## Testing Checklist
 
@@ -132,15 +123,6 @@ Most browsers let you simulate mobile devices:
 3. Click the **device toggle** icon (looks like a phone/tablet)
 4. Select different devices to test
 
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: Browser DevTools device mode]</strong><br/>
-    Chrome DevTools with device toolbar visible, showing mobile preview
-  </div>
-</div>
-
-
 ## Found a Problem? Fix It!
 
 When something's not right, you have options:
@@ -150,12 +132,14 @@ When something's not right, you have options:
 Go back to Claude Code and describe the issue:
 
 ```text
-The button on the homepage isn't centered. Can you fix it?
-```
-
-```text
 When I click "Submit", nothing happens. The form should
 show a success message.
+```
+
+Or take a screenshot of the error and describe how you would want to fix it.
+
+```text
+The color contrast of the button on the homepage isn't as per accessibility guidelines. Can you fix it?
 ```
 
 ### Option 2: Debug Yourself
@@ -165,16 +149,9 @@ Open your browser's developer tools:
 - **Windows**: Press `F12` or `Ctrl + Shift + I`
 - **Mac**: Press `Cmd + Option + I`
 
-Look for red error messages in the **Console** tab. These tell you what went wrong!
+Look for red error messages in the **Console** tab. These tell you what went wrong. If you can't understand what they mean, paste these messages into Claude chat and it will be able to help you take the next steps.
 
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: Browser Console with error]</strong><br/>
-    Chrome DevTools Console tab showing a JavaScript error in red
-  </div>
-</div>
-
+![Debugger on Arc](debugging.png)
 
 ## Common Issues and Fixes
 

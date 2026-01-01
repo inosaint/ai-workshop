@@ -1,5 +1,21 @@
 /* Custom styles for AI Workshop - Blue accent for Rapide theme */
 
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Screen reader only utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 :root {
   /* Blue accent color matching the landing page button (#2563eb) */
   --sl-color-accent-low: #1e40af;
@@ -10,6 +26,10 @@
   --str-color-accent: #2563eb;
   --str-color-accent-high: #60a5fa;
   --str-color-accent-low: #1e40af;
+
+  /* Set Inter as the default font */
+  --sl-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --sl-font-system: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 [data-theme="dark"] {
@@ -100,7 +120,58 @@
   font-size: 0.9rem;
 }
 
+/* Prompt editor */
+.prompt-editor {
+  max-width: 100%;
+  overflow: hidden;
+  margin: 2rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border: 2px solid #cbd5e1;
+  border-radius: 12px;
+  color: #1e293b;
+}
+
+.prompt-editor h3 {
+  margin: 0 0 1.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #1e293b;
+}
+
+.prompt-editor label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #334155;
+}
+
+.prompt-fields {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+[data-theme="dark"] .prompt-editor {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  border-color: #475569;
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .prompt-editor h3 {
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .prompt-editor label {
+  color: #e2e8f0;
+}
+
 /* Prompt editor input fields */
+.prompt-field {
+  max-width: 100%;
+}
+
 .prompt-field input,
 .prompt-field textarea,
 .prompt-field select {
@@ -111,6 +182,17 @@
   font-family: inherit;
   background: white;
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.prompt-field input:focus,
+.prompt-field textarea:focus,
+.prompt-field select:focus {
+  outline: none;
+  border-color: var(--sl-color-accent);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
 [data-theme="dark"] .prompt-field input,
@@ -121,7 +203,182 @@
   color: #f1f5f9;
 }
 
+[data-theme="dark"] .prompt-field input:focus,
+[data-theme="dark"] .prompt-field textarea:focus,
+[data-theme="dark"] .prompt-field select:focus {
+  border-color: var(--sl-color-accent);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
 .prompt-field textarea {
   min-height: 100px;
   resize: vertical;
+}
+
+.prompt-field label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #334155;
+}
+
+[data-theme="dark"] .prompt-field label {
+  color: var(--sl-color-text);
+}
+
+.help-text {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+[data-theme="dark"] .help-text {
+  color: var(--sl-color-gray-4);
+}
+
+/* Generated prompt section */
+.generated-prompt {
+  display: none;
+  margin-top: 1.5rem;
+}
+
+.generated-prompt.show {
+  display: block;
+}
+
+.generated-prompt label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.prompt-output-wrapper {
+  position: relative;
+}
+
+/* Prompt output */
+#promptOutput {
+  background: #1e293b;
+  color: #e2e8f0;
+  padding: 1.5rem;
+  padding-right: 5rem;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-width: 100%;
+  overflow-x: auto;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+}
+
+[data-theme="dark"] #promptOutput {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+/* Buttons */
+.prompt-button {
+  width: 100%;
+  padding: 0.875rem;
+  background: var(--sl-color-accent);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.prompt-button:hover {
+  background: var(--sl-color-accent-high);
+}
+
+.prompt-button:focus-visible {
+  outline: 3px solid var(--sl-color-accent);
+  outline-offset: 2px;
+}
+
+.prompt-button:active {
+  transform: scale(0.98);
+}
+
+.prompt-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.copy-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  padding: 0.5rem 1rem;
+  background: var(--sl-color-accent);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.copy-button:hover {
+  background: var(--sl-color-accent-high);
+}
+
+.copy-button:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+.copy-button.copied {
+  background: #10b981;
+}
+
+/* Error message */
+.error-message {
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: none;
+}
+
+.error-message.show {
+  display: block;
+}
+
+[data-theme="dark"] .error-message {
+  color: #fca5a5;
+}
+
+/* Project cards */
+.project-card {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 2px solid var(--sl-color-gray-3);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.project-card:focus-within {
+  border-color: var(--sl-color-accent);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.project-card details summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--sl-color-accent);
+  padding: 0.5rem;
+  margin: -0.5rem;
+  border-radius: 6px;
+}
+
+.project-card details summary:focus-visible {
+  outline: 2px solid var(--sl-color-accent);
+  outline-offset: 2px;
 }

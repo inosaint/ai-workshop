@@ -112,7 +112,6 @@ ai-workshop/
 │   │   ├── introduction/
 │   │   ├── github-setup/
 │   │   ├── install-claude-code/
-│   │   ├── git-basics/
 │   │   ├── choose-project/
 │   │   ├── building-with-claude/
 │   │   ├── testing-locally/

@@ -9,89 +9,17 @@ sidebar:
 
 This is the moment you've been waiting for! Let's use Claude Code to build your project.
 
+### Step 1: Open a new Claude Code chat
 
-## Step 1: Create Your Project Folder
+![New Chat Setup](new-project.png)
 
-First, let's create a folder for your project. Open your terminal (Command Prompt on Windows, Terminal on Mac).
-
-### Windows
-
-```bash
-mkdir my-project
-cd my-project
-```
-
-### Mac
-
-```bash
-mkdir my-project
-cd my-project
-```
-
-<div class="tip-box">
-  <strong>💡 Tip:</strong> Replace "my-project" with a name for your project, like "my-portfolio" or "quiz-game". Use lowercase letters and hyphens (no spaces!).
-</div>
+1. Choose the repository you want Claude to work on. Eg., username/username.github.io
+2. Select the default Cloud environment
+3. Paste your prompt
+4. (optional) Add any images for design reference
 
 
-## Step 2: Initialize Git
-
-Let's set up Git in your project folder:
-
-```bash
-git init
-```
-
-You should see:
-```
-Initialized empty Git repository in /path/to/my-project/.git/
-```
-
-
-## Step 3: Launch Claude Code
-
-Now for the exciting part! Start Claude Code:
-
-```bash
-claude
-```
-
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: Claude Code interface]</strong><br/>
-    The Claude Code CLI showing the welcome message and prompt ready for input
-  </div>
-</div>
-
-
-## Step 4: Give Claude Code Your Prompt
-
-Now paste your project prompt from the previous section. For example, if you chose the Portfolio project:
-
-```text
-Create a personal portfolio website with:
-- A hero section with my name and a short tagline
-- An "About Me" section where I can describe myself
-- A "Skills" section showing 4-6 things I'm good at
-- A "Projects" section with placeholder cards for 3 projects
-- A "Contact" section with links to email and social media
-- Modern, clean design with a color scheme of your choice
-- Mobile-responsive layout
-- Use HTML, CSS, and vanilla JavaScript only
-```
-
-Press **Enter** and watch Claude Code work!
-
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: Claude Code generating code]</strong><br/>
-    Claude Code showing progress as it creates files, with file names appearing as they're created
-  </div>
-</div>
-
-
-## Step 5: Watch and Learn
+### Step 2: Watch and Learn
 
 Claude Code will:
 
@@ -99,197 +27,54 @@ Claude Code will:
 2. **Create files** - Generate HTML, CSS, and JavaScript files
 3. **Explain** - Tell you what it's doing and why
 
+![How the mostly one-sided Chat conversation would look like](example-convo.png)
+
 <div class="warning-box">
   <strong>⚠️ Be patient!</strong> Complex projects might take a minute or two. Don't interrupt Claude Code while it's working.
 </div>
 
 
-## Step 6: Review What Was Created
+### Step 3: Review What Was Created
 
-After Claude Code finishes, let's see what files were created:
+![Claude will push it's changes to a branch](claude-branch.png)
 
-```bash
-ls
-```
+After Claude Code finishes, let's see what files were created. Claude code would have created a new branch and pushed it's work to that branch. You will need to *fetch* those changes to your local system for review.
 
-You should see something like:
-```
-index.html
-styles.css
-script.js
-```
+## Accessing Claude's Changes with Github Desktop
 
-(The exact files depend on your project)
-
-
-## Working with Claude Code: Tips & Tricks
-
-### Asking Follow-up Questions
-
-You can ask Claude Code to modify or add things:
-
-```text
-Can you change the color scheme to blue and white?
-```
-
-```text
-Add a dark mode toggle button
-```
-
-```text
-The contact form needs email validation
-```
-
-### Being Specific Helps
-
-Instead of:
-> "Make it look better"
-
-Try:
-> "Add more spacing between sections and make the headings larger"
-
-Instead of:
-> "It's not working"
-
-Try:
-> "When I click the submit button, nothing happens. Can you check the JavaScript?"
-
-### Asking for Explanations
-
-Don't understand something? Just ask!
-
-```text
-Can you explain what the CSS flexbox code does?
-```
-
-```text
-Why did you use addEventListener instead of onclick?
-```
-
-Claude Code is patient and loves explaining things!
-
-
-## Common Claude Code Commands
-
-While chatting with Claude Code, you can use these helpful commands:
-
-| Command | What It Does |
-|---------|--------------|
-| `/help` | Shows available commands |
-| `/clear` | Clears the conversation history |
-| `exit` or `Ctrl+C` | Exit Claude Code |
-
-
-## Example Conversation
-
-Here's what a typical session might look like:
-
-```
-You: Create a simple landing page with a hero section,
-     3 feature cards, and a footer with social links
-
-Claude: I'll create a clean landing page for you. Let me
-        set up the structure with HTML, add styling with
-        CSS, and include some interactive elements...
-
-        [Creates index.html]
-        [Creates styles.css]
-        [Creates script.js]
-
-        Done! I've created a landing page with:
-        - A hero section with a headline and CTA button
-        - 3 feature cards with icons
-        - A footer with social media links
-
-        You can open index.html in your browser to see it.
-
-You: Can you make the feature cards have a hover effect?
-
-Claude: Sure! I'll add a smooth hover animation to the
-        cards...
-
-        [Updates styles.css]
-
-        Done! Now when you hover over a card, it will
-        lift up slightly with a shadow effect.
-```
-
-
-## Making Changes
-
-Want to tweak something? You have two options:
-
-### Option 1: Ask Claude Code
-
-The easiest way - just tell Claude Code what to change:
-
-```text
-Change the heading font to something more playful
-```
-
-### Option 2: Edit Files Yourself
-
-You can also edit files directly using any text editor:
-
-1. Open the file in a text editor (VS Code, Notepad++, TextEdit, etc.)
-2. Make your changes
-3. Save the file
-4. Refresh your browser to see the changes
-
-<div class="tip-box">
-  <strong>💡 Pro Tip:</strong> Try making small changes yourself! If you break something, you can always ask Claude Code to fix it.
-</div>
-
-
-## Save Your Progress with GitHub Desktop
-
-After Claude Code creates your project, let's save it with GitHub Desktop:
-
+![](github-bar.png)
 ### Step 1: Open GitHub Desktop
 
-Switch to GitHub Desktop. You should see your new files listed in the "Changes" tab.
+Switch to GitHub Desktop. You should see the above bar at the top. The left-most section is the repository you are on. The middle section is the branch you are on and the rightmost section is the 'actionable' section.
 
-### Step 2: Review Your Changes
+### Step 2: Navigate to your branch
 
-Click on the files to see what was created. All the new files should be checked.
+![](github-branch.png)
 
-### Step 3: Commit Your Changes
+Use the branch selector to select the branch that Claude worked on. 
 
-1. In the "Summary" field at the bottom left, type: `Initial project created with Claude Code`
-2. Click the **"Commit to main"** button
+### Pulling from Origin
 
-### Step 4: Publish to GitHub
+After you select the correct branch, you may see a button to "Pull Origin". Do that.
 
-1. Click the **"Publish repository"** button at the top
-2. Uncheck "Keep this code private" (we want it public for GitHub Pages)
-3. Click **"Publish repository"**
-
-Your project is now saved and backed up on GitHub! 🎉
-
-<div class="checkpoint">
-  <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>Your project files are created and saved on GitHub. Let's test it locally!</p>
+<div class="tip-box">
+  <strong>💡 Want more tips?</strong> Check out <a href="/ai-workshop/claude-tips/">Working with Claude Code: Tips & Tricks</a> in the Level Up section for advanced techniques!
 </div>
 
 
 ## Troubleshooting
 
-### Claude Code isn't responding
+### Github Repo not installed
 
-Try pressing Enter. If that doesn't work, press `Ctrl+C` to exit and restart with `claude`.
+![Github app not installed](github-connection.png)
 
-### "I don't like what Claude Code made"
-
-That's okay! You can:
-1. Ask Claude Code to change it: "Can you try a different style?"
-2. Start over: Delete the files and give a new prompt
-3. Be more specific in your next prompt
-
-### Files weren't created
-
-Make sure you're in the right folder. Run `pwd` (Mac) or `cd` (Windows) to see your current location.
-
+You will need to re-connect the Github Integration and Select the repository you are working on.
 
 ## Next Steps
 
-You have a working project! In the next section, we'll learn how to view it in your browser and make sure everything works.
+You have a working project created by Claude Code! In the next section, we'll learn how to make changes and save your progress with GitHub.
+
+<div class="checkpoint">
+  <div class="checkpoint-title">✅ Checkpoint</div>
+  <p>Claude Code has created your project files. Ready to make changes!</p>
+</div>

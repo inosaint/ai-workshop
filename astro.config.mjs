@@ -26,7 +26,6 @@ export default defineConfig({
         './src/styles/custom.css',
       ],
       components: {
-        Footer: './src/components/Footer.astro',
         Head: './src/components/Head.astro',
       },
       sidebar: [
@@ -42,7 +41,6 @@ export default defineConfig({
           items: [
             { label: 'GitHub Account', link: '/github-setup/' },
             { label: 'Install Claude Code', link: '/install-claude-code/' },
-            { label: 'Git Basics', link: '/git-basics/' },
           ],
         },
         {
@@ -51,6 +49,7 @@ export default defineConfig({
             { label: 'Choose Your Project', link: '/choose-project/' },
             { label: 'Building with Claude', link: '/building-with-claude/' },
             { label: 'Testing Locally', link: '/testing-locally/' },
+            { label: 'Making Changes', link: '/making-changes/' },
           ],
         },
         {
@@ -62,6 +61,7 @@ export default defineConfig({
         {
           label: 'Level Up',
           items: [
+            { label: 'Tips & Tricks', link: '/claude-tips/' },
             { label: 'Claude API Basics', link: '/claude-api/' },
             { label: 'Add Analytics (PostHog)', link: '/analytics-posthog/' },
           ],
@@ -81,7 +81,16 @@ export default defineConfig({
             { label: 'Cheat Sheet', link: '/reference/cheat-sheet/' },
             { label: 'Glossary', link: '/reference/glossary/' },
             { label: 'Troubleshooting', link: '/troubleshooting/' },
-            { label: 'License', link: '/license/' },
+          ],
+        },
+        {
+          label: 'About',
+          collapsed: true,
+          items: [
+            { label: 'Why This Guide', link: '/about/why-this-guide/' },
+            { label: 'Further Learning', link: '/about/further-learning/' },
+            { label: 'Colophon', link: '/about/colophon/' },
+            { label: 'License', link: '/about/license/' },
           ],
         },
       ],
