@@ -2,7 +2,7 @@
 title: Claude API Basics
 description: Learn how to use the Claude API directly in your projects
 sidebar:
-  order: 9
+  order: 11
 ---
 
 # Claude API Basics
