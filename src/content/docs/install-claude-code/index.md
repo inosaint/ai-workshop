@@ -11,26 +11,11 @@ Next - let's install Claude Code on your computer. We'll be using the Claude Cod
 
 ## Download Claude Code
 
-### Windows
+### Windows/Mac
 
 1. Go to **[claude.ai/download](https://claude.ai/download)** (or the official Claude Code download page)
-2. Click **"Download for Windows"**
+2. Click **"Download for Windows/Mac"**
 3. The installer will download (usually to your Downloads folder)
-
-### Mac
-
-1. Go to **[claude.ai/download](https://claude.ai/download)** (or the official Claude Code download page)
-2. Click **"Download for Mac"**
-3. The installer will download (usually to your Downloads folder)
-
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: Claude Code download page]</strong><br/>
-    The download page showing Windows and Mac download buttons
-  </div>
-</div>
-
 
 ## Install Claude Code
 
@@ -40,15 +25,6 @@ Next - let's install Claude Code on your computer. We'll be using the Claude Cod
 2. Follow the installation wizard
 3. Click **"Install"** and wait for the installation to complete
 4. Click **"Finish"** when done
-
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: Claude Code Windows installer]</strong><br/>
-    The installation wizard showing the install button
-  </div>
-</div>
-
 ### Mac
 
 1. Open the downloaded `.dmg` file from your Downloads folder
@@ -56,13 +32,6 @@ Next - let's install Claude Code on your computer. We'll be using the Claude Cod
 3. Open **Applications** and double-click **Claude Code**
 4. If you see a security warning, click **"Open"** to confirm
 
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: Claude Code Mac installation]</strong><br/>
-    The DMG window showing the drag-to-Applications process
-  </div>
-</div>
 
 <div class="checkpoint">
   <div class="checkpoint-title">✅ Checkpoint</div>
@@ -75,7 +44,7 @@ Before we test Claude Code, you need to know how to open the terminal on your sy
 
 ### Windows
 
-1. Press `Win + R` to open the Run dialog
+1. Press `⊞ Win + R` to open the Run dialog
 2. Type `cmd` and press Enter
 3. The Command Prompt window will open
 
@@ -90,50 +59,24 @@ Before we test Claude Code, you need to know how to open the terminal on your sy
 </div>
 
 
-## Your First Claude Code Command
+### Connect Github to Claude Code
+![](github-claude-settings.png)
 
-Let's make sure Claude Code is working! In your terminal:
+Before we start, we need to connect Claude code to Github. You need to navigate to Claude's settings and connect Github.
 
-```bash
-claude --version
-```
+You will need to authenticate your github login and then you should be taken to the **Integrations > Applications >Claude** page. Here you can make a choice to select all repositories access or only the one you are working on at this moment. 
 
-You should see the Claude Code version number.
+If you choose to '**Select repository**', you can select the one you have just created.
 
-Now let's start Claude Code:
+![](repo-claude.png)
 
-```bash
-claude
-```
-
-This will launch Claude Code. The first time you run it, you'll need to authenticate.
-
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: Claude Code first run]</strong><br/>
-    The Claude Code CLI interface showing the authentication prompt
-  </div>
-</div>
-
-### Authenticating Claude Code
-
-1. Claude Code will provide a URL or open your browser automatically
-2. Log in with your Anthropic account (or create one if you don't have one)
-3. Authorize Claude Code to access your account
-4. Return to your terminal - you should now be authenticated!
-
-<div class="checkpoint">
-  <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>You should now see the Claude Code interface ready for your commands! You can type <code>/exit</code> or press <code>Ctrl+C</code> to exit.</p>
-</div>
-
----
 
 ## Troubleshooting
 
-### Can't find Claude Code after installation (Mac)
+<div class="tip-box"> You can find more information about the Github Integration on <a href="https://support.claude.com/en/articles/10167454-using-the-github-integration"> Claude's help site<a>.
+</div>
 
+### Can't find Claude Code after installation (Mac)
 Check your **Applications** folder. If Claude Code is there but won't open, right-click it and select **"Open"** to bypass the security warning.
 
 ### Installation stuck or won't complete (Windows)
@@ -150,7 +93,11 @@ This can happen with downloaded apps. Try:
 2. Run: `xattr -cr /Applications/Claude\ Code.app`
 3. Try opening Claude Code again
 
+### “npm is not recognized” (Windows)
+
+Close Command Prompt completely and reopen it. The installation needs a fresh window to work.
+
 
 ## Next Steps
 
-Claude Code is installed and ready to go! Next, you'll choose a project to build with Claude Code.
+Claude Code is installed and Github has been setup so now you are ready to go! Next, you'll choose a project to build with Claude Code.

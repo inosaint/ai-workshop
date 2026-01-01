@@ -16,28 +16,11 @@ And the best part? **You don't need any prior coding experience.**
 
 ## Who Is This Guide For?
 
-This workshop is designed for:
+Like the previous line states, this guide is written for anyone who is just a beginner and has no prior coding experience. 
 
-### Complete Beginners
-Never written a line of code? Perfect! This guide assumes zero technical knowledge. We explain everything in plain language.
+When I started [vibe coding in November 2025](http://kenneth.dsouza.im/writing/vibe-coding/) and shared my projects with my friends. Many expressed interest in trying out vibecoding but I found that there wasnt any resource that helped people build on their own. Most resources, even official ones tend to be written for intermediate or expert users. 
 
-### Curious Explorers
-Wondering what AI can actually do? You'll get hands-on experience building real projects with AI assistance.
-
-### Career Changers
-Exploring tech careers or looking to add technical skills? This is your friendly introduction to modern development.
-
-### Students & Educators
-Learning about AI and coding? This workshop provides a practical, beginner-friendly curriculum you can follow or teach.
-
-### Creative Professionals
-Want to build your portfolio site, landing page, or creative project without learning to code first? AI makes it possible.
-
-### Business Owners & Entrepreneurs
-Need to prototype an idea or understand what's possible with AI tools? Start here.
-
-**Not for experienced developers** - If you already know how to code and use Git, you might find this too basic. This workshop prioritizes clarity and accessibility over advanced concepts.
-
+Yes, there are AI based vibe-coding systems like Replit and Figma Make but they kinda lock you within their private platforms. So I decided to write a simple guide based on my approach towards vibe coding(a missing manual perhaps?), hoping that helps new users get a taste of vibe coding and start building.
 
 ## The Journey Ahead
 
