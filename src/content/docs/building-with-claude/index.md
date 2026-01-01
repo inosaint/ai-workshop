@@ -53,82 +53,7 @@ Use the branch selector to select the branch that Claude worked on.
 
 ### Pulling from Origin
 
-After you select the correct branch, you may see a button to "Pull Origin". Do that. 
-
-## Working with Claude Code: Tips & Tricks
-
-### Asking Follow-up Questions
-
-You can ask Claude Code to modify or add things:
-
-```text
-Can you change the color scheme to blue and white?
-```
-
-```text
-Add a dark mode toggle button
-```
-
-```text
-The contact form needs email validation
-```
-
-#### Being Specific Helps
-
-Instead of:
-> "Make it look better"
-
-Try:
-> "Add more spacing between sections and make the headings larger"
-
-Instead of:
-> "It's not working"
-
-Try:
-> "When I click the submit button, nothing happens. Can you check the JavaScript?"
-
-#### Asking for Explanations
-
-Don't understand something? Just ask!
-
-```text
-Can you explain what the CSS flexbox code does?
-```
-
-```text
-Why did you use addEventListener instead of onclick?
-```
-
-Claude Code is patient and loves explaining things!
-
-### Getting Beginner-Friendly Responses
-
-If you're new to coding and want Claude to explain things in simple terms, add this to your prompts:
-
-```text
-Please explain everything in simple terms, as if I'm a complete
-beginner. Avoid technical jargon and use everyday language.
-If you need to use a technical term, please define it first
-```
-
-**Example:**
-
-```text
-Can you add a contact form to my website? Please explain
-everything in simple terms, as if I'm a complete beginner.
-```
-
-This helps Claude:
-- Use plain, everyday language instead of technical terms
-- Explain concepts like you're learning for the first time
-- Define any technical words before using them
-- Keep explanations clear and approachable
-
-**Before (technical):**
-> "I'll implement a POST request handler with form validation using regex patterns and preventDefault to handle the submit event."
-
-**After (beginner-friendly):**
-> "I'll add code that checks if the email looks correct when someone clicks the submit button, and then sends the message."
+After you select the correct branch, you may see a button to "Pull Origin". Do that.
 
 ## Example Conversation
 
@@ -164,6 +89,11 @@ Claude: Sure! I'll add a smooth hover animation to the
         lift up slightly with a shadow effect.
 ```
 
+<div class="tip-box">
+  <strong>💡 Want more tips?</strong> Check out <a href="/ai-workshop/claude-tips/">Working with Claude Code: Tips & Tricks</a> in the Level Up section for advanced techniques!
+</div>
+
+
 ## Troubleshooting
 
 ### Github Repo not installed
@@ -178,4 +108,9 @@ Make sure you're in the right folder. Run `pwd` (Mac) or `cd` (Windows) to see y
 
 ## Next Steps
 
-You have a working project! In the next section, we'll learn how to view it in your browser and make sure everything works.
+You have a working project created by Claude Code! In the next section, we'll learn how to make changes and save your progress with GitHub.
+
+<div class="checkpoint">
+  <div class="checkpoint-title">✅ Checkpoint</div>
+  <p>Claude Code has created your project files. Ready to make changes!</p>
+</div>

@@ -48,6 +48,7 @@ export default defineConfig({
           items: [
             { label: 'Choose Your Project', link: '/choose-project/' },
             { label: 'Building with Claude', link: '/building-with-claude/' },
+            { label: 'Making Changes', link: '/making-changes/' },
             { label: 'Testing Locally', link: '/testing-locally/' },
           ],
         },
@@ -61,6 +62,7 @@ export default defineConfig({
           label: 'Level Up',
           items: [
             { label: 'Claude API Basics', link: '/claude-api/' },
+            { label: 'Tips & Tricks', link: '/claude-tips/' },
             { label: 'Add Analytics (PostHog)', link: '/analytics-posthog/' },
           ],
         },
