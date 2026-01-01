@@ -27,6 +27,8 @@ Claude Code will:
 2. **Create files** - Generate HTML, CSS, and JavaScript files
 3. **Explain** - Tell you what it's doing and why
 
+![How the mostly one-sided Chat conversation would look like](example-convo.png)
+
 <div class="warning-box">
   <strong>⚠️ Be patient!</strong> Complex projects might take a minute or two. Don't interrupt Claude Code while it's working.
 </div>
@@ -55,40 +57,6 @@ Use the branch selector to select the branch that Claude worked on.
 
 After you select the correct branch, you may see a button to "Pull Origin". Do that.
 
-## Example Conversation
-
-Here's what a typical session might look like:
-
-```
-You: Create a simple landing page with a hero section,
-     3 feature cards, and a footer with social links
-
-Claude: I'll create a clean landing page for you. Let me
-        set up the structure with HTML, add styling with
-        CSS, and include some interactive elements...
-
-        [Creates index.html]
-        [Creates styles.css]
-        [Creates script.js]
-
-        Done! I've created a landing page with:
-        - A hero section with a headline and CTA button
-        - 3 feature cards with icons
-        - A footer with social media links
-
-        You can open index.html in your browser to see it.
-
-You: Can you make the feature cards have a hover effect?
-
-Claude: Sure! I'll add a smooth hover animation to the
-        cards...
-
-        [Updates styles.css]
-
-        Done! Now when you hover over a card, it will
-        lift up slightly with a shadow effect.
-```
-
 <div class="tip-box">
   <strong>💡 Want more tips?</strong> Check out <a href="/ai-workshop/claude-tips/">Working with Claude Code: Tips & Tricks</a> in the Level Up section for advanced techniques!
 </div>
@@ -101,10 +69,6 @@ Claude: Sure! I'll add a smooth hover animation to the
 ![Github app not installed](github-connection.png)
 
 You will need to re-connect the Github Integration and Select the repository you are working on.
-
-### Files weren't created
-
-Make sure you're in the right folder. Run `pwd` (Mac) or `cd` (Windows) to see your current location.
 
 ## Next Steps
 
