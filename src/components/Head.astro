@@ -15,16 +15,43 @@ const posthogHost = import.meta.env.PUBLIC_POSTHOG_HOST;
 {posthogKey && (
   <script is:inline define:vars={{ posthogKey, posthogHost }}>
     !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Xr es pi Zr rs Kr Qr capture Ni calculateEventProperties os register register_once register_for_session unregister unregister_for_session ds getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey cancelPendingSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException startExceptionAutocapture stopExceptionAutocapture loadToolbar get_property getSessionProperty us ns createPersonProfile hs Vr vs opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing ss debug O ls getPageViewId captureTraceFeedback captureTraceMetric qr".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-    posthog.init(posthogKey, {
-      api_host: posthogHost,
-      person_profiles: 'identified_only',
-      capture_pageview: true,
-      capture_pageleave: true
+
+    // Log initialization attempt
+    console.log('[PostHog] Initializing with config:', {
+      key: posthogKey ? posthogKey.substring(0, 10) + '...' : 'undefined',
+      host: posthogHost,
+      timestamp: new Date().toISOString()
     });
+
+    try {
+      posthog.init(posthogKey, {
+        api_host: posthogHost,
+        person_profiles: 'identified_only',
+        capture_pageview: true,
+        capture_pageleave: true,
+        loaded: function(posthog) {
+          console.log('[PostHog] Successfully loaded and initialized');
+          console.log('[PostHog] Distinct ID:', posthog.get_distinct_id());
+        },
+        on_request_error: function(error) {
+          console.error('[PostHog] Request error:', error);
+        }
+      });
+      console.log('[PostHog] Init called successfully');
+    } catch (error) {
+      console.error('[PostHog] Initialization failed:', error);
+      console.error('[PostHog] Error details:', {
+        message: error.message,
+        stack: error.stack
+      });
+    }
 
     // Track course module based on URL path
     document.addEventListener('DOMContentLoaded', function() {
+      console.log('[PostHog] DOMContentLoaded event fired');
+
       const path = window.location.pathname;
+      console.log('[PostHog] Current path:', path);
 
       // Map paths to course modules for funnel tracking
       const moduleMap = {
@@ -49,41 +76,102 @@ const posthogHost = import.meta.env.PUBLIC_POSTHOG_HOST;
       };
 
       // Find matching module
+      let moduleFound = false;
       for (const [urlPath, data] of Object.entries(moduleMap)) {
         if (path.includes(urlPath)) {
-          posthog.capture('page_viewed', {
-            module: data.module,
-            module_order: data.order,
-            course_section: data.section,
-            page_path: path
-          });
+          moduleFound = true;
+          console.log('[PostHog] Module matched:', data);
+
+          // Capture page view event
+          try {
+            console.log('[PostHog] Attempting to capture page_viewed event...');
+            posthog.capture('page_viewed', {
+              module: data.module,
+              module_order: data.order,
+              course_section: data.section,
+              page_path: path
+            });
+            console.log('[PostHog] page_viewed event captured successfully');
+          } catch (error) {
+            console.error('[PostHog] Failed to capture page_viewed event:', error);
+            console.error('[PostHog] Event data:', {
+              module: data.module,
+              module_order: data.order,
+              course_section: data.section,
+              page_path: path
+            });
+          }
 
           // Set user properties for funnel analysis
-          posthog.people.set({
-            last_module_viewed: data.module,
-            furthest_module_order: data.order,
-            last_section: data.section
-          });
+          try {
+            console.log('[PostHog] Attempting to set user properties...');
+            posthog.people.set({
+              last_module_viewed: data.module,
+              furthest_module_order: data.order,
+              last_section: data.section
+            });
+            console.log('[PostHog] User properties set successfully');
+          } catch (error) {
+            console.error('[PostHog] Failed to set user properties:', error);
+            console.error('[PostHog] Properties data:', {
+              last_module_viewed: data.module,
+              furthest_module_order: data.order,
+              last_section: data.section
+            });
+          }
           break;
         }
       }
 
+      if (!moduleFound) {
+        console.warn('[PostHog] No module mapping found for path:', path);
+      }
+
       // Track checkpoint interactions
       const checkpoints = document.querySelectorAll('.checkpoint');
-      checkpoints.forEach((checkpoint, index) => {
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              posthog.capture('checkpoint_viewed', {
-                page_path: path,
-                checkpoint_index: index
-              });
-            }
-          });
-        }, { threshold: 0.5 });
+      console.log('[PostHog] Found', checkpoints.length, 'checkpoints on page');
 
-        observer.observe(checkpoint);
+      checkpoints.forEach((checkpoint, index) => {
+        try {
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                try {
+                  console.log('[PostHog] Checkpoint viewed:', { index, path });
+                  posthog.capture('checkpoint_viewed', {
+                    page_path: path,
+                    checkpoint_index: index
+                  });
+                  console.log('[PostHog] checkpoint_viewed event captured for index:', index);
+                } catch (error) {
+                  console.error('[PostHog] Failed to capture checkpoint_viewed event:', error);
+                  console.error('[PostHog] Checkpoint data:', { page_path: path, checkpoint_index: index });
+                }
+              }
+            });
+          }, { threshold: 0.5 });
+
+          observer.observe(checkpoint);
+        } catch (error) {
+          console.error('[PostHog] Failed to setup checkpoint observer for index', index, ':', error);
+        }
       });
+
+      console.log('[PostHog] Event tracking setup complete');
     });
+
+    // Add script load error handler
+    window.addEventListener('error', function(event) {
+      if (event.filename && event.filename.includes('posthog')) {
+        console.error('[PostHog] Script loading error:', {
+          message: event.message,
+          filename: event.filename,
+          lineno: event.lineno,
+          colno: event.colno
+        });
+      }
+    }, true);
+
+    console.log('[PostHog] Setup complete');
   </script>
 )}
