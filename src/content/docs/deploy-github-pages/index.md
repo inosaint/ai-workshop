@@ -5,7 +5,6 @@ sidebar:
   order: 8
 ---
 
-# Deploy to GitHub Pages
 
 This is the moment of truth! Let's put your project on the internet where anyone can see it.
 

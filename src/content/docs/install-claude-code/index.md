@@ -5,7 +5,6 @@ sidebar:
   order: 3
 ---
 
-# Installing Claude Code
 
 Next - let's install Claude Code on your computer. We'll be using the Claude Code desktop app, which includes everything you need to start building.
 
