@@ -88,6 +88,7 @@ export default defineConfig({
           collapsed: true,
           items: [
             { label: 'Why This Guide', link: '/about/why-this-guide/' },
+            { label: 'Version', link: '/about/version/' },
             { label: 'Further Learning', link: '/about/further-learning/' },
             { label: 'Colophon', link: '/about/colophon/' },
             { label: 'License', link: '/about/license/' },
