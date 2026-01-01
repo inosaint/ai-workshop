@@ -237,6 +237,26 @@
   color: var(--sl-color-gray-4);
 }
 
+/* Generated prompt section */
+.generated-prompt {
+  display: none;
+  margin-top: 1.5rem;
+}
+
+.generated-prompt.show {
+  display: block;
+}
+
+.generated-prompt label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.prompt-output-wrapper {
+  position: relative;
+}
+
 /* Prompt output */
 #promptOutput {
   background: #1e293b;
@@ -356,11 +376,6 @@
   padding: 0.5rem;
   margin: -0.5rem;
   border-radius: 6px;
-  transition: background-color 0.2s;
-}
-
-.project-card details summary:hover {
-  background: var(--sl-color-gray-2);
 }
 
 .project-card details summary:focus-visible {
