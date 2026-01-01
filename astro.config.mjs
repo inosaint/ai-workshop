@@ -61,8 +61,8 @@ export default defineConfig({
         {
           label: 'Level Up',
           items: [
-            { label: 'Claude API Basics', link: '/claude-api/' },
             { label: 'Tips & Tricks', link: '/claude-tips/' },
+            { label: 'Claude API Basics', link: '/claude-api/' },
             { label: 'Add Analytics (PostHog)', link: '/analytics-posthog/' },
           ],
         },

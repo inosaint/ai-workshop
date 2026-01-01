@@ -2,7 +2,7 @@
 title: Working with Claude Code - Tips & Tricks
 description: Advanced techniques for getting the most out of Claude Code
 sidebar:
-  order: 11
+  order: 10
 ---
 
 # Working with Claude Code: Tips & Tricks
