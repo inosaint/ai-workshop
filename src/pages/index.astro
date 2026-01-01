@@ -1,17 +1,15 @@
 ---
 // Custom landing page with PostHog analytics
-import PostHog from '../components/posthog.astro';
+import PostHogLayout from '../layouts/PostHogLayout.astro';
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <PostHog />
-  <title>AI Workshop</title>
-  <meta name="description" content="Learn to build with Claude Code - from complete beginner to deployed project">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-  <style>
+<PostHogLayout
+  title="AI Workshop"
+  description="Learn to build with Claude Code - from complete beginner to deployed project"
+>
+  <link slot="head" rel="preconnect" href="https://fonts.googleapis.com">
+  <link slot="head" rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link slot="head" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style slot="head">
     * {
       margin: 0;
       padding: 0;
@@ -91,8 +89,7 @@ import PostHog from '../components/posthog.astro';
       }
     }
   </style>
-</head>
-<body>
+
   <div class="container">
     <h1>Learn to build with AI</h1>
     <p>
@@ -101,5 +98,4 @@ import PostHog from '../components/posthog.astro';
     </p>
     <a href="/ai-workshop/introduction/" class="cta">Start Learning</a>
   </div>
-</body>
-</html>
+</PostHogLayout>
