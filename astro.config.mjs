@@ -26,7 +26,7 @@ export default defineConfig({
         './src/styles/custom.css',
       ],
       components: {
-        Head: './src/components/Head.astro',
+        Head: './src/components/posthog.astro',
       },
       sidebar: [
         {
