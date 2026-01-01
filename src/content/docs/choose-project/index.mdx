@@ -102,14 +102,12 @@ Create a habit tracker app with:
 
 Have something else in mind? Use our Prompt Builder to create your own project prompt!
 
-<div className="prompt-editor" style={{margin: '2rem 0', padding: '2rem', background: 'var(--sl-color-gray-1)', borderRadius: '12px'}}>
-  <h3 style={{margin: '0 0 1.5rem 0', display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
-    ✨ Prompt Builder
-  </h3>
+<div className="prompt-editor">
+  <h3>✨ Prompt Builder</h3>
 
-  <div style={{display: 'grid', gap: '1rem', marginBottom: '1.5rem'}}>
+  <div className="prompt-fields">
     <div className="prompt-field">
-      <label htmlFor="projectType" style={{display: 'block', fontWeight: 500, marginBottom: '0.5rem'}}>What type of project?</label>
+      <label htmlFor="projectType">What type of project?</label>
       <select id="projectType">
         <option value="">Choose a type...</option>
         <option value="website">Website / Landing Page</option>
@@ -121,30 +119,30 @@ Have something else in mind? Use our Prompt Builder to create your own project p
     </div>
 
     <div className="prompt-field">
-      <label htmlFor="projectIdea" style={{display: 'block', fontWeight: 500, marginBottom: '0.5rem'}}>Describe your idea (1-2 sentences)</label>
+      <label htmlFor="projectIdea">Describe your idea (1-2 sentences)</label>
       <textarea id="projectIdea" placeholder="e.g., A recipe organizer where I can save and search my favorite recipes"></textarea>
     </div>
 
     <div className="prompt-field">
-      <label htmlFor="projectFeatures" style={{display: 'block', fontWeight: 500, marginBottom: '0.5rem'}}>Key features (comma-separated)</label>
+      <label htmlFor="projectFeatures">Key features (comma-separated)</label>
       <input type="text" id="projectFeatures" placeholder="e.g., search, favorites, categories, dark mode" />
     </div>
 
     <div className="prompt-field">
-      <label htmlFor="projectColors" style={{display: 'block', fontWeight: 500, marginBottom: '0.5rem'}}>Color preference (optional)</label>
+      <label htmlFor="projectColors">Color preference (optional)</label>
       <input type="text" id="projectColors" placeholder="e.g., blue and white, dark theme, colorful" />
     </div>
   </div>
 
-  <button id="generateBtn" style={{width: '100%', padding: '0.875rem', background: 'var(--sl-color-accent)', color: 'white', border: 'none', borderRadius: '8px', fontSize: '1rem', fontWeight: 600, cursor: 'pointer'}}>
+  <button id="generateBtn" className="prompt-button">
     Generate My Prompt
   </button>
 
-  <div id="generatedPrompt" style={{display: 'none', marginTop: '1.5rem'}}>
-    <label style={{display: 'block', fontWeight: 500, marginBottom: '0.5rem'}}>Your custom prompt:</label>
-    <div style={{position: 'relative'}}>
-      <pre id="promptOutput" style={{background: '#1e293b', color: '#e2e8f0', padding: '1.5rem', borderRadius: '8px', whiteSpace: 'pre-wrap', fontSize: '0.9rem', lineHeight: 1.6}}></pre>
-      <button id="copyBtn" style={{position: 'absolute', top: '0.75rem', right: '0.75rem', padding: '0.5rem 1rem', background: 'var(--sl-color-accent)', color: 'white', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '0.85rem'}}>
+  <div id="generatedPrompt" className="generated-prompt">
+    <label>Your custom prompt:</label>
+    <div className="prompt-output-wrapper">
+      <pre id="promptOutput"></pre>
+      <button id="copyBtn" className="copy-button">
         Copy
       </button>
     </div>
@@ -200,7 +198,7 @@ Have something else in mind? Use our Prompt Builder to create your own project p
     prompt += '- Include helpful comments in the code';
 
     document.getElementById('promptOutput').textContent = prompt;
-    document.getElementById('generatedPrompt').style.display = 'block';
+    document.getElementById('generatedPrompt').classList.add('show');
   }
 
   function copyPrompt() {
