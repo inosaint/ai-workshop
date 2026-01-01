@@ -48,8 +48,8 @@ export default defineConfig({
           items: [
             { label: 'Choose Your Project', link: '/choose-project/' },
             { label: 'Building with Claude', link: '/building-with-claude/' },
-            { label: 'Making Changes', link: '/making-changes/' },
             { label: 'Testing Locally', link: '/testing-locally/' },
+            { label: 'Making Changes', link: '/making-changes/' },
           ],
         },
         {

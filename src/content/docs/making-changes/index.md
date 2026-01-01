@@ -2,7 +2,7 @@
 title: Making Changes with Claude Code
 description: Learn how to modify and save your project
 sidebar:
-  order: 7
+  order: 8
 ---
 
 # Making Changes with Claude Code
