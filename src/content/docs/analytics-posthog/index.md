@@ -5,7 +5,6 @@ sidebar:
   order: 10
 ---
 
-# Adding Analytics with PostHog
 
 You've built something amazing and put it online. But how do you know if people are actually using it? That's where analytics come in!
 
