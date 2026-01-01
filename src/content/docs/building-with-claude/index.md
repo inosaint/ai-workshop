@@ -5,7 +5,6 @@ sidebar:
   order: 6
 ---
 
-# Building with Claude Code
 
 This is the moment you've been waiting for! Let's use Claude Code to build your project.
 
