@@ -5,7 +5,7 @@ sidebar:
   order: 8
 ---
 
-Now that Claude Code has created your project, you'll want to make changes and improvements. Here's how!
+Now that Claude Code has created your project and you are able to view it on your system, you'll want to make changes and improvements. Here's how!
 
 ## Making Changes
 
@@ -13,7 +13,7 @@ Want to tweak something? You have two options:
 
 ## Method 1: Ask Claude Code (Recommended)
 
-The easiest way - just tell Claude Code what to change:
+The easiest way - just tell Claude Code what to change or share some screenshots or design images (only PNG, GIF, WebP, JPEG images are supported, no PDFs)
 
 ```text
 Change the heading font to something more playful
@@ -46,7 +46,13 @@ After making changes to your project, let's save them with GitHub Desktop:
 
 #### Step 1: Open GitHub Desktop
 
-Switch to GitHub Desktop. You should see your new files listed in the "Changes" tab.
+1. Switch to GitHub Desktop. 
+2. Click on '**Fetch Origin**' incase you want to fetch the changes Claude Code has made and verify locally.
+3. If you have made any changes manually in the editor, you should see your new files listed in the "Changes" tab.
+
+<div class="tip-box">
+  Incase you asked Claude to make the changes for you, you can skip Step 2 and 3 that are written below.
+</div>
 
 #### Step 2: Review Your Changes
 
@@ -60,6 +66,11 @@ Click on the files to see what was created or modified. All the changed files sh
    - First time: `Initial project created with Claude Code`
    - After changes: `Updated button styles and added footer`
 1. Click the **"Commit to branch"** button
+
+<div class="checkpoint">
+  <div class="checkpoint-title">✅ Checkpoint</div>
+  <p>You know how to make changes and save your progress. Ready to put it on the internet?</p>
+</div>
 
 ## Best Practices
 
@@ -77,11 +88,6 @@ Instead of "updates" or "changes", write:
 
 You can even ask Claude to help you write these.
 
-<div class="checkpoint">
-  <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>You know how to make changes and save your progress. Ready to test your project!</p>
-</div>
-
 ## Next Steps
 
-In the next section, we'll learn how to view your project in a browser and make sure everything works correctly.
+In the next section, we'll learn how to deploy your project to github pages and make it accessible on the internet.

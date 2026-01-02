@@ -5,8 +5,6 @@ sidebar:
   order: 5
 ---
 
-## Help Make This Guide Better
-
 Your feedback and contributions are invaluable in making the AI Workshop better for everyone. Whether you've found a typo, encountered an issue, or have ideas for new content, we'd love to hear from you!
 
 ## Report Issues or Suggest Improvements

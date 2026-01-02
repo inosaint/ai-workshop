@@ -21,7 +21,7 @@ Go to [claude.ai](https://claude.ai/) in your browser and create an account.
 
 ### Step 2: Ask Claude to Create Something
 
-Once you login, you should be able to see an interface with an input field at the bottom. Try asking Claude some simple queries to familiarise yourself.
+Once you login, you should be able to see an interface with an input field. Try asking Claude some simple queries to familiarise yourself.
 
 Once you are ready, let's head to making your first AI assisted artifact. 
 
@@ -33,7 +33,7 @@ Can you create Tetris as a Claude Artifact?
 
 Press **Enter** and watch!
 
-Note: feel free to use any other simple game you would want to create or check out these additional [[#Prompts]].
+Note: feel free to use any other simple game you would want to create or check out these additional [Prompts](#additional-prompts).
 
 ### Step 3: See the Magic
 

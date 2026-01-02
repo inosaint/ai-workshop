@@ -39,27 +39,10 @@ Claude Code will:
 
 After Claude Code finishes, let's see what files were created. Claude code would have created a new branch and pushed it's work to that branch. You will need to *fetch* those changes to your local system for review.
 
-## Accessing Claude's Changes with Github Desktop
-
-![](github-bar.png)
-### Step 1: Open GitHub Desktop
-
-Switch to GitHub Desktop. You should see the above bar at the top. The left-most section is the repository you are on. The middle section is the branch you are on and the rightmost section is the 'actionable' section.
-
-### Step 2: Navigate to your branch
-
-![](github-branch.png)
-
-Use the branch selector to select the branch that Claude worked on. 
-
-### Pulling from Origin
-
-After you select the correct branch, you may see a button to "Pull Origin". Do that.
 
 <div class="tip-box">
   <strong>💡 Want more tips?</strong> Check out <a href="/ai-workshop/claude-tips/">Working with Claude Code: Tips & Tricks</a> in the Level Up section for advanced techniques!
 </div>
-
 
 ## Troubleshooting
 
@@ -71,9 +54,9 @@ You will need to re-connect the Github Integration and Select the repository you
 
 ## Next Steps
 
-You have a working project created by Claude Code! In the next section, we'll learn how to make changes and save your progress with GitHub.
+Now that you have the code in your local system, you need to know how to verify it! In the next section, we'll learn how to test your sites locally.
 
 <div class="checkpoint">
   <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>Claude Code has created your project files. Ready to make changes!</p>
+  <p>Claude Code has created your project files. Ready to Test them?</p>
 </div>

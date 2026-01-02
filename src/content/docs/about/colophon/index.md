@@ -5,8 +5,6 @@ sidebar:
   order: 3
 ---
 
-# Colophon
-
 This page describes how the AI Workshop was created and the technologies behind it.
 
 ## Built With
@@ -22,6 +20,8 @@ This page describes how the AI Workshop was created and the technologies behind 
 ### Typography
 **[Inter](https://rsms.me/inter/)** by Rasmus Andersson - A carefully crafted typeface designed for user interfaces. Optimized for screens and highly legible.
 
+[**Instrument Serif**](https://fonts.google.com/specimen/Instrument+Serif/about) on the landing page.
+
 ### Hosting
 **[GitHub Pages](https://pages.github.com)** - Free, reliable hosting directly from the GitHub repository.
 
@@ -36,27 +36,6 @@ This page describes how the AI Workshop was created and the technologies behind 
 ### Created With
 This entire workshop was built using **[Claude Code](https://claude.ai)** - practicing what we preach! The guide itself is a testament to AI-assisted development.
 
-### Code Editor
-**[Visual Studio Code](https://code.visualstudio.com)** - When manual edits are needed.
-
-## Design Philosophy
-
-### Accessibility First
-- Semantic HTML structure
-- ARIA labels and roles where needed
-- Keyboard navigation support
-- Screen reader friendly
-- High contrast color schemes
-
-### Mobile Responsive
-Every page is designed to work beautifully on phones, tablets, and desktops.
-
-### Plain Language
-Technical jargon is minimized. When technical terms are necessary, they're defined clearly.
-
-### Progressive Disclosure
-Information is revealed gradually - start simple, add complexity only when needed.
-
 ## Content License
 
 This work is licensed under **[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)**.
@@ -67,12 +46,6 @@ You're free to share and adapt this content for non-commercial purposes, as long
 
 ### Created By
 **Kenneth Mark Dsouza** - Concept, content, and development.
-
-### Special Thanks
-- The Anthropic team for Claude and Claude Code
-- The Astro and Starlight communities
-- Early testers and feedback providers
-- Everyone learning to code with AI
 
 ## Open Source
 

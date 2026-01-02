@@ -5,8 +5,6 @@ sidebar:
   order: 100
 ---
 
-# License
-
 **AI Workshop** © 2025 by **Kenneth Mark Dsouza** is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 <div style="text-align: center; margin: 2rem 0;">
@@ -100,4 +98,4 @@ USA
 
 If you have questions about how you can use this material, feel free to:
 - Open an issue on [GitHub](https://github.com/inosaint/ai-workshop/issues)
-- Contact Kenneth Mark Dsouza at [https://kenneth.dsouza.im/](https://kenneth.dsouza.im/)
+- or reach out to Kenneth on <a href="http://x.com/kenneth">X</a>  or <a href="https://bsky.app/profile/ken.cv">Bluesky</a>

@@ -37,27 +37,6 @@ Next - let's install Claude Code on your computer. We'll be using the Claude Cod
   <p>Claude Code is now installed on your computer!</p>
 </div>
 
-## Opening Your Terminal
-
-Before we test Claude Code, you need to know how to open the terminal on your system.
-
-### Windows
-
-1. Press `⊞ Win + R` to open the Run dialog
-2. Type `cmd` and press Enter
-3. The Command Prompt window will open
-
-### Mac
-
-1. Press `Cmd + Space` to open Spotlight
-2. Type `Terminal` and press Enter
-3. The Terminal window will open
-
-<div class="tip-box">
-  <strong>💡 Terminal Reference:</strong> For more terminal commands and tips, check out the <a href="/ai-workshop/reference/cheat-sheet/#terminal--command-line">Terminal section of our Cheat Sheet</a>.
-</div>
-
-
 ### Connect Github to Claude Code
 ![](github-claude-settings.png)
 
