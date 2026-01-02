@@ -5,8 +5,6 @@ sidebar:
   order: 10
 ---
 
-# Working with Claude Code: Tips & Tricks
-
 Master these techniques to become more effective with Claude Code!
 
 ## Asking Follow-up Questions

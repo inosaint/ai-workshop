@@ -5,8 +5,6 @@ sidebar:
   order: 7
 ---
 
-# Testing Locally
-
 Before sharing your project with the world, let's make sure it works properly on your own computer.
 
 ## What Does "Testing Locally" Mean?
@@ -19,9 +17,30 @@ When you test locally:
 - You can break things safely (no one else will see!)
 - It's free - no hosting needed
 
+## Accessing Claude's Changes with Github Desktop
+
+![](github-bar.png)
+### Step 1: Open GitHub Desktop
+
+Switch to GitHub Desktop. You should see the above bar at the top. The left-most section is the repository you are on. The middle section is the branch you are on and the rightmost section is the 'actionable' section.
+
+### Step 2: Navigate to your branch
+
+![](github-branch.png)
+
+Use the branch selector to select the branch that Claude worked on. 
+
+### Pulling from Origin
+
+After you select the correct branch, you may see a button to "Pull Origin". Do that. If not click on '**Fetch Origin**' and wait for the app to check for updates.
+
+---
+
+There are two methods, you can choose between to test Claude Code's work.
+
 ## Method 1: Just Open the HTML File
 
-If you choose to build a simple static project, then the simplest way to view your project is to navigate to the folder in your file finder and open the index.html file
+If you choose to build a simple static project, then the simplest way to view your project is to navigate to the folder in your file finder and open the **index.html** file
 
 Opening this file should open a new browser window and you should be able to view your project. 
 
@@ -29,30 +48,29 @@ Opening this file should open a new browser window and you should be able to vie
   <strong>💡 Tip:</strong> The address bar will show something like <code>file:///path/to/your/file</code>. This means you're viewing a local file, not a website on the internet.
 </div>
 
-
 ## Method 2: Use a Local Server (Recommended)
 
 Some features (like loading data or using certain JavaScript) require a "real" server. Here's how to set one up:
 
-### Using Python (Usually Pre-installed on Mac)
-
-### Opening Terminal
-
-<div class="tip-box">
-  <strong>💡 Quick Reference:</strong> See the <a href="/ai-workshop/reference/cheat-sheet/#terminal--command-line">Terminal section of our Cheat Sheet</a> for more terminal commands.
-</div>
+### Step 1: Opening Terminal
 
 **Windows:**
 1. Press `⊞ Win + R` to open Run dialog
 2. Type `cmd` and press Enter
+3. The Command Prompt window will open
 
 **Mac:**
 1. Press `Cmd + Space` to open Spotlight
 2. Type `Terminal` and press Enter
+3. The Terminal window will open
 
-### Navigate to Your Project
 
-#### Step 1:
+<div class="tip-box">
+  <strong>💡 Terminal Reference:</strong> For more terminal commands and tips, check out the <a href="/ai-workshop/reference/cheat-sheet/#terminal--command-line">Terminal section of our Cheat Sheet</a>.
+</div>
+
+### Step 2: Navigate to Your Project
+
 In the terminal, use `cd` (change directory) to go to your project folder. You can use the system's folder information menu action to find the full folder pathname.
 
 **Windows:**
@@ -76,7 +94,7 @@ You can verify you're in the right place by running:
 
 You should see your project files (or an empty folder if you just created it).
 
-#### Step 2:
+### Step 3: Run the server
 Now that you have navigated to your project folder in the terminal, run the follwoing command:
 
 **Python 3:**
@@ -201,48 +219,6 @@ Try hard refresh: `Ctrl + Shift + R` (Windows) or `Cmd + Shift + R` (Mac)
 </body>
 ```
 
-
-## Making Changes and Seeing Updates
-
-The development cycle is:
-
-```
-┌──────────────────────────────────────────────────────┐
-│                                                      │
-│   1. EDIT      →  Change your code                  │
-│       ↓                                              │
-│   2. SAVE      →  Ctrl+S / Cmd+S                    │
-│       ↓                                              │
-│   3. REFRESH   →  Browser refresh (F5 or Cmd+R)     │
-│       ↓                                              │
-│   4. CHECK     →  See if it worked                  │
-│       ↓                                              │
-│   [ Repeat until happy! ]                            │
-│                                                      │
-└──────────────────────────────────────────────────────┘
-```
-
-
-## Save Your Work!
-
-Once you're happy with your changes, save them with GitHub Desktop:
-
-### Step 1: Open GitHub Desktop
-
-Switch to GitHub Desktop to see your changes.
-
-### Step 2: Review Your Changes
-
-Look at the "Changes" tab to see what you modified.
-
-### Step 3: Commit Your Changes
-
-1. In the "Summary" field, type: `Fix styling issues and test locally`
-2. Click **"Commit to main"**
-
-### Step 4: Push to GitHub
-
-Click **"Push origin"** to back up your work.
 
 <div class="checkpoint">
   <div class="checkpoint-title">✅ Checkpoint</div>

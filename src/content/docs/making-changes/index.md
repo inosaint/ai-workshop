@@ -13,7 +13,7 @@ Want to tweak something? You have two options:
 
 ## Method 1: Ask Claude Code (Recommended)
 
-The easiest way - just tell Claude Code what to change:
+The easiest way - just tell Claude Code what to change or share some screenshots or design images (only PNG, GIF, WebP, JPEG images are supported, no PDFs)
 
 ```text
 Change the heading font to something more playful
@@ -46,7 +46,13 @@ After making changes to your project, let's save them with GitHub Desktop:
 
 #### Step 1: Open GitHub Desktop
 
-Switch to GitHub Desktop. You should see your new files listed in the "Changes" tab.
+1. Switch to GitHub Desktop. 
+2. Click on '**Fetch Origin**' incase you want to fetch the changes Claude Code has made and verify locally.
+3. If you have made any changes manually in the editor, you should see your new files listed in the "Changes" tab.
+
+<div class="tip-box">
+  Incase you asked Claude to make the changes for you, you can skip Step 2 and 3 that are written below.
+</div>
 
 #### Step 2: Review Your Changes
 

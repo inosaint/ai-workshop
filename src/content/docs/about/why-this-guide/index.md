@@ -77,5 +77,5 @@ This workshop is our contribution to that future.
 ---
 
 <div class="tip-box">
-  <strong>Have feedback?</strong> We would love to hear from you! Open an issue on <a href="https://github.com/inosaint/ai-workshop/issues">GitHub</a> or reach out to Kenneth Mark Dsouza.
+  <strong>Have feedback?</strong> We would love to hear from you! Open an issue on <a href="https://github.com/inosaint/ai-workshop/issues">GitHub</a> or reach out to Kenneth on <a href="http://x.com/kenneth">X</a>  or <a href="https://bsky.app/profile/ken.cv">Bluesky</a>.
 </div>

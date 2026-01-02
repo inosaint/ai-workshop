@@ -5,74 +5,34 @@ sidebar:
   order: 8
 ---
 
-
 This is the moment of truth! Let's put your project on the internet where anyone can see it.
-
-GitHub Pages is a free hosting service that turns your GitHub repository into a live website.
-
-You should already have:
-- ✅ Your project code created with Claude Code
-- ✅ Your repository published to GitHub via GitHub Desktop
-- ✅ All changes committed and pushed
-
-
-## Step 1: Verify Your Code is on GitHub
+### Step 1: Verify Your Code is on GitHub
 
 Let's make sure everything is ready:
 
 1. Open **GitHub Desktop**
-2. Check that the **Changes tab** is empty (all changes committed)
-3. Click **Repository → View on GitHub** (or press `Ctrl+Shift+G` / `Cmd+Shift+G`)
-4. Your browser will open to your repository - you should see your project files!
+2. Click on '**Fetch Origin**'
+3. Check that the **Changes tab** is empty (all changes committed)
 
-<div class="warning-box">
-  <strong>⚠️ Files not showing?</strong><br/>
-  If you don't see your files on GitHub, go back to GitHub Desktop and look for a "Push origin" or "Publish repository" button. Click it to upload your code.
+If everything is in order, then you are ready to merge your changes to the main codebase.
+
+### Step 2: Create a Pull Request
+
+Now let's move your local code to the main branch.
+
+1. Open **GitHub Desktop**
+2. There should be a button to '**Preview Pull Request**'
+3. Click on that and it will take you to Github.com.
+4. Fill in the description of the Pull Request and then click on '**Create Pull Request**'
+5. Github will run some checks and when they complete, you can click on the final '**Merge Branch**' and complete the merger. 
+
+<div class="tip-box">
+  If you encounter any errors here, paste those errors in Claude so that you can debug them.
 </div>
 
+### Step 3: Visit Your Live Site!
 
-## Step 2: Enable GitHub Pages
-
-Now let's turn your repository into a live website!
-
-1. In your repository, click **"Settings"** (tab at the top)
-2. Scroll down and click **"Pages"** in the left sidebar
-3. Under **"Source"**, select **"Deploy from a branch"**
-4. Under **"Branch"**, select **"main"** and leave the folder as **"/ (root)"**
-5. Click **"Save"**
-
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: GitHub Pages settings]</strong><br/>
-    GitHub Settings > Pages section showing:<br/>
-    • Source: "Deploy from a branch"<br/>
-    • Branch: "main" selected, "/(root)" folder<br/>
-    • Save button
-  </div>
-</div>
-
-
-## Step 3: Wait for Deployment
-
-GitHub needs a minute or two to build and deploy your site.
-
-1. Stay on the Pages settings page
-2. Refresh after a minute
-3. You'll see a message: **"Your site is live at..."**
-
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: GitHub Pages deployed]</strong><br/>
-    GitHub Pages settings showing green banner: "Your site is live at https://username.github.io/repo-name/"
-  </div>
-</div>
-
-
-## Step 4: Visit Your Live Site!
-
-Click the link or type it in your browser:
+GitHub usually needs a minute or two to build and deploy your site. Type it in your browser:
 
 ```
 https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/
@@ -80,14 +40,12 @@ https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/
 
 🎉 **Congratulations! Your project is live on the internet!**
 
-
 ## Updating Your Site
 
-Whenever you make changes to your project:
-
+Now after seeing the site live on the internet, you may need to make changes. 
 ### Step 1: Make Your Changes
 
-Edit your files in your code editor and save them.
+EverytimWhenever you ask Claude to mak
 
 ### Step 2: Commit in GitHub Desktop
 
@@ -104,6 +62,15 @@ GitHub Pages will automatically update within a few minutes!
 
 
 ## Troubleshooting
+
+#### Deployment delays
+
+![The deployment has completed](git-actions.png)
+
+This is an optional step incase you need to debug. 
+
+1. **Check Actions tab** - See if the deployment is still running
+2. Check if there are any errors pointed out. 
 
 ### 404 Error / Page Not Found
 
@@ -123,27 +90,6 @@ GitHub Pages will automatically update within a few minutes!
 - **Hard refresh** - `Ctrl + Shift + R` (Windows) or `Cmd + Shift + R` (Mac)
 - **Check Actions tab** - See if the deployment is still running
 
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: GitHub Actions tab]</strong><br/>
-    GitHub repository Actions tab showing deployment status with green checkmark
-  </div>
-</div>
-
-
-## Sharing Your Site
-
-Your site URL is:
-```
-https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/
-```
-
-Share it with:
-- Friends and family
-- Social media
-- Your resume/portfolio
-- Job applications
 
 <div class="tip-box">
   <strong>💡 Pro Tip:</strong> You can use a custom domain (like "yourname.com") instead of the github.io address. That's a bit more advanced, but GitHub has <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site" target="_blank">great documentation</a> if you're interested!
@@ -155,10 +101,18 @@ Share it with:
   <p>Your project is LIVE on the internet! You just deployed a real website. 🎉</p>
 </div>
 
-
 ## What's Next?
 
 You've accomplished something amazing - going from zero to a deployed website!
+
+Take a moment to appreciate how far you've come:
+
+- ✅ Created a GitHub account
+- ✅ Installed Claude Code
+- ✅ Learned Git basics
+- ✅ Built a real project with AI
+- ✅ Tested it locally
+- ✅ Deployed it to the internet
 
 In the next sections, we'll level up your skills by:
 - Learning to use the Claude API directly

@@ -54,7 +54,7 @@ You don't need to memorize these now - they'll make more sense once we use them!
 
 ### Step 1:
 
-Head over to to **[github.com](https://github.com/)** and create your own account. Choose a good username when creating your account
+Head over to to **[github.com](https://github.com/)** and create your own account. Choose a good username when creating your account. The username you choose wil be the default name used for the Github pages so choose something professional (unlike me).
 
 ### Step 2:
 
@@ -76,7 +76,7 @@ Head over to Github.com and navigate to your newly created repository and click 
 
 ![Configuring the Repo's Publish settings](gh-pages.png)
 
-Navigate to pages on the left nav and select, 'Deploy from a Branch' and select main / root and click 'Save'
+Navigate to pages on the left nav and select, '**Deploy from a Branch**' and select **main / root** and click '**Save**'
 
 ## Next Steps
 
