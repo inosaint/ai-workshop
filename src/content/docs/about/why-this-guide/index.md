@@ -5,8 +5,6 @@ sidebar:
   order: 1
 ---
 
-# Why This Guide
-
 ## The Mission
 
 This workshop exists to make AI-assisted coding accessible to everyone, regardless of technical background.
@@ -33,7 +31,7 @@ You build something real in the first 10 minutes. No theory, no setup - just imm
 ### Plain Language
 We avoid technical jargon. When we must use a technical term, we define it first. Every explanation is written as if you are learning for the very first time.
 
-### Desktop Apps, Not Command Lines
+### Desktop Apps, Not Command Lines (if we can help it)
 We use GitHub Desktop and Claude Code desktop app instead of forcing you to learn terminal commands. You click buttons, not type cryptic commands.
 
 ### One Clear Path
@@ -69,28 +67,12 @@ Every decision - from using desktop apps to avoiding terminal commands - was mad
 
 ## The Vision
 
-We believe the future of software development is collaboration between humans and AI.
+We believe the future of software development is collaboration between humans and AI. Today with AI assistance, anyone with an idea can and should be able to bring it to life.
 
-Programming should not require years of study. With AI assistance, anyone with an idea can bring it to life.
+This workshop is our contribution to that future. 
 
-This workshop is our contribution to that future.
+**Make apps personal and the internet wild again!**
 
-## Our Commitment
-
-We promise to:
-- Keep this guide free and accessible
-- Use plain, simple language
-- Test every step with real beginners
-- Update as tools and best practices evolve
-- Listen to your feedback and improve
-
-## Join the Journey
-
-Whether you are here to build your first website or explore what AI can do, welcome!
-
-You are not just learning to code - you are discovering a new way to create.
-
-Let's build something amazing together.
 
 ---
 

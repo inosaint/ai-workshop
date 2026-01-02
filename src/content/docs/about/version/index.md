@@ -5,8 +5,6 @@ sidebar:
   order: 4
 ---
 
-## Version Information
-
 **Current Version:** 1.0.0
 
 ### Release History

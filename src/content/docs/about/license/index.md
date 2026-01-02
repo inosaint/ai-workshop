@@ -5,8 +5,6 @@ sidebar:
   order: 100
 ---
 
-# License
-
 **AI Workshop** © 2025 by **Kenneth Mark Dsouza** is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 <div style="text-align: center; margin: 2rem 0;">

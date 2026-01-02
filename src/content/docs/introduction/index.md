@@ -9,7 +9,7 @@ You're about to embark on an exciting journey. By the end of this workshop, you'
 
 - Familiarise yourself with the AI ecosystem
 - Experience how AI can help you create
-- A real project running live on the internet
+- A real project running live on the internet. For Free.
 
 And the best part? **You don't need any prior coding experience.**
 
