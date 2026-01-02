@@ -19,6 +19,7 @@ If everything is in order, then you are ready to merge your changes to the main 
 ### Step 2: Create a Pull Request
 
 Now let's move your local code to the main branch.
+![](preview-pr.png)
 
 1. Open **GitHub Desktop**
 2. There should be a button to '**Preview Pull Request**'
