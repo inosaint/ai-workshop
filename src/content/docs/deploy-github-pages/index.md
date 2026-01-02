@@ -43,23 +43,10 @@ https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/
 ## Updating Your Site
 
 Now after seeing the site live on the internet, you may need to make changes. 
-### Step 1: Make Your Changes
 
-EverytimWhenever you ask Claude to mak
+It's recommended to start a new chat in Claude code for every new change as Claude tends to create a new branch to work in. Incase you create a branch on **Github Desktop**, Claude Code will not be able to access it. 
 
-### Step 2: Commit in GitHub Desktop
-
-1. Open GitHub Desktop
-2. You'll see your changes in the "Changes" tab
-3. Write a summary of what you changed (e.g., "Updated homepage colors")
-4. Click **"Commit to main"**
-
-### Step 3: Push to GitHub
-
-Click the **"Push origin"** button at the top.
-
-GitHub Pages will automatically update within a few minutes!
-
+To make changes you can repeat the steps mentioned in 'Making Changes'.
 
 ## Troubleshooting
 

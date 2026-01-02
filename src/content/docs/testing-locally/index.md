@@ -34,7 +34,7 @@ Use the branch selector to select the branch that Claude worked on.
 
 After you select the correct branch, you may see a button to "Pull Origin". Do that. If not click on '**Fetch Origin**' and wait for the app to check for updates.
 
----
+## Testing Locally
 
 There are two methods, you can choose between to test Claude Code's work.
 
@@ -171,7 +171,7 @@ Look for red error messages in the **Console** tab. These tell you what went wro
 
 ![Debugger on Arc](debugging.png)
 
-## Common Issues and Fixes
+## Troubleshooting
 
 ### Images Not Loading
 
@@ -222,10 +222,9 @@ Try hard refresh: `Ctrl + Shift + R` (Windows) or `Cmd + Shift + R` (Mac)
 
 <div class="checkpoint">
   <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>Your project works locally and you've saved your progress. Time to share it with the world!</p>
+  <p>Your project works locally and you've saved your progress. Are there any changes you would like to make?</p>
 </div>
-
 
 ## Next Steps
 
-Your project is looking good! Let's deploy it to GitHub Pages so anyone with the link can see it.
+Now that you've got the first version of your vibe coded project running. You can proceed to make changes or head to deploy it on Github.

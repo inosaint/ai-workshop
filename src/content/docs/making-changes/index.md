@@ -5,7 +5,7 @@ sidebar:
   order: 8
 ---
 
-Now that Claude Code has created your project, you'll want to make changes and improvements. Here's how!
+Now that Claude Code has created your project and you are able to view it on your system, you'll want to make changes and improvements. Here's how!
 
 ## Making Changes
 
@@ -67,6 +67,11 @@ Click on the files to see what was created or modified. All the changed files sh
    - After changes: `Updated button styles and added footer`
 1. Click the **"Commit to branch"** button
 
+<div class="checkpoint">
+  <div class="checkpoint-title">✅ Checkpoint</div>
+  <p>You know how to make changes and save your progress. Ready to put it on the internet?</p>
+</div>
+
 ## Best Practices
 
 ### 1. Commit Often
@@ -83,11 +88,6 @@ Instead of "updates" or "changes", write:
 
 You can even ask Claude to help you write these.
 
-<div class="checkpoint">
-  <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>You know how to make changes and save your progress. Ready to test your project!</p>
-</div>
-
 ## Next Steps
 
-In the next section, we'll learn how to view your project in a browser and make sure everything works correctly.
+In the next section, we'll learn how to deploy your project to github pages and make it accessible on the internet.
