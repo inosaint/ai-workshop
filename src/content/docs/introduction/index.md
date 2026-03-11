@@ -1,6 +1,6 @@
 ---
 title: Welcome
-description: An introduction to what we'll build and learn together
+description: "AI Workshop is a free, beginner-friendly course on building web projects with Claude Code. No coding experience needed — go from zero to a deployed website in 3 hours."
 sidebar:
   order: 1
 ---

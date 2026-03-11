@@ -12,5 +12,5 @@ Ready to take your skills to the next level? Here are carefully selected courses
 
 
 <div class="tip-box">
-  <strong>Have a course recommendation?</strong> Open an issue on <a href="https://github.com/inosaint/ai-workshop/issues">GitHub</a> to suggest resources for this page!
+  <strong>Have a course recommendation?</strong> Open an issue on our <a href="https://github.com/inosaint/ai-workshop/issues">GitHub Issues page</a> to suggest resources for this page!
 </div>

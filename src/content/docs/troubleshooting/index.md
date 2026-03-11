@@ -1,8 +1,75 @@
 ---
 title: Troubleshooting
-description: Solutions to common problems you might encounter
+description: Solutions to common problems you might encounter during the AI Workshop course
 sidebar:
   order: 3
+head:
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: |
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I fix 'node: command not found' or 'npm: command not found'?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Restart your terminal, then check if Node.js is installed by running 'node --version'. If not installed, follow the Install Claude Code guide to set up Node.js."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I fix 'claude: command not found'?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Restart your terminal first. Check the installation with 'npm list -g @anthropic-ai/claude-code'. If not found, reinstall with 'npm install -g @anthropic-ai/claude-code'."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What do I do when Claude Code is stuck or frozen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Press Ctrl + C to cancel the current operation. Wait a moment as complex tasks can take time. If still stuck, close the terminal and restart Claude Code."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I change my GitHub repository from private to public?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If you forgot to uncheck 'Keep this code private' when publishing, go to your repository on GitHub.com, then Settings, then General, scroll down to the Danger Zone and click Change repository visibility to switch from Private to Public."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I fix a 404 error on GitHub Pages?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Wait longer as first deployments can take 10+ minutes. Check you have an index.html in the root of your repository. Verify Pages is enabled in Repository Settings > Pages. Check the URL format: https://username.github.io/repo-name/."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is my GitHub Pages site not updating?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Wait 2-5 minutes as GitHub Pages caches aggressively. Try a hard refresh with Ctrl+Shift+R (Windows) or Cmd+Shift+R (Mac). Check the Actions tab to see if deployment is still running. Make sure you pushed your changes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I fix a '401 Unauthorized' error with the Claude API?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Check your API key is correct with no extra spaces. Verify the key is active in your Anthropic console at console.anthropic.com. Check the environment variable is set by running 'echo $ANTHROPIC_API_KEY'."
+            }
+          }
+        ]
+      }
 ---
 
 # Troubleshooting
@@ -159,6 +226,12 @@ Enter your Mac password when prompted (you won't see characters as you type).
 2. Check that the push completed (look for the checkmark)
 3. Refresh the GitHub.com page in your browser
 4. Verify you're looking at the correct repository and branch
+
+### Repository is Private (GitHub Pages Won't Work)
+
+**Problem:** You forgot to uncheck 'Keep this code private' when publishing, so GitHub Pages won't deploy.
+
+**Solution:** Go to your repository on GitHub.com → **Settings** → **General** → scroll down to the **Danger Zone** → click **Change repository visibility** and switch it from Private to Public.
 
 
 ## Website Issues

@@ -5,7 +5,7 @@ sidebar:
   order: 2
 ---
 <div class="tip-box">
-  You can skip this section if you are already familiar with Github and have an account 
+  You can skip this section if you are already familiar with Github and have an account.
 
 </div>
 
@@ -62,21 +62,39 @@ Download [Github Desktop](https://desktop.github.com) and login with your newly 
 
 ### Step 3:
 
-[Create a new repository](https://docs.github.com/en/desktop/overview/creating-your-first-repository-using-github-desktop#creating-a-new-repository)(repo) using Github Desktop and Publish it. Name it using the following format: [username].github.io, where *username* is your github username. This is what will be used as your free github domain.
+[Create a new repository](https://docs.github.com/en/desktop/overview/creating-your-first-repository-using-github-desktop#creating-a-new-repository)(repo) using Github Desktop. 
+
+![Create a New Repository dialog](new-repo-dialog.png)
+
+
+Name it using the following format: [username].github.io, where *username* is your github username. This is what will be used as your free github domain. Please do not make mistakes, the name of the repository should be identical in spelling and case to your github username.
 
 ![Create a New Repository using Github Desktop](new-repo.png)
+
+
 
 You can head over to [Github's help article](https://docs.github.com/en/desktop/overview/creating-your-first-repository-using-github-desktop) to learn more about Github Desktop and it's interface.
 
 ### Step 4:
 
-Head over to Github.com and navigate to your newly created repository and click on Settings.
+Publish the repo. While publishing, please remember to uncheck 'Keep this code private' checkbox.
+
+![Publish Repository dialog](publish-repo.png)
+
+
 
 ### Step 5:
+
+Head over to Github.com and navigate to your newly created repository and click on Settings.
+
+### Step 6:
 
 ![Configuring the Repo's Publish settings](gh-pages.png)
 
 Navigate to pages on the left nav and select, '**Deploy from a Branch**' and select **main / root** and click '**Save**'
+
+If you had not unchecked the 'Keep this code private' checkbox when you were publishing the repository, you will need to follow extra steps. You will need to go to Setting > General and then scroll all the way down the page to the 'Danger Zone' to find 'Change repository visibility' from Private to Public.
+
 
 ## Next Steps
 

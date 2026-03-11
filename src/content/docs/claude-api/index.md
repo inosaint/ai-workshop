@@ -367,4 +367,4 @@ Now that you understand the API, here are some features you could add:
 
 ## Next Steps
 
-In the next section, we'll add analytics to your project so you can see how people are using it!
+In the next section, we'll [add analytics to your project with PostHog](/ai-workshop/analytics-posthog/) so you can see how people are using it!

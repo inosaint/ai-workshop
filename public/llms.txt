@@ -1,0 +1,54 @@
+# AI Workshop — Free AI Course
+
+> A free, beginner-friendly course on building and deploying web projects with Claude Code. No coding experience required. Go from zero to a live website in about 3 hours.
+
+This is an open-source educational resource hosted at https://inosaint.github.io/ai-workshop/
+
+## Course Overview
+
+AI Workshop teaches complete beginners how to build web projects using Claude Code (Anthropic's AI coding assistant). The course covers:
+
+- Setting up GitHub and Claude Code
+- Building web projects with AI assistance (vibe coding)
+- Testing projects locally
+- Deploying to GitHub Pages for free
+- Using the Claude API directly
+- Adding analytics with PostHog
+
+## Course Modules
+
+### Start Here
+- [Welcome & Introduction](https://inosaint.github.io/ai-workshop/introduction/): Overview of the course, who it's for, and what you'll learn
+- [Your First AI Creation (Quick Win)](https://inosaint.github.io/ai-workshop/quick-win/): Experience AI-assisted creation in 60 seconds
+
+### Setup
+- [GitHub Account Setup](https://inosaint.github.io/ai-workshop/github-setup/): Create a GitHub account and install GitHub Desktop
+- [Install Claude Code](https://inosaint.github.io/ai-workshop/install-claude-code/): Install Node.js and Claude Code
+
+### Build Your Project
+- [Choose Your Project](https://inosaint.github.io/ai-workshop/choose-project/): Pick a project idea and write a prompt for Claude
+- [Building with Claude Code](https://inosaint.github.io/ai-workshop/building-with-claude/): Use Claude Code to generate your project
+- [Testing Locally](https://inosaint.github.io/ai-workshop/testing-locally/): Run and test your project on your computer
+- [Making Changes](https://inosaint.github.io/ai-workshop/making-changes/): Modify your project and save progress with Git
+
+### Go Live
+- [Deploy to GitHub Pages](https://inosaint.github.io/ai-workshop/deploy-github-pages/): Put your project live on the internet for free
+
+### Level Up
+- [Tips & Tricks](https://inosaint.github.io/ai-workshop/claude-tips/): Advanced techniques for working with Claude Code
+- [Claude API Basics](https://inosaint.github.io/ai-workshop/claude-api/): Learn to use the Claude API directly in your projects
+- [Add Analytics (PostHog)](https://inosaint.github.io/ai-workshop/analytics-posthog/): Track visitors with PostHog analytics
+
+### Reference
+- [Cheat Sheet](https://inosaint.github.io/ai-workshop/reference/cheat-sheet/): Quick reference for common commands
+- [Glossary](https://inosaint.github.io/ai-workshop/reference/glossary/): Definitions of technical terms
+- [Troubleshooting](https://inosaint.github.io/ai-workshop/troubleshooting/): Solutions to common problems
+
+## Key Facts
+
+- **Price**: Free and open source (MIT License)
+- **Duration**: Approximately 3 hours
+- **Prerequisites**: None — no coding experience required
+- **Tools Used**: Claude Code, GitHub, GitHub Desktop, GitHub Pages
+- **Source Code**: https://github.com/inosaint/ai-workshop
+- **Built With**: Astro + Starlight
