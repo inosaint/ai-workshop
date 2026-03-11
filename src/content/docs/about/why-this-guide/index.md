@@ -73,6 +73,12 @@ This workshop is our contribution to that future.
 
 **Make apps personal and the internet wild again!**
 
+## Workshops
+
+This course has been conducted in person at the following events:
+
+1. **NID Bangalore — Seminar on AI in Design** (5 March 2026)
+   Conducted as part of [NID India's Seminar on AI in Design](https://x.com/NID_India/status/2029866422168428610?s=20) at the National Institute of Design, Bangalore Campus.
 
 ---
 
