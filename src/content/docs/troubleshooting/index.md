@@ -38,6 +38,14 @@ head:
           },
           {
             "@type": "Question",
+            "name": "How do I change my GitHub repository from private to public?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If you forgot to uncheck 'Keep this code private' when publishing, go to your repository on GitHub.com, then Settings, then General, scroll down to the Danger Zone and click Change repository visibility to switch from Private to Public."
+            }
+          },
+          {
+            "@type": "Question",
             "name": "How do I fix a 404 error on GitHub Pages?",
             "acceptedAnswer": {
               "@type": "Answer",
@@ -218,6 +226,12 @@ Enter your Mac password when prompted (you won't see characters as you type).
 2. Check that the push completed (look for the checkmark)
 3. Refresh the GitHub.com page in your browser
 4. Verify you're looking at the correct repository and branch
+
+### Repository is Private (GitHub Pages Won't Work)
+
+**Problem:** You forgot to uncheck 'Keep this code private' when publishing, so GitHub Pages won't deploy.
+
+**Solution:** Go to your repository on GitHub.com → **Settings** → **General** → scroll down to the **Danger Zone** → click **Change repository visibility** and switch it from Private to Public.
 
 
 ## Website Issues
