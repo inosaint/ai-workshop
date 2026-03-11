@@ -90,4 +90,4 @@ You can even ask Claude to help you write these.
 
 ## Next Steps
 
-In the next section, we'll learn how to deploy your project to github pages and make it accessible on the internet.
+In the next section, we'll learn how to [deploy your project to GitHub Pages](/ai-workshop/deploy-github-pages/) and make it accessible on the internet.

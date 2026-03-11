@@ -227,4 +227,4 @@ Try hard refresh: `Ctrl + Shift + R` (Windows) or `Cmd + Shift + R` (Mac)
 
 ## Next Steps
 
-Now that you've got the first version of your vibe coded project running. You can proceed to make changes or head to deploy it on Github.
+Now that you've got the first version of your vibe coded project running. You can proceed to [make changes to your project](/ai-workshop/making-changes/) or head to [deploy it on GitHub Pages](/ai-workshop/deploy-github-pages/).

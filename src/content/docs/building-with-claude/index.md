@@ -54,7 +54,7 @@ You will need to re-connect the Github Integration and Select the repository you
 
 ## Next Steps
 
-Now that you have the code in your local system, you need to know how to verify it! In the next section, we'll learn how to test your sites locally.
+Now that you have the code in your local system, you need to know how to verify it! In the next section, we'll learn how to [test your project locally](/ai-workshop/testing-locally/).
 
 <div class="checkpoint">
   <div class="checkpoint-title">✅ Checkpoint</div>

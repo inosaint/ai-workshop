@@ -1,7 +1,17 @@
 ---
 const posthogKey = import.meta.env.PUBLIC_POSTHOG_KEY;
 const posthogHost = import.meta.env.PUBLIC_POSTHOG_HOST;
+
+let headEntries: { tag: string; attrs: Record<string, string>; content: string }[] = [];
+try {
+  headEntries = Astro.locals.starlightRoute?.head ?? [];
+} catch {
+  // Not a Starlight page (e.g. landing page) — skip head entries
+}
 ---
+
+<!-- Render Starlight's default head entries (OG tags, JSON-LD, etc.) -->
+{headEntries.map(({ tag: Tag, attrs, content }) => <Tag {...attrs} set:html={content} />)}
 
 <!-- Ensure UTF-8 encoding -->
 <meta charset="UTF-8" />

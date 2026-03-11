@@ -3,12 +3,58 @@
 import PostHogLayout from '../layouts/PostHogLayout.astro';
 ---
 <PostHogLayout
-  title="AI Workshop"
-  description="Learn to build with Claude Code - from complete beginner to deployed project"
+  title="AI Workshop — Free AI Course: Learn to Build with Claude Code"
+  description="A free, beginner-friendly course on building web projects with Claude Code. No coding experience required. Go from zero to a deployed website in 3 hours."
 >
   <link slot="head" rel="preconnect" href="https://fonts.googleapis.com">
   <link slot="head" rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link slot="head" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Open Graph -->
+  <meta slot="head" property="og:title" content="AI Workshop — Free AI Course: Learn to Build with Claude Code">
+  <meta slot="head" property="og:description" content="A free, beginner-friendly course on building web projects with Claude Code. No coding experience required. Go from zero to a deployed website in 3 hours.">
+  <meta slot="head" property="og:type" content="website">
+  <meta slot="head" property="og:url" content="https://inosaint.github.io/ai-workshop/">
+  <meta slot="head" property="og:site_name" content="AI Workshop — Free AI Course">
+  <meta slot="head" property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta slot="head" name="twitter:card" content="summary_large_image">
+  <meta slot="head" name="twitter:title" content="AI Workshop — Free AI Course: Learn to Build with Claude Code">
+  <meta slot="head" name="twitter:description" content="A free, beginner-friendly course. No coding experience required. Go from zero to a deployed website in 3 hours.">
+
+  <!-- Canonical -->
+  <link slot="head" rel="canonical" href="https://inosaint.github.io/ai-workshop/">
+
+  <!-- JSON-LD for landing page -->
+  <script slot="head" type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "AI Workshop — Free AI Course: Build with Claude Code",
+    "description": "A free, beginner-friendly course that teaches you to build and deploy web projects using Claude Code. No coding experience required.",
+    "provider": {
+      "@type": "Organization",
+      "name": "AI Workshop",
+      "url": "https://inosaint.github.io/ai-workshop/"
+    },
+    "isAccessibleForFree": true,
+    "educationalLevel": "Beginner",
+    "inLanguage": "en",
+    "coursePrerequisites": "No coding experience required",
+    "hasCourseInstance": {
+      "@type": "CourseInstance",
+      "courseMode": "Online",
+      "courseWorkload": "PT3H"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "category": "Free"
+    }
+  }
+  </script>
 
   <!-- Commented out to test GitHub secrets with posthog.astro component
   <script slot="head">
@@ -103,11 +149,11 @@ import PostHogLayout from '../layouts/PostHogLayout.astro';
   </style>
 
   <div class="container">
-    <h1>Learn to build with AI</h1>
+    <h1>Learn to build your first site with AI</h1>
     <p>
-      From complete beginner to deployed project in 3 hours.<br>
+      A free course that takes you from complete beginner to deployed project in 3 hours.<br>
       No coding experience required.
     </p>
-    <a href="/ai-workshop/introduction/" class="cta">Start Learning</a>
+    <a href="/ai-workshop/introduction/" class="cta">Start the Free Course</a>
   </div>
 </PostHogLayout>
