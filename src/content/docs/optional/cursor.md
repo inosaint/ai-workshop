@@ -210,10 +210,10 @@ You can use both tools on the same project! Your files are just files on your co
 
 
 <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
-  <a href="/ai-workshop/optional/netlify/" style="padding: 0.75rem 1.5rem; border: 2px solid var(--sl-color-gray-3); color: inherit; text-decoration: none; border-radius: 8px;">
+  <a href="/optional/netlify/" style="padding: 0.75rem 1.5rem; border: 2px solid var(--sl-color-gray-3); color: inherit; text-decoration: none; border-radius: 8px;">
     ← Netlify Deploy
   </a>
-  <a href="/ai-workshop/reference/cheat-sheet/" style="padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
+  <a href="/reference/cheat-sheet/" style="padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
     Cheat Sheet →
   </a>
 </div>

@@ -59,7 +59,6 @@ try {
         // Map paths to course modules for funnel tracking
         const moduleMap = {
           '/': { module: 'Landing Page', order: 0, section: 'Start' },
-          '/ai-workshop/': { module: 'Landing Page', order: 0, section: 'Start' },
           '/introduction/': { module: 'Introduction', order: 1, section: 'Start Here' },
           '/quick-win/': { module: 'Quick Win', order: 2, section: 'Start Here' },
           '/github-setup/': { module: 'GitHub Setup', order: 3, section: 'Setup' },
@@ -83,8 +82,8 @@ try {
         // Find matching module
         let moduleFound = false;
         for (const [urlPath, data] of Object.entries(moduleMap)) {
-          // For landing pages, require exact match to avoid false positives
-          const isLandingPage = urlPath === '/' || urlPath === '/ai-workshop/';
+          // For landing page, require exact match to avoid false positives
+          const isLandingPage = urlPath === '/';
           const matches = isLandingPage
             ? (path === urlPath || path === urlPath.replace(/\/$/, ''))
             : path.includes(urlPath);

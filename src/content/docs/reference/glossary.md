@@ -220,10 +220,10 @@ If there's a term you don't understand that's not here, try:
 
 
 <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
-  <a href="/ai-workshop/reference/cheat-sheet/" style="padding: 0.75rem 1.5rem; border: 2px solid var(--sl-color-gray-3); color: inherit; text-decoration: none; border-radius: 8px;">
+  <a href="/reference/cheat-sheet/" style="padding: 0.75rem 1.5rem; border: 2px solid var(--sl-color-gray-3); color: inherit; text-decoration: none; border-radius: 8px;">
     ← Cheat Sheet
   </a>
-  <a href="/ai-workshop/troubleshooting/" style="padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
+  <a href="/troubleshooting/" style="padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
     Troubleshooting →
   </a>
 </div>

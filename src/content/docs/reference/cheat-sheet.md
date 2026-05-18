@@ -311,7 +311,7 @@ build/
 
 
 <div style="text-align: center; margin-top: 2rem;">
-  <a href="/ai-workshop/reference/glossary/" style="padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
+  <a href="/reference/glossary/" style="padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
     View Glossary →
   </a>
 </div>

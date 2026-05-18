@@ -9,7 +9,7 @@ Your feedback and contributions are invaluable in making the AI Workshop better 
 
 ## Report Issues or Suggest Improvements
 
-Visit our **[GitHub Issues page](https://github.com/inosaint/ai-workshop/issues)** to:
+Visit our **[GitHub Issues page](https://github.com/inosaint/issues)** to:
 
 - 🐛 **Report bugs or errors** you've encountered
 - 📝 **Suggest improvements** to existing content
@@ -20,7 +20,7 @@ Visit our **[GitHub Issues page](https://github.com/inosaint/ai-workshop/issues)
 ## How to Raise an Issue
 
 1. **Check existing issues** to see if your concern has already been reported
-2. **Click "New Issue"** on the [Issues page](https://github.com/inosaint/ai-workshop/issues/new)
+2. **Click "New Issue"** on the [Issues page](https://github.com/inosaint/issues/new)
 3. **Choose a template** (or start from scratch)
 4. **Provide details**:
    - Clear title describing the issue or suggestion

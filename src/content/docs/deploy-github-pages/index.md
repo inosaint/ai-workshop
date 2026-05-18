@@ -47,11 +47,11 @@ Now after seeing the site live on the internet, you may need to make changes.
 
 It's recommended to start a new chat in Claude code for every new change as Claude tends to create a new branch to work in. Incase you create a branch on **Github Desktop**, Claude Code will not be able to access it. 
 
-To make changes you can repeat the steps mentioned in [Making Changes with Claude Code](/ai-workshop/making-changes/).
+To make changes you can repeat the steps mentioned in [Making Changes with Claude Code](/making-changes/).
 
 ## Troubleshooting
 
-For more solutions, see our full [Troubleshooting guide](/ai-workshop/troubleshooting/).
+For more solutions, see our full [Troubleshooting guide](/troubleshooting/).
 
 #### Deployment delays
 
@@ -105,5 +105,5 @@ Take a moment to appreciate how far you've come:
 - ✅ Deployed it to the internet
 
 In the next sections, we'll level up your skills by:
-- [Learning to use the Claude API directly](/ai-workshop/claude-api/)
-- [Adding analytics to track visitors with PostHog](/ai-workshop/analytics-posthog/)
+- [Learning to use the Claude API directly](/claude-api/)
+- [Adding analytics to track visitors with PostHog](/analytics-posthog/)

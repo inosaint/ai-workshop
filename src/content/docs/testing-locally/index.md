@@ -66,7 +66,7 @@ Some features (like loading data or using certain JavaScript) require a "real" s
 
 
 <div class="tip-box">
-  <strong>💡 Terminal Reference:</strong> For more terminal commands and tips, check out the <a href="/ai-workshop/reference/cheat-sheet/#terminal--command-line">Terminal section of our Cheat Sheet</a>.
+  <strong>💡 Terminal Reference:</strong> For more terminal commands and tips, check out the <a href="/reference/cheat-sheet/#terminal--command-line">Terminal section of our Cheat Sheet</a>.
 </div>
 
 ### Step 2: Navigate to Your Project
@@ -227,4 +227,4 @@ Try hard refresh: `Ctrl + Shift + R` (Windows) or `Cmd + Shift + R` (Mac)
 
 ## Next Steps
 
-Now that you've got the first version of your vibe coded project running. You can proceed to [make changes to your project](/ai-workshop/making-changes/) or head to [deploy it on GitHub Pages](/ai-workshop/deploy-github-pages/).
+Now that you've got the first version of your vibe coded project running. You can proceed to [make changes to your project](/making-changes/) or head to [deploy it on GitHub Pages](/deploy-github-pages/).

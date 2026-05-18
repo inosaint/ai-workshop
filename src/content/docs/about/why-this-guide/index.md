@@ -83,5 +83,5 @@ This course has been conducted in person at the following events:
 ---
 
 <div class="tip-box">
-  <strong>Have feedback?</strong> We would love to hear from you! Open an issue on <a href="https://github.com/inosaint/ai-workshop/issues">GitHub</a> or reach out to Kenneth on <a href="http://x.com/kenneth">X</a>  or <a href="https://bsky.app/profile/ken.cv">Bluesky</a>.
+  <strong>Have feedback?</strong> We would love to hear from you! Open an issue on <a href="https://github.com/inosaint/issues">GitHub</a> or reach out to Kenneth on <a href="http://x.com/kenneth">X</a>  or <a href="https://bsky.app/profile/ken.cv">Bluesky</a>.
 </div>
