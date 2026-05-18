@@ -3,8 +3,7 @@ import starlight from '@astrojs/starlight';
 import starlightThemeRapide from 'starlight-theme-rapide';
 
 export default defineConfig({
-  site: 'https://inosaint.github.io',
-  base: '/ai-workshop',
+  site: 'https://howtoaicode.com',
   integrations: [
     starlight({
       title: 'AI Workshop — Free AI Course',
@@ -24,7 +23,7 @@ export default defineConfig({
             '@context': 'https://schema.org',
             '@type': 'WebSite',
             name: 'AI Workshop — Free AI Course',
-            url: 'https://inosaint.github.io/ai-workshop/',
+            url: 'https://howtoaicode.com/',
             description: 'A free, beginner-friendly course on building projects with Claude Code. Go from zero coding experience to a deployed website in 3 hours.',
           }),
         },
@@ -40,7 +39,7 @@ export default defineConfig({
             provider: {
               '@type': 'Organization',
               name: 'AI Workshop',
-              url: 'https://inosaint.github.io/ai-workshop/',
+              url: 'https://howtoaicode.com/',
             },
             isAccessibleForFree: true,
             educationalLevel: 'Beginner',

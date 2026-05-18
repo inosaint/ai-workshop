@@ -186,7 +186,7 @@ Take a moment to appreciate how far you've come:
 ## Next Steps
 
 Check out the Reference section for:
-- [Cheat Sheet](/ai-workshop/reference/cheat-sheet/) - Quick command reference
-- [Glossary](/ai-workshop/reference/glossary/) - Terms explained
-- [Troubleshooting](/ai-workshop/troubleshooting/) - Common issues and fixes
+- [Cheat Sheet](/reference/cheat-sheet/) - Quick command reference
+- [Glossary](/reference/glossary/) - Terms explained
+- [Troubleshooting](/troubleshooting/) - Common issues and fixes
 [[]]

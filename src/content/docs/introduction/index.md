@@ -69,7 +69,7 @@ Here's a secret that experienced developers know:
 
 When something goes wrong (and it will), that's not failure - that's learning. Every error message is a clue. Every bug is a puzzle to solve.
 
-This workshop has a [Troubleshooting](/ai-workshop/troubleshooting/) section for common issues.
+This workshop has a [Troubleshooting](/troubleshooting/) section for common issues.
 
 
 ## Ready to Start?

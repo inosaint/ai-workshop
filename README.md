@@ -61,7 +61,7 @@ cp .env.example .env
 npm run dev
 ```
 
-The site will be available at `http://localhost:4321/ai-workshop/`
+The site will be available at `http://localhost:4321/`
 
 ### Building for Production
 
@@ -97,7 +97,7 @@ This project includes a GitHub Actions workflow for automatic deployment.
 
 5. Push to the `main` branch
 
-6. The site will automatically deploy to `https://YOUR-USERNAME.github.io/ai-workshop/`
+6. The site will automatically deploy to `https://YOUR-USERNAME.github.io/ai-workshop/` (or to a custom domain you configure in repo Settings → Pages — this project serves at `https://howtoaicode.com/`)
 
 ## Project Structure
 
@@ -151,7 +151,7 @@ The analytics will automatically track:
 Replace placeholder images in the content with actual screenshots:
 
 1. Add images to `public/images/`
-2. Update Markdown to use: `![Alt text](/ai-workshop/images/your-image.png)`
+2. Update Markdown to use: `![Alt text](/images/your-image.png)`
 
 ### Updating Colors
 

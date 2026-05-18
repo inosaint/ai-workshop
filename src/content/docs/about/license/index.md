@@ -97,5 +97,5 @@ USA
 ## Questions?
 
 If you have questions about how you can use this material, feel free to:
-- Open an issue on [GitHub](https://github.com/inosaint/ai-workshop/issues)
+- Open an issue on [GitHub](https://github.com/inosaint/issues)
 - or reach out to Kenneth on <a href="http://x.com/kenneth">X</a>  or <a href="https://bsky.app/profile/ken.cv">Bluesky</a>

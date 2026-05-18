@@ -41,7 +41,7 @@ After Claude Code finishes, let's see what files were created. Claude code would
 
 
 <div class="tip-box">
-  <strong>💡 Want more tips?</strong> Check out <a href="/ai-workshop/claude-tips/">Working with Claude Code: Tips & Tricks</a> in the Level Up section for advanced techniques!
+  <strong>💡 Want more tips?</strong> Check out <a href="/claude-tips/">Working with Claude Code: Tips & Tricks</a> in the Level Up section for advanced techniques!
 </div>
 
 ## Troubleshooting
@@ -54,7 +54,7 @@ You will need to re-connect the Github Integration and Select the repository you
 
 ## Next Steps
 
-Now that you have the code in your local system, you need to know how to verify it! In the next section, we'll learn how to [test your project locally](/ai-workshop/testing-locally/).
+Now that you have the code in your local system, you need to know how to verify it! In the next section, we'll learn how to [test your project locally](/testing-locally/).
 
 <div class="checkpoint">
   <div class="checkpoint-title">✅ Checkpoint</div>
