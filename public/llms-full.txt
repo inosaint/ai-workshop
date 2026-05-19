@@ -1,0 +1,3239 @@
+# AI Workshop — Free AI Course: Build with Claude Code
+# Full content snapshot for AI crawlers
+# Generated: 2026-05-19
+# Source: https://howtoaicode.com
+
+This is a free, beginner-friendly course on building web projects with Claude Code.
+No coding experience required. Go from zero to a deployed website in ~3 hours.
+
+---
+
+## Welcome
+URL: https://howtoaicode.com/introduction/
+> AI Workshop is a free, beginner-friendly course on building web projects with Claude Code. No coding experience needed — go from zero to a deployed website in 3 hours.
+
+You're about to embark on an exciting journey. By the end of this workshop, you'll learn:
+
+- Familiarise yourself with the AI ecosystem
+- Experience how AI can help you create
+- A real project running live on the internet. For Free.
+
+And the best part? **You don't need any prior coding experience.**
+
+## Who Is This Guide For?
+
+Like the previous line states, this guide is written for anyone who is just a beginner and has no prior coding experience. 
+
+When I started [vibe coding in November 2025](http://kenneth.dsouza.im/writing/vibe-coding/) and shared my projects with my friends. Many expressed interest in trying out vibecoding but I found that there wasnt any resource that helped people build on their own. Most resources, even official ones tend to be written for intermediate or expert users. 
+
+Yes, there are AI based vibe-coding systems like Replit and Figma Make but they kinda lock you within their private platforms. So I decided to write a simple guide based on my approach towards vibe coding(a missing manual perhaps?), hoping that helps new users get a taste of vibe coding and start building.
+
+## The Journey Ahead
+
+Here's our roadmap:
+
+```
+[You are here]
+      ↓
+┌─────────────────────┐
+│  0. QUICK WIN       │ ← Experience AI magic in 60 seconds
+├─────────────────────┤
+│  1. SETUP           │ ← Create accounts, install tools
+├─────────────────────┤
+│  2. LEARN GIT       │ ← Understand how code is saved
+├─────────────────────┤
+│  3. BUILD           │ ← Create your project with Claude
+├─────────────────────┤
+│  4. TEST            │ ← Make sure everything works
+├─────────────────────┤
+│  5. DEPLOY          │ ← Put it on the internet!
+├─────────────────────┤
+│  6. LEVEL UP        │ ← APIs, analytics, and more
+└─────────────────────┘
+      ↓
+   [Success!]
+```
+
+## What You'll Need
+
+Before we start, make sure you have:
+
+- ✅ A computer (Windows or Mac)
+- ✅ An internet connection
+- ✅ About 3 hours of focused time
+- ✅ Curiosity and patience!
+
+That's it. No special software, no coding knowledge, no experience required.
+
+## A Note on Making Mistakes
+
+Here's a secret that experienced developers know:
+
+> **Everyone makes mistakes. ALL. THE. TIME.**
+
+When something goes wrong (and it will), that's not failure - that's learning. Every error message is a clue. Every bug is a puzzle to solve.
+
+This workshop has a [Troubleshooting](/troubleshooting/) section for common issues.
+
+## Ready to Start?
+
+Let's experience what AI can do in just 60 seconds. No setup required!
+
+  💡 Tip: Keep this workshop open in one browser tab, and follow along with the other windows. You've got this!
+
+---
+
+## Your First AI Creation
+URL: https://howtoaicode.com/quick-win/
+> Experience the magic of AI in 60 seconds
+
+Before we dive into installations and setups, let's experience what AI can do **right now**.
+
+ChatGPT, Grok and Claude are the popular LLMs in the western world. For this exercise, we will be using Claude though you could try this with the LLM of your choice.
+
+## What is Claude?
+
+Think of Claude as a **super-smart assistant** that you can talk to via a chat interface in plain English. Today you can use Claude and other LLMs to do a variety of tasks from editing blog posts to generating images and even building full-fledged apps.
+
+Claude has a feature called **Artifacts** that lets you create things instantly in your browser - no setup required!
+
+### Step 1: Open Claude
+
+Go to [claude.ai](https://claude.ai/) in your browser and create an account.  
+
+### Step 2: Ask Claude to Create Something
+
+Once you login, you should be able to see an interface with an input field. Try asking Claude some simple queries to familiarise yourself.
+
+Once you are ready, let's head to making your first AI assisted artifact. 
+
+Copy and paste this prompt into Claude:
+
+```
+Can you create Tetris as a Claude Artifact?
+```
+
+Press **Enter** and watch!
+
+Note: feel free to use any other simple game you would want to create or check out these additional [Prompts](#additional-prompts).
+
+### Step 3: See the Magic
+
+Within seconds, Claude will create a **working Tetris game** right in your browser!
+
+![Claude doing it's magic in browser](tetris.png)
+
+### Step 4: Iterate on the outcome
+
+Was the outcome to your satisfaction?
+If not, try asking it to make changes.
+
+E.g., You can ask it to change the visual style or add some fun new game elements.
+
+✅ You just created your first app with AI!
+All within 5 minutes. Imagine what you can build with more time.
+
+## Additional Prompts
+
+Here are some fun things to ask Claude to create:
+
+### A Pomodoro Timer
+
+```
+Create a Pomodoro timer with 25-minute work sessions and 5-minute breaks.
+Add start, pause, and reset buttons. Show the time in a large, easy-to-read format.
+```
+
+### A Color Palette Generator
+
+```
+Create a color palette generator that shows 5 harmonious colors.
+Add a "Generate New Palette" button. Show the hex codes for each color and let me click to copy them.
+```
+
+### A Simple Game
+
+```
+Create a simple memory card matching game with 8 pairs of cards. When I click two cards, show if they match. Track my number of moves.
+```
+
+## Why This Matters
+
+What you just did is the core of what we'll learn in this workshop:
+
+1. **You gave AI instructions** (a prompt)
+2. **AI created something useful** (code that works)
+3. **You used it immediately** (no complex setup)
+
+The difference? **Claude Artifacts** run in your browser temporarily. In this workshop, you'll learn to:
+
+- Create projects that **live permanently** on the internet
+- Build things **on your own computer**
+- Have **full control** over your code
+- Share your creations with **anyone in the world**
+
+## Ready for More?
+
+Now that you've seen what's possible, let's set up the tools that will let you build anything you can imagine.
+
+  💡 Keep that Claude tab open! You can use Artifacts to quickly prototype ideas throughout the workshop.
+
+---
+
+## GitHub Account
+URL: https://howtoaicode.com/github-setup/
+> Create your GitHub account step by step
+
+You can skip this section if you are already familiar with Github and have an account.
+
+GitHub is where developers store their code. Think of it as **Google Drive for code**.
+
+In this section, you'll create a free GitHub account that you'll use for the rest of the workshop.
+### What is Git?
+
+**Git is a time machine for your code.**
+
+Remember when you'd save files like:
+- `design_final.psd`
+- `poster_final_v2.ai`
+- `design_FINAL_FINAL.sketch`
+- `design_FINAL_FINAL_actually_final.fig`
+
+Git solves this problem elegantly. Instead of creating copies, Git tracks every change you make. You can:
+- Go back to any previous version
+- See what changed and when
+- Work with others without overwriting each other's work
+
+## Git vs GitHub: What's the Difference?
+
+| Git                       | GitHub                        |
+| ------------------------- | ----------------------------- |
+| Software on your computer | Website on the internet       |
+| Tracks changes locally    | Stores your code in the cloud |
+| Free and open source      | Free for public projects      |
+| Works offline             | Requires internet             |
+
+## A crash course of terms
+
+Before we dive in, let's understand a few terms you would need to be familiar with.
+
+|Concept|Everyday Analogy|
+|---|---|
+|**GitHub**|Like Google Drive(Cloud), but specifically designed for code projects|
+|**Repository** (repo)|A folder that contains your project files|
+|**Commit**|Saving a version of your work (like "Save As" with a note)|
+|**Push**|Uploading your saved work to the cloud|
+|**Pull**|Downloading the latest version from the cloud|
+
+You don't need to memorize these now - they'll make more sense once we use them!
+
+## Setting up your GitHub Account
+
+### Step 1:
+
+Head over to to **[github.com](https://github.com/)** and create your own account. Choose a good username when creating your account. The username you choose wil be the default name used for the Github pages so choose something professional (unlike me).
+
+### Step 2:
+
+Download [Github Desktop](https://desktop.github.com) and login with your newly created credentials.
+
+### Step 3:
+
+[Create a new repository](https://docs.github.com/en/desktop/overview/creating-your-first-repository-using-github-desktop#creating-a-new-repository)(repo) using Github Desktop. 
+
+![Create a New Repository dialog](new-repo-dialog.png)
+
+Name it using the following format: [username].github.io, where *username* is your github username. This is what will be used as your free github domain. Please do not make mistakes, the name of the repository should be identical in spelling and case to your github username.
+
+![Create a New Repository using Github Desktop](new-repo.png)
+
+You can head over to [Github's help article](https://docs.github.com/en/desktop/overview/creating-your-first-repository-using-github-desktop) to learn more about Github Desktop and it's interface.
+
+### Step 4:
+
+Publish the repo. While publishing, please remember to uncheck 'Keep this code private' checkbox.
+
+![Publish Repository dialog](publish-repo.png)
+
+### Step 5:
+
+Head over to Github.com and navigate to your newly created repository and click on Settings.
+
+### Step 6:
+
+![Configuring the Repo's Publish settings](gh-pages.png)
+
+Navigate to pages on the left nav and select, '**Deploy from a Branch**' and select **main / root** and click '**Save**'
+
+If you had not unchecked the 'Keep this code private' checkbox when you were publishing the repository, you will need to follow extra steps. You will need to go to Setting > General and then scroll all the way down the page to the 'Danger Zone' to find 'Change repository visibility' from Private to Public.
+
+## Next Steps
+
+Your GitHub account is ready. In the next section, we'll install Claude Code on your computer.
+
+  💡 Tip: Keep the GitHub tab open - we'll come back to it soon!
+
+---
+
+## Installing Claude Code
+URL: https://howtoaicode.com/install-claude-code/
+> Get Claude Code running on your computer
+
+Next - let's install Claude Code on your computer. We'll be using the Claude Code desktop app, which includes everything you need to start building.
+
+## Download Claude Code
+
+### Windows/Mac
+
+1. Go to **[claude.ai/download](https://claude.ai/download)** (or the official Claude Code download page)
+2. Click **"Download for Windows/Mac"**
+3. The installer will download (usually to your Downloads folder)
+
+## Install Claude Code
+
+### Windows
+
+1. Open the downloaded file from your Downloads folder
+2. Follow the installation wizard
+3. Click **"Install"** and wait for the installation to complete
+4. Click **"Finish"** when done
+### Mac
+
+1. Open the downloaded `.dmg` file from your Downloads folder
+2. Drag the **Claude Code** app to your **Applications** folder
+3. Open **Applications** and double-click **Claude Code**
+4. If you see a security warning, click **"Open"** to confirm
+
+  ✅ Checkpoint
+  Claude Code is now installed on your computer!
+
+### Connect Github to Claude Code
+![](github-claude-settings.png)
+
+Before we start, we need to connect Claude code to Github. You need to navigate to Claude's settings and connect Github.
+
+You will need to authenticate your github login and then you should be taken to the **Integrations > Applications >Claude** page. Here you can make a choice to select all repositories access or only the one you are working on at this moment. 
+
+If you choose to '**Select repository**', you can select the one you have just created.
+
+![](repo-claude.png)
+
+## Troubleshooting
+
+ You can find more information about the Github Integration on  Claude's help site.
+
+### Can't find Claude Code after installation (Mac)
+Check your **Applications** folder. If Claude Code is there but won't open, right-click it and select **"Open"** to bypass the security warning.
+
+### Installation stuck or won't complete (Windows)
+
+Try running the installer as Administrator:
+1. Right-click the installer file
+2. Select **"Run as administrator"**
+3. Follow the installation steps again
+
+### "App is damaged" message (Mac)
+
+This can happen with downloaded apps. Try:
+1. Open **Terminal**
+2. Run: `xattr -cr /Applications/Claude\ Code.app`
+3. Try opening Claude Code again
+
+### “npm is not recognized” (Windows)
+
+Close Command Prompt completely and reopen it. The installation needs a fresh window to work.
+
+## Next Steps
+
+Claude Code is installed and Github has been setup so now you are ready to go! Next, you'll choose a project to build with Claude Code.
+
+---
+
+## Choose Your Project
+URL: https://howtoaicode.com/choose-project/
+> Pick a project to build or create your own
+
+Now comes the fun part - deciding what to build!
+
+During this workshop, you can choose from three project ideas, or bring your own:
+
+| Project | Description |
+|---------|-------------|
+| Personal Portfolio | A beautiful one-page website showcasing who you are |
+| Interactive Quiz | A fun game that tests knowledge and shows results |
+| Habit Tracker | A simple app to track daily habits and see your progress |
+| Your Own Idea | Anything you can imagine! |
+
+All paths lead to the same destination: a working project you can show off!
+
+## Option 1: Personal Portfolio
+
+  👤
+  Personal Portfolio
+  
+    A beautiful one-page website that showcases who you are. Perfect for job hunting, networking, or just having your own corner of the internet.
+  
+
+  
+    View starter prompt (click to expand)
+
+```text
+Create a personal portfolio website with:
+- A hero section with my name and a short tagline
+- An "About Me" section where I can describe myself
+- A "Skills" section showing 4-6 things I'm good at
+- A "Projects" section with placeholder cards for 3 projects
+- A "Contact" section with links to email and social media
+- Modern, clean design with a color scheme of your choice
+- Mobile-responsive layout
+- Use HTML, CSS, and vanilla JavaScript only
+```
+  
+
+## Option 2: Interactive Quiz Game
+
+  🎮
+  Interactive Quiz Game
+  
+    A fun trivia game that tests knowledge and shows a final score. Great for learning how user interaction works.
+  
+
+  
+    View starter prompt (click to expand)
+
+```text
+Create an interactive quiz game with:
+- A welcome screen with a "Start Quiz" button
+- 5 multiple-choice questions about [choose a topic: movies, science, history, etc.]
+- 4 answer options per question
+- Visual feedback showing if the answer was correct or wrong
+- A progress bar showing current question number
+- A results screen showing final score with a message based on performance
+- Option to restart the quiz
+- Fun, colorful design with animations
+- Use HTML, CSS, and vanilla JavaScript only
+```
+  
+
+## Option 3: Habit Tracker
+
+  ✅
+  Habit Tracker
+  
+    A simple app to track daily habits and visualize your consistency. Perfect for building good routines.
+  
+
+  
+    View starter prompt (click to expand)
+
+```text
+Create a habit tracker app with:
+- Ability to add new habits with a name and emoji
+- A list of habits that can be marked complete for today
+- Visual checkboxes or toggle buttons for each habit
+- A simple streak counter showing consecutive days
+- Data saved in browser localStorage (persists between visits)
+- Clean, minimal design with satisfying animations when completing habits
+- A weekly view showing which days each habit was completed
+- Use HTML, CSS, and vanilla JavaScript only
+```
+  
+
+## Option 4: Build Your Own Idea!
+
+Have something else in mind? Use our Prompt Builder to create your own project prompt!
+
+  ✨ Prompt Builder
+
+  
+    
+      What type of project?
+      
+        Choose a type...
+        Website / Landing Page
+        Game
+        Utility / Tool
+        Dashboard
+        Other
+      
+    
+
+    
+      Describe your idea (1-2 sentences)
+      
+    
+
+    
+      Key features (comma-separated)
+      
+    
+
+    
+      Color preference (optional)
+      
+    
+  
+
+  
+    Generate My Prompt
+  
+
+  
+    Your custom prompt:
+    
+      
+      
+        Copy
+      
+    
+  
+
+## Tips for Writing Good Prompts
+
+  💡 Prompt Writing Tips:
+  
+    Be specific - "A contact form" is vague; "A contact form with name, email, message fields and validation" is clear
+    List features - Bullet points help Claude Code understand exactly what you want
+    Mention the tech - "Use HTML, CSS, and JavaScript" keeps things simple for beginners
+    Describe the look - "Modern and minimal" or "Fun and colorful" guides the design
+  
+
+## What Happens Next?
+
+Once you've chosen (or created) your project:
+
+1. **Copy your prompt** - Either from the templates above or from the Prompt Builder
+2. **Open Claude Code** - Start a new chat
+3. **Paste and run** - Give Claude Code your prompt and watch the magic happen!
+
+We'll walk through this step-by-step in the next section.
+
+  ✅ Checkpoint
+  You have a project idea and a prompt ready to go. Time to build!
+
+---
+
+## Building with Claude Code
+URL: https://howtoaicode.com/building-with-claude/
+> Use Claude Code to create your project step by step
+
+This is the moment you've been waiting for! Let's use Claude Code to build your project.
+
+### Step 1: Open a new Claude Code chat
+
+![New Chat Setup](new-project.png)
+
+1. Choose the repository you want Claude to work on. Eg., username/username.github.io
+2. Select the default Cloud environment
+3. Paste your prompt
+4. (optional) Add any images for design reference
+
+### Step 2: Watch and Learn
+
+Claude Code will:
+
+1. **Plan** - Think about the best approach
+2. **Create files** - Generate HTML, CSS, and JavaScript files
+3. **Explain** - Tell you what it's doing and why
+
+![How the mostly one-sided Chat conversation would look like](example-convo.png)
+
+  ⚠️ Be patient! Complex projects might take a minute or two. Don't interrupt Claude Code while it's working.
+
+### Step 3: Review What Was Created
+
+![Claude will push it's changes to a branch](claude-branch.png)
+
+After Claude Code finishes, let's see what files were created. Claude code would have created a new branch and pushed it's work to that branch. You will need to *fetch* those changes to your local system for review.
+
+  💡 Want more tips? Check out Working with Claude Code: Tips & Tricks in the Level Up section for advanced techniques!
+
+## Troubleshooting
+
+### Github Repo not installed
+
+![Github app not installed](github-connection.png)
+
+You will need to re-connect the Github Integration and Select the repository you are working on.
+
+## Next Steps
+
+Now that you have the code in your local system, you need to know how to verify it! In the next section, we'll learn how to [test your project locally](/testing-locally/).
+
+  ✅ Checkpoint
+  Claude Code has created your project files. Ready to Test them?
+
+---
+
+## Testing Locally
+URL: https://howtoaicode.com/testing-locally/
+> Run and test your project on your own computer
+
+Before sharing your project with the world, let's make sure it works properly on your own computer.
+
+## What Does "Testing Locally" Mean?
+
+"Local" means on your own computer (as opposed to "the cloud" or "online").
+
+When you test locally:
+- Only you can see it
+- Changes appear instantly
+- You can break things safely (no one else will see!)
+- It's free - no hosting needed
+
+## Accessing Claude's Changes with Github Desktop
+
+![](github-bar.png)
+### Step 1: Open GitHub Desktop
+
+Switch to GitHub Desktop. You should see the above bar at the top. The left-most section is the repository you are on. The middle section is the branch you are on and the rightmost section is the 'actionable' section.
+
+### Step 2: Navigate to your branch
+
+![](github-branch.png)
+
+Use the branch selector to select the branch that Claude worked on. 
+
+### Pulling from Origin
+
+After you select the correct branch, you may see a button to "Pull Origin". Do that. If not click on '**Fetch Origin**' and wait for the app to check for updates.
+
+## Testing Locally
+
+There are two methods, you can choose between to test Claude Code's work.
+
+## Method 1: Just Open the HTML File
+
+If you choose to build a simple static project, then the simplest way to view your project is to navigate to the folder in your file finder and open the **index.html** file
+
+Opening this file should open a new browser window and you should be able to view your project. 
+
+  💡 Tip: The address bar will show something like file:///path/to/your/file. This means you're viewing a local file, not a website on the internet.
+
+## Method 2: Use a Local Server (Recommended)
+
+Some features (like loading data or using certain JavaScript) require a "real" server. Here's how to set one up:
+
+### Step 1: Opening Terminal
+
+**Windows:**
+1. Press `⊞ Win + R` to open Run dialog
+2. Type `cmd` and press Enter
+3. The Command Prompt window will open
+
+**Mac:**
+1. Press `Cmd + Space` to open Spotlight
+2. Type `Terminal` and press Enter
+3. The Terminal window will open
+
+  💡 Terminal Reference: For more terminal commands and tips, check out the Terminal section of our Cheat Sheet.
+
+### Step 2: Navigate to Your Project
+
+In the terminal, use `cd` (change directory) to go to your project folder. You can use the system's folder information menu action to find the full folder pathname.
+
+**Windows:**
+```bash
+cd Documents\GitHub\my-project
+```
+
+**Mac:**
+```bash
+cd ~/Documents/GitHub/my-project
+```
+
+  💡 Tip: Replace "my-project" with your actual project folder name. If you're not sure where GitHub Desktop saves projects, check GitHub Desktop → Preferences → Advanced → Repository storage location.
+
+You can verify you're in the right place by running:
+- **Windows:** `dir`
+- **Mac:** `ls`
+
+You should see your project files (or an empty folder if you just created it).
+
+### Step 3: Run the server
+Now that you have navigated to your project folder in the terminal, run the follwoing command:
+
+**Python 3:**
+```bash
+python -m http.server 8000
+```
+
+**Python 2 (older systems):**
+```bash
+python -m SimpleHTTPServer 8000
+```
+
+This should setup the local server at port 8000 and when it's running, it should open up your browser automatically to the correct url. If it doesn't use the url below.
+```
+http://localhost:8000
+```
+
+If you encounter any error in the terminal window, copy and paste that error into Claude's chat and Claude will be able to tell you what you need to do.
+
+## Testing Checklist
+
+Go through your project and check these things:
+
+### Visual Checks
+
+- [ ] Does everything appear on screen?
+- [ ] Do the colors look right?
+- [ ] Is text readable (not too small/large)?
+- [ ] Do images load correctly?
+
+### Interactive Checks
+
+- [ ] Do buttons do something when clicked?
+- [ ] Do links go to the right places?
+- [ ] Do forms accept input?
+- [ ] Do animations/effects work?
+
+### Responsive Checks (Mobile-Friendly)
+
+Most browsers let you simulate mobile devices:
+
+1. Right-click anywhere on the page
+2. Click **"Inspect"** or **"Inspect Element"**
+3. Click the **device toggle** icon (looks like a phone/tablet)
+4. Select different devices to test
+
+## Found a Problem? Fix It!
+
+When something's not right, you have options:
+
+### Option 1: Ask Claude Code
+
+Go back to Claude Code and describe the issue:
+
+```text
+When I click "Submit", nothing happens. The form should
+show a success message.
+```
+
+Or take a screenshot of the error and describe how you would want to fix it.
+
+```text
+The color contrast of the button on the homepage isn't as per accessibility guidelines. Can you fix it?
+```
+
+### Option 2: Debug Yourself
+
+Open your browser's developer tools:
+
+- **Windows**: Press `F12` or `Ctrl + Shift + I`
+- **Mac**: Press `Cmd + Option + I`
+
+Look for red error messages in the **Console** tab. These tell you what went wrong. If you can't understand what they mean, paste these messages into Claude chat and it will be able to help you take the next steps.
+
+![Debugger on Arc](debugging.png)
+
+## Troubleshooting
+
+### Images Not Loading
+
+**Possible causes:**
+- Wrong file path (check the `src` attribute)
+- File is in the wrong folder
+- Typo in the filename (case matters!)
+
+**Fix:** Make sure your image path matches exactly where the file is:
+```html
+<!-- If image is in the same folder -->
+<img src="photo.jpg" alt="Photo">
+
+<!-- If image is in an "images" folder -->
+<img src="images/photo.jpg" alt="Photo">
+```
+
+### CSS Not Applying
+
+**Possible causes:**
+- CSS file not linked in HTML
+- Typo in the CSS link path
+- Browser cached old version
+
+**Fix:** Check your HTML `` section:
+```html
+<link rel="stylesheet" href="styles.css">
+```
+
+Try hard refresh: `Ctrl + Shift + R` (Windows) or `Cmd + Shift + R` (Mac)
+
+### JavaScript Not Working
+
+**Possible causes:**
+- Script file not linked
+- Script loaded before HTML elements exist
+- Syntax error in code
+
+**Fix:** Check Console for errors, and make sure your script is at the bottom of the body:
+```html
+<body>
+  <!-- Your content -->
+
+  <script src="script.js"></script>  <!-- Put scripts at the end! -->
+</body>
+```
+
+  ✅ Checkpoint
+  Your project works locally and you've saved your progress. Are there any changes you would like to make?
+
+## Next Steps
+
+Now that you've got the first version of your vibe coded project running. You can proceed to [make changes to your project](/making-changes/) or head to [deploy it on GitHub Pages](/deploy-github-pages/).
+
+---
+
+## Making Changes with Claude Code
+URL: https://howtoaicode.com/making-changes/
+> Learn how to modify and save your project
+
+Now that Claude Code has created your project and you are able to view it on your system, you'll want to make changes and improvements. Here's how!
+
+## Making Changes
+
+Want to tweak something? You have two options:
+
+## Method 1: Ask Claude Code (Recommended)
+
+The easiest way - just tell Claude Code what to change or share some screenshots or design images (only PNG, GIF, WebP, JPEG images are supported, no PDFs)
+
+```text
+Change the heading font to something more playful
+```
+
+```text
+Make the buttons bigger and add rounded corners
+```
+
+```text
+Add a footer with copyright information
+```
+
+## Method 2: Edit Files Yourself
+
+You can also edit files directly using any text editor:
+
+1. Open the file in a text editor (VS Code, Notepad++, TextEdit, etc.)
+2. Make your changes
+3. Save the file
+4. Refresh your browser to see the changes
+
+  💡 Pro Tip: Try making small changes yourself! If you break something, you can always ask Claude Code to fix it.
+
+### Save Your Progress with GitHub Desktop
+
+After making changes to your project, let's save them with GitHub Desktop:
+
+#### Step 1: Open GitHub Desktop
+
+1. Switch to GitHub Desktop. 
+2. Click on '**Fetch Origin**' incase you want to fetch the changes Claude Code has made and verify locally.
+3. If you have made any changes manually in the editor, you should see your new files listed in the "Changes" tab.
+
+  Incase you asked Claude to make the changes for you, you can skip Step 2 and 3 that are written below.
+
+#### Step 2: Review Your Changes
+
+Click on the files to see what was created or modified. All the changed files should be checked.
+
+![Checking in your changes manually](checking-in.png)
+
+#### Step 3: Commit Your Changes
+
+1. In the "Summary" field at the bottom left, type something that describes the changes you made
+   - First time: `Initial project created with Claude Code`
+   - After changes: `Updated button styles and added footer`
+1. Click the **"Commit to branch"** button
+
+  ✅ Checkpoint
+  You know how to make changes and save your progress. Ready to put it on the internet?
+
+## Best Practices
+
+### 1. Commit Often
+Save your work frequently with meaningful commit messages. This creates a history you can refer back to.
+
+### 2. Test Before Committing
+Always view your changes in the browser before committing to make sure they work as expected.
+
+### 3. Write Clear Commit Messages
+Instead of "updates" or "changes", write:
+- "Add contact form with validation"
+- "Fix navigation menu alignment"
+- "Update color scheme to blue"
+
+You can even ask Claude to help you write these.
+
+## Next Steps
+
+In the next section, we'll learn how to [deploy your project to GitHub Pages](/deploy-github-pages/) and make it accessible on the internet.
+
+---
+
+## Deploy to GitHub Pages
+URL: https://howtoaicode.com/deploy-github-pages/
+> Put your project live on the internet for free
+
+This is the moment of truth! Let's put your project on the internet where anyone can see it.
+### Step 1: Verify Your Code is on GitHub
+
+Let's make sure everything is ready:
+
+1. Open **GitHub Desktop**
+2. Click on '**Fetch Origin**'
+3. Check that the **Changes tab** is empty (all changes committed)
+
+If everything is in order, then you are ready to merge your changes to the main codebase.
+
+### Step 2: Create a Pull Request
+
+Now let's move your local code to the main branch.
+![](preview-pr.png)
+
+1. Open **GitHub Desktop**
+2. There should be a button to '**Preview Pull Request**'
+3. Click on that and it will take you to Github.com.
+4. Fill in the description of the Pull Request and then click on '**Create Pull Request**'
+5. Github will run some checks and when they complete, you can click on the final '**Merge Branch**' and complete the merger. 
+
+  If you encounter any errors here, paste those errors in Claude so that you can debug them.
+
+### Step 3: Visit Your Live Site!
+
+GitHub usually needs a minute or two to build and deploy your site. Type it in your browser:
+
+```
+https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/
+```
+
+🎉 **Congratulations! Your project is live on the internet!**
+
+## Updating Your Site
+
+Now after seeing the site live on the internet, you may need to make changes. 
+
+It's recommended to start a new chat in Claude code for every new change as Claude tends to create a new branch to work in. Incase you create a branch on **Github Desktop**, Claude Code will not be able to access it. 
+
+To make changes you can repeat the steps mentioned in [Making Changes with Claude Code](/making-changes/).
+
+## Troubleshooting
+
+For more solutions, see our full [Troubleshooting guide](/troubleshooting/).
+
+#### Deployment delays
+
+![The deployment has completed](git-actions.png)
+
+This is an optional step incase you need to debug. 
+
+1. **Check Actions tab** - See if the deployment is still running
+2. Check if there are any errors pointed out. 
+
+### 404 Error / Page Not Found
+
+- **Check the URL** - Make sure you're using the correct repository name
+- **Check your files** - Make sure you have an `index.html` file in the root of your repository
+- **Wait a bit** - First deployment can take up to 10 minutes
+
+### Blank Page
+
+- **Check browser console** for errors (F12 → Console tab)
+- **Check file paths** - Links to CSS/JS might need updating
+- **Case sensitivity** - `Styles.css` is different from `styles.css`
+
+### Changes Not Showing
+
+- **Wait 2-5 minutes** - GitHub Pages caches aggressively
+- **Hard refresh** - `Ctrl + Shift + R` (Windows) or `Cmd + Shift + R` (Mac)
+- **Check Actions tab** - See if the deployment is still running
+
+  💡 Pro Tip: You can use a custom domain (like "yourname.com") instead of the github.io address. That's a bit more advanced, but GitHub has great documentation if you're interested!
+
+  ✅ Checkpoint
+  Your project is LIVE on the internet! You just deployed a real website. 🎉
+
+## What's Next?
+
+You've accomplished something amazing - going from zero to a deployed website!
+
+Take a moment to appreciate how far you've come:
+
+- ✅ Created a GitHub account
+- ✅ Installed Claude Code
+- ✅ Learned Git basics
+- ✅ Built a real project with AI
+- ✅ Tested it locally
+- ✅ Deployed it to the internet
+
+In the next sections, we'll level up your skills by:
+- [Learning to use the Claude API directly](/claude-api/)
+- [Adding analytics to track visitors with PostHog](/analytics-posthog/)
+
+---
+
+## Working with Claude Code - Tips & Tricks
+URL: https://howtoaicode.com/claude-tips/
+> Advanced techniques for getting the most out of Claude Code
+
+Master these techniques to become more effective with Claude Code!
+
+## Asking Follow-up Questions
+
+You can ask Claude Code to modify or add things at any time:
+
+```text
+Can you change the color scheme to blue and white?
+```
+
+```text
+Add a dark mode toggle button
+```
+
+```text
+The contact form needs email validation
+```
+
+```text
+Make the navigation sticky at the top when scrolling
+```
+
+## Being Specific Helps
+
+The more specific your requests, the better results you'll get.
+
+### Vague vs. Specific
+
+**Instead of:**
+> "Make it look better"
+
+**Try:**
+> "Add more spacing between sections and make the headings larger"
+
+**Instead of:**
+> "It's not working"
+
+**Try:**
+> "When I click the submit button, nothing happens. Can you check the JavaScript?"
+
+**Instead of:**
+> "Add some colors"
+
+**Try:**
+> "Use a blue (#2563eb) and white color scheme with subtle gray backgrounds"
+
+## Asking for Explanations
+
+Don't understand something? Just ask!
+
+```text
+Can you explain what the CSS flexbox code does?
+```
+
+```text
+Why did you use addEventListener instead of onclick?
+```
+
+```text
+How does the form validation work?
+```
+
+```text
+What's the difference between let and const in JavaScript?
+```
+
+Claude Code is patient and loves explaining things in beginner-friendly terms!
+
+## Getting Beginner-Friendly Responses
+
+If you're new to coding and want Claude to explain things in simple terms, add this to your prompts:
+
+  💡 Beginner-Friendly Prompt:
+  Add this at the end of your requests to Claude:
+  Please explain everything in simple terms, as if I'm a complete
+beginner. Avoid technical jargon and use everyday language.
+If you need to use a technical term, please define it first.
+
+**Example:**
+
+```text
+Can you add a contact form to my website? Please explain
+everything in simple terms, as if I'm a complete beginner.
+```
+
+This helps Claude:
+- Use plain, everyday language instead of technical terms
+- Explain concepts like you're learning for the first time
+- Define any technical words before using them
+- Keep explanations clear and approachable
+
+**Before (technical):**
+> "I'll implement a POST request handler with form validation using regex patterns and preventDefault to handle the submit event."
+
+**After (beginner-friendly):**
+> "I'll add code that checks if the email looks correct when someone clicks the submit button, and then sends the message."
+
+## Common Patterns
+
+### Iterative Improvements
+
+Don't try to get everything perfect in one go. Build iteratively:
+
+1. Start with basic structure
+2. Add functionality
+3. Improve styling
+4. Add polish and details
+
+**Example workflow:**
+```text
+1. "Create a simple contact form with name, email, and message fields"
+2. "Add validation to make sure all fields are filled"
+3. "Style the form to match my site's blue color scheme"
+4. "Add a success message after submission"
+```
+
+### Breaking Down Complex Features
+
+Complex features are easier to build in steps:
+
+**Instead of:**
+> "Build a complete e-commerce shopping cart"
+
+**Try:**
+```text
+1. "Create a product card component with image, title, price"
+2. "Add an 'Add to Cart' button to each product"
+3. "Create a cart that shows selected items"
+4. "Add quantity controls to the cart"
+5. "Calculate and display the total price"
+```
+
+### Learning from the Code
+
+Ask Claude to teach you while building:
+
+```text
+Create a photo gallery with a lightbox effect.
+As you build it, explain each major part of the code
+so I can understand how it works.
+```
+
+## Troubleshooting Tips
+
+### When Something Doesn't Work
+
+1. **Be descriptive** - Explain exactly what's happening
+2. **Share error messages** - If you see errors in the browser console, share them
+3. **Describe what you expected** - What should have happened?
+
+**Good troubleshooting request:**
+```text
+When I click the "Submit" button, I see this error in the console:
+"Uncaught TypeError: Cannot read property 'value' of null"
+
+I expected the form to show a success message. Can you help fix this?
+```
+
+### When You Want Something Different
+
+Be honest! Claude Code won't be offended.
+
+```text
+The design is nice, but can we try a more modern, minimalist style?
+```
+
+```text
+This works, but the animations feel too slow. Can we speed them up?
+```
+
+## Advanced Techniques
+
+### Referencing Existing Code
+
+You can ask Claude to work with your existing code:
+
+```text
+I have a navigation menu in header.html.
+Can you make it responsive and add a mobile hamburger menu?
+```
+
+### Asking for Multiple Variations
+
+```text
+Can you show me 3 different color schemes I could use for this site?
+```
+
+```text
+What are some alternative ways to layout this contact section?
+```
+
+### Requesting Best Practices
+
+```text
+Can you review my HTML and suggest accessibility improvements?
+```
+
+```text
+Are there any performance optimizations I should make to this code?
+```
+
+## Keep Exploring!
+
+The more you work with Claude Code, the better you'll get at:
+- Asking clear, specific questions
+- Breaking down problems
+- Understanding the code it generates
+- Building more complex projects
+
+Don't be afraid to experiment and ask questions!
+
+  ✅ Checkpoint
+  You've learned pro tips for working effectively with Claude Code!
+
+---
+
+## Claude API Basics
+URL: https://howtoaicode.com/claude-api/
+> Learn how to use the Claude API directly in your projects
+
+# Claude API Basics
+
+You've been using Claude Code, which is like having a conversation with Claude. But what if you want to add AI capabilities directly into your own projects?
+
+That's where the **Claude API** comes in!
+
+## What is an API?
+
+**API** stands for **Application Programming Interface**. Think of it as a waiter at a restaurant:
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   You (Customer)     →     Waiter (API)     →    Kitchen   │
+│                                                             │
+│   "I'd like the      →    Takes order to    →   Cooks the  │
+│    pasta, please"         the kitchen           food       │
+│                                                             │
+│   Receives pasta     ←    Brings food back  ←   Prepares   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+You don't go into the kitchen yourself - you ask the waiter (API), and they handle the communication.
+
+With the Claude API:
+- **You** = Your application
+- **Waiter** = The Claude API
+- **Kitchen** = Claude's AI brain
+
+## Getting Your API Key
+
+To use the Claude API, you need an API key - like a password that identifies you.
+
+### Step 1: Create an Anthropic Account
+
+1. Go to [console.anthropic.com](https://console.anthropic.com)
+2. Click **"Sign Up"** or **"Log In"**
+3. Complete the registration process
+
+  🖼️
+  
+    [Screenshot: Anthropic Console login page]
+    The Anthropic Console welcome page with Sign Up / Log In buttons
+  
+
+### Step 2: Get Your API Key
+
+1. Once logged in, go to **"API Keys"** in the sidebar
+2. Click **"Create Key"**
+3. Give it a name (e.g., "Workshop Project")
+4. Copy the key immediately!
+
+  ⚠️ Critical: You can only see your API key once! Copy it and save it somewhere safe. If you lose it, you'll need to create a new one.
+
+  🖼️
+  
+    [Screenshot: API Keys page]
+    Anthropic Console API Keys section with "Create Key" button and a blurred API key
+  
+
+### Step 3: Store Your Key Safely
+
+Never put your API key directly in your code! Instead:
+
+**For local development**, create a file called `.env`:
+
+```bash
+ANTHROPIC_API_KEY=sk-ant-your-key-here
+```
+
+  ⚠️ Never commit this file! Add .env to your .gitignore file to keep it out of GitHub.
+
+## Understanding API Pricing
+
+The Claude API charges based on **tokens** (roughly 4 characters = 1 token).
+
+| Model | Input (per 1M tokens) | Output (per 1M tokens) |
+|-------|----------------------|------------------------|
+| Claude 3.5 Sonnet | $3.00 | $15.00 |
+| Claude 3 Haiku | $0.25 | $1.25 |
+
+For learning and small projects, you'll likely spend less than $1!
+
+New accounts often get free credits to start - check your console.
+
+## Your First API Call
+
+Let's make a simple API call using JavaScript. This is the foundation of adding AI to any project!
+
+### Basic Example (Node.js)
+
+First, install the Anthropic SDK:
+
+```bash
+npm install @anthropic-ai/sdk
+```
+
+Then create a file called `test-api.js`:
+
+```javascript
+import Anthropic from "@anthropic-ai/sdk";
+
+// Create the client
+const client = new Anthropic({
+  apiKey: process.env.ANTHROPIC_API_KEY,
+});
+
+// Make a request to Claude
+async function askClaude(question) {
+  const message = await client.messages.create({
+    model: "claude-sonnet-4-20250514",
+    max_tokens: 1024,
+    messages: [
+      {
+        role: "user",
+        content: question,
+      },
+    ],
+  });
+
+  // Print Claude's response
+  console.log(message.content[0].text);
+}
+
+// Try it out!
+askClaude("What are three fun facts about penguins?");
+```
+
+Run it:
+
+```bash
+ANTHROPIC_API_KEY=your-key-here node test-api.js
+```
+
+  ✅ Checkpoint
+  If you see penguin facts in your terminal, congratulations! You've made your first API call!
+
+## Understanding the API Response
+
+When you call the API, you get back a structured response:
+
+```javascript
+{
+  "id": "msg_01XFDUDYJgAACzvnptvVoYEL",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "text",
+      "text": "Here are three fun facts about penguins..."
+    }
+  ],
+  "model": "claude-sonnet-4-20250514",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 12,
+    "output_tokens": 150
+  }
+}
+```
+
+Key parts:
+- `content[0].text` - Claude's actual response
+- `usage` - How many tokens were used (for billing)
+- `stop_reason` - Why Claude stopped (usually "end_turn")
+
+## Building a Simple AI Feature
+
+Let's add a real AI feature to a web page - a writing assistant!
+
+### HTML Setup
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Writing Helper</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    textarea {
+      width: 100%;
+      height: 150px;
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 16px;
+    }
+    button {
+      background: #6366f1;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #4f46e5;
+    }
+    #result {
+      margin-top: 20px;
+      padding: 20px;
+      background: #f1f5f9;
+      border-radius: 8px;
+      white-space: pre-wrap;
+    }
+    .loading {
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <h1>✍️ AI Writing Helper</h1>
+  <p>Enter some text and let AI improve it!</p>
+
+  <textarea id="userInput" placeholder="Type or paste your text here..."></textarea>
+
+  <button onclick="improveText()">Improve My Text</button>
+
+  <div id="result"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+```
+
+  ⚠️ Security Note: For a real production app, you'd need a backend server to keep your API key secret. For learning purposes, this example shows the concept.
+
+## System Prompts: Giving Claude a Role
+
+You can give Claude a specific role or personality using a **system prompt**:
+
+```javascript
+const message = await client.messages.create({
+  model: "claude-sonnet-4-20250514",
+  max_tokens: 1024,
+  system: "You are a helpful writing assistant. Improve the user's text while maintaining their voice and intent. Be concise and helpful.",
+  messages: [
+    {
+      role: "user",
+      content: userText,
+    },
+  ],
+});
+```
+
+### System Prompt Ideas
+
+| Use Case | System Prompt |
+|----------|---------------|
+| Writing Helper | "You are a friendly editor. Improve clarity and flow while keeping the author's voice." |
+| Code Reviewer | "You are a senior developer. Review code for bugs and suggest improvements." |
+| Tutor | "You are a patient teacher. Explain concepts simply, using examples." |
+| Translator | "You are a professional translator. Translate accurately while preserving tone." |
+
+## Streaming Responses
+
+For long responses, you can "stream" the response word-by-word (like ChatGPT does):
+
+```javascript
+const stream = await client.messages.stream({
+  model: "claude-sonnet-4-20250514",
+  max_tokens: 1024,
+  messages: [{ role: "user", content: "Tell me a story" }],
+});
+
+for await (const chunk of stream) {
+  if (
+    chunk.type === "content_block_delta" &&
+    chunk.delta.type === "text_delta"
+  ) {
+    process.stdout.write(chunk.delta.text);
+  }
+}
+```
+
+This creates a more dynamic, engaging user experience!
+
+## Best Practices
+
+### 1. Handle Errors Gracefully
+
+```javascript
+try {
+  const response = await client.messages.create({...});
+  // Use response
+} catch (error) {
+  if (error.status === 429) {
+    console.log("Rate limited - slow down!");
+  } else if (error.status === 401) {
+    console.log("Invalid API key");
+  } else {
+    console.log("Something went wrong:", error.message);
+  }
+}
+```
+
+### 2. Set Reasonable Limits
+
+```javascript
+{
+  max_tokens: 500,  // Don't let responses get too long
+  // ...
+}
+```
+
+### 3. Keep API Keys Secret
+
+- Never commit API keys to Git
+- Use environment variables
+- For web apps, call the API from a backend server
+
+## Ideas for Your Projects
+
+Now that you understand the API, here are some features you could add:
+
+| Feature | Description |
+|---------|-------------|
+| **Smart Search** | Let users ask questions about your content |
+| **Content Generator** | Auto-generate product descriptions, bios, etc. |
+| **Chatbot** | Add a helpful chat widget to your site |
+| **Summarizer** | Summarize long articles or documents |
+| **Translator** | Translate content on the fly |
+| **Writing Assistant** | Help users improve their writing |
+
+  ✅ Checkpoint
+  You understand how the Claude API works and can make basic API calls. You're now ready to add AI features to any project!
+
+## Next Steps
+
+In the next section, we'll [add analytics to your project with PostHog](/analytics-posthog/) so you can see how people are using it!
+
+---
+
+## Adding Analytics with PostHog
+URL: https://howtoaicode.com/analytics-posthog/
+> Track how people use your project with PostHog analytics
+
+You've built something amazing and put it online. But how do you know if people are actually using it? That's where analytics come in!
+
+## What is PostHog?
+
+PostHog is a free, open-source analytics tool that helps you understand:
+- How many people visit your site
+- What pages they view
+- What buttons they click
+- Where they come from
+- And much more!
+
+It's privacy-friendly and has a generous free tier - perfect for personal projects.
+
+## Why Analytics Matter
+
+Without analytics, you're flying blind:
+
+```
+┌────────────────────────────────────────────────────────────┐
+│                                                            │
+│   Without Analytics:                                       │
+│   "I wonder if anyone uses my site?" 🤷                    │
+│                                                            │
+│   With Analytics:                                          │
+│   "50 people visited yesterday! Most clicked the          │
+│    contact button but few filled out the form.            │
+│    I should make the form simpler."  💡                   │
+│                                                            │
+└────────────────────────────────────────────────────────────┘
+```
+
+## Step 1: Create a PostHog Account
+
+1. Go to [posthog.com](https://posthog.com)
+2. Click **"Get Started - Free"**
+3. Sign up with your email or GitHub account
+
+### During Setup
+
+- Choose **"PostHog Cloud"** (easiest option)
+- Select your region (usually US or EU)
+- Name your project
+
+  ✅ Checkpoint
+  You should now see your PostHog dashboard!
+
+## Step 2: Get Your Snippet
+
+PostHog will give you a JavaScript snippet to add to your site.
+
+1. Once you've created a new Project, use the onboarding wizard
+2. Look for the technology you are using in your project in the search bar or just copy the API key and ask Claude to implement posthog for you
+
+## Step 3: Add to Your Website
+
+Paste the snippet in your HTML file, just before the closing `` tag:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Awesome Project</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- PostHog Analytics -->
+  <script>
+    !function(t,e){/* ... PostHog snippet ... */}
+    posthog.init('YOUR_API_KEY_HERE', {api_host: 'https://app.posthog.com'})
+  </script>
+</head>
+<body>
+  <!-- Your content -->
+</body>
+</html>
+```
+
+  ⚠️ Replace the API key! Make sure to use your actual PostHog API key from your dashboard.
+
+## Step 4: Test It's Working
+
+1. Save your file
+2. Open it in your browser
+3. Go back to PostHog dashboard
+4. Click **"Live Events"** in the sidebar
+5. You should see your visit appear in real-time!
+
+  ✅ Checkpoint
+  If you see events appearing in PostHog, analytics is working!
+
+## Step 5: Track Custom Events
+
+PostHog automatically tracks page views. But you can also track specific actions like button clicks and form submissions! PostHog also comes with session replays out of the box which means that you can also view your users using your website in a anonymized manner.
+
+## Understanding Your Dashboard
+
+Let's explore what PostHog shows you:
+
+![PostHog dashboard](posthog-dash.png)
+
+### Web Analytics
+
+The main dashboard shows:
+- **Unique visitors** - How many different people visited
+- **Page views** - Total pages viewed
+- **Sessions** - Browsing sessions
+- **Bounce rate** - People who left immediately
+
+## Creating Your First Insight
+
+Insights help you answer specific questions about your data. 
+
+##### Asking PostHog's AI
+Now with PostHog's inbuilt AI, you can just talk to the AI and get it to implement the insights you want. Once it creates the insight in chat, remember to 'Save' it so that you can add it to the Dashboard.
+##### Manually setting up Insights
+To explore making your own insights, here's an example on how you could go about it.
+
+1. Go to **"Insights"** in PostHog
+2. Click **"New Insight"**
+3. Choose **"Trends"**
+4. Select your event (e.g., "signup_button_clicked")
+5. Click **"Save"**
+
+Now you can see how many times that button was clicked over time! Play around with the configurations like Filters, Breakdowns and Visualization types and see what works best for you.
+
+## What to Track (And What Not To)
+
+### Good Things to Track
+
+| Event | Why It's Useful |
+|-------|-----------------|
+| Page views | Know which pages are popular |
+| Button clicks | See what features people use |
+| Form submissions | Track conversions |
+| Error occurrences | Find problems to fix |
+### Don't Track
+
+- Personal information (names, emails)
+- Passwords or sensitive data
+- Anything users wouldn't expect
+
+## PostHog Free Tier
+
+PostHog's free tier includes:
+- **1 million events/month** - Plenty for personal projects
+- **Session recordings**
+- **Feature flags**
+- **Unlimited team members**
+
+Perfect for what we're building!
+
+  ✅ Checkpoint
+  That's it! You've added analytics to your project! You can now see how people interact with your site.
+
+## What You've Accomplished!
+
+Take a moment to appreciate how far you've come:
+
+- ✅ Created a GitHub account
+- ✅ Installed Claude Code
+- ✅ Learned Git basics
+- ✅ Built a real project with AI
+- ✅ Tested it locally
+- ✅ Deployed it to the internet
+- ✅ Learned to use the Claude API
+- ✅ Added analytics
+
+**You're no longer a complete beginner - you're a builder!** 🎉
+
+## Next Steps
+
+Check out the Reference section for:
+- [Cheat Sheet](/reference/cheat-sheet/) - Quick command reference
+- [Glossary](/reference/glossary/) - Terms explained
+- [Troubleshooting](/troubleshooting/) - Common issues and fixes
+
+---
+
+## Cheat Sheet
+URL: https://howtoaicode.com/reference/cheat-sheet/
+> Quick reference for all the commands you learned
+
+# Cheat Sheet
+
+Keep this page bookmarked! Here's a quick reference for everything you learned.
+
+## Terminal / Command Line
+
+### Navigation
+
+| Command | What It Does | Example |
+|---------|--------------|---------|
+| `cd folder` | Go into a folder | `cd my-project` |
+| `cd ..` | Go up one folder | `cd ..` |
+| `pwd` (Mac) / `cd` (Win) | Show current location | `pwd` |
+| `ls` (Mac) / `dir` (Win) | List files | `ls` |
+| `mkdir name` | Create a folder | `mkdir my-project` |
+
+### Opening Terminal
+
+- **Windows**: `Win + R`, type `cmd`, press Enter
+- **Mac**: `Cmd + Space`, type `Terminal`, press Enter
+
+## GitHub Desktop
+
+### Creating a New Repository
+
+1. **File → New Repository** (or Ctrl+N / Cmd+N)
+2. Fill in name, description, and local path
+3. Check "Initialize with a README"
+4. Click **"Create Repository"**
+
+### Daily Workflow
+
+1. **Make changes** in your code editor and save
+2. **Open GitHub Desktop** - changes appear in "Changes" tab
+3. **Review changes** - click files to see what changed
+4. **Write summary** - describe what you changed
+5. **Commit to main** - click the button
+6. **Push origin** - click the button at top
+
+### Publishing to GitHub
+
+1. Click **"Publish repository"** button
+2. Uncheck "Keep this code private" (for GitHub Pages)
+3. Click **"Publish repository"**
+
+### Useful Actions
+
+| Action | How To Do It |
+|--------|--------------|
+| View on GitHub | Repository → View on GitHub |
+| Open in editor | Right-click repo → Open in Visual Studio Code |
+| Discard changes | Right-click file → Discard changes |
+| See history | Click "History" tab |
+| Pull latest | Repository → Pull |
+| Clone a repo | File → Clone Repository |
+
+## Claude Code
+
+### Basic Commands
+
+```bash
+# Start Claude Code
+claude
+
+# Exit Claude Code
+exit
+# or press Ctrl+C
+```
+
+### Inside Claude Code
+
+| Command | What It Does |
+|---------|--------------|
+| `/help` | Show available commands |
+| `/clear` | Clear conversation |
+| Type normally | Chat with Claude |
+
+### Useful Prompts
+
+```text
+# Create a project
+Create a [type] website with [features]
+
+# Fix something
+The [feature] isn't working. Can you check why?
+
+# Explain something
+Can you explain what [code/concept] does?
+
+# Change something
+Can you change [feature] to [new behavior]?
+```
+
+## Node.js / npm
+
+```bash
+# Check Node version
+node --version
+
+# Check npm version
+npm --version
+
+# Install a package globally
+npm install -g package-name
+
+# Install project dependencies
+npm install
+
+# Run a script from package.json
+npm run scriptname
+
+# Start a local server
+npx serve
+# or
+npm install -g serve && serve
+```
+
+## Local Testing
+
+### Python Server
+
+```bash
+# Python 3
+python -m http.server 8000
+
+# Python 2
+python -m SimpleHTTPServer 8000
+
+# Then open: http://localhost:8000
+```
+
+### Node Server
+
+```bash
+npx serve
+# or
+npm install -g serve && serve
+```
+
+### Browser Developer Tools
+
+- **Windows**: `F12` or `Ctrl + Shift + I`
+- **Mac**: `Cmd + Option + I`
+
+### Hard Refresh (Clear Cache)
+
+- **Windows**: `Ctrl + Shift + R`
+- **Mac**: `Cmd + Shift + R`
+
+## GitHub Pages
+
+### Setup Steps
+
+1. Go to repository **Settings**
+2. Click **Pages** in sidebar
+3. Set Source to **Deploy from a branch**
+4. Select **main** branch, **/ (root)** folder
+5. Click **Save**
+
+### Your URL Format
+
+```
+https://USERNAME.github.io/REPO-NAME/
+```
+
+## Claude API
+
+### Installation
+
+```bash
+npm install @anthropic-ai/sdk
+```
+
+### Basic API Call
+
+```javascript
+import Anthropic from "@anthropic-ai/sdk";
+
+const client = new Anthropic({
+  apiKey: process.env.ANTHROPIC_API_KEY,
+});
+
+const message = await client.messages.create({
+  model: "claude-sonnet-4-20250514",
+  max_tokens: 1024,
+  messages: [{ role: "user", content: "Hello!" }],
+});
+
+console.log(message.content[0].text);
+```
+
+## PostHog Analytics
+
+### Quick Setup
+
+Add before ``:
+
+```html
+<script>
+  !function(t,e){/*...PostHog snippet...*/}
+  posthog.init('YOUR_KEY', {api_host: 'https://app.posthog.com'})
+</script>
+```
+
+### Track Custom Events
+
+```javascript
+// Track event
+posthog.capture('event_name');
+
+// Track with data
+posthog.capture('event_name', { key: 'value' });
+
+// Opt out
+posthog.opt_out_capturing();
+
+// Opt in
+posthog.opt_in_capturing();
+```
+
+## Keyboard Shortcuts
+
+### Terminal
+
+| Shortcut | Action |
+|----------|--------|
+| `Ctrl + C` | Stop current command |
+| `Ctrl + L` | Clear screen |
+| `↑` / `↓` | Previous/next command |
+| `Tab` | Auto-complete |
+
+### Browser
+
+| Shortcut | Action |
+|----------|--------|
+| `F5` or `Cmd/Ctrl + R` | Refresh |
+| `Cmd/Ctrl + Shift + R` | Hard refresh |
+| `F12` or `Cmd + Option + I` | Developer tools |
+| `Cmd/Ctrl + U` | View source |
+
+## File Structure Basics
+
+### Typical Web Project
+
+```
+my-project/
+├── index.html      # Main page
+├── styles.css      # Styling
+├── script.js       # JavaScript
+├── images/         # Image files
+│   ├── logo.png
+│   └── photo.jpg
+└── .gitignore      # Files Git should ignore
+```
+
+### .gitignore Template
+
+```
+# Dependencies
+node_modules/
+
+# Environment
+.env
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+build/
+```
+
+## Quick Troubleshooting
+
+| Problem | Solution |
+|---------|----------|
+| "command not found" | Restart terminal, check installation |
+| Git push rejected | Run `git pull` first |
+| CSS not loading | Check `` path, hard refresh |
+| JS not working | Check browser console for errors |
+| GitHub Pages 404 | Wait 5 min, check `index.html` exists |
+| API error 401 | Check API key is correct |
+
+## Helpful Links
+
+- [GitHub Docs](https://docs.github.com)
+- [Claude Code Documentation](https://docs.anthropic.com/claude-code)
+- [Anthropic API Reference](https://docs.anthropic.com/api)
+- [PostHog Docs](https://posthog.com/docs)
+- [MDN Web Docs](https://developer.mozilla.org) (HTML/CSS/JS reference)
+
+  
+    View Glossary →
+
+---
+
+## Glossary
+URL: https://howtoaicode.com/reference/glossary/
+> All the technical terms explained in plain English
+
+# Glossary
+
+Don't know what a term means? Look it up here! All explanations are in plain English.
+
+## A
+
+### API (Application Programming Interface)
+A way for programs to talk to each other. Like a waiter that takes your order (request) to the kitchen (server) and brings back your food (response).
+
+### API Key
+A secret password that identifies you when using an API. Like a membership card at a club - you need it to get in.
+
+## B
+
+### Backend
+The part of a website you don't see - the server, database, and logic that runs behind the scenes. Like the kitchen of a restaurant.
+
+### Branch (Git)
+A parallel version of your code. Like making a copy of a document to try changes without affecting the original.
+
+### Browser
+The application you use to view websites (Chrome, Firefox, Safari, Edge). It reads HTML, CSS, and JavaScript and displays web pages.
+
+## C
+
+### CLI (Command Line Interface)
+A text-based way to interact with your computer. Instead of clicking buttons, you type commands. Claude Code runs in the CLI.
+
+### Clone (Git)
+Copying a repository from GitHub to your computer. Like downloading a folder from the cloud.
+
+### Commit (Git)
+Saving a snapshot of your code with a message explaining what changed. Like hitting "Save As" with a sticky note attached.
+
+### Console (Browser)
+A tool in your browser that shows error messages and lets you run JavaScript. Open with F12 → Console tab.
+
+### CSS (Cascading Style Sheets)
+The language that controls how websites look - colors, fonts, spacing, layouts. The "paint and decorations" of a web page.
+
+## D
+
+### Deploy
+Putting your website on the internet so others can see it. Like publishing a book after you've finished writing.
+
+### Developer Tools (DevTools)
+Built-in browser tools for debugging websites. Open with F12. Shows errors, lets you inspect elements, and more.
+
+### Domain
+The address of a website (like google.com). Can be custom (yourname.com) or free (username.github.io).
+
+## E
+
+### Environment Variable
+A value stored outside your code, like passwords or API keys. Keeps secrets safe and makes code portable.
+
+## F
+
+### Frontend
+The part of a website you see and interact with - buttons, text, images. Like the dining area of a restaurant.
+
+## G
+
+### Git
+Software that tracks changes to your code over time. Like "Track Changes" in Word, but much more powerful.
+
+### GitHub
+A website that hosts Git repositories online. Like Google Drive for code, with extra features for collaboration.
+
+### GitHub Pages
+A free service that turns a GitHub repository into a live website. No server setup required!
+
+## H
+
+### Hosting
+Where your website lives on the internet. The computer (server) that sends your website to visitors' browsers.
+
+### HTML (HyperText Markup Language)
+The language that defines the structure of web pages - headings, paragraphs, images, links. The "skeleton" of a website.
+
+## I
+
+### IDE (Integrated Development Environment)
+A fancy text editor designed for writing code. VS Code is a popular example. Has features like syntax highlighting and auto-complete.
+
+## J
+
+### JavaScript
+A programming language that makes websites interactive - animations, form validation, dynamic content. The "behavior" of a website.
+
+### JSON (JavaScript Object Notation)
+A format for storing and sending data. Looks like this: `{"name": "John", "age": 25}`. Easy for both humans and computers to read.
+
+## L
+
+### Local/Localhost
+Your own computer. "Running locally" means running on your machine, not on the internet. localhost is the address (usually http://localhost:3000).
+
+### LLM (Large Language Model)
+An AI trained on lots of text that can understand and generate language. Claude is an LLM.
+
+## M
+
+### Markdown
+A simple way to format text using symbols. Like this: `**bold**`, `*italic*`, `# Heading`. Used in README files and documentation.
+
+## N
+
+### Node.js
+A program that lets you run JavaScript outside of a browser. Needed for development tools and servers.
+
+### npm (Node Package Manager)
+A tool for downloading and managing JavaScript packages (reusable code). Comes with Node.js.
+
+## O
+
+### Open Source
+Software whose code is publicly available. Anyone can view, use, and often contribute to it. GitHub hosts lots of open source projects.
+
+## P
+
+### Package
+A reusable bundle of code someone else wrote. Like a pre-built component you can add to your project instead of building from scratch.
+
+### Path
+The location of a file or folder. Like an address: `/Users/john/projects/my-site/index.html`
+
+### Production
+The live version of your website that real users see. As opposed to development (what you're working on locally).
+
+### Push (Git)
+Uploading your commits to GitHub. Like syncing your changes to the cloud.
+
+### Pull (Git)
+Downloading changes from GitHub to your computer. Like syncing updates from the cloud.
+
+## R
+
+### Repository (Repo)
+A folder tracked by Git. Contains your project files and their history. Can be local (on your computer) or remote (on GitHub).
+
+### Responsive Design
+A website that adapts to different screen sizes - looking good on phones, tablets, and desktops.
+
+## S
+
+### Server
+A computer that stores websites and sends them to browsers when requested. GitHub Pages uses servers, so you don't have to manage one.
+
+### SSH
+A secure way to connect to servers and GitHub. Uses cryptographic keys instead of passwords. More advanced than HTTPS.
+
+### Static Site
+A website made of fixed files (HTML, CSS, JS, images) that don't change. As opposed to dynamic sites that generate content on the fly.
+
+## T
+
+### Terminal
+The application where you type commands. Called "Command Prompt" on Windows, "Terminal" on Mac. Claude Code runs here.
+
+### Token (API)
+A unit of text for AI models. Roughly 4 characters or 3/4 of a word. API pricing is based on tokens used.
+
+### Token (Authentication)
+A string of characters that proves your identity. Like a temporary password. Used for GitHub and API access.
+
+## U
+
+### URL (Uniform Resource Locator)
+A web address. Like `https://github.com/user/repo`. The way browsers find websites.
+
+## V
+
+### Version Control
+A system for tracking changes over time. Git is version control software. Lets you go back to previous versions and collaborate with others.
+
+### VS Code
+A popular free code editor made by Microsoft. Has lots of extensions and features for developers.
+
+## W
+
+### Workflow
+A sequence of steps to accomplish something. Your Git workflow might be: edit → add → commit → push.
+
+## Need Something Else?
+
+If there's a term you don't understand that's not here, try:
+- Asking Claude Code: "What does [term] mean?"
+- Searching [MDN Web Docs](https://developer.mozilla.org)
+- Googling "[term] explained simply"
+
+  
+    ← Cheat Sheet
+  
+  
+    Troubleshooting →
+
+---
+
+## Troubleshooting
+URL: https://howtoaicode.com/troubleshooting/
+> Solutions to common problems you might encounter during the AI Workshop course
+
+# Troubleshooting
+
+Something not working? Don't panic! Here are solutions to common problems.
+
+## Installation Issues
+
+### "node: command not found" or "npm: command not found"
+
+**Problem:** Your terminal doesn't recognize Node.js commands.
+
+**Solutions:**
+
+1. **Restart your terminal** - Close and reopen Command Prompt/Terminal
+2. **Check if Node is installed:**
+   ```bash
+   node --version
+   ```
+3. **If not installed**, go back to the [Install Claude Code](/install-claude-code/) section
+
+### "npm ERR! permission denied" (Mac)
+
+**Problem:** npm doesn't have permission to install globally.
+
+**Solution:** Use sudo:
+```bash
+sudo npm install -g @anthropic-ai/claude-code
+```
+Enter your Mac password when prompted (you won't see characters as you type).
+
+### "npm ERR! network error"
+
+**Problem:** Can't connect to npm servers.
+
+**Solutions:**
+
+1. Check your internet connection
+2. Try again in a few minutes (servers might be busy)
+3. If behind a firewall/VPN, try disabling temporarily
+
+## Claude Code Issues
+
+### "claude: command not found"
+
+**Problem:** Claude Code isn't recognized.
+
+**Solutions:**
+
+1. **Restart your terminal**
+2. **Check installation:**
+   ```bash
+   npm list -g @anthropic-ai/claude-code
+   ```
+3. **Reinstall if needed:**
+   ```bash
+   npm install -g @anthropic-ai/claude-code
+   ```
+
+### Claude Code Won't Authenticate
+
+**Problem:** Can't log in to Claude Code.
+
+**Solutions:**
+
+1. Make sure you have a valid Anthropic account
+2. Try opening the authentication URL manually in your browser
+3. Check that cookies aren't being blocked
+4. Try logging out and back in:
+   ```bash
+   claude logout
+   claude
+   ```
+
+### Claude Code is Stuck/Frozen
+
+**Problem:** Claude Code isn't responding.
+
+**Solutions:**
+
+1. Press `Ctrl + C` to cancel
+2. Wait a moment - complex tasks can take time
+3. If still stuck, close the terminal and restart Claude Code
+
+## GitHub Desktop Issues
+
+### GitHub Desktop Won't Open/Install
+
+**Problem:** Can't install or open GitHub Desktop.
+
+**Solutions:**
+
+- **Windows:** Make sure you're running Windows 10 or later
+- **Mac:** Make sure you're running macOS 10.15 or later
+- Download the latest version from [desktop.github.com](https://desktop.github.com)
+- Try restarting your computer
+
+### Can't Sign In to GitHub Desktop
+
+**Problem:** GitHub Desktop won't accept your credentials.
+
+**Solutions:**
+
+1. Make sure you're using your GitHub username and password
+2. Check your internet connection
+3. If using two-factor authentication, you may need a personal access token:
+   - Go to GitHub.com → Settings → Developer settings → Personal access tokens
+   - Generate a new token with 'repo' scope
+   - Use this token as your password in GitHub Desktop
+
+### "Push Rejected" or "Can't Push"
+
+**Problem:** GitHub Desktop says it can't push your changes.
+
+**Solutions:**
+
+1. Click **Repository → Pull** to get the latest changes first
+2. Then try pushing again
+3. If still failing, check that you have internet connection
+4. Make sure you have permission to push to this repository
+
+### No Changes Showing Up
+
+**Problem:** You made changes but don't see them in GitHub Desktop.
+
+**Solutions:**
+
+1. Make sure you've saved your files in your code editor
+2. Click **Repository → Refresh** in GitHub Desktop
+3. Check that you're looking at the correct repository (check the name at the top)
+
+### "Repository Not Found"
+
+**Problem:** GitHub Desktop can't find your repository.
+
+**Solutions:**
+
+1. Make sure the repository exists on GitHub.com
+2. Try removing and re-adding the repository:
+   - Right-click the repository name
+   - Select "Remove"
+   - Then **File → Clone Repository** to add it back
+
+### Can't See My Repository on GitHub
+
+**Problem:** Pushed changes but can't see them on GitHub.com.
+
+**Solutions:**
+
+1. Make sure you clicked **"Push origin"** after committing
+2. Check that the push completed (look for the checkmark)
+3. Refresh the GitHub.com page in your browser
+4. Verify you're looking at the correct repository and branch
+
+### Repository is Private (GitHub Pages Won't Work)
+
+**Problem:** You forgot to uncheck 'Keep this code private' when publishing, so GitHub Pages won't deploy.
+
+**Solution:** Go to your repository on GitHub.com → **Settings** → **General** → scroll down to the **Danger Zone** → click **Change repository visibility** and switch it from Private to Public.
+
+## Website Issues
+
+### Page is Blank / Nothing Showing
+
+**Possible causes:**
+
+1. **JavaScript error** - Check browser console (F12)
+2. **Wrong file path** - Check your HTML links
+3. **Syntax error in HTML** - Validate at [validator.w3.org](https://validator.w3.org)
+
+### CSS Not Loading
+
+**Solutions:**
+
+1. **Check the link path:**
+   ```html
+   <!-- If CSS is in same folder -->
+   <link rel="stylesheet" href="styles.css">
+
+   <!-- If CSS is in a css folder -->
+   <link rel="stylesheet" href="css/styles.css">
+   ```
+
+2. **Hard refresh the page:** `Ctrl + Shift + R` (Windows) or `Cmd + Shift + R` (Mac)
+
+3. **Check for typos** in the filename (case matters!)
+
+### Images Not Showing
+
+**Solutions:**
+
+1. **Check the image path:**
+   ```html
+   <!-- Same folder -->
+   <img src="photo.jpg" alt="Photo">
+
+   <!-- In images folder -->
+   <img src="images/photo.jpg" alt="Photo">
+   ```
+
+2. **Check the filename** - `Photo.jpg` is different from `photo.jpg`
+
+3. **Verify the file exists** in the right location
+
+### JavaScript Not Working
+
+**Solutions:**
+
+1. **Check browser console** (F12 → Console) for red error messages
+
+2. **Make sure script is at the end of body:**
+   ```html
+   <body>
+     <!-- content -->
+     <script src="script.js"></script>
+   </body>
+   ```
+
+3. **Check for typos** in element IDs and function names
+
+## GitHub Pages Issues
+
+### 404 - Page Not Found
+
+**Solutions:**
+
+1. **Wait longer** - First deployment can take 10+ minutes
+2. **Check you have `index.html`** in the root of your repository
+3. **Verify Pages is enabled:**
+   - Repository → Settings → Pages
+   - Should show "Your site is live at..."
+4. **Check the URL** - Should be `https://username.github.io/repo-name/`
+
+### Site Not Updating
+
+**Solutions:**
+
+1. **Wait 2-5 minutes** - GitHub Pages caches aggressively
+2. **Hard refresh:** `Ctrl + Shift + R` (Windows) or `Cmd + Shift + R` (Mac)
+3. **Check Actions tab** for deployment status
+4. **Make sure you pushed:**
+   - Open GitHub Desktop
+   - Look for "Push origin" button - if you see it, click it
+   - Changes tab should be empty (everything committed)
+
+### Mixed Content Error
+
+**Problem:** Your site uses HTTPS but some resources use HTTP.
+
+**Solution:** Change all `http://` links to `https://` in your code.
+
+## API Issues
+
+### "401 Unauthorized"
+
+**Problem:** Invalid or missing API key.
+
+**Solutions:**
+
+1. Check your API key is correct
+2. Make sure there are no extra spaces
+3. Verify the key is active in your Anthropic console
+4. Check environment variable is set:
+   ```bash
+   echo $ANTHROPIC_API_KEY
+   ```
+
+### "429 Too Many Requests"
+
+**Problem:** You've exceeded the rate limit.
+
+**Solutions:**
+
+1. Wait a minute and try again
+2. Add delays between requests in your code
+3. Upgrade your plan if needed
+
+### "500 Internal Server Error"
+
+**Problem:** Something went wrong on the API side.
+
+**Solutions:**
+
+1. Wait a few minutes and try again
+2. Check [status.anthropic.com](https://status.anthropic.com) for outages
+3. If persistent, contact support
+
+## General Tips
+
+### When Something Goes Wrong
+
+1. **Read the error message** - It often tells you exactly what's wrong
+2. **Google the error** - Someone else has probably had the same problem
+3. **Check the browser console** - F12 → Console tab
+4. **Ask Claude Code** - Paste the error and ask for help
+5. **Start small** - Undo recent changes and add them back one at a time
+
+### Prevention
+
+- **Save often** with Git commits
+- **Test frequently** as you make changes
+- **Keep backups** of working versions
+
+## Still Stuck?
+
+1. **Ask Claude Code** - Describe your problem in detail
+2. **Check documentation:**
+   - [Claude Code Docs](https://docs.anthropic.com/claude-code)
+   - [GitHub Docs](https://docs.github.com)
+   - [MDN Web Docs](https://developer.mozilla.org)
+3. **Take a break** - Sometimes stepping away helps!
+4. **Ask a friend** - Fresh eyes often spot the problem
+
+  💡 Remember: Making mistakes is part of learning. Every experienced developer has seen these errors hundreds of times!
+
+---
+
+## Colophon
+URL: https://howtoaicode.com/about/colophon/
+> How this guide was built and the tools behind it
+
+This page describes how the AI Workshop was created and the technologies behind it.
+
+## Built With
+
+### Static Site Generator
+**[Astro](https://astro.build)** - A modern web framework optimized for content-rich websites. Fast, flexible, and built for the edge.
+
+### Documentation Theme
+**[Starlight](https://starlight.astro.build)** - Astro's official documentation theme, providing beautiful, accessible, and responsive design out of the box.
+
+**[starlight-theme-rapide](https://github.com/HiDeoo/starlight-theme-rapide)** - A custom Starlight theme for enhanced visual polish.
+
+### Typography
+**[Inter](https://rsms.me/inter/)** by Rasmus Andersson - A carefully crafted typeface designed for user interfaces. Optimized for screens and highly legible.
+
+[**Instrument Serif**](https://fonts.google.com/specimen/Instrument+Serif/about) on the landing page.
+
+### Hosting
+**[GitHub Pages](https://pages.github.com)** - Free, reliable hosting directly from the GitHub repository.
+
+### Analytics
+**[PostHog](https://posthog.com)** - Privacy-focused product analytics to understand how people use this guide and improve the learning experience.
+
+## Development
+
+### Version Control
+**[Git](https://git-scm.org)** & **[GitHub](https://github.com)** - Source code management and collaboration.
+
+### Created With
+This entire workshop was built using **[Claude Code](https://claude.ai)** - practicing what we preach! The guide itself is a testament to AI-assisted development.
+
+## Content License
+
+This work is licensed under **[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)**.
+
+You're free to share and adapt this content for non-commercial purposes, as long as you give credit and share your adaptations under the same license.
+
+## Credits
+
+### Created By
+**Kenneth Mark Dsouza** - Concept, content, and development.
+
+## Open Source
+
+This project is open source and available on GitHub:
+
+**[github.com/inosaint/ai-workshop](https://github.com/inosaint/ai-workshop)**
+
+Contributions, suggestions, and feedback are welcome!
+
+## Technical Details
+
+### Repository Structure
+```
+ai-workshop/
+├── src/
+│   ├── content/docs/    # All workshop content
+│   ├── components/      # Custom components
+│   └── styles/          # Custom CSS
+├── astro.config.mjs     # Astro configuration
+└── package.json         # Dependencies
+```
+
+### Build Process
+1. Content written in Markdown/MDX
+2. Astro builds static HTML
+3. Deployed to GitHub Pages
+4. Available at [kenneth.dsouza.im/ai-workshop](https://kenneth.dsouza.im/ai-workshop)
+
+---
+
+  Curious about the code? Check out the GitHub repository to see how everything works!
+
+---
+
+## Further Learning
+URL: https://howtoaicode.com/about/further-learning/
+> Recommended courses and resources to continue your AI and coding journey
+
+Ready to take your skills to the next level? Here are carefully selected courses and resources to continue your journey with AI and coding.
+
+1. [RISD's AI Course](https://risd-ai-studio.notion.site/)(free)
+2. [Prototyping with Cursor](https://www.designisaparty.com/prototyping) (paid)
+
+  Have a course recommendation? Open an issue on our GitHub Issues page to suggest resources for this page!
+
+---
+
+## Improve This Guide
+URL: https://howtoaicode.com/about/improve-this-guide/
+> Help make the AI Workshop better by reporting issues and suggesting improvements
+
+Your feedback and contributions are invaluable in making the AI Workshop better for everyone. Whether you've found a typo, encountered an issue, or have ideas for new content, we'd love to hear from you!
+
+## Report Issues or Suggest Improvements
+
+Visit our **[GitHub Issues page](https://github.com/inosaint/issues)** to:
+
+- 🐛 **Report bugs or errors** you've encountered
+- 📝 **Suggest improvements** to existing content
+- 💡 **Propose new topics** or sections
+- ❓ **Ask questions** about unclear instructions
+- 🎨 **Share ideas** for better explanations or examples
+
+## How to Raise an Issue
+
+1. **Check existing issues** to see if your concern has already been reported
+2. **Click "New Issue"** on the [Issues page](https://github.com/inosaint/issues/new)
+3. **Choose a template** (or start from scratch)
+4. **Provide details**:
+   - Clear title describing the issue or suggestion
+   - Which page or section you're referring to
+   - What you expected vs. what you found
+   - Screenshots if helpful
+5. **Submit** and we'll review it as soon as possible!
+
+## Types of Contributions We Welcome
+
+- **Content improvements**: Better explanations, additional examples, or clearer instructions
+- **Technical corrections**: Fixes for code errors, outdated commands, or broken links
+- **New content**: Suggestions for additional modules or advanced topics
+- **Accessibility**: Help us make the guide more accessible to all learners
+- **Translations**: Interest in translating the guide to other languages
+
+## Quick Fixes
+
+Found a small typo or error? You can also:
+- Use the **"Edit this page"** link at the bottom of any page
+- Make the fix directly and submit a pull request
+
+## Questions?
+
+If you're not sure whether to create an issue or just have a general question, feel free to open an issue anyway. We're here to help!
+
+---
+
+**Thank you** for helping make the AI Workshop better for everyone! 🙏
+
+---
+
+## License
+URL: https://howtoaicode.com/about/license/
+> AI Workshop license information
+
+**AI Workshop** © 2025 by **Kenneth Mark Dsouza** is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+  
+    
+  
+
+---
+
+## Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+
+This is a human-readable summary of (and not a substitute for) the [full license](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
+
+### You are free to:
+
+- **Share** --- copy and redistribute the material in any medium or format
+- **Adapt** --- remix, transform, and build upon the material
+
+The licensor cannot revoke these freedoms as long as you follow the license terms.
+
+---
+
+### Under the following terms:
+
+#### Attribution
+You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+#### NonCommercial
+You may not use the material for commercial purposes.
+
+#### ShareAlike
+If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+
+#### No additional restrictions
+You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
+---
+
+### Notices
+
+You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.
+
+No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.
+
+---
+
+## What This Means for You
+
+### ✅ You CAN:
+
+- Use this workshop material for personal learning
+- Share it with friends, colleagues, or students
+- Adapt and modify the content for your own use
+- Create derivative works based on this material
+- Use it in educational settings (schools, bootcamps, etc.) as long as it's not-for-profit
+
+### ❌ You CANNOT:
+
+- Sell this material or charge money for access to it
+- Use it in a commercial training program or paid course
+- Remove the attribution to the original author
+- Distribute modified versions under a different license
+
+### 📝 If You Adapt This Work:
+
+1. Give appropriate credit: "Based on AI Workshop by Kenneth Mark Dsouza"
+2. Link back to the original: [https://kenneth.dsouza.im/ai-workshop](https://kenneth.dsouza.im/ai-workshop)
+3. Indicate what changes you made
+4. License your version under CC BY-NC-SA 4.0 as well
+
+---
+
+## Full Legal Code
+
+To view the complete legal text of the license, visit:
+
+**[Creative Commons BY-NC-SA 4.0 Legal Code](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)**
+
+Or contact:
+```
+Creative Commons
+PO Box 1866
+Mountain View, CA 94042
+USA
+```
+
+---
+
+## Questions?
+
+If you have questions about how you can use this material, feel free to:
+- Open an issue on [GitHub](https://github.com/inosaint/issues)
+- or reach out to Kenneth on X  or Bluesky
+
+---
+
+## Version
+URL: https://howtoaicode.com/about/version/
+> Version information for the AI Workshop
+
+**Current Version:** 1.0.0
+
+### Release History
+
+#### Version 1.0.0
+- Initial release of the AI Workshop guide
+- Complete beginner-friendly curriculum for building with Claude Code
+- GitHub Pages deployment guide
+- Analytics integration with PostHog
+
+### About This Guide
+
+This guide is continuously updated to reflect the latest best practices and tools for building with AI. Check back regularly for updates and improvements.
+
+---
+
+## Why This Guide
+URL: https://howtoaicode.com/about/why-this-guide/
+> The story and purpose behind the AI Workshop
+
+## The Mission
+
+This workshop exists to make AI-assisted coding accessible to everyone, regardless of technical background.
+
+## The Problem We Saw
+
+Traditional coding tutorials assume you already know:
+- How to use a terminal
+- What Git and GitHub are
+- How to install development tools
+- Technical jargon and concepts
+
+But what if you are completely new to coding? What if terms like "repository," "CLI," and "deployment" sound like a foreign language?
+
+**Most tutorials leave beginners behind.**
+
+## Our Solution
+
+The AI Workshop takes a different approach:
+
+### Start with Success
+You build something real in the first 10 minutes. No theory, no setup - just immediate results that prove "I can do this!"
+
+### Plain Language
+We avoid technical jargon. When we must use a technical term, we define it first. Every explanation is written as if you are learning for the very first time.
+
+### Desktop Apps, Not Command Lines (if we can help it)
+We use GitHub Desktop and Claude Code desktop app instead of forcing you to learn terminal commands. You click buttons, not type cryptic commands.
+
+### One Clear Path
+No overwhelming options. No "you could also do it this way." Just one clear, tested path from start to finish.
+
+### Real Projects
+You build actual websites you can share, not toy examples. Your portfolio site, your business landing page, your creative project.
+
+## Who This Is For
+
+This workshop is designed for:
+
+- **Complete beginners** who have never coded before
+- **Curious minds** who want to see what AI can do
+- **Professionals** exploring AI tools for work
+- **Students** learning modern development workflows
+- **Creators** who want to build without learning to code first
+- **Educators** looking for beginner-friendly AI curriculum
+
+## What Makes This Different
+
+### AI-First Approach
+We teach you to work **with** AI, not just learn coding syntax. This is how modern development works.
+
+### No Prerequisites
+Seriously. If you can use a web browser and download apps, you can do this workshop.
+
+### Free and Open
+This guide is free, open-source, and licensed for sharing. We believe knowledge should be accessible.
+
+### Built for Non-Technical Users
+Every decision - from using desktop apps to avoiding terminal commands - was made with beginners in mind.
+
+## The Vision
+
+We believe the future of software development is collaboration between humans and AI. Today with AI assistance, anyone with an idea can and should be able to bring it to life.
+
+This workshop is our contribution to that future. 
+
+**Make apps personal and the internet wild again!**
+
+## Workshops
+
+This course has been conducted in person at the following events:
+
+1. **NID Bangalore — Seminar on AI in Design** (5 March 2026)
+   Conducted as part of [NID India's Seminar on AI in Design](https://x.com/NID_India/status/2029866422168428610?s=20) at the National Institute of Design, Bangalore Campus.
+
+---
+
+  Have feedback? We would love to hear from you! Open an issue on GitHub or reach out to Kenneth on X  or Bluesky.
+
+---
+
+## Using Cursor (Alternative)
+URL: https://howtoaicode.com/optional/cursor/
+> An AI-powered code editor when you hit Claude Code limits
+
+Hit your Claude Code session limit? No worries! **Cursor** is an excellent alternative that works similarly but with a visual interface.
+
+---
+
+## What is Cursor?
+
+Cursor is an **AI-powered code editor** built on top of VS Code. Instead of typing in a terminal like Claude Code, you get a full visual editor where you can:
+
+- Chat with AI in a sidebar
+- Highlight code and ask AI to modify it
+- Generate entire files with natural language
+- Get inline code suggestions as you type
+
+  🖼️
+  
+    [Screenshot: Cursor editor interface]
+    The Cursor IDE showing the code editor on the left and AI chat on the right
+  
+
+## Why Use Cursor?
+
+| Feature | Claude Code | Cursor |
+|---------|-------------|--------|
+| Interface | Terminal (command line) | Visual editor (like VS Code) |
+| Learning curve | Steeper for beginners | More familiar if you've used any editor |
+| Session limits | Yes (on free tier) | Generous free tier |
+| Code editing | Creates/modifies files | Edit + AI suggestions inline |
+| Best for | Quick projects, automation | Longer coding sessions |
+
+## Installing Cursor
+
+### Step 1: Download Cursor
+
+Go to [cursor.com](https://cursor.com) and download the installer for your operating system.
+
+  🖼️
+  
+    [Screenshot: Cursor download page]
+    The Cursor website with download buttons for Mac, Windows, and Linux
+  
+
+### Step 2: Install and Open
+
+- **Mac**: Open the `.dmg` file and drag Cursor to Applications
+- **Windows**: Run the installer and follow the prompts
+
+### Step 3: Sign In
+
+Open Cursor and create a free account (or sign in with GitHub/Google).
+
+  ✅ Checkpoint
+  You should now see the Cursor editor with a welcome screen.
+
+## Opening Your Project in Cursor
+
+1. Click **File → Open Folder** (or `Cmd/Ctrl + O`)
+2. Navigate to your project folder
+3. Click **Open**
+
+You'll see your project files in the sidebar on the left.
+
+## Using AI in Cursor
+
+### Method 1: Chat Panel
+
+Press `Cmd + L` (Mac) or `Ctrl + L` (Windows) to open the AI chat.
+
+Type your request just like you would in Claude Code:
+
+```text
+Create a simple landing page with a header, hero section,
+and three feature cards. Use modern CSS with flexbox.
+```
+
+  🖼️
+  
+    [Screenshot: Cursor chat panel]
+    The AI chat sidebar with a conversation about creating a landing page
+  
+
+### Method 2: Inline Editing (Cmd/Ctrl + K)
+
+1. Select some code (or place your cursor where you want changes)
+2. Press `Cmd + K` (Mac) or `Ctrl + K` (Windows)
+3. Type what you want to change
+
+```text
+Add a hover effect to this button that scales it up slightly
+```
+
+Cursor will show you a preview of the changes. Press **Enter** to accept.
+
+### Method 3: Tab Autocomplete
+
+As you type code, Cursor suggests completions. Press **Tab** to accept them.
+
+## Cursor Shortcuts Cheat Sheet
+
+| Shortcut | Action |
+|----------|--------|
+| `Cmd/Ctrl + L` | Open AI chat panel |
+| `Cmd/Ctrl + K` | Inline AI edit |
+| `Cmd/Ctrl + Shift + L` | Add selection to chat |
+| `Tab` | Accept AI suggestion |
+| `Esc` | Dismiss suggestion |
+| `Cmd/Ctrl + S` | Save file |
+| `Cmd/Ctrl + P` | Quick file search |
+
+## Example: Building the Same Project
+
+Let's recreate what we'd do in Claude Code, but in Cursor:
+
+### 1. Create a New File
+
+Right-click in the sidebar → **New File** → name it `index.html`
+
+### 2. Use AI to Generate Content
+
+With the empty file open, press `Cmd/Ctrl + K` and type:
+
+```text
+Create a personal portfolio page with:
+- Hero section with name and tagline
+- About section
+- Skills section with 4 cards
+- Contact section
+Use modern CSS, include it in a style tag
+```
+
+### 3. Preview Your Work
+
+- Right-click on `index.html` → **Open with Live Server** (if you have the extension)
+- Or just double-click the file to open it in your browser
+
+### 4. Make Changes
+
+Want to tweak something? Select the code, press `Cmd/Ctrl + K`:
+
+```text
+Change the color scheme to blue and white
+```
+
+## Cursor vs Claude Code: When to Use Which
+
+### Use Claude Code when:
+- You want the fastest path from idea to code
+- You're comfortable with the terminal
+- You need quick automation or scripting
+- You're doing a quick prototype
+
+### Use Cursor when:
+- You hit your Claude Code session limit
+- You prefer a visual interface
+- You want to edit code manually alongside AI
+- You're doing longer coding sessions
+- You want inline suggestions as you type
+
+## Tips for Cursor Success
+
+  💡 Cursor Tips:
+  
+    Be specific in your prompts, just like with Claude Code
+    Use Cmd/Ctrl + K for quick inline changes
+    Select context - highlight relevant code before asking AI to modify it
+    Save often - Cmd/Ctrl + S after accepting AI changes
+    Use chat for bigger tasks, inline edit for small tweaks
+  
+
+## Switching Between Tools
+
+You can use both tools on the same project! Your files are just files on your computer.
+
+1. Start a project with Claude Code
+2. Hit a session limit
+3. Open the same folder in Cursor
+4. Continue where you left off
+5. Go back to Claude Code later when limits reset
+
+  ✅ Checkpoint
+  You now have a backup option when Claude Code isn't available. Keep building!
+
+  
+    ← Netlify Deploy
+  
+  
+    Cheat Sheet →
+
+---
+
+## Deploy to Netlify (Optional)
+URL: https://howtoaicode.com/optional/netlify/
+> An alternative way to deploy your project
+
+# Deploy to Netlify (Optional)
+
+GitHub Pages is great, but Netlify offers some extra features:
+- Custom domains with automatic HTTPS
+- Form handling without a backend
+- Continuous deployment from Git
+- Deploy previews for branches
+
+## Step 1: Create a Netlify Account
+
+1. Go to [netlify.com](https://netlify.com)
+2. Click **"Sign up"**
+3. Sign up with your GitHub account (easiest!)
+
+  🖼️
+  
+    [Screenshot: Netlify signup]
+    Netlify homepage with "Sign up" button and GitHub login option
+  
+
+## Step 2: Connect Your Repository
+
+1. Click **"Add new site"** → **"Import an existing project"**
+2. Choose **GitHub** as your Git provider
+3. Authorize Netlify to access your repositories
+4. Select your project repository
+
+  🖼️
+  
+    [Screenshot: Netlify import project]
+    Netlify interface showing GitHub repository selection
+  
+
+## Step 3: Configure Build Settings
+
+For a simple HTML/CSS/JS project:
+
+- **Build command:** Leave empty (or `echo "No build needed"`)
+- **Publish directory:** `.` (or the folder with your index.html)
+
+  🖼️
+  
+    [Screenshot: Netlify build settings]
+    Build settings form with fields for build command and publish directory
+  
+
+Click **"Deploy site"**!
+
+## Step 4: Wait for Deployment
+
+Netlify will:
+1. Clone your repository
+2. Run any build commands (if specified)
+3. Publish your site
+
+  ✅ Checkpoint
+  Your site should be live at something like random-name-12345.netlify.app
+
+## Step 5: Change Your Site Name
+
+The random URL isn't great. Let's change it:
+
+1. Go to **Site settings** → **Site details** → **Change site name**
+2. Choose something memorable (e.g., `my-portfolio`)
+3. Your URL becomes: `my-portfolio.netlify.app`
+
+  🖼️
+  
+    [Screenshot: Netlify site name settings]
+    Site settings page with "Change site name" option
+  
+
+## Automatic Deployments
+
+The best part: Netlify automatically redeploys whenever you push to GitHub!
+
+```
+Push to GitHub → Netlify detects changes → Site updates automatically
+```
+
+No manual steps needed after initial setup.
+
+## Adding a Custom Domain
+
+Want to use your own domain (like `yourname.com`)?
+
+1. Go to **Site settings** → **Domain management**
+2. Click **"Add custom domain"**
+3. Enter your domain name
+4. Follow the DNS configuration instructions
+
+Netlify provides free HTTPS certificates automatically!
+
+## Netlify Forms (Bonus Feature)
+
+Netlify can handle form submissions without a backend!
+
+Just add the `netlify` attribute to your form:
+
+```html
+<form name="contact" netlify>
+  <label>
+    Name: <input type="text" name="name">
+  </label>
+  <label>
+    Email: <input type="email" name="email">
+  </label>
+  <label>
+    Message: <textarea name="message"></textarea>
+  </label>
+  <button type="submit">Send</button>
+</form>
+```
+
+Submissions appear in your Netlify dashboard!
+
+## GitHub Pages vs Netlify
+
+| Feature | GitHub Pages | Netlify |
+|---------|--------------|---------|
+| Price | Free | Free (with limits) |
+| Custom domain | Yes | Yes |
+| HTTPS | Yes | Yes (easier setup) |
+| Form handling | No | Yes |
+| Deploy previews | No | Yes |
+| Build tools | Limited | Extensive |
+| Ease of setup | Easier | Slightly more steps |
+
+**Bottom line:** Both are great! GitHub Pages is simpler, Netlify has more features.
+
+## Troubleshooting
+
+### "Page not found" after deploy
+
+- Check your **publish directory** is correct
+- Make sure `index.html` exists in that directory
+- Check for case sensitivity in filenames
+
+### Build failing
+
+- Check the **deploy log** for error messages
+- For simple HTML sites, leave build command empty
+- Make sure all file paths are correct
+
+### Changes not appearing
+
+- Check the **Deploys** tab to see if deployment succeeded
+- Hard refresh: `Ctrl + Shift + R` (Windows) or `Cmd + Shift + R` (Mac)
+- Check that you pushed to the correct branch
+
+---

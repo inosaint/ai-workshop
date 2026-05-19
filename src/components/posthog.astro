@@ -4,12 +4,28 @@ const posthogHost = import.meta.env.PUBLIC_POSTHOG_HOST;
 
 let headEntries: { tag: string; attrs: Record<string, string>; content: string }[] = [];
 let locale: string | undefined;
+let slug: string | undefined;
+let pageTitle: string | undefined;
 try {
   headEntries = Astro.locals.starlightRoute?.head ?? [];
   locale = Astro.locals.starlightRoute?.locale;
+  slug = Astro.locals.starlightRoute?.slug;
+  pageTitle = Astro.locals.starlightRoute?.entry?.data?.title;
 } catch {
   // Not a Starlight page (e.g. landing page) — skip head entries
 }
+
+const SITE = 'https://howtoaicode.com';
+
+// BreadcrumbList — every docs page
+const breadcrumbJsonLd = slug ? JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
+    { '@type': 'ListItem', position: 2, name: pageTitle || slug, item: `${SITE}/${slug}/` },
+  ],
+}) : null;
 ---
 
 <!-- Prevent indexing of machine-translated pages until manually reviewed -->
@@ -17,6 +33,9 @@ try {
 
 <!-- Render Starlight's default head entries (OG tags, JSON-LD, etc.) -->
 {headEntries.map(({ tag: Tag, attrs, content }) => <Tag {...attrs} set:html={content} />)}
+
+<!-- Per-page structured data -->
+{breadcrumbJsonLd && <script type="application/ld+json" set:html={breadcrumbJsonLd} />}
 
 
 <!-- Ensure UTF-8 encoding -->

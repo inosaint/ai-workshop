@@ -11,7 +11,8 @@
     "astro": "astro",
     "translate": "node scripts/translate.mjs",
     "add-locale": "node scripts/add-locale.mjs",
-    "review-translations": "node scripts/review-translations.mjs"
+    "review-translations": "node scripts/review-translations.mjs",
+    "build-llms-full": "node scripts/build-llms-full.mjs"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.34.0",

@@ -58,3 +58,8 @@ Each page is scored 1–5 on four dimensions with specific issues flagged for hu
 Starlight uses two different locale identifiers — don't confuse them:
 - **Locale path key** (lowercase, used in URLs and `src/content/docs/<key>/`): e.g. `zh-cn`, `pt-br`
 - **BCP-47 language tag** (used in sidebar `translations: {}` objects and `lang:` field): e.g. `zh-CN`, `pt-BR`
+
+## SEO / AEO / GEO
+
+- Do not add generic `HowTo` or `FAQPage` JSON-LD unless it includes the complete required content (for example, HowTo steps or FAQ questions and answers). Page-specific FAQ schema can live in frontmatter when the page actually contains those answers.
+- When updating `scripts/build-llms-full.mjs`, preserve fenced code blocks exactly. Only strip MDX/JSX wrappers outside code fences so the AI crawler snapshot does not corrupt examples.
