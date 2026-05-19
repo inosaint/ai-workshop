@@ -9,7 +9,9 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "translate": "node scripts/translate.mjs"
+    "translate": "node scripts/translate.mjs",
+    "add-locale": "node scripts/add-locale.mjs",
+    "review-translations": "node scripts/review-translations.mjs"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.34.0",
