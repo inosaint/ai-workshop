@@ -1,0 +1,253 @@
+---
+title: 选择你的项目
+description: 选择一个项目来构建，或者创建你自己的项目
+sidebar:
+  order: 5
+---
+
+现在是最有趣的部分——决定要构建什么！
+
+在这次工作坊中，你可以从三个项目创意中选择，或者带来你自己的想法：
+
+| 项目 | 描述 |
+|---------|-------------|
+| 个人作品集 | 一个展示你是谁的精美单页网站 |
+| 互动问答 | 一个测试知识并显示结果的有趣游戏 |
+| 习惯追踪器 | 一个追踪日常习惯并查看进度的简单应用 |
+| 你自己的想法 | 任何你能想象到的东西！ |
+
+所有路径都通向同一个目的地：一个你可以展示的完整项目！
+
+## 选项 1：个人作品集
+
+<div class="project-card" style={{margin: '2rem 0', padding: '1.5rem', borderRadius: '12px', border: '2px solid var(--sl-color-gray-3)'}}>
+  <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>👤</div>
+  <h3 style={{margin: '0 0 0.5rem 0'}}>个人作品集</h3>
+  <p style={{color: 'var(--sl-color-gray-5)', marginBottom: '1rem'}}>
+    一个展示你是谁的精美单页网站。非常适合求职、拓展人脉，或者只是拥有属于自己的互联网一角。
+  </p>
+
+  <details>
+    <summary style={{cursor: 'pointer', fontWeight: 600, color: 'var(--sl-color-accent)'}}>查看起始提示词（点击展开）</summary>
+
+```text
+Create a personal portfolio website with:
+- A hero section with my name and a short tagline
+- An "About Me" section where I can describe myself
+- A "Skills" section showing 4-6 things I'm good at
+- A "Projects" section with placeholder cards for 3 projects
+- A "Contact" section with links to email and social media
+- Modern, clean design with a color scheme of your choice
+- Mobile-responsive layout
+- Use HTML, CSS, and vanilla JavaScript only
+```
+  </details>
+</div>
+
+## 选项 2：互动问答游戏
+
+<div class="project-card" style={{margin: '2rem 0', padding: '1.5rem', borderRadius: '12px', border: '2px solid var(--sl-color-gray-3)'}}>
+  <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>🎮</div>
+  <h3 style={{margin: '0 0 0.5rem 0'}}>互动问答游戏</h3>
+  <p style={{color: 'var(--sl-color-gray-5)', marginBottom: '1rem'}}>
+    一个测试知识并显示最终得分的有趣问答游戏。非常适合学习用户交互的工作原理。
+  </p>
+
+  <details>
+    <summary style={{cursor: 'pointer', fontWeight: 600, color: 'var(--sl-color-accent)'}}>查看起始提示词（点击展开）</summary>
+
+```text
+Create an interactive quiz game with:
+- A welcome screen with a "Start Quiz" button
+- 5 multiple-choice questions about [choose a topic: movies, science, history, etc.]
+- 4 answer options per question
+- Visual feedback showing if the answer was correct or wrong
+- A progress bar showing current question number
+- A results screen showing final score with a message based on performance
+- Option to restart the quiz
+- Fun, colorful design with animations
+- Use HTML, CSS, and vanilla JavaScript only
+```
+  </details>
+</div>
+
+## 选项 3：习惯追踪器
+
+<div class="project-card" style={{margin: '2rem 0', padding: '1.5rem', borderRadius: '12px', border: '2px solid var(--sl-color-gray-3)'}}>
+  <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>✅</div>
+  <h3 style={{margin: '0 0 0.5rem 0'}}>习惯追踪器</h3>
+  <p style={{color: 'var(--sl-color-gray-5)', marginBottom: '1rem'}}>
+    一个追踪日常习惯并可视化你坚持情况的简单应用。非常适合养成良好的日常习惯。
+  </p>
+
+  <details>
+    <summary style={{cursor: 'pointer', fontWeight: 600, color: 'var(--sl-color-accent)'}}>查看起始提示词（点击展开）</summary>
+
+```text
+Create a habit tracker app with:
+- Ability to add new habits with a name and emoji
+- A list of habits that can be marked complete for today
+- Visual checkboxes or toggle buttons for each habit
+- A simple streak counter showing consecutive days
+- Data saved in browser localStorage (persists between visits)
+- Clean, minimal design with satisfying animations when completing habits
+- A weekly view showing which days each habit was completed
+- Use HTML, CSS, and vanilla JavaScript only
+```
+  </details>
+</div>
+
+
+## 选项 4：构建你自己的想法！
+
+有其他想法吗？使用我们的提示词生成器来创建你自己的项目提示词！
+
+<div className="prompt-editor">
+  <h3>✨ 提示词生成器</h3>
+
+  <div className="prompt-fields">
+    <div className="prompt-field">
+      <label htmlFor="projectType">项目类型是什么？</label>
+      <select id="projectType">
+        <option value="">选择一个类型...</option>
+        <option value="website">网站 / 落地页</option>
+        <option value="game">游戏</option>
+        <option value="tool">实用工具 / 工具</option>
+        <option value="dashboard">仪表板</option>
+        <option value="other">其他</option>
+      </select>
+    </div>
+
+    <div className="prompt-field">
+      <label htmlFor="projectIdea">描述你的想法（1-2句话）</label>
+      <textarea id="projectIdea" placeholder="例如：一个可以保存和搜索我喜欢的食谱的食谱整理器"></textarea>
+    </div>
+
+    <div className="prompt-field">
+      <label htmlFor="projectFeatures">主要功能（用逗号分隔）</label>
+      <input type="text" id="projectFeatures" placeholder="例如：搜索、收藏、分类、深色模式" />
+    </div>
+
+    <div className="prompt-field">
+      <label htmlFor="projectColors">颜色偏好（可选）</label>
+      <input type="text" id="projectColors" placeholder="例如：蓝白色、深色主题、多彩" />
+    </div>
+  </div>
+
+  <button id="generateBtn" className="prompt-button">
+    生成我的提示词
+  </button>
+
+  <div id="generatedPrompt" className="generated-prompt">
+    <label>你的自定义提示词：</label>
+    <div className="prompt-output-wrapper">
+      <pre id="promptOutput"></pre>
+      <button id="copyBtn" className="copy-button">
+        复制
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+{`
+(function() {
+  function init() {
+    const generateBtn = document.getElementById('generateBtn');
+    const copyBtn = document.getElementById('copyBtn');
+
+    if (generateBtn) {
+      generateBtn.addEventListener('click', generatePrompt);
+    }
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', copyPrompt);
+    }
+  }
+
+  function generatePrompt() {
+    const type = document.getElementById('projectType').value;
+    const idea = document.getElementById('projectIdea').value;
+    const features = document.getElementById('projectFeatures').value;
+    const colors = document.getElementById('projectColors').value;
+
+    if (!idea) {
+      alert('Please describe your project idea!');
+      return;
+    }
+
+    let prompt = 'Create a ' + (type || 'web project') + ':\\n\\n';
+    prompt += 'Main concept: ' + idea + '\\n\\n';
+    prompt += 'Features to include:\\n';
+
+    if (features) {
+      features.split(',').forEach(feature => {
+        prompt += '- ' + feature.trim() + '\\n';
+      });
+    } else {
+      prompt += '- [Add your key features here]\\n';
+    }
+
+    prompt += '\\nAdditional requirements:\\n';
+    if (colors) {
+      prompt += '- Color scheme: ' + colors + '\\n';
+    }
+    prompt += '- Mobile-responsive design\\n';
+    prompt += '- Clean, modern UI\\n';
+    prompt += '- Use HTML, CSS, and vanilla JavaScript only\\n';
+    prompt += '- Include helpful comments in the code';
+
+    document.getElementById('promptOutput').textContent = prompt;
+    document.getElementById('generatedPrompt').classList.add('show');
+  }
+
+  function copyPrompt() {
+    const prompt = document.getElementById('promptOutput').textContent;
+    navigator.clipboard.writeText(prompt).then(() => {
+      const btn = document.getElementById('copyBtn');
+      btn.textContent = 'Copied!';
+      btn.style.background = '#10b981';
+      setTimeout(() => {
+        btn.textContent = 'Copy';
+        btn.style.background = 'var(--sl-color-accent)';
+      }, 2000);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+`}
+</script>
+
+
+## 编写好提示词的技巧
+
+<div className="tip-box">
+  <strong>💡 提示词编写技巧：</strong>
+  <ul style={{margin: '0.5rem 0 0 0', paddingLeft: '1.5rem'}}>
+    <li><strong>要具体</strong> - "一个联系表单"太模糊；"一个包含姓名、邮箱、留言字段并带有验证功能的联系表单"才清晰</li>
+    <li><strong>列出功能</strong> - 使用项目符号有助于 Claude Code 准确理解你想要什么</li>
+    <li><strong>说明技术栈</strong> - "使用 HTML、CSS 和 JavaScript"让初学者的事情保持简单</li>
+    <li><strong>描述外观</strong> - "现代简约"或"有趣多彩"能引导设计方向</li>
+  </ul>
+</div>
+
+
+## 接下来会发生什么？
+
+一旦你选择（或创建）了你的项目：
+
+1. **复制你的提示词** - 从上面的模板或从提示词生成器中获取
+2. **打开 Claude Code** - 开始一个新的对话
+3. **粘贴并运行** - 将你的提示词交给 Claude Code，见证奇迹发生！
+
+我们将在下一节中一步步引导你完成这个过程。
+
+<div className="checkpoint">
+  <div className="checkpoint-title">✅ 检查点</div>
+  <p>你已经有了一个项目想法和一个准备好的提示词。是时候开始构建了！</p>
+</div>
