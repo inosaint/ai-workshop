@@ -106,11 +106,16 @@ try {
             });
 
             // Set user properties for funnel analysis
-            posthog.setPersonProperties({
+            const storedFurthest = parseInt(localStorage.getItem('ph_furthest_module') || '0', 10);
+            const props = {
               last_module_viewed: data.module,
-              furthest_module_order: data.order,
               last_section: data.section
-            });
+            };
+            if (data.order > storedFurthest) {
+              localStorage.setItem('ph_furthest_module', String(data.order));
+              props.furthest_module_order = data.order;
+            }
+            posthog.setPersonProperties(props);
             break;
           }
         }

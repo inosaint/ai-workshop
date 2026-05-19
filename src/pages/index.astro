@@ -8,7 +8,7 @@ import PostHogLayout from '../layouts/PostHogLayout.astro';
 >
   <link slot="head" rel="preconnect" href="https://fonts.googleapis.com">
   <link slot="head" rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link slot="head" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link slot="head" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
 
   <!-- Open Graph -->
   <meta slot="head" property="og:title" content="AI Workshop — Free AI Course: Learn to Build with Claude Code">
@@ -25,6 +25,17 @@ import PostHogLayout from '../layouts/PostHogLayout.astro';
 
   <!-- Canonical -->
   <link slot="head" rel="canonical" href="https://howtoaicode.com/">
+
+  <!-- Commented out to test GitHub secrets with posthog.astro component
+  <script slot="head">
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Xr es pi Zr rs Kr Qr capture Ni calculateEventProperties os register register_once register_for_session unregister unregister_for_session ds getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey cancelPendingSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException startExceptionAutocapture stopExceptionAutocapture loadToolbar get_property getSessionProperty us ns createPersonProfile hs Vr vs opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing ss debug O ls getPageViewId captureTraceFeedback captureTraceMetric qr".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_kIaH7NvvMzhJRVaowyRREB98geiqVcTkhesrQt7sQR0', {
+        api_host: 'https://us.i.posthog.com',
+        defaults: '2025-11-30',
+        person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
+    })
+  </script>
+  -->
 
   <!-- JSON-LD for landing page -->
   <script slot="head" type="application/ld+json">
@@ -56,19 +67,8 @@ import PostHogLayout from '../layouts/PostHogLayout.astro';
   }
   </script>
 
-  <!-- Commented out to test GitHub secrets with posthog.astro component
-  <script slot="head">
-    !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init Xr es pi Zr rs Kr Qr capture Ni calculateEventProperties os register register_once register_for_session unregister unregister_for_session ds getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey cancelPendingSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException startExceptionAutocapture stopExceptionAutocapture loadToolbar get_property getSessionProperty us ns createPersonProfile hs Vr vs opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing ss debug O ls getPageViewId captureTraceFeedback captureTraceMetric qr".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-    posthog.init('phc_kIaH7NvvMzhJRVaowyRREB98geiqVcTkhesrQt7sQR0', {
-        api_host: 'https://us.i.posthog.com',
-        defaults: '2025-11-30',
-        person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
-    })
-  </script>
-  -->
-
   <style slot="head">
-    * {
+    *, *::before, *::after {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -79,9 +79,9 @@ import PostHogLayout from '../layouts/PostHogLayout.astro';
     }
 
     body {
-      font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      background: #ffffff;
-      color: #1a1a1a;
+      font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+      background: oklch(0.99 0.008 78);
+      color: oklch(0.16 0.01 260);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -89,48 +89,148 @@ import PostHogLayout from '../layouts/PostHogLayout.astro';
       min-height: 100vh;
       padding: 2rem;
       text-align: center;
+      overflow-x: hidden;
+    }
+
+    /* Warm background blobs */
+    .blob {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(70px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .blob-1 {
+      width: 480px;
+      height: 480px;
+      background: oklch(0.80 0.14 68);
+      opacity: 0.15;
+      top: -140px;
+      right: -100px;
+    }
+
+    .blob-2 {
+      width: 360px;
+      height: 360px;
+      background: oklch(0.76 0.16 48);
+      opacity: 0.13;
+      bottom: -100px;
+      left: -80px;
+    }
+
+    .blob-3 {
+      width: 220px;
+      height: 220px;
+      background: oklch(0.83 0.12 85);
+      opacity: 0.10;
+      top: 38%;
+      left: 8%;
     }
 
     .container {
-      max-width: 600px;
+      position: relative;
+      z-index: 1;
+      max-width: 560px;
+      animation: arrive 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    @keyframes arrive {
+      from {
+        opacity: 0;
+        transform: translateY(22px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: oklch(0.50 0.16 52);
+      background: oklch(0.97 0.04 75);
+      border: 1.5px solid oklch(0.88 0.09 72);
+      border-radius: 100px;
+      padding: 0.35rem 0.9rem;
+      margin-bottom: 1.75rem;
+      letter-spacing: 0.01em;
     }
 
     h1 {
-      font-family: 'Instrument Serif', Georgia, serif;
-      font-size: clamp(2.5rem, 8vw, 3.5rem);
-      font-weight: 400;
-      line-height: 1.15;
-      margin-bottom: 1.5rem;
-      letter-spacing: -0.02em;
+      font-family: 'Nunito', sans-serif;
+      font-size: clamp(2.4rem, 8vw, 3.6rem);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.025em;
+      color: oklch(0.14 0.01 260);
     }
 
-    p {
-      font-size: 1.125rem;
-      color: #555;
-      line-height: 1.6;
+    .subtitle {
+      font-size: 1.1rem;
+      color: oklch(0.48 0.008 260);
+      line-height: 1.7;
       margin-bottom: 2.5rem;
     }
 
     .cta {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
       padding: 1rem 2.5rem;
-      font-size: 1rem;
-      font-weight: 500;
-      font-family: inherit;
-      color: white;
-      background: #2563eb;
+      font-size: 1.05rem;
+      font-weight: 700;
+      font-family: 'Nunito', sans-serif;
+      color: oklch(0.99 0 0);
+      background: oklch(0.66 0.19 52);
       border: none;
-      border-radius: 50px;
+      border-radius: 100px;
       text-decoration: none;
       cursor: pointer;
-      transition: all 0.2s ease;
-      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+      transition: background 0.2s cubic-bezier(0.22, 1, 0.36, 1),
+                  transform 0.2s cubic-bezier(0.22, 1, 0.36, 1),
+                  box-shadow 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+      box-shadow: 0 4px 24px oklch(0.66 0.19 52 / 0.36);
     }
 
     .cta:hover {
-      background: #1d4ed8;
-      transform: translateY(-1px);
-      box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35);
+      background: oklch(0.58 0.19 52);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px oklch(0.66 0.19 52 / 0.42);
+    }
+
+    .cta:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 12px oklch(0.66 0.19 52 / 0.30);
+    }
+
+    .cta:focus-visible {
+      outline: 3px solid oklch(0.66 0.19 52);
+      outline-offset: 3px;
+    }
+
+    .cta-arrow {
+      transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .cta:hover .cta-arrow {
+      transform: translateX(3px);
+    }
+
+    .proof {
+      margin-top: 1.75rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: oklch(0.58 0.01 260);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
     }
 
     @media (max-width: 480px) {
@@ -138,22 +238,51 @@ import PostHogLayout from '../layouts/PostHogLayout.astro';
         padding: 1.5rem;
       }
 
-      p {
+      .subtitle {
         font-size: 1rem;
       }
 
       .cta {
         padding: 0.875rem 2rem;
+        font-size: 1rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .container {
+        animation: none;
+      }
+
+      .cta,
+      .cta-arrow {
+        transition: none;
       }
     }
   </style>
 
+  <div class="blob blob-1" aria-hidden="true"></div>
+  <div class="blob blob-2" aria-hidden="true"></div>
+  <div class="blob blob-3" aria-hidden="true"></div>
+
   <div class="container">
-    <h1>Learn to build your first site<br>with AI</h1>
-    <p>
+    <div class="kicker">✦ Free &nbsp;·&nbsp; No experience needed &nbsp;·&nbsp; 3 hours</div>
+    <h1>Learn to build your first site with AI</h1>
+    <p class="subtitle">
       From complete beginner to deployed project in 3 hours.<br>
       No coding experience required.
     </p>
-    <a href="/introduction/" class="cta">Start Free Course</a>
+    <a href="/introduction/" class="cta" id="cta-start">
+      Start Free Course
+      <span class="cta-arrow" aria-hidden="true">→</span>
+    </a>
+    <p class="proof">🎉 Hundreds of beginners have completed this course</p>
   </div>
+
+  <script>
+    document.getElementById('cta-start')?.addEventListener('click', function() {
+      if (window.posthog) {
+        posthog.capture('cta_clicked', { cta: 'start_free_course', page: '/' });
+      }
+    });
+  </script>
 </PostHogLayout>
