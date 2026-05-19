@@ -271,10 +271,18 @@ import PostHogLayout from '../layouts/PostHogLayout.astro';
       From complete beginner to deployed project in 3 hours.<br>
       No coding experience required.
     </p>
-    <a href="/introduction/" class="cta">
+    <a href="/introduction/" class="cta" id="cta-start">
       Start Free Course
       <span class="cta-arrow" aria-hidden="true">→</span>
     </a>
     <p class="proof">🎉 Hundreds of beginners have completed this course</p>
   </div>
+
+  <script>
+    document.getElementById('cta-start')?.addEventListener('click', function() {
+      if (window.posthog) {
+        posthog.capture('cta_clicked', { cta: 'start_free_course', page: '/' });
+      }
+    });
+  </script>
 </PostHogLayout>
