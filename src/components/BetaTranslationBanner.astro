@@ -10,6 +10,7 @@ const isTranslated = locale !== undefined && locale !== 'root';
 const bannerText: Record<string, { message: string; cta: string }> = {
   'zh-cn': { message: '本页内容由英文机器翻译而来，质量可能参差不齐。', cta: '报告问题' },
   'es': { message: 'Esta página fue traducida automáticamente del inglés. La calidad puede variar.', cta: 'Reportar un problema' },
+  'id': { message: 'Halaman ini diterjemahkan secara otomatis dari bahasa Inggris. Kualitas mungkin bervariasi.', cta: 'Laporkan masalah' },
 };
 
 const text = locale ? (bannerText[locale] ?? { message: 'This page was machine-translated from English. Quality may vary.', cta: 'Report an issue' }) : null;

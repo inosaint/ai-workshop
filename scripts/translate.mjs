@@ -48,6 +48,7 @@ const LANGUAGE_NAMES = {
   'es': 'Spanish',
   'pt-BR': 'Brazilian Portuguese',
   'hi': 'Hindi',
+  'id': 'Indonesian',
 };
 
 const LOCALE_PATHS = {

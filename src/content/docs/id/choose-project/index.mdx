@@ -1,0 +1,253 @@
+---
+title: Pilih Proyek Anda
+description: Pilih proyek untuk dibangun atau buat sendiri
+sidebar:
+  order: 5
+---
+
+Inilah bagian yang menyenangkan — memutuskan apa yang akan dibangun!
+
+Selama workshop ini, Anda bisa memilih dari tiga ide proyek, atau membawa ide sendiri:
+
+| Proyek | Deskripsi |
+|--------|-----------|
+| Portfolio Pribadi | Website satu halaman yang indah menampilkan diri Anda |
+| Kuis Interaktif | Game seru yang menguji pengetahuan dan menampilkan hasil |
+| Pelacak Kebiasaan | Aplikasi sederhana untuk melacak kebiasaan harian dan melihat kemajuan |
+| Ide Anda Sendiri | Apa pun yang bisa Anda bayangkan! |
+
+Semua jalur menuju tujuan yang sama: proyek yang berfungsi dan bisa Anda banggakan!
+
+## Pilihan 1: Portfolio Pribadi
+
+<div class="project-card" style={{margin: '2rem 0', padding: '1.5rem', borderRadius: '12px', border: '2px solid var(--sl-color-gray-3)'}}>
+  <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>👤</div>
+  <h3 style={{margin: '0 0 0.5rem 0'}}>Portfolio Pribadi</h3>
+  <p style={{color: 'var(--sl-color-gray-5)', marginBottom: '1rem'}}>
+    Website satu halaman yang indah menampilkan siapa Anda. Sempurna untuk mencari kerja, networking, atau sekadar memiliki sudut Anda sendiri di internet.
+  </p>
+
+  <details>
+    <summary style={{cursor: 'pointer', fontWeight: 600, color: 'var(--sl-color-accent)'}}>Lihat prompt awal (klik untuk memperluas)</summary>
+
+```text
+Create a personal portfolio website with:
+- A hero section with my name and a short tagline
+- An "About Me" section where I can describe myself
+- A "Skills" section showing 4-6 things I'm good at
+- A "Projects" section with placeholder cards for 3 projects
+- A "Contact" section with links to email and social media
+- Modern, clean design with a color scheme of your choice
+- Mobile-responsive layout
+- Use HTML, CSS, and vanilla JavaScript only
+```
+  </details>
+</div>
+
+## Pilihan 2: Game Kuis Interaktif
+
+<div class="project-card" style={{margin: '2rem 0', padding: '1.5rem', borderRadius: '12px', border: '2px solid var(--sl-color-gray-3)'}}>
+  <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>🎮</div>
+  <h3 style={{margin: '0 0 0.5rem 0'}}>Game Kuis Interaktif</h3>
+  <p style={{color: 'var(--sl-color-gray-5)', marginBottom: '1rem'}}>
+    Game trivia yang menyenangkan yang menguji pengetahuan dan menampilkan skor akhir. Bagus untuk mempelajari cara kerja interaksi pengguna.
+  </p>
+
+  <details>
+    <summary style={{cursor: 'pointer', fontWeight: 600, color: 'var(--sl-color-accent)'}}>Lihat prompt awal (klik untuk memperluas)</summary>
+
+```text
+Create an interactive quiz game with:
+- A welcome screen with a "Start Quiz" button
+- 5 multiple-choice questions about [choose a topic: movies, science, history, etc.]
+- 4 answer options per question
+- Visual feedback showing if the answer was correct or wrong
+- A progress bar showing current question number
+- A results screen showing final score with a message based on performance
+- Option to restart the quiz
+- Fun, colorful design with animations
+- Use HTML, CSS, and vanilla JavaScript only
+```
+  </details>
+</div>
+
+## Pilihan 3: Pelacak Kebiasaan
+
+<div class="project-card" style={{margin: '2rem 0', padding: '1.5rem', borderRadius: '12px', border: '2px solid var(--sl-color-gray-3)'}}>
+  <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>✅</div>
+  <h3 style={{margin: '0 0 0.5rem 0'}}>Pelacak Kebiasaan</h3>
+  <p style={{color: 'var(--sl-color-gray-5)', marginBottom: '1rem'}}>
+    Aplikasi sederhana untuk melacak kebiasaan harian dan memvisualisasikan konsistensi Anda. Sempurna untuk membangun rutinitas yang baik.
+  </p>
+
+  <details>
+    <summary style={{cursor: 'pointer', fontWeight: 600, color: 'var(--sl-color-accent)'}}>Lihat prompt awal (klik untuk memperluas)</summary>
+
+```text
+Create a habit tracker app with:
+- Ability to add new habits with a name and emoji
+- A list of habits that can be marked complete for today
+- Visual checkboxes or toggle buttons for each habit
+- A simple streak counter showing consecutive days
+- Data saved in browser localStorage (persists between visits)
+- Clean, minimal design with satisfying animations when completing habits
+- A weekly view showing which days each habit was completed
+- Use HTML, CSS, and vanilla JavaScript only
+```
+  </details>
+</div>
+
+
+## Pilihan 4: Bangun Ide Anda Sendiri!
+
+Punya sesuatu yang lain dalam pikiran? Gunakan Pembuat Prompt kami untuk membuat prompt proyek Anda sendiri!
+
+<div className="prompt-editor">
+  <h3>✨ Pembuat Prompt</h3>
+
+  <div className="prompt-fields">
+    <div className="prompt-field">
+      <label htmlFor="projectType">Jenis proyek apa?</label>
+      <select id="projectType">
+        <option value="">Pilih jenis...</option>
+        <option value="website">Website / Landing Page</option>
+        <option value="game">Game</option>
+        <option value="tool">Utilitas / Alat</option>
+        <option value="dashboard">Dashboard</option>
+        <option value="other">Lainnya</option>
+      </select>
+    </div>
+
+    <div className="prompt-field">
+      <label htmlFor="projectIdea">Deskripsikan ide Anda (1-2 kalimat)</label>
+      <textarea id="projectIdea" placeholder="mis., Pengatur resep tempat saya bisa menyimpan dan mencari resep favorit saya"></textarea>
+    </div>
+
+    <div className="prompt-field">
+      <label htmlFor="projectFeatures">Fitur utama (dipisahkan koma)</label>
+      <input type="text" id="projectFeatures" placeholder="mis., pencarian, favorit, kategori, mode gelap" />
+    </div>
+
+    <div className="prompt-field">
+      <label htmlFor="projectColors">Preferensi warna (opsional)</label>
+      <input type="text" id="projectColors" placeholder="mis., biru dan putih, tema gelap, warna-warni" />
+    </div>
+  </div>
+
+  <button id="generateBtn" className="prompt-button">
+    Buat Prompt Saya
+  </button>
+
+  <div id="generatedPrompt" className="generated-prompt">
+    <label>Prompt kustom Anda:</label>
+    <div className="prompt-output-wrapper">
+      <pre id="promptOutput"></pre>
+      <button id="copyBtn" className="copy-button">
+        Salin
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+{`
+(function() {
+  function init() {
+    const generateBtn = document.getElementById('generateBtn');
+    const copyBtn = document.getElementById('copyBtn');
+
+    if (generateBtn) {
+      generateBtn.addEventListener('click', generatePrompt);
+    }
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', copyPrompt);
+    }
+  }
+
+  function generatePrompt() {
+    const type = document.getElementById('projectType').value;
+    const idea = document.getElementById('projectIdea').value;
+    const features = document.getElementById('projectFeatures').value;
+    const colors = document.getElementById('projectColors').value;
+
+    if (!idea) {
+      alert('Tolong deskripsikan ide proyek Anda!');
+      return;
+    }
+
+    let prompt = 'Create a ' + (type || 'web project') + ':\\n\\n';
+    prompt += 'Main concept: ' + idea + '\\n\\n';
+    prompt += 'Features to include:\\n';
+
+    if (features) {
+      features.split(',').forEach(feature => {
+        prompt += '- ' + feature.trim() + '\\n';
+      });
+    } else {
+      prompt += '- [Add your key features here]\\n';
+    }
+
+    prompt += '\\nAdditional requirements:\\n';
+    if (colors) {
+      prompt += '- Color scheme: ' + colors + '\\n';
+    }
+    prompt += '- Mobile-responsive design\\n';
+    prompt += '- Clean, modern UI\\n';
+    prompt += '- Use HTML, CSS, and vanilla JavaScript only\\n';
+    prompt += '- Include helpful comments in the code';
+
+    document.getElementById('promptOutput').textContent = prompt;
+    document.getElementById('generatedPrompt').classList.add('show');
+  }
+
+  function copyPrompt() {
+    const prompt = document.getElementById('promptOutput').textContent;
+    navigator.clipboard.writeText(prompt).then(() => {
+      const btn = document.getElementById('copyBtn');
+      btn.textContent = 'Tersalin!';
+      btn.style.background = '#10b981';
+      setTimeout(() => {
+        btn.textContent = 'Salin';
+        btn.style.background = 'var(--sl-color-accent)';
+      }, 2000);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+`}
+</script>
+
+
+## Tips Menulis Prompt yang Baik
+
+<div className="tip-box">
+  <strong>💡 Tips Menulis Prompt:</strong>
+  <ul style={{margin: '0.5rem 0 0 0', paddingLeft: '1.5rem'}}>
+    <li><strong>Spesifik</strong> — "Formulir kontak" itu samar; "Formulir kontak dengan kolom nama, email, pesan, dan validasi" itu jelas</li>
+    <li><strong>Daftar fitur</strong> — Poin-poin membantu Claude Code memahami tepat apa yang Anda inginkan</li>
+    <li><strong>Sebutkan teknologinya</strong> — "Gunakan HTML, CSS, dan JavaScript" menjaga hal-hal tetap sederhana untuk pemula</li>
+    <li><strong>Deskripsikan tampilannya</strong> — "Modern dan minimalis" atau "Seru dan berwarna" memandu desain</li>
+  </ul>
+</div>
+
+
+## Apa yang Terjadi Selanjutnya?
+
+Setelah Anda memilih (atau membuat) proyek Anda:
+
+1. **Salin prompt Anda** — Baik dari template di atas atau dari Pembuat Prompt
+2. **Buka Claude Code** — Mulai chat baru
+3. **Tempel dan jalankan** — Berikan Claude Code prompt Anda dan saksikan keajaibannya!
+
+Kita akan membahas ini langkah demi langkah di bagian berikutnya.
+
+<div className="checkpoint">
+  <div className="checkpoint-title">✅ Pos Pemeriksaan</div>
+  <p>Anda memiliki ide proyek dan prompt yang siap. Saatnya membangun!</p>
+</div>
