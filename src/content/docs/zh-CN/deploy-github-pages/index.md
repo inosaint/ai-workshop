@@ -20,7 +20,7 @@ sidebar:
 ### 第二步：创建 Pull Request
 
 现在让我们将本地代码推送到主分支。
-![](preview-pr.png)
+![](../../deploy-github-pages/preview-pr.png)
 
 1. 打开 **GitHub Desktop**
 2. 界面上应该有一个"**Preview Pull Request**"按钮
@@ -56,7 +56,7 @@ https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/
 
 #### 部署延迟
 
-![部署已完成](git-actions.png)
+![部署已完成](../../deploy-github-pages/git-actions.png)
 
 这是一个可选步骤，供你在需要调试时使用。
 

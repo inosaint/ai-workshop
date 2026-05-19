@@ -19,14 +19,14 @@ sidebar:
 
 ## 通过 Github Desktop 获取 Claude 的更改
 
-![](github-bar.png)
+![](../../testing-locally/github-bar.png)
 ### 第一步：打开 GitHub Desktop
 
 切换到 GitHub Desktop。你应该能看到顶部的上述工具栏。最左侧的部分是你当前所在的仓库，中间部分是你当前所在的分支，最右侧是"操作"区域。
 
 ### 第二步：切换到你的分支
 
-![](github-branch.png)
+![](../../testing-locally/github-branch.png)
 
 使用分支选择器，选择 Claude 工作所在的分支。
 
@@ -169,7 +169,7 @@ The color contrast of the button on the homepage isn't as per accessibility guid
 
 在 **Console**（控制台）选项卡中查找红色错误信息，这些信息会告诉你哪里出了问题。如果看不懂，将这些信息粘贴到 Claude 对话框中，它将帮助你确定下一步操作。
 
-![Debugger on Arc](debugging.png)
+![Debugger on Arc](../../testing-locally/debugging.png)
 
 ## 故障排查
 
@@ -183,10 +183,10 @@ The color contrast of the button on the homepage isn't as per accessibility guid
 **解决方法：** 确保图片路径与文件实际位置完全一致：
 ```html
 <!-- 如果图片与 HTML 文件在同一文件夹 -->
-<img src="photo.jpg" alt="Photo">
+<img src="../../testing-locally/photo.jpg" alt="Photo">
 
 <!-- 如果图片在"images"文件夹中 -->
-<img src="images/photo.jpg" alt="Photo">
+<img src="../../testing-locally/images/photo.jpg" alt="Photo">
 ```
 
 ### CSS 样式未生效

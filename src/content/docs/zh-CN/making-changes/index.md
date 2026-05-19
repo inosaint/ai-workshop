@@ -58,7 +58,7 @@ Add a footer with copyright information
 
 点击文件查看已创建或修改的内容。所有已更改的文件都应处于勾选状态。
 
-![手动检查您的更改](checking-in.png)
+![手动检查您的更改](../../making-changes/checking-in.png)
 
 #### 第三步：提交您的更改
 

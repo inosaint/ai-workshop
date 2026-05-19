@@ -39,7 +39,7 @@ Can you create Tetris as a Claude Artifact?
 
 几秒钟之内，Claude 就会在你的浏览器中创建一个**可运行的俄罗斯方块游戏**！
 
-![Claude 在浏览器中施展魔法](tetris.png)
+![Claude 在浏览器中施展魔法](../../quick-win/tetris.png)
 
 ### 第四步：对结果进行迭代
 

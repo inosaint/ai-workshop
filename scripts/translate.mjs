@@ -128,7 +128,21 @@ Rules:
     messages: [{ role: 'user', content: source }],
   });
 
-  const translated = response.content[0].text;
+  let translated = response.content[0].text;
+
+  // Fix relative image paths: images live in the English source folder, not the translated one.
+  // e.g. ![alt](foo.png) -> ![alt](../../section/foo.png)
+  const sectionName = relative(DOCS_ROOT, dirname(src));
+  const imgPathPrefix = `../../${sectionName}/`;
+  translated = translated.replace(
+    /!\[([^\]]*)\]\((?!\.\.\/|https?:\/\/)([^/)][^)]*\.(png|jpg|gif|webp|svg))\)/g,
+    (_, alt, imgPath) => `![${alt}](${imgPathPrefix}${imgPath})`
+  );
+  translated = translated.replace(
+    /src="(?!\.\.\/|https?:\/\/)([^/""][^"]*\.(png|jpg|gif|webp|svg))"/g,
+    (_, imgPath) => `src="${imgPathPrefix}${imgPath}"`
+  );
+
   mkdirSync(dirname(out), { recursive: true });
   writeFileSync(out, translated, 'utf8');
 

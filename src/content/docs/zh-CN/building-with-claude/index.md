@@ -10,7 +10,7 @@ sidebar:
 
 ### 第一步：打开新的 Claude Code 对话
 
-![新建对话设置](new-project.png)
+![新建对话设置](../../building-with-claude/new-project.png)
 
 1. 选择您希望 Claude 处理的代码仓库，例如：username/username.github.io
 2. 选择默认的云端环境
@@ -26,7 +26,7 @@ Claude Code 将会：
 2. **创建文件** - 生成 HTML、CSS 和 JavaScript 文件
 3. **解释说明** - 告诉您它在做什么以及原因
 
-![对话过程大致呈现单方面交流的样子](example-convo.png)
+![对话过程大致呈现单方面交流的样子](../../building-with-claude/example-convo.png)
 
 <div class="warning-box">
   <strong>⚠️ 请耐心等待！</strong> 复杂的项目可能需要一两分钟。在 Claude Code 工作期间请勿打断它。
@@ -35,7 +35,7 @@ Claude Code 将会：
 
 ### 第三步：查看已创建的内容
 
-![Claude 会将更改推送到一个分支](claude-branch.png)
+![Claude 会将更改推送到一个分支](../../building-with-claude/claude-branch.png)
 
 Claude Code 完成后，让我们看看创建了哪些文件。Claude Code 会创建一个新分支并将其工作推送到该分支。您需要将这些更改*拉取*到本地系统进行审查。
 
@@ -48,7 +48,7 @@ Claude Code 完成后，让我们看看创建了哪些文件。Claude Code 会�
 
 ### Github 仓库未安装
 
-![Github 应用未安装](github-connection.png)
+![Github 应用未安装](../../building-with-claude/github-connection.png)
 
 您需要重新连接 Github 集成并选择您正在使用的代码仓库。
 

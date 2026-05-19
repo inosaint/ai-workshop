@@ -38,7 +38,7 @@ sidebar:
 </div>
 
 ### 将 Github 连接到 Claude Code
-![](github-claude-settings.png)
+![](../../install-claude-code/github-claude-settings.png)
 
 在开始之前，我们需要将 Claude Code 连接到 Github。您需要进入 Claude 的设置并连接 Github。
 
@@ -46,7 +46,7 @@ sidebar:
 
 如果您选择 **"Select repository"**，可以选择您刚刚创建的那个仓库。
 
-![](repo-claude.png)
+![](../../install-claude-code/repo-claude.png)
 
 
 ## 故障排除

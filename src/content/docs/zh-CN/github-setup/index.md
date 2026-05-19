@@ -65,11 +65,11 @@ Git 优雅地解决了这个问题。它不是创建副本，而是追踪你所�
 
 使用 Github Desktop [创建一个新的 repository](https://docs.github.com/en/desktop/overview/creating-your-first-repository-using-github-desktop#creating-a-new-repository)（仓库/repo）。
 
-![创建新 Repository 的对话框](new-repo-dialog.png)
+![创建新 Repository 的对话框](../../github-setup/new-repo-dialog.png)
 
 按照以下格式命名：[username].github.io，其中 *username* 是你的 github 用户名。这将作为你免费的 github 域名使用。请不要出错，repository 的名称在拼写和大小写上必须与你的 github 用户名完全一致。
 
-![使用 Github Desktop 创建新 Repository](new-repo.png)
+![使用 Github Desktop 创建新 Repository](../../github-setup/new-repo.png)
 
 你可以前往 [Github 的帮助文章](https://docs.github.com/en/desktop/overview/creating-your-first-repository-using-github-desktop)，了解更多关于 Github Desktop 及其界面的信息。
 
@@ -77,7 +77,7 @@ Git 优雅地解决了这个问题。它不是创建副本，而是追踪你所�
 
 发布该仓库。发布时，请记得取消勾选"Keep this code private"复选框。
 
-![发布 Repository 的对话框](publish-repo.png)
+![发布 Repository 的对话框](../../github-setup/publish-repo.png)
 
 ### 第 5 步：
 
@@ -85,7 +85,7 @@ Git 优雅地解决了这个问题。它不是创建副本，而是追踪你所�
 
 ### 第 6 步：
 
-![配置仓库的发布设置](gh-pages.png)
+![配置仓库的发布设置](../../github-setup/gh-pages.png)
 
 在左侧导航栏中进入 pages，选择"**Deploy from a Branch**"，然后选择 **main / root**，点击"**Save**"。
 
