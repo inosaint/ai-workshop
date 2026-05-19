@@ -7,5 +7,14 @@
   "zh-CN:src/content/docs/building-with-claude/index.md": "d29060d67d23a289030e902cfe3b1084",
   "zh-CN:src/content/docs/testing-locally/index.md": "5f7a5b23530a366eca2f19b5aa317119",
   "zh-CN:src/content/docs/making-changes/index.md": "ae4112ece8b6660ff9bba90679e72dc3",
-  "zh-CN:src/content/docs/deploy-github-pages/index.md": "0292c9098e5693ba22538859dbc0026b"
+  "zh-CN:src/content/docs/deploy-github-pages/index.md": "0292c9098e5693ba22538859dbc0026b",
+  "es:src/content/docs/introduction/index.md": "3735dce3515db45318efd623ce3b5d50",
+  "es:src/content/docs/quick-win/index.md": "c7e64e708682fc9fcba837f693cb81f0",
+  "es:src/content/docs/github-setup/index.md": "a7a6600286c46bc80f56074d80f9940c",
+  "es:src/content/docs/install-claude-code/index.md": "108148e1f3249cdbba901a888455bf65",
+  "es:src/content/docs/choose-project/index.mdx": "b1edf468a98e9dceb48bd948a94146b5",
+  "es:src/content/docs/building-with-claude/index.md": "d29060d67d23a289030e902cfe3b1084",
+  "es:src/content/docs/testing-locally/index.md": "5f7a5b23530a366eca2f19b5aa317119",
+  "es:src/content/docs/making-changes/index.md": "ae4112ece8b6660ff9bba90679e72dc3",
+  "es:src/content/docs/deploy-github-pages/index.md": "0292c9098e5693ba22538859dbc0026b"
 }
