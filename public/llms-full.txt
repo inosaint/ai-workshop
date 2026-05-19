@@ -79,9 +79,7 @@ This workshop has a [Troubleshooting](/troubleshooting/) section for common issu
 
 Let's experience what AI can do in just 60 seconds. No setup required!
 
-<div class="tip-box">
-  <strong>💡 Tip:</strong> Keep this workshop open in one browser tab, and follow along with the other windows. You've got this!
-</div>
+  💡 Tip: Keep this workshop open in one browser tab, and follow along with the other windows. You've got this!
 
 ---
 
@@ -178,9 +176,7 @@ The difference? **Claude Artifacts** run in your browser temporarily. In this wo
 
 Now that you've seen what's possible, let's set up the tools that will let you build anything you can imagine.
 
-<div class="tip-box">
-  <strong>💡 Keep that Claude tab open!</strong> You can use Artifacts to quickly prototype ideas throughout the workshop.
-</div>
+  💡 Keep that Claude tab open! You can use Artifacts to quickly prototype ideas throughout the workshop.
 
 ---
 
@@ -188,10 +184,7 @@ Now that you've seen what's possible, let's set up the tools that will let you b
 URL: https://howtoaicode.com/github-setup/
 > Create your GitHub account step by step
 
-<div class="tip-box">
-  You can skip this section if you are already familiar with Github and have an account.
-
-</div>
+You can skip this section if you are already familiar with Github and have an account.
 
 GitHub is where developers store their code. Think of it as **Google Drive for code**.
 
@@ -278,9 +271,7 @@ If you had not unchecked the 'Keep this code private' checkbox when you were pub
 
 Your GitHub account is ready. In the next section, we'll install Claude Code on your computer.
 
-<div class="tip-box">
-  <strong>💡 Tip:</strong> Keep the GitHub tab open - we'll come back to it soon!
-</div>
+  💡 Tip: Keep the GitHub tab open - we'll come back to it soon!
 
 ---
 
@@ -313,10 +304,8 @@ Next - let's install Claude Code on your computer. We'll be using the Claude Cod
 3. Open **Applications** and double-click **Claude Code**
 4. If you see a security warning, click **"Open"** to confirm
 
-<div class="checkpoint">
-  <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>Claude Code is now installed on your computer!</p>
-</div>
+  ✅ Checkpoint
+  Claude Code is now installed on your computer!
 
 ### Connect Github to Claude Code
 ![](github-claude-settings.png)
@@ -331,8 +320,7 @@ If you choose to '**Select repository**', you can select the one you have just c
 
 ## Troubleshooting
 
-<div class="tip-box"> You can find more information about the Github Integration on <a href="https://support.claude.com/en/articles/10167454-using-the-github-integration"> Claude's help site<a>.
-</div>
+ You can find more information about the Github Integration on  Claude's help site.
 
 ### Can't find Claude Code after installation (Mac)
 Check your **Applications** folder. If Claude Code is there but won't open, right-click it and select **"Open"** to bypass the security warning.
@@ -380,15 +368,14 @@ All paths lead to the same destination: a working project you can show off!
 
 ## Option 1: Personal Portfolio
 
-<div class="project-card" style=}>
-  <div style=}>👤</div>
-  <h3 style=}>Personal Portfolio</h3>
-  <p style=}>
+  👤
+  Personal Portfolio
+  
     A beautiful one-page website that showcases who you are. Perfect for job hunting, networking, or just having your own corner of the internet.
-  </p>
+  
 
-  <details>
-    <summary style=}>View starter prompt (click to expand)</summary>
+  
+    View starter prompt (click to expand)
 
 ```text
 Create a personal portfolio website with:
@@ -401,20 +388,18 @@ Create a personal portfolio website with:
 - Mobile-responsive layout
 - Use HTML, CSS, and vanilla JavaScript only
 ```
-  </details>
-</div>
+  
 
 ## Option 2: Interactive Quiz Game
 
-<div class="project-card" style=}>
-  <div style=}>🎮</div>
-  <h3 style=}>Interactive Quiz Game</h3>
-  <p style=}>
+  🎮
+  Interactive Quiz Game
+  
     A fun trivia game that tests knowledge and shows a final score. Great for learning how user interaction works.
-  </p>
+  
 
-  <details>
-    <summary style=}>View starter prompt (click to expand)</summary>
+  
+    View starter prompt (click to expand)
 
 ```text
 Create an interactive quiz game with:
@@ -428,20 +413,18 @@ Create an interactive quiz game with:
 - Fun, colorful design with animations
 - Use HTML, CSS, and vanilla JavaScript only
 ```
-  </details>
-</div>
+  
 
 ## Option 3: Habit Tracker
 
-<div class="project-card" style=}>
-  <div style=}>✅</div>
-  <h3 style=}>Habit Tracker</h3>
-  <p style=}>
+  ✅
+  Habit Tracker
+  
     A simple app to track daily habits and visualize your consistency. Perfect for building good routines.
-  </p>
+  
 
-  <details>
-    <summary style=}>View starter prompt (click to expand)</summary>
+  
+    View starter prompt (click to expand)
 
 ```text
 Create a habit tracker app with:
@@ -454,105 +437,66 @@ Create a habit tracker app with:
 - A weekly view showing which days each habit was completed
 - Use HTML, CSS, and vanilla JavaScript only
 ```
-  </details>
-</div>
+  
 
 ## Option 4: Build Your Own Idea!
 
 Have something else in mind? Use our Prompt Builder to create your own project prompt!
 
-<div className="prompt-editor">
-  <h3>✨ Prompt Builder</h3>
+  ✨ Prompt Builder
 
-  <div className="prompt-fields">
-    <div className="prompt-field">
-      <label htmlFor="projectType">What type of project?</label>
-      <select id="projectType">
-        <option value="">Choose a type...</option>
-        <option value="website">Website / Landing Page</option>
-        <option value="game">Game</option>
-        <option value="tool">Utility / Tool</option>
-        <option value="dashboard">Dashboard</option>
-        <option value="other">Other</option>
-      </select>
-    </div>
+  
+    
+      What type of project?
+      
+        Choose a type...
+        Website / Landing Page
+        Game
+        Utility / Tool
+        Dashboard
+        Other
+      
+    
 
-    <div className="prompt-field">
-      <label htmlFor="projectIdea">Describe your idea (1-2 sentences)</label>
-      <textarea id="projectIdea" placeholder="e.g., A recipe organizer where I can save and search my favorite recipes"></textarea>
-    </div>
+    
+      Describe your idea (1-2 sentences)
+      
+    
 
-    <div className="prompt-field">
-      <label htmlFor="projectFeatures">Key features (comma-separated)</label>
-      <input type="text" id="projectFeatures" placeholder="e.g., search, favorites, categories, dark mode" />
-    </div>
+    
+      Key features (comma-separated)
+      
+    
 
-    <div className="prompt-field">
-      <label htmlFor="projectColors">Color preference (optional)</label>
-      <input type="text" id="projectColors" placeholder="e.g., blue and white, dark theme, colorful" />
-    </div>
-  </div>
+    
+      Color preference (optional)
+      
+    
+  
 
-  <button id="generateBtn" className="prompt-button">
+  
     Generate My Prompt
-  </button>
+  
 
-  <div id="generatedPrompt" className="generated-prompt">
-    <label>Your custom prompt:</label>
-    <div className="prompt-output-wrapper">
-      <pre id="promptOutput"></pre>
-      <button id="copyBtn" className="copy-button">
+  
+    Your custom prompt:
+    
+      
+      
         Copy
-      </button>
-    </div>
-  </div>
-</div>
-
-<script>
-
-    if (copyBtn) 
-  }
-
-  function generatePrompt() 
-
-    let prompt = 'Create a ' + (type || 'web project') + ':\\n\\n';
-    prompt += 'Main concept: ' + idea + '\\n\\n';
-    prompt += 'Features to include:\\n';
-
-    if (features) );
-    } else 
-
-    prompt += '\\nAdditional requirements:\\n';
-    if (colors) 
-    prompt += '- Mobile-responsive design\\n';
-    prompt += '- Clean, modern UI\\n';
-    prompt += '- Use HTML, CSS, and vanilla JavaScript only\\n';
-    prompt += '- Include helpful comments in the code';
-
-    document.getElementById('promptOutput').textContent = prompt;
-    document.getElementById('generatedPrompt').classList.add('show');
-  }
-
-  function copyPrompt() , 2000);
-    });
-  }
-
-  if (document.readyState === 'loading')  else 
-})();
-`}
-</script>
+      
+    
+  
 
 ## Tips for Writing Good Prompts
 
-<div className="tip-box">
-  <strong>💡 Prompt Writing Tips:</strong>
-  <ul style=}>
-    <li><strong>Be specific</strong> - "A contact form" is vague; "A contact form with name, email, message fields and validation" is clear</li>
-    <li><strong>List features</strong> - Bullet points help Claude Code understand exactly what you want</li>
-    <li><strong>Mention the tech</strong> - "Use HTML, CSS, and JavaScript" keeps things simple for beginners</li>
-    <li><strong>Describe the look</strong> - "Modern and minimal" or "Fun and colorful" guides the design</li>
-  </ul>
-</div>
+  💡 Prompt Writing Tips:
+  
+    Be specific - "A contact form" is vague; "A contact form with name, email, message fields and validation" is clear
+    List features - Bullet points help Claude Code understand exactly what you want
+    Mention the tech - "Use HTML, CSS, and JavaScript" keeps things simple for beginners
+    Describe the look - "Modern and minimal" or "Fun and colorful" guides the design
+  
 
 ## What Happens Next?
 
@@ -564,10 +508,8 @@ Once you've chosen (or created) your project:
 
 We'll walk through this step-by-step in the next section.
 
-<div className="checkpoint">
-  <div className="checkpoint-title">✅ Checkpoint</div>
-  <p>You have a project idea and a prompt ready to go. Time to build!</p>
-</div>
+  ✅ Checkpoint
+  You have a project idea and a prompt ready to go. Time to build!
 
 ---
 
@@ -596,9 +538,7 @@ Claude Code will:
 
 ![How the mostly one-sided Chat conversation would look like](example-convo.png)
 
-<div class="warning-box">
-  <strong>⚠️ Be patient!</strong> Complex projects might take a minute or two. Don't interrupt Claude Code while it's working.
-</div>
+  ⚠️ Be patient! Complex projects might take a minute or two. Don't interrupt Claude Code while it's working.
 
 ### Step 3: Review What Was Created
 
@@ -606,9 +546,7 @@ Claude Code will:
 
 After Claude Code finishes, let's see what files were created. Claude code would have created a new branch and pushed it's work to that branch. You will need to *fetch* those changes to your local system for review.
 
-<div class="tip-box">
-  <strong>💡 Want more tips?</strong> Check out <a href="/claude-tips/">Working with Claude Code: Tips & Tricks</a> in the Level Up section for advanced techniques!
-</div>
+  💡 Want more tips? Check out Working with Claude Code: Tips & Tricks in the Level Up section for advanced techniques!
 
 ## Troubleshooting
 
@@ -622,10 +560,8 @@ You will need to re-connect the Github Integration and Select the repository you
 
 Now that you have the code in your local system, you need to know how to verify it! In the next section, we'll learn how to [test your project locally](/testing-locally/).
 
-<div class="checkpoint">
-  <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>Claude Code has created your project files. Ready to Test them?</p>
-</div>
+  ✅ Checkpoint
+  Claude Code has created your project files. Ready to Test them?
 
 ---
 
@@ -672,9 +608,7 @@ If you choose to build a simple static project, then the simplest way to view yo
 
 Opening this file should open a new browser window and you should be able to view your project. 
 
-<div class="tip-box">
-  <strong>💡 Tip:</strong> The address bar will show something like <code>file:///path/to/your/file</code>. This means you're viewing a local file, not a website on the internet.
-</div>
+  💡 Tip: The address bar will show something like file:///path/to/your/file. This means you're viewing a local file, not a website on the internet.
 
 ## Method 2: Use a Local Server (Recommended)
 
@@ -692,9 +626,7 @@ Some features (like loading data or using certain JavaScript) require a "real" s
 2. Type `Terminal` and press Enter
 3. The Terminal window will open
 
-<div class="tip-box">
-  <strong>💡 Terminal Reference:</strong> For more terminal commands and tips, check out the <a href="/reference/cheat-sheet/#terminal--command-line">Terminal section of our Cheat Sheet</a>.
-</div>
+  💡 Terminal Reference: For more terminal commands and tips, check out the Terminal section of our Cheat Sheet.
 
 ### Step 2: Navigate to Your Project
 
@@ -710,9 +642,7 @@ cd Documents\GitHub\my-project
 cd ~/Documents/GitHub/my-project
 ```
 
-<div class="tip-box">
-  <strong>💡 Tip:</strong> Replace "my-project" with your actual project folder name. If you're not sure where GitHub Desktop saves projects, check GitHub Desktop → Preferences → Advanced → Repository storage location.
-</div>
+  💡 Tip: Replace "my-project" with your actual project folder name. If you're not sure where GitHub Desktop saves projects, check GitHub Desktop → Preferences → Advanced → Repository storage location.
 
 You can verify you're in the right place by running:
 - **Windows:** `dir`
@@ -822,7 +752,7 @@ Look for red error messages in the **Console** tab. These tell you what went wro
 - Typo in the CSS link path
 - Browser cached old version
 
-**Fix:** Check your HTML `<head>` section:
+**Fix:** Check your HTML `` section:
 ```html
 <link rel="stylesheet" href="styles.css">
 ```
@@ -845,10 +775,8 @@ Try hard refresh: `Ctrl + Shift + R` (Windows) or `Cmd + Shift + R` (Mac)
 </body>
 ```
 
-<div class="checkpoint">
-  <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>Your project works locally and you've saved your progress. Are there any changes you would like to make?</p>
-</div>
+  ✅ Checkpoint
+  Your project works locally and you've saved your progress. Are there any changes you would like to make?
 
 ## Next Steps
 
@@ -891,9 +819,7 @@ You can also edit files directly using any text editor:
 3. Save the file
 4. Refresh your browser to see the changes
 
-<div class="tip-box">
-  <strong>💡 Pro Tip:</strong> Try making small changes yourself! If you break something, you can always ask Claude Code to fix it.
-</div>
+  💡 Pro Tip: Try making small changes yourself! If you break something, you can always ask Claude Code to fix it.
 
 ### Save Your Progress with GitHub Desktop
 
@@ -905,9 +831,7 @@ After making changes to your project, let's save them with GitHub Desktop:
 2. Click on '**Fetch Origin**' incase you want to fetch the changes Claude Code has made and verify locally.
 3. If you have made any changes manually in the editor, you should see your new files listed in the "Changes" tab.
 
-<div class="tip-box">
   Incase you asked Claude to make the changes for you, you can skip Step 2 and 3 that are written below.
-</div>
 
 #### Step 2: Review Your Changes
 
@@ -922,10 +846,8 @@ Click on the files to see what was created or modified. All the changed files sh
    - After changes: `Updated button styles and added footer`
 1. Click the **"Commit to branch"** button
 
-<div class="checkpoint">
-  <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>You know how to make changes and save your progress. Ready to put it on the internet?</p>
-</div>
+  ✅ Checkpoint
+  You know how to make changes and save your progress. Ready to put it on the internet?
 
 ## Best Practices
 
@@ -975,9 +897,7 @@ Now let's move your local code to the main branch.
 4. Fill in the description of the Pull Request and then click on '**Create Pull Request**'
 5. Github will run some checks and when they complete, you can click on the final '**Merge Branch**' and complete the merger. 
 
-<div class="tip-box">
   If you encounter any errors here, paste those errors in Claude so that you can debug them.
-</div>
 
 ### Step 3: Visit Your Live Site!
 
@@ -1028,14 +948,10 @@ This is an optional step incase you need to debug.
 - **Hard refresh** - `Ctrl + Shift + R` (Windows) or `Cmd + Shift + R` (Mac)
 - **Check Actions tab** - See if the deployment is still running
 
-<div class="tip-box">
-  <strong>💡 Pro Tip:</strong> You can use a custom domain (like "yourname.com") instead of the github.io address. That's a bit more advanced, but GitHub has <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site" target="_blank">great documentation</a> if you're interested!
-</div>
+  💡 Pro Tip: You can use a custom domain (like "yourname.com") instead of the github.io address. That's a bit more advanced, but GitHub has great documentation if you're interested!
 
-<div class="checkpoint">
-  <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>Your project is LIVE on the internet! You just deployed a real website. 🎉</p>
-</div>
+  ✅ Checkpoint
+  Your project is LIVE on the internet! You just deployed a real website. 🎉
 
 ## What's Next?
 
@@ -1132,13 +1048,11 @@ Claude Code is patient and loves explaining things in beginner-friendly terms!
 
 If you're new to coding and want Claude to explain things in simple terms, add this to your prompts:
 
-<div class="tip-box">
-  <strong>💡 Beginner-Friendly Prompt:</strong>
-  <p>Add this at the end of your requests to Claude:</p>
-  <pre><code>Please explain everything in simple terms, as if I'm a complete
+  💡 Beginner-Friendly Prompt:
+  Add this at the end of your requests to Claude:
+  Please explain everything in simple terms, as if I'm a complete
 beginner. Avoid technical jargon and use everyday language.
-If you need to use a technical term, please define it first.</code></pre>
-</div>
+If you need to use a technical term, please define it first.
 
 **Example:**
 
@@ -1273,10 +1187,8 @@ The more you work with Claude Code, the better you'll get at:
 
 Don't be afraid to experiment and ask questions!
 
-<div class="checkpoint">
-  <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>You've learned pro tips for working effectively with Claude Code!</p>
-</div>
+  ✅ Checkpoint
+  You've learned pro tips for working effectively with Claude Code!
 
 ---
 
@@ -1324,13 +1236,11 @@ To use the Claude API, you need an API key - like a password that identifies you
 2. Click **"Sign Up"** or **"Log In"**
 3. Complete the registration process
 
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: Anthropic Console login page]</strong><br/>
+  🖼️
+  
+    [Screenshot: Anthropic Console login page]
     The Anthropic Console welcome page with Sign Up / Log In buttons
-  </div>
-</div>
+  
 
 ### Step 2: Get Your API Key
 
@@ -1339,17 +1249,13 @@ To use the Claude API, you need an API key - like a password that identifies you
 3. Give it a name (e.g., "Workshop Project")
 4. Copy the key immediately!
 
-<div class="warning-box">
-  <strong>⚠️ Critical:</strong> You can only see your API key once! Copy it and save it somewhere safe. If you lose it, you'll need to create a new one.
-</div>
+  ⚠️ Critical: You can only see your API key once! Copy it and save it somewhere safe. If you lose it, you'll need to create a new one.
 
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: API Keys page]</strong><br/>
+  🖼️
+  
+    [Screenshot: API Keys page]
     Anthropic Console API Keys section with "Create Key" button and a blurred API key
-  </div>
-</div>
+  
 
 ### Step 3: Store Your Key Safely
 
@@ -1361,9 +1267,7 @@ Never put your API key directly in your code! Instead:
 ANTHROPIC_API_KEY=sk-ant-your-key-here
 ```
 
-<div class="warning-box">
-  <strong>⚠️ Never commit this file!</strong> Add <code>.env</code> to your <code>.gitignore</code> file to keep it out of GitHub.
-</div>
+  ⚠️ Never commit this file! Add .env to your .gitignore file to keep it out of GitHub.
 
 ## Understanding API Pricing
 
@@ -1393,12 +1297,23 @@ npm install @anthropic-ai/sdk
 Then create a file called `test-api.js`:
 
 ```javascript
+import Anthropic from "@anthropic-ai/sdk";
 
 // Create the client
-const client = new Anthropic();
+const client = new Anthropic({
+  apiKey: process.env.ANTHROPIC_API_KEY,
+});
 
 // Make a request to Claude
-async function askClaude(question) ,
+async function askClaude(question) {
+  const message = await client.messages.create({
+    model: "claude-sonnet-4-20250514",
+    max_tokens: 1024,
+    messages: [
+      {
+        role: "user",
+        content: question,
+      },
     ],
   });
 
@@ -1416,21 +1331,30 @@ Run it:
 ANTHROPIC_API_KEY=your-key-here node test-api.js
 ```
 
-<div class="checkpoint">
-  <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>If you see penguin facts in your terminal, congratulations! You've made your first API call!</p>
-</div>
+  ✅ Checkpoint
+  If you see penguin facts in your terminal, congratulations! You've made your first API call!
 
 ## Understanding the API Response
 
 When you call the API, you get back a structured response:
 
 ```javascript
-
+{
+  "id": "msg_01XFDUDYJgAACzvnptvVoYEL",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "text",
+      "text": "Here are three fun facts about penguins..."
+    }
   ],
   "model": "claude-sonnet-4-20250514",
   "stop_reason": "end_turn",
-  "usage": 
+  "usage": {
+    "input_tokens": 12,
+    "output_tokens": 150
+  }
 }
 ```
 
@@ -1452,12 +1376,41 @@ Let's add a real AI feature to a web page - a writing assistant!
   <meta charset="UTF-8">
   <title>AI Writing Helper</title>
   <style>
-    body 
-    textarea 
-    button 
-    button:hover 
-    #result 
-    .loading 
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    textarea {
+      width: 100%;
+      height: 150px;
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 16px;
+    }
+    button {
+      background: #6366f1;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #4f46e5;
+    }
+    #result {
+      margin-top: 20px;
+      padding: 20px;
+      background: #f1f5f9;
+      border-radius: 8px;
+      white-space: pre-wrap;
+    }
+    .loading {
+      opacity: 0.5;
+    }
   </style>
 </head>
 <body>
@@ -1475,16 +1428,22 @@ Let's add a real AI feature to a web page - a writing assistant!
 </html>
 ```
 
-<div class="warning-box">
-  <strong>⚠️ Security Note:</strong> For a real production app, you'd need a backend server to keep your API key secret. For learning purposes, this example shows the concept.
-</div>
+  ⚠️ Security Note: For a real production app, you'd need a backend server to keep your API key secret. For learning purposes, this example shows the concept.
 
 ## System Prompts: Giving Claude a Role
 
 You can give Claude a specific role or personality using a **system prompt**:
 
 ```javascript
-const message = await client.messages.create(,
+const message = await client.messages.create({
+  model: "claude-sonnet-4-20250514",
+  max_tokens: 1024,
+  system: "You are a helpful writing assistant. Improve the user's text while maintaining their voice and intent. Be concise and helpful.",
+  messages: [
+    {
+      role: "user",
+      content: userText,
+    },
   ],
 });
 ```
@@ -1503,10 +1462,19 @@ const message = await client.messages.create(,
 For long responses, you can "stream" the response word-by-word (like ChatGPT does):
 
 ```javascript
-const stream = await client.messages.stream(],
+const stream = await client.messages.stream({
+  model: "claude-sonnet-4-20250514",
+  max_tokens: 1024,
+  messages: [{ role: "user", content: "Tell me a story" }],
 });
 
-for await (const chunk of stream) 
+for await (const chunk of stream) {
+  if (
+    chunk.type === "content_block_delta" &&
+    chunk.delta.type === "text_delta"
+  ) {
+    process.stdout.write(chunk.delta.text);
+  }
 }
 ```
 
@@ -1517,16 +1485,27 @@ This creates a more dynamic, engaging user experience!
 ### 1. Handle Errors Gracefully
 
 ```javascript
-try );
+try {
+  const response = await client.messages.create({...});
   // Use response
-} catch (error)  else if (error.status === 401)  else 
+} catch (error) {
+  if (error.status === 429) {
+    console.log("Rate limited - slow down!");
+  } else if (error.status === 401) {
+    console.log("Invalid API key");
+  } else {
+    console.log("Something went wrong:", error.message);
+  }
 }
 ```
 
 ### 2. Set Reasonable Limits
 
 ```javascript
-
+{
+  max_tokens: 500,  // Don't let responses get too long
+  // ...
+}
 ```
 
 ### 3. Keep API Keys Secret
@@ -1548,10 +1527,8 @@ Now that you understand the API, here are some features you could add:
 | **Translator** | Translate content on the fly |
 | **Writing Assistant** | Help users improve their writing |
 
-<div class="checkpoint">
-  <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>You understand how the Claude API works and can make basic API calls. You're now ready to add AI features to any project!</p>
-</div>
+  ✅ Checkpoint
+  You understand how the Claude API works and can make basic API calls. You're now ready to add AI features to any project!
 
 ## Next Steps
 
@@ -1606,10 +1583,8 @@ Without analytics, you're flying blind:
 - Select your region (usually US or EU)
 - Name your project
 
-<div class="checkpoint">
-  <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>You should now see your PostHog dashboard!</p>
-</div>
+  ✅ Checkpoint
+  You should now see your PostHog dashboard!
 
 ## Step 2: Get Your Snippet
 
@@ -1620,7 +1595,7 @@ PostHog will give you a JavaScript snippet to add to your site.
 
 ## Step 3: Add to Your Website
 
-Paste the snippet in your HTML file, just before the closing `</head>` tag:
+Paste the snippet in your HTML file, just before the closing `` tag:
 
 ```html
 <!DOCTYPE html>
@@ -1632,8 +1607,8 @@ Paste the snippet in your HTML file, just before the closing `</head>` tag:
 
   <!-- PostHog Analytics -->
   <script>
-    !function(t,e)
-    posthog.init('YOUR_API_KEY_HERE', )
+    !function(t,e){/* ... PostHog snippet ... */}
+    posthog.init('YOUR_API_KEY_HERE', {api_host: 'https://app.posthog.com'})
   </script>
 </head>
 <body>
@@ -1642,9 +1617,7 @@ Paste the snippet in your HTML file, just before the closing `</head>` tag:
 </html>
 ```
 
-<div class="warning-box">
-  <strong>⚠️ Replace the API key!</strong> Make sure to use your actual PostHog API key from your dashboard.
-</div>
+  ⚠️ Replace the API key! Make sure to use your actual PostHog API key from your dashboard.
 
 ## Step 4: Test It's Working
 
@@ -1654,10 +1627,8 @@ Paste the snippet in your HTML file, just before the closing `</head>` tag:
 4. Click **"Live Events"** in the sidebar
 5. You should see your visit appear in real-time!
 
-<div class="checkpoint">
-  <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>If you see events appearing in PostHog, analytics is working!</p>
-</div>
+  ✅ Checkpoint
+  If you see events appearing in PostHog, analytics is working!
 
 ## Step 5: Track Custom Events
 
@@ -1720,10 +1691,8 @@ PostHog's free tier includes:
 
 Perfect for what we're building!
 
-<div class="checkpoint">
-  <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>That's it! You've added analytics to your project! You can now see how people interact with your site.</p>
-</div>
+  ✅ Checkpoint
+  That's it! You've added analytics to your project! You can now see how people interact with your site.
 
 ## What You've Accomplished!
 
@@ -1929,10 +1898,16 @@ npm install @anthropic-ai/sdk
 ### Basic API Call
 
 ```javascript
+import Anthropic from "@anthropic-ai/sdk";
 
-const client = new Anthropic();
+const client = new Anthropic({
+  apiKey: process.env.ANTHROPIC_API_KEY,
+});
 
-const message = await client.messages.create(],
+const message = await client.messages.create({
+  model: "claude-sonnet-4-20250514",
+  max_tokens: 1024,
+  messages: [{ role: "user", content: "Hello!" }],
 });
 
 console.log(message.content[0].text);
@@ -1942,12 +1917,12 @@ console.log(message.content[0].text);
 
 ### Quick Setup
 
-Add before `</head>`:
+Add before ``:
 
 ```html
 <script>
-  !function(t,e)
-  posthog.init('YOUR_KEY', )
+  !function(t,e){/*...PostHog snippet...*/}
+  posthog.init('YOUR_KEY', {api_host: 'https://app.posthog.com'})
 </script>
 ```
 
@@ -1958,7 +1933,7 @@ Add before `</head>`:
 posthog.capture('event_name');
 
 // Track with data
-posthog.capture('event_name', );
+posthog.capture('event_name', { key: 'value' });
 
 // Opt out
 posthog.opt_out_capturing();
@@ -2026,7 +2001,7 @@ build/
 |---------|----------|
 | "command not found" | Restart terminal, check installation |
 | Git push rejected | Run `git pull` first |
-| CSS not loading | Check `<link>` path, hard refresh |
+| CSS not loading | Check `` path, hard refresh |
 | JS not working | Check browser console for errors |
 | GitHub Pages 404 | Wait 5 min, check `index.html` exists |
 | API error 401 | Check API key is correct |
@@ -2039,11 +2014,8 @@ build/
 - [PostHog Docs](https://posthog.com/docs)
 - [MDN Web Docs](https://developer.mozilla.org) (HTML/CSS/JS reference)
 
-<div style="text-align: center; margin-top: 2rem;">
-  <a href="/reference/glossary/" style="padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
+  
     View Glossary →
-  </a>
-</div>
 
 ---
 
@@ -2142,7 +2114,7 @@ A fancy text editor designed for writing code. VS Code is a popular example. Has
 A programming language that makes websites interactive - animations, form validation, dynamic content. The "behavior" of a website.
 
 ### JSON (JavaScript Object Notation)
-A format for storing and sending data. Looks like this: ``. Easy for both humans and computers to read.
+A format for storing and sending data. Looks like this: `{"name": "John", "age": 25}`. Easy for both humans and computers to read.
 
 ## L
 
@@ -2242,14 +2214,11 @@ If there's a term you don't understand that's not here, try:
 - Searching [MDN Web Docs](https://developer.mozilla.org)
 - Googling "[term] explained simply"
 
-<div style="display: flex; justify-content: space-between; margin-top: 2rem;">
-  <a href="/reference/cheat-sheet/" style="padding: 0.75rem 1.5rem; border: 2px solid var(--sl-color-gray-3); color: inherit; text-decoration: none; border-radius: 8px;">
+  
     ← Cheat Sheet
-  </a>
-  <a href="/troubleshooting/" style="padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
+  
+  
     Troubleshooting →
-  </a>
-</div>
 
 ---
 
@@ -2568,9 +2537,7 @@ Enter your Mac password when prompted (you won't see characters as you type).
 3. **Take a break** - Sometimes stepping away helps!
 4. **Ask a friend** - Fresh eyes often spot the problem
 
-<div class="tip-box">
-  <strong>💡 Remember:</strong> Making mistakes is part of learning. Every experienced developer has seen these errors hundreds of times!
-</div>
+  💡 Remember: Making mistakes is part of learning. Every experienced developer has seen these errors hundreds of times!
 
 ---
 
@@ -2649,9 +2616,7 @@ ai-workshop/
 
 ---
 
-<div class="tip-box">
-  <strong>Curious about the code?</strong> Check out the <a href="https://github.com/inosaint/ai-workshop">GitHub repository</a> to see how everything works!
-</div>
+  Curious about the code? Check out the GitHub repository to see how everything works!
 
 ---
 
@@ -2664,9 +2629,7 @@ Ready to take your skills to the next level? Here are carefully selected courses
 1. [RISD's AI Course](https://risd-ai-studio.notion.site/)(free)
 2. [Prototyping with Cursor](https://www.designisaparty.com/prototyping) (paid)
 
-<div class="tip-box">
-  <strong>Have a course recommendation?</strong> Open an issue on our <a href="https://github.com/inosaint/issues">GitHub Issues page</a> to suggest resources for this page!
-</div>
+  Have a course recommendation? Open an issue on our GitHub Issues page to suggest resources for this page!
 
 ---
 
@@ -2728,11 +2691,9 @@ URL: https://howtoaicode.com/about/license/
 
 **AI Workshop** © 2025 by **Kenneth Mark Dsouza** is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-<div style="text-align: center; margin: 2rem 0;">
-  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">
-    <img src="https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png" alt="CC BY-NC-SA 4.0" />
-  </a>
-</div>
+  
+    
+  
 
 ---
 
@@ -2819,7 +2780,7 @@ USA
 
 If you have questions about how you can use this material, feel free to:
 - Open an issue on [GitHub](https://github.com/inosaint/issues)
-- or reach out to Kenneth on <a href="http://x.com/kenneth">X</a>  or <a href="https://bsky.app/profile/ken.cv">Bluesky</a>
+- or reach out to Kenneth on X  or Bluesky
 
 ---
 
@@ -2924,9 +2885,7 @@ This course has been conducted in person at the following events:
 
 ---
 
-<div class="tip-box">
-  <strong>Have feedback?</strong> We would love to hear from you! Open an issue on <a href="https://github.com/inosaint/issues">GitHub</a> or reach out to Kenneth on <a href="http://x.com/kenneth">X</a>  or <a href="https://bsky.app/profile/ken.cv">Bluesky</a>.
-</div>
+  Have feedback? We would love to hear from you! Open an issue on GitHub or reach out to Kenneth on X  or Bluesky.
 
 ---
 
@@ -2947,13 +2906,11 @@ Cursor is an **AI-powered code editor** built on top of VS Code. Instead of typi
 - Generate entire files with natural language
 - Get inline code suggestions as you type
 
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: Cursor editor interface]</strong><br/>
+  🖼️
+  
+    [Screenshot: Cursor editor interface]
     The Cursor IDE showing the code editor on the left and AI chat on the right
-  </div>
-</div>
+  
 
 ## Why Use Cursor?
 
@@ -2971,13 +2928,11 @@ Cursor is an **AI-powered code editor** built on top of VS Code. Instead of typi
 
 Go to [cursor.com](https://cursor.com) and download the installer for your operating system.
 
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: Cursor download page]</strong><br/>
+  🖼️
+  
+    [Screenshot: Cursor download page]
     The Cursor website with download buttons for Mac, Windows, and Linux
-  </div>
-</div>
+  
 
 ### Step 2: Install and Open
 
@@ -2988,10 +2943,8 @@ Go to [cursor.com](https://cursor.com) and download the installer for your opera
 
 Open Cursor and create a free account (or sign in with GitHub/Google).
 
-<div class="checkpoint">
-  <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>You should now see the Cursor editor with a welcome screen.</p>
-</div>
+  ✅ Checkpoint
+  You should now see the Cursor editor with a welcome screen.
 
 ## Opening Your Project in Cursor
 
@@ -3014,13 +2967,11 @@ Create a simple landing page with a header, hero section,
 and three feature cards. Use modern CSS with flexbox.
 ```
 
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: Cursor chat panel]</strong><br/>
+  🖼️
+  
+    [Screenshot: Cursor chat panel]
     The AI chat sidebar with a conversation about creating a landing page
-  </div>
-</div>
+  
 
 ### Method 2: Inline Editing (Cmd/Ctrl + K)
 
@@ -3101,16 +3052,14 @@ Change the color scheme to blue and white
 
 ## Tips for Cursor Success
 
-<div class="tip-box">
-  <strong>💡 Cursor Tips:</strong>
-  <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem;">
-    <li><strong>Be specific</strong> in your prompts, just like with Claude Code</li>
-    <li><strong>Use Cmd/Ctrl + K</strong> for quick inline changes</li>
-    <li><strong>Select context</strong> - highlight relevant code before asking AI to modify it</li>
-    <li><strong>Save often</strong> - Cmd/Ctrl + S after accepting AI changes</li>
-    <li><strong>Use chat</strong> for bigger tasks, inline edit for small tweaks</li>
-  </ul>
-</div>
+  💡 Cursor Tips:
+  
+    Be specific in your prompts, just like with Claude Code
+    Use Cmd/Ctrl + K for quick inline changes
+    Select context - highlight relevant code before asking AI to modify it
+    Save often - Cmd/Ctrl + S after accepting AI changes
+    Use chat for bigger tasks, inline edit for small tweaks
+  
 
 ## Switching Between Tools
 
@@ -3122,19 +3071,14 @@ You can use both tools on the same project! Your files are just files on your co
 4. Continue where you left off
 5. Go back to Claude Code later when limits reset
 
-<div class="checkpoint">
-  <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>You now have a backup option when Claude Code isn't available. Keep building!</p>
-</div>
+  ✅ Checkpoint
+  You now have a backup option when Claude Code isn't available. Keep building!
 
-<div style="display: flex; justify-content: space-between; margin-top: 2rem;">
-  <a href="/optional/netlify/" style="padding: 0.75rem 1.5rem; border: 2px solid var(--sl-color-gray-3); color: inherit; text-decoration: none; border-radius: 8px;">
+  
     ← Netlify Deploy
-  </a>
-  <a href="/reference/cheat-sheet/" style="padding: 0.75rem 1.5rem; background: var(--sl-color-accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
+  
+  
     Cheat Sheet →
-  </a>
-</div>
 
 ---
 
@@ -3156,13 +3100,11 @@ GitHub Pages is great, but Netlify offers some extra features:
 2. Click **"Sign up"**
 3. Sign up with your GitHub account (easiest!)
 
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: Netlify signup]</strong><br/>
+  🖼️
+  
+    [Screenshot: Netlify signup]
     Netlify homepage with "Sign up" button and GitHub login option
-  </div>
-</div>
+  
 
 ## Step 2: Connect Your Repository
 
@@ -3171,13 +3113,11 @@ GitHub Pages is great, but Netlify offers some extra features:
 3. Authorize Netlify to access your repositories
 4. Select your project repository
 
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: Netlify import project]</strong><br/>
+  🖼️
+  
+    [Screenshot: Netlify import project]
     Netlify interface showing GitHub repository selection
-  </div>
-</div>
+  
 
 ## Step 3: Configure Build Settings
 
@@ -3186,13 +3126,11 @@ For a simple HTML/CSS/JS project:
 - **Build command:** Leave empty (or `echo "No build needed"`)
 - **Publish directory:** `.` (or the folder with your index.html)
 
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: Netlify build settings]</strong><br/>
+  🖼️
+  
+    [Screenshot: Netlify build settings]
     Build settings form with fields for build command and publish directory
-  </div>
-</div>
+  
 
 Click **"Deploy site"**!
 
@@ -3203,10 +3141,8 @@ Netlify will:
 2. Run any build commands (if specified)
 3. Publish your site
 
-<div class="checkpoint">
-  <div class="checkpoint-title">✅ Checkpoint</div>
-  <p>Your site should be live at something like <code>random-name-12345.netlify.app</code></p>
-</div>
+  ✅ Checkpoint
+  Your site should be live at something like random-name-12345.netlify.app
 
 ## Step 5: Change Your Site Name
 
@@ -3216,13 +3152,11 @@ The random URL isn't great. Let's change it:
 2. Choose something memorable (e.g., `my-portfolio`)
 3. Your URL becomes: `my-portfolio.netlify.app`
 
-<div class="image-placeholder">
-  <div class="image-placeholder-icon">🖼️</div>
-  <div class="image-placeholder-text">
-    <strong>[Screenshot: Netlify site name settings]</strong><br/>
+  🖼️
+  
+    [Screenshot: Netlify site name settings]
     Site settings page with "Change site name" option
-  </div>
-</div>
+  
 
 ## Automatic Deployments
 

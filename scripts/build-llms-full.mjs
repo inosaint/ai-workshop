@@ -66,13 +66,27 @@ function extractFrontmatter(content) {
 }
 
 function stripMdx(body) {
-  return body
+  const codeBlocks = [];
+  const placeholderPrefix = '@@CODE_BLOCK_';
+
+  const withoutCode = body.replace(/```[\s\S]*?```/g, (match) => {
+    const placeholder = `${placeholderPrefix}${codeBlocks.length}@@`;
+    codeBlocks.push(match);
+    return placeholder;
+  });
+
+  const cleaned = withoutCode
     .replace(/^import\s+.+$/gm, '')           // MDX imports
-    .replace(/<[A-Z][^>]*>[\s\S]*?<\/[A-Z][^>]*>/g, '') // JSX components
-    .replace(/<[A-Z][^/]*\/>/g, '')            // self-closing JSX
-    .replace(/\{[^}]+\}/g, '')                 // JSX expressions
+    .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '') // page interactivity
+    .replace(/<\/?[A-Za-z][^>]*>/g, '')        // HTML/JSX wrappers
+    .replace(/^\s*\{[^}]+\}\s*$/gm, '')        // standalone JSX expressions
     .replace(/\n{3,}/g, '\n\n')
     .trim();
+
+  return cleaned.replace(
+    new RegExp(`${placeholderPrefix}(\\d+)@@`, 'g'),
+    (_, index) => codeBlocks[Number(index)] || ''
+  );
 }
 
 // Gather all English-only files (skip locale subdirs)

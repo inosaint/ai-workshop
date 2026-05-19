@@ -26,28 +26,6 @@ const breadcrumbJsonLd = slug ? JSON.stringify({
     { '@type': 'ListItem', position: 2, name: pageTitle || slug, item: `${SITE}/${slug}/` },
   ],
 }) : null;
-
-// HowTo — instructional pages
-const HOW_TO_SLUGS = new Set([
-  'quick-win', 'github-setup', 'install-claude-code', 'choose-project',
-  'building-with-claude', 'testing-locally', 'making-changes', 'deploy-github-pages',
-  'claude-tips', 'claude-api', 'analytics-posthog',
-]);
-const howToJsonLd = (slug && HOW_TO_SLUGS.has(slug)) ? JSON.stringify({
-  '@context': 'https://schema.org',
-  '@type': 'HowTo',
-  name: pageTitle || slug,
-  url: `${SITE}/${slug}/`,
-}) : null;
-
-// FAQPage — troubleshooting and cheat-sheet
-const FAQ_SLUGS = new Set(['troubleshooting', 'reference/cheat-sheet']);
-const faqJsonLd = (slug && FAQ_SLUGS.has(slug)) ? JSON.stringify({
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  name: pageTitle || slug,
-  url: `${SITE}/${slug}/`,
-}) : null;
 ---
 
 <!-- Prevent indexing of machine-translated pages until manually reviewed -->
@@ -58,8 +36,6 @@ const faqJsonLd = (slug && FAQ_SLUGS.has(slug)) ? JSON.stringify({
 
 <!-- Per-page structured data -->
 {breadcrumbJsonLd && <script type="application/ld+json" set:html={breadcrumbJsonLd} />}
-{howToJsonLd && <script type="application/ld+json" set:html={howToJsonLd} />}
-{faqJsonLd && <script type="application/ld+json" set:html={faqJsonLd} />}
 
 
 <!-- Ensure UTF-8 encoding -->

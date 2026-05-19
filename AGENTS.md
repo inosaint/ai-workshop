@@ -60,3 +60,8 @@ bun run preview  # preview production build locally
 ```
 
 Always run `bun run build` after adding a locale to confirm zero build errors before committing.
+
+## SEO / AEO / GEO
+
+- Do not add generic `HowTo` or `FAQPage` JSON-LD unless it includes the complete required content (for example, HowTo steps or FAQ questions and answers). Page-specific FAQ schema can live in frontmatter when the page actually contains those answers.
+- When updating `scripts/build-llms-full.mjs`, preserve fenced code blocks exactly. Only strip MDX/JSX wrappers outside code fences so the AI crawler snapshot does not corrupt examples.
