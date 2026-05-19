@@ -18,6 +18,7 @@ try {
 <!-- Render Starlight's default head entries (OG tags, JSON-LD, etc.) -->
 {headEntries.map(({ tag: Tag, attrs, content }) => <Tag {...attrs} set:html={content} />)}
 
+
 <!-- Ensure UTF-8 encoding -->
 <meta charset="UTF-8" />
 
