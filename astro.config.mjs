@@ -6,6 +6,11 @@ export default defineConfig({
   site: 'https://howtoaicode.com',
   integrations: [
     starlight({
+      defaultLocale: 'root',
+      locales: {
+        root: { label: 'English', lang: 'en' },
+        'zh-CN': { label: '简体中文', lang: 'zh-CN' },
+      },
       title: 'AI Workshop — Free AI Course',
       description: 'A free, beginner-friendly course on building projects with Claude Code. Go from zero coding experience to a deployed website in 3 hours.',
       head: [
@@ -84,6 +89,7 @@ export default defineConfig({
       ],
       components: {
         Head: './src/components/posthog.astro',
+        Banner: './src/components/BetaTranslationBanner.astro',
       },
       sidebar: [
         {

@@ -1,0 +1,38 @@
+---
+let locale: string | undefined;
+try {
+  locale = Astro.locals.starlightRoute?.locale;
+} catch {
+  // Not a Starlight page
+}
+const isTranslated = locale !== undefined && locale !== 'root';
+---
+
+{isTranslated && (
+  <div class="translation-banner">
+    <span>
+      This page was machine-translated from English. Quality may vary.
+      <a href="https://github.com/inosaint/ai-workshop/issues/new?title=Translation+issue&labels=translation" target="_blank" rel="noopener">
+        Report an issue
+      </a>
+    </span>
+  </div>
+)}
+
+<style>
+  .translation-banner {
+    background-color: var(--sl-color-orange-low, #fff3cd);
+    border-bottom: 1px solid var(--sl-color-orange, #ffc107);
+    color: var(--sl-color-text, #1a1a1a);
+    font-size: var(--sl-text-sm, 0.875rem);
+    padding: 0.5rem 1rem;
+    text-align: center;
+    width: 100%;
+  }
+  .translation-banner a {
+    color: inherit;
+    font-weight: 600;
+    margin-left: 0.5rem;
+    text-decoration: underline;
+  }
+</style>
