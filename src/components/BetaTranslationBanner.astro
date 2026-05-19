@@ -6,14 +6,20 @@ try {
   // Not a Starlight page
 }
 const isTranslated = locale !== undefined && locale !== 'root';
+
+const bannerText: Record<string, { message: string; cta: string }> = {
+  'zh-cn': { message: '本页内容由英文机器翻译而来，质量可能参差不齐。', cta: '报告问题' },
+};
+
+const text = locale ? (bannerText[locale] ?? { message: 'This page was machine-translated from English. Quality may vary.', cta: 'Report an issue' }) : null;
 ---
 
-{isTranslated && (
+{isTranslated && text && (
   <div class="translation-banner">
     <span>
-      This page was machine-translated from English. Quality may vary.
+      {text.message}
       <a href="https://github.com/inosaint/ai-workshop/issues/new?title=Translation+issue&labels=translation" target="_blank" rel="noopener">
-        Report an issue
+        {text.cta}
       </a>
     </span>
   </div>

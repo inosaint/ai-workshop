@@ -9,7 +9,7 @@ export default defineConfig({
       defaultLocale: 'root',
       locales: {
         root: { label: 'English', lang: 'en' },
-        'zh-CN': { label: '简体中文', lang: 'zh-CN' },
+        'zh-cn': { label: '简体中文', lang: 'zh-CN' },
       },
       title: 'AI Workshop — Free AI Course',
       description: 'A free, beginner-friendly course on building projects with Claude Code. Go from zero coding experience to a deployed website in 3 hours.',

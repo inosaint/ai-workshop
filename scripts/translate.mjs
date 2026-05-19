@@ -50,6 +50,10 @@ const LANGUAGE_NAMES = {
   'hi': 'Hindi',
 };
 
+const LOCALE_PATHS = {
+  'zh-CN': 'zh-cn',
+};
+
 // --- CLI args ---
 const args = process.argv.slice(2);
 const getArg = (name) => { const i = args.indexOf(`--${name}`); return i !== -1 ? args[i + 1] : null; };
@@ -81,7 +85,7 @@ function readdir(dir) {
 function md5(str) { return createHash('md5').update(str).digest('hex'); }
 
 function outputPath(src) {
-  return join(DOCS_ROOT, lang, relative(DOCS_ROOT, src));
+  return join(DOCS_ROOT, LOCALE_PATHS[lang] || lang, relative(DOCS_ROOT, src));
 }
 
 function loadManifest() {
