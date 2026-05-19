@@ -102,13 +102,13 @@ Paste the snippet in your HTML file, just before the closing `</head>` tag:
 
 ## Step 5: Track Custom Events
 
-PostHog automatically tracks page views. But you can also track specific actions like button clicks and form submissions! Posthog also comes with session replays out of the box which means that you can also view your users using your website in a anonymized manner.
+PostHog automatically tracks page views. But you can also track specific actions like button clicks and form submissions! PostHog also comes with session replays out of the box which means that you can also view your users using your website in a anonymized manner.
 
 ## Understanding Your Dashboard
 
 Let's explore what PostHog shows you:
 
-![Posthog dashboard](posthog-dash.png)
+![PostHog dashboard](posthog-dash.png)
 
 ### Web Analytics
 
@@ -122,8 +122,8 @@ The main dashboard shows:
 
 Insights help you answer specific questions about your data. 
 
-##### Asking Posthog's AI
-Now with Posthog's inbuilt AI, you can just talk to the AI and get it to implement the insights you want. Once it creates the insight in chat, remember to 'Save' it so that you can add it to the Dashboard.
+##### Asking PostHog's AI
+Now with PostHog's inbuilt AI, you can just talk to the AI and get it to implement the insights you want. Once it creates the insight in chat, remember to 'Save' it so that you can add it to the Dashboard.
 ##### Manually setting up Insights
 To explore making your own insights, here's an example on how you could go about it.
 
@@ -189,4 +189,3 @@ Check out the Reference section for:
 - [Cheat Sheet](/reference/cheat-sheet/) - Quick command reference
 - [Glossary](/reference/glossary/) - Terms explained
 - [Troubleshooting](/troubleshooting/) - Common issues and fixes
-[[]]
