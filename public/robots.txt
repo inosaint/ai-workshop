@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+Disallow: /zh-cn/
+Disallow: /es/
+
+# AI crawlers — explicitly welcome for GEO/AEO
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://howtoaicode.com/sitemap-index.xml
