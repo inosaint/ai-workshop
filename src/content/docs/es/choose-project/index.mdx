@@ -1,0 +1,253 @@
+---
+title: Elige Tu Proyecto
+description: Elige un proyecto para construir o crea el tuyo propio
+sidebar:
+  order: 5
+---
+
+¡Ahora viene la parte divertida: decidir qué construir!
+
+Durante este taller, puedes elegir entre tres ideas de proyectos, o traer la tuya propia:
+
+| Proyecto | Descripción |
+|---------|-------------|
+| Portafolio Personal | Un hermoso sitio web de una página que muestra quién eres |
+| Quiz Interactivo | Un juego divertido que pone a prueba conocimientos y muestra resultados |
+| Rastreador de Hábitos | Una aplicación sencilla para registrar hábitos diarios y ver tu progreso |
+| Tu Propia Idea | ¡Cualquier cosa que puedas imaginar! |
+
+¡Todos los caminos llevan al mismo destino: un proyecto funcional del que puedes presumir!
+
+## Opción 1: Portafolio Personal
+
+<div class="project-card" style={{margin: '2rem 0', padding: '1.5rem', borderRadius: '12px', border: '2px solid var(--sl-color-gray-3)'}}>
+  <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>👤</div>
+  <h3 style={{margin: '0 0 0.5rem 0'}}>Portafolio Personal</h3>
+  <p style={{color: 'var(--sl-color-gray-5)', marginBottom: '1rem'}}>
+    Un hermoso sitio web de una página que muestra quién eres. Perfecto para buscar empleo, hacer networking, o simplemente tener tu propio rincón en internet.
+  </p>
+
+  <details>
+    <summary style={{cursor: 'pointer', fontWeight: 600, color: 'var(--sl-color-accent)'}}>Ver prompt de inicio (clic para expandir)</summary>
+
+```text
+Create a personal portfolio website with:
+- A hero section with my name and a short tagline
+- An "About Me" section where I can describe myself
+- A "Skills" section showing 4-6 things I'm good at
+- A "Projects" section with placeholder cards for 3 projects
+- A "Contact" section with links to email and social media
+- Modern, clean design with a color scheme of your choice
+- Mobile-responsive layout
+- Use HTML, CSS, and vanilla JavaScript only
+```
+  </details>
+</div>
+
+## Opción 2: Juego de Quiz Interactivo
+
+<div class="project-card" style={{margin: '2rem 0', padding: '1.5rem', borderRadius: '12px', border: '2px solid var(--sl-color-gray-3)'}}>
+  <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>🎮</div>
+  <h3 style={{margin: '0 0 0.5rem 0'}}>Juego de Quiz Interactivo</h3>
+  <p style={{color: 'var(--sl-color-gray-5)', marginBottom: '1rem'}}>
+    Un divertido juego de trivia que pone a prueba conocimientos y muestra una puntuación final. Ideal para aprender cómo funciona la interacción con el usuario.
+  </p>
+
+  <details>
+    <summary style={{cursor: 'pointer', fontWeight: 600, color: 'var(--sl-color-accent)'}}>Ver prompt de inicio (clic para expandir)</summary>
+
+```text
+Create an interactive quiz game with:
+- A welcome screen with a "Start Quiz" button
+- 5 multiple-choice questions about [choose a topic: movies, science, history, etc.]
+- 4 answer options per question
+- Visual feedback showing if the answer was correct or wrong
+- A progress bar showing current question number
+- A results screen showing final score with a message based on performance
+- Option to restart the quiz
+- Fun, colorful design with animations
+- Use HTML, CSS, and vanilla JavaScript only
+```
+  </details>
+</div>
+
+## Opción 3: Rastreador de Hábitos
+
+<div class="project-card" style={{margin: '2rem 0', padding: '1.5rem', borderRadius: '12px', border: '2px solid var(--sl-color-gray-3)'}}>
+  <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>✅</div>
+  <h3 style={{margin: '0 0 0.5rem 0'}}>Rastreador de Hábitos</h3>
+  <p style={{color: 'var(--sl-color-gray-5)', marginBottom: '1rem'}}>
+    Una aplicación sencilla para registrar hábitos diarios y visualizar tu constancia. Perfecto para crear buenas rutinas.
+  </p>
+
+  <details>
+    <summary style={{cursor: 'pointer', fontWeight: 600, color: 'var(--sl-color-accent)'}}>Ver prompt de inicio (clic para expandir)</summary>
+
+```text
+Create a habit tracker app with:
+- Ability to add new habits with a name and emoji
+- A list of habits that can be marked complete for today
+- Visual checkboxes or toggle buttons for each habit
+- A simple streak counter showing consecutive days
+- Data saved in browser localStorage (persists between visits)
+- Clean, minimal design with satisfying animations when completing habits
+- A weekly view showing which days each habit was completed
+- Use HTML, CSS, and vanilla JavaScript only
+```
+  </details>
+</div>
+
+
+## Opción 4: ¡Construye Tu Propia Idea!
+
+¿Tienes algo más en mente? ¡Usa nuestro Constructor de Prompts para crear el prompt de tu propio proyecto!
+
+<div className="prompt-editor">
+  <h3>✨ Constructor de Prompts</h3>
+
+  <div className="prompt-fields">
+    <div className="prompt-field">
+      <label htmlFor="projectType">¿Qué tipo de proyecto?</label>
+      <select id="projectType">
+        <option value="">Elige un tipo...</option>
+        <option value="website">Sitio web / Página de inicio</option>
+        <option value="game">Juego</option>
+        <option value="tool">Utilidad / Herramienta</option>
+        <option value="dashboard">Dashboard</option>
+        <option value="other">Otro</option>
+      </select>
+    </div>
+
+    <div className="prompt-field">
+      <label htmlFor="projectIdea">Describe tu idea (1-2 oraciones)</label>
+      <textarea id="projectIdea" placeholder="p. ej., Un organizador de recetas donde pueda guardar y buscar mis recetas favoritas"></textarea>
+    </div>
+
+    <div className="prompt-field">
+      <label htmlFor="projectFeatures">Funcionalidades clave (separadas por comas)</label>
+      <input type="text" id="projectFeatures" placeholder="p. ej., búsqueda, favoritos, categorías, modo oscuro" />
+    </div>
+
+    <div className="prompt-field">
+      <label htmlFor="projectColors">Preferencia de colores (opcional)</label>
+      <input type="text" id="projectColors" placeholder="p. ej., azul y blanco, tema oscuro, colorido" />
+    </div>
+  </div>
+
+  <button id="generateBtn" className="prompt-button">
+    Generar Mi Prompt
+  </button>
+
+  <div id="generatedPrompt" className="generated-prompt">
+    <label>Tu prompt personalizado:</label>
+    <div className="prompt-output-wrapper">
+      <pre id="promptOutput"></pre>
+      <button id="copyBtn" className="copy-button">
+        Copiar
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+{`
+(function() {
+  function init() {
+    const generateBtn = document.getElementById('generateBtn');
+    const copyBtn = document.getElementById('copyBtn');
+
+    if (generateBtn) {
+      generateBtn.addEventListener('click', generatePrompt);
+    }
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', copyPrompt);
+    }
+  }
+
+  function generatePrompt() {
+    const type = document.getElementById('projectType').value;
+    const idea = document.getElementById('projectIdea').value;
+    const features = document.getElementById('projectFeatures').value;
+    const colors = document.getElementById('projectColors').value;
+
+    if (!idea) {
+      alert('Please describe your project idea!');
+      return;
+    }
+
+    let prompt = 'Create a ' + (type || 'web project') + ':\\n\\n';
+    prompt += 'Main concept: ' + idea + '\\n\\n';
+    prompt += 'Features to include:\\n';
+
+    if (features) {
+      features.split(',').forEach(feature => {
+        prompt += '- ' + feature.trim() + '\\n';
+      });
+    } else {
+      prompt += '- [Add your key features here]\\n';
+    }
+
+    prompt += '\\nAdditional requirements:\\n';
+    if (colors) {
+      prompt += '- Color scheme: ' + colors + '\\n';
+    }
+    prompt += '- Mobile-responsive design\\n';
+    prompt += '- Clean, modern UI\\n';
+    prompt += '- Use HTML, CSS, and vanilla JavaScript only\\n';
+    prompt += '- Include helpful comments in the code';
+
+    document.getElementById('promptOutput').textContent = prompt;
+    document.getElementById('generatedPrompt').classList.add('show');
+  }
+
+  function copyPrompt() {
+    const prompt = document.getElementById('promptOutput').textContent;
+    navigator.clipboard.writeText(prompt).then(() => {
+      const btn = document.getElementById('copyBtn');
+      btn.textContent = '¡Copiado!';
+      btn.style.background = '#10b981';
+      setTimeout(() => {
+        btn.textContent = 'Copiar';
+        btn.style.background = 'var(--sl-color-accent)';
+      }, 2000);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+`}
+</script>
+
+
+## Consejos para Escribir Buenos Prompts
+
+<div className="tip-box">
+  <strong>💡 Consejos para escribir prompts:</strong>
+  <ul style={{margin: '0.5rem 0 0 0', paddingLeft: '1.5rem'}}>
+    <li><strong>Sé específico</strong> - "Un formulario de contacto" es vago; "Un formulario de contacto con campos de nombre, correo electrónico, mensaje y validación" es claro</li>
+    <li><strong>Lista las funcionalidades</strong> - Los puntos con viñetas ayudan a Claude Code a entender exactamente lo que quieres</li>
+    <li><strong>Menciona la tecnología</strong> - "Usa HTML, CSS y JavaScript" mantiene las cosas simples para principiantes</li>
+    <li><strong>Describe el aspecto visual</strong> - "Moderno y minimalista" o "Divertido y colorido" orienta el diseño</li>
+  </ul>
+</div>
+
+
+## ¿Qué Pasa Después?
+
+Una vez que hayas elegido (o creado) tu proyecto:
+
+1. **Copia tu prompt** - Ya sea de las plantillas anteriores o del Constructor de Prompts
+2. **Abre Claude Code** - Inicia un nuevo chat
+3. **Pega y ejecuta** - Dale a Claude Code tu prompt y ¡observa cómo ocurre la magia!
+
+Recorreremos esto paso a paso en la siguiente sección.
+
+<div className="checkpoint">
+  <div className="checkpoint-title">✅ Punto de control</div>
+  <p>Tienes una idea de proyecto y un prompt listo para usar. ¡Es hora de construir!</p>
+</div>

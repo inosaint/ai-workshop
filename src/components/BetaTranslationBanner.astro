@@ -1,0 +1,45 @@
+---
+let locale: string | undefined;
+try {
+  locale = Astro.locals.starlightRoute?.locale;
+} catch {
+  // Not a Starlight page
+}
+const isTranslated = locale !== undefined && locale !== 'root';
+
+const bannerText: Record<string, { message: string; cta: string }> = {
+  'zh-cn': { message: '本页内容由英文机器翻译而来，质量可能参差不齐。', cta: '报告问题' },
+  'es': { message: 'Esta página fue traducida automáticamente del inglés. La calidad puede variar.', cta: 'Reportar un problema' },
+};
+
+const text = locale ? (bannerText[locale] ?? { message: 'This page was machine-translated from English. Quality may vary.', cta: 'Report an issue' }) : null;
+---
+
+{isTranslated && text && (
+  <div class="translation-banner">
+    <span>
+      {text.message}
+      <a href="https://github.com/inosaint/ai-workshop/issues/new?title=Translation+issue&labels=translation" target="_blank" rel="noopener">
+        {text.cta}
+      </a>
+    </span>
+  </div>
+)}
+
+<style>
+  .translation-banner {
+    background-color: var(--sl-color-orange-low, #fff3cd);
+    border-bottom: 1px solid var(--sl-color-orange, #ffc107);
+    color: var(--sl-color-text, #1a1a1a);
+    font-size: var(--sl-text-sm, 0.875rem);
+    padding: 0.5rem 1rem;
+    text-align: center;
+    width: 100%;
+  }
+  .translation-banner a {
+    color: inherit;
+    font-weight: 600;
+    margin-left: 0.5rem;
+    text-decoration: underline;
+  }
+</style>
