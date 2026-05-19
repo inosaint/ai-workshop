@@ -3,8 +3,9 @@
  * Translation script for howtoaicode.com
  *
  * Usage:
- *   ANTHROPIC_API_KEY=sk-... npm run translate -- --lang zh-CN --section setup
- *   ANTHROPIC_API_KEY=sk-... npm run translate -- --lang zh-CN   # all pilot sections
+ *   bun run translate -- --lang zh-CN --section setup
+ *   bun run translate -- --lang zh-CN   # all pilot sections
+ *   (ANTHROPIC_API_KEY is read from .env automatically)
  *
  * Flags:
  *   --lang <locale>   Target language code (e.g. zh-CN). Required.
@@ -17,6 +18,14 @@ import Anthropic from '@anthropic-ai/sdk';
 import { createHash } from 'node:crypto';
 import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, statSync } from 'node:fs';
 import { join, dirname, relative } from 'node:path';
+
+// Load .env if present (so you don't need to prefix the command with ANTHROPIC_API_KEY=...)
+if (existsSync('.env')) {
+  for (const line of readFileSync('.env', 'utf8').split('\n')) {
+    const match = line.match(/^([A-Z_][A-Z0-9_]*)=(.*)$/);
+    if (match && !process.env[match[1]]) process.env[match[1]] = match[2];
+  }
+}
 
 const DOCS_ROOT = 'src/content/docs';
 const MANIFEST_PATH = 'scripts/.translation-manifest.json';
