@@ -91,7 +91,9 @@ Rules:
     }],
   });
 
-  return JSON.parse(response.content[0].text);
+  const text = response.content[0].text.trim();
+  const jsonText = text.replace(/^```(?:json)?\s*\n?/, '').replace(/\n?```\s*$/, '');
+  return JSON.parse(jsonText);
 }
 
 function patchAstroConfig(translations) {
